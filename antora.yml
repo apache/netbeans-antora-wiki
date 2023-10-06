@@ -1,0 +1,4 @@
+name: wiki
+title: Documentation
+version: main
+start_page: wiki/index.adoc
