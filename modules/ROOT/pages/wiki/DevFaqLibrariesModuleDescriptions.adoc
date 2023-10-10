@@ -19,15 +19,15 @@
 
 = In the Libraries tab of my application's Project Properties, there sure are a lot of modules listed. What are they for?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLibrariesModuleDescriptions
 :description: Apache NetBeans wiki DevFaqLibrariesModuleDescriptions
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 13
+:page-wikidevsection: _getting_started
+:page-position: 13
 
 
 When you're creating an application on the NetBeans Platform in NetBeans IDE, you can right-click the app in the Projects window, choose Properties, and then go to the Libraries tab. There you'll see a list of clusters containing the modules you can add to your application.

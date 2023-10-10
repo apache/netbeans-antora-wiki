@@ -19,15 +19,15 @@
 
 =  I want to disable the popup menu on the toolbars in the main window. How do I do that?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsNoActionsOnToolbars
 :description: Apache NetBeans wiki DevFaqWindowsNoActionsOnToolbars
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 11
+:page-wikidevsection: _window_system
+:page-position: 11
 
 There is no canonical (or pretty) way to do this, but there is a hack you can do - it works in NetBeans 5.0, 5.5 and 6.x (and probably earlier versions but this wasn't tested).  
 

@@ -19,15 +19,15 @@
 
 = How do I adjust the initial size/position of the main window?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqInitialMainWindowSize
 :description: Apache NetBeans wiki DevFaqInitialMainWindowSize
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 15
+:page-wikidevsection: _window_system
+:page-position: 15
 
 
 The default initial size of an application based on NetBeans platform is 90% of the whole screen area and the main window is also centered. These defaults can be redefined quite easily:

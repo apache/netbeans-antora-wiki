@@ -19,15 +19,15 @@
 
 = Can I bind one key to more than one action?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqRebindingKeys
 :description: Apache NetBeans wiki DevFaqRebindingKeys
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _key_bindings
-:position: 2
+:page-wikidevsection: _key_bindings
+:page-position: 2
 
 The simple answer is no:  The
 global keymap (get `Keymap` from Lookup)

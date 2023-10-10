@@ -19,15 +19,15 @@
 
 = Becoming a Proficient NetBeans Module Developer
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqBecomingProficient
 :description: Apache NetBeans wiki DevFaqBecomingProficient
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 2
+:page-wikidevsection: _getting_started
+:page-position: 2
 
 The NetBeans Platform has a learning curve.  
 The goal of this FAQ is to get you over the basic humps quickly.  

@@ -19,15 +19,15 @@
 
 = How do I add an action to the toolbar of the editor?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddToEditorToolbar
 :description: Apache NetBeans wiki DevFaqActionAddToEditorToolbar
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 4
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 4
 
 
 Use

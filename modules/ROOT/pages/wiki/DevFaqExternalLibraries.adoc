@@ -19,15 +19,15 @@
 
 =  How to store external libraries in the NetBeans Hg repository
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqExternalLibraries
 :description: Apache NetBeans wiki DevFaqExternalLibraries
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 13
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 13
 
 
 In the spirit of building on the shoulders of giants,

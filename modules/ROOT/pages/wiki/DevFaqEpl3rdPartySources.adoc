@@ -19,15 +19,15 @@
 
 =  Where to download sources of EPL third-party components?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqEpl3rdPartySources
 :description: Apache NetBeans wiki DevFaqEpl3rdPartySources
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _licensing_issues
-:position: 4
+:page-wikidevsection: _licensing_issues
+:page-position: 4
 
 == The following third-party components licensed under EPL license have the sources available for download from netbeans.org:
 

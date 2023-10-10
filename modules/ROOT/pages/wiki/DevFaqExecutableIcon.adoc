@@ -19,15 +19,15 @@
 
 = How can I change the executable's icon?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqExecutableIcon
 :description: Apache NetBeans wiki DevFaqExecutableIcon
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 12
+:page-wikidevsection: _window_system
+:page-position: 12
 
 In short, the current NetBeans IDE (6.7) only provides limited support for changing application icons. Alternate solutions are described below, but NetBeans itself does not include any way to change the icon of the Windows launcher executable called `<your branding name>.exe`, nor does it provide a way to specify an `.icns` file for Mac OS X. There is already an enhancement request for Windows icon support: link:https://bz.apache.org/netbeans/show_bug.cgi?id=64612[issue #64612].
 
@@ -113,7 +113,7 @@ Since Netbeans 6.9 (link:https://bz.apache.org/netbeans/show_bug.cgi?id=182230+&
 
 == Related links
 
-* xref:../blogs/geertjan/icons_for_netbeans_platform_applications.adoc[Icons for NetBeans Platform Applications on Windows]
+* xref:front::blogs/geertjan/icons_for_netbeans_platform_applications.adoc[Icons for NetBeans Platform Applications on Windows]
 ////
 == Apache Migration Information
 

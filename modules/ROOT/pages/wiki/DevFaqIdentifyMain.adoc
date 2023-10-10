@@ -19,15 +19,15 @@
 
 = How do I identify the "main project"?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqIdentifyMain
 :description: Apache NetBeans wiki DevFaqIdentifyMain
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_types
-:position: 5
+:page-wikidevsection: _project_types
+:page-position: 5
 
 [source,java]
 ----

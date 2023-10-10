@@ -19,15 +19,15 @@
 
 = How can I customize the window system via the latest 7.1 techniques/enhancements?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomizeWindowSystem
 :description: Apache NetBeans wiki DevFaqCustomizeWindowSystem
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 24
+:page-wikidevsection: _window_system
+:page-position: 24
 
 When developing an application based on NetBeans platform there's sometimes need to tweak the Window System for your target users. Here's a couple of tips how to use various switches and options.
 
@@ -113,11 +113,11 @@ NetBeans version 7.1 introduced a concept of *tab groups*. All windows in the sa
 
 As of NetBeans 7.1 non-document windows in the same docking spot are organized into a tab group (see also above).
 
-image:71_and_newer.png[title="Tabs in NetBeans 7.1 and newer"]
+image:./71_and_newer.png[title="Tabs in NetBeans 7.1 and newer"]
 
 If you want to revert the tab layout back to the old behavior in NetBeans 7.0 then you must set system property _winsys.stretching_view_tabs_ to true. Window tabs will then stretch to fill the whole width of the docking spot:
 
-image:70_and_older.png[title="Tabs in NetBeans 7.0 and older"]
+image:./70_and_older.png[title="Tabs in NetBeans 7.0 and older"]
 
 Please note that tab group actions (close group, float group, move group etc) will still be present in the main menu and in window's context menu. Use the branding propeties above to remove those actions.
 

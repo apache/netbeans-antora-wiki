@@ -19,15 +19,15 @@
 
 = What is a Node?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWhatIsANode
 :description: Apache NetBeans wiki DevFaqWhatIsANode
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 1
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 1
 
 Nodes are presentation objects.  They have actions, properties and localized display names - they are the place where the architecture meets the human.  Nodes typically wrap some model object and provide human-readable names, icons, etc.  They are at the heart of a lot of NetBeans selection and user interface systems.
 

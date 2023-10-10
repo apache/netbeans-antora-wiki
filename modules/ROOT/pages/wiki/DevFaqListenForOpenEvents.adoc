@@ -19,15 +19,15 @@
 
 = How can I be notified when a file is opened?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqListenForOpenEvents
 :description: Apache NetBeans wiki DevFaqListenForOpenEvents
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _files_and_data_objects
-:position: 8
+:page-wikidevsection: _files_and_data_objects
+:page-position: 8
 
 
 [source,java]

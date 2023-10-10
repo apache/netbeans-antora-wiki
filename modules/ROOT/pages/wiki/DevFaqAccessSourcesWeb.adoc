@@ -19,15 +19,15 @@
 
 = How do I get access to zipped NetBeans sources for a periodic build?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAccessSourcesWeb
 :description: Apache NetBeans wiki DevFaqAccessSourcesWeb
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 4
+:page-wikidevsection: _getting_started
+:page-position: 4
 
 
 (as of June, 2010)

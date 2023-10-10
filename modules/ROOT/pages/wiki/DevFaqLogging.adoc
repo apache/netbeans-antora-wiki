@@ -19,15 +19,15 @@
 
 = Using java.util.logging in NetBeans
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLogging
 :description: Apache NetBeans wiki DevFaqLogging
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _logging_and_error_handling
-:position: 1
+:page-wikidevsection: _logging_and_error_handling
+:page-position: 1
 
 The logging system in NetBeans is based on the standard JDK's java.util.logging and complies to it as much as possible. This document sumarizes the basic usecases and shall be treated as a guide for writing good NetBeans ready logging code. The info given here is valid for default configuration of the logger as it is used in NetBeans. However it is possible to fully replace the system by providing own logging properties as in any other JDK application. Then of course the behaviour may get completely different.
 

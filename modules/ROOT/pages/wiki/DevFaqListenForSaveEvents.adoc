@@ -19,15 +19,15 @@
 
 = How can I be notified when a file is modified and saved??
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqListenForSaveEvents
 :description: Apache NetBeans wiki DevFaqListenForSaveEvents
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _files_and_data_objects
-:position: 7
+:page-wikidevsection: _files_and_data_objects
+:page-position: 7
 
 The link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataObject.Registry.html[DataObject.Registry] in link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders[LoadersAPI] gives you a set of modified DataObjects. You can also add a listener and be notified when the set of modified objects changes.
 

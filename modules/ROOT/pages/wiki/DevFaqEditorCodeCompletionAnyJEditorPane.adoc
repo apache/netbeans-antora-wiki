@@ -19,15 +19,15 @@
 
 =  How to add code completion to any JEditorPane
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqEditorCodeCompletionAnyJEditorPane
 :description: Apache NetBeans wiki DevFaqEditorCodeCompletionAnyJEditorPane
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _editor_and_edited_files
-:position: 11
+:page-wikidevsection: _editor_and_edited_files
+:page-position: 11
 
 
 You can add the built-in Java code completion from the Netbeans 6 Java editor to any arbitrary JEditorPane. See the code below for how this can be achieved. Note that Netbeans Java editor functionality is derived from an underlying FileObject, so we are essentially creating a dummy Java FileObject and tying our JEditorPane document in with the appropriate hooks.

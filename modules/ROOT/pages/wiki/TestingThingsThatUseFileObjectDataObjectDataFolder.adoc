@@ -19,15 +19,15 @@
 
 = Testing Things That Use FileObject/DataObject/DataFolder
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki TestingThingsThatUseFileObjectDataObjectDataFolder
 :description: Apache NetBeans wiki TestingThingsThatUseFileObjectDataObjectDataFolder
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _running_and_writing_tests
-:position: 5
+:page-wikidevsection: _running_and_writing_tests
+:page-position: 5
 
 
 If your unit tests use `FileObject` (including `DataObject` or `DataFolder`), then you may be suprised that `FileUtil.toFileObject(java.util.File)` returns `null`. This is because the MasterFS filesystem implementation is what maps `FileObject`s to your local disk and it needs to be on the classpath when tests are run.

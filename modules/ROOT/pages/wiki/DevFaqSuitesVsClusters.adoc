@@ -19,15 +19,15 @@
 
 = What is the difference between a suite and a cluster?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSuitesVsClusters
 :description: Apache NetBeans wiki DevFaqSuitesVsClusters
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 18
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 18
 
 
 A suite is a project which bundles together a number of xref:./DevFaqWhatIsAModule.adoc[module] projects, lets you build them all together, and puts the resulting JARs in a directory structure the NetBeans Platform understands.

@@ -19,15 +19,15 @@
 
 = How do I lazy-load an item in the Lookup?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupLazyLoad
 :description: Apache NetBeans wiki DevFaqLookupLazyLoad
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _lookup
-:position: 15
+:page-wikidevsection: _lookup
+:page-position: 15
 
 
 A node is typically used to represent some business object and it's a common idiom to place that business object in the node's lookup so that, for example, a context-sensitive action can operate on it.  Sometimes fully initializing that business object can involve an expensive operation that would be wasted effort if the user never invoked the action that used it anyway.  

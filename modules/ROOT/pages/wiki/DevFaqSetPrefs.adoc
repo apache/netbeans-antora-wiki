@@ -19,23 +19,23 @@
 
 = How do I let the user set preferences/options/customization/configuration for my module/application?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSetPrefs
 :description: Apache NetBeans wiki DevFaqSetPrefs
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _settings
-:position: 1
+:page-wikidevsection: _settings
+:page-position: 1
 
 
 From 6.0 onwards, you can use the link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/NbPreferences.html[NbPreferences API].
 
 Read the following related blog entries:
 
-* xref:../blogs/geertjan/preferences_api_and_netbeans_ide.adoc[Preferences API and NetBeans IDE (Part 1)]
-* xref:../blogs/geertjan/preferences_api_and_netbeans_ide1.adoc[Preferences API and NetBeans IDE (Part 2)]
+* xref:front::blogs/geertjan/preferences_api_and_netbeans_ide.adoc[Preferences API and NetBeans IDE (Part 1)]
+* xref:front::blogs/geertjan/preferences_api_and_netbeans_ide1.adoc[Preferences API and NetBeans IDE (Part 2)]
 
 ////
 == Apache Migration Information

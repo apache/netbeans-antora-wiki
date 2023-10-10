@@ -19,15 +19,15 @@
 
 =  The next button is never enabled when I create my DataObject from a template. Help!
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDataObjectInItsCookieSet
 :description: Apache NetBeans wiki DevFaqDataObjectInItsCookieSet
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _files_and_data_objects
-:position: 13
+:page-wikidevsection: _files_and_data_objects
+:page-position: 13
 
 Most likely your `DataObject` does not put itself into its own `CookieSet`/`Lookup`.  If you call `setCookieSet()`, or override `getLookup()` or `getCookie()`, this can happen.  There are a few parts of NetBeans which will expect `Node`s to be present in their own `Lookup`s and `DataObject`s to be present in theirs.  It is always best to make sure they are there.  For a `DataObject`, the code for this is usually as simple as:
 

@@ -19,15 +19,15 @@
 
 = How do I preserve the column attributes of a TreeTableView?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqViewSaveTTVColumns
 :description: Apache NetBeans wiki DevFaqViewSaveTTVColumns
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 18
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 18
 
 
 Assuming you are embedding a `TreeTableView` (TTV) inside a `TopComponent`, you can override the `readExternal(ObjectInput)` and `writeExternal(ObjectOutput)` methods for preserving the attributes of the columns in your TTV (e.g. the column ordering, sorted-ness, sorting order, visibility, and width).

@@ -19,15 +19,15 @@
 
 = How can I customize the build process?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomizeBuild
 :description: Apache NetBeans wiki DevFaqCustomizeBuild
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 35
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 35
 
 
 Problem: Customization of the build process is not documented properly

@@ -20,7 +20,7 @@
 
 = API_Development
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published
 :syntax: true
@@ -34,7 +34,7 @@
 [[Overview]]
 == Overview
 
-The xref:front:index.adoc[NetBeans] project provides a rich set of
+The xref:front::index.adoc[NetBeans] project provides a rich set of
 link:https://bits.netbeans.org/dev/javadoc/[APIs] that is being developed as
 part of work of various groups. By distributing development of the
 xref:./API_Design.adoc[API]s to multiple people we can increase the amount of designed,

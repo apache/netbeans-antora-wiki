@@ -19,16 +19,16 @@
 
 = What is a DataLoader?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDataLoader
 :description: Apache NetBeans wiki DevFaqDataLoader
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _files_and_data_objects
-:position: 6
-include::../inc/database.adoc[]
+:page-wikidevsection: _files_and_data_objects
+:page-position: 6
+include::front::partial$database.adoc[]
 
 As of NetBeans 6.8, it is usually not necessary to implement DataLoader directly - today it is usually an implementation detail of writing file support, and you can simply write a xref:./DevFaqDataObject.adoc[DataObject] subclass and register it as follows:
 

@@ -19,15 +19,15 @@
 
 = How do I add a new panel to a Project Properties dialog?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddProjectCustomizer
 :description: Apache NetBeans wiki DevFaqActionAddProjectCustomizer
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_types
-:position: 2
+:page-wikidevsection: _project_types
+:page-position: 2
 
 Create and register the panel (here for Java SE projects):
 

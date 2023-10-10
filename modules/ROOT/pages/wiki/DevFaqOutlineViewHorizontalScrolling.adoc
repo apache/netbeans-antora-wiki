@@ -19,15 +19,15 @@
 
 = How do I add horizontal scrolling support in the OutlineView component?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqOutlineViewHorizontalScrolling
 :description: Apache NetBeans wiki DevFaqOutlineViewHorizontalScrolling
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 32
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 32
 
 The OutlineView component already contains a JScrollPane, but the component's default behavior is to fit all the columns in the available space.  If you have a large number of columns, say twenty or more, you may find that the horizontal space allocated to any one column is insufficient.  In this case, you will likely want to disable table column resizing so that you can scroll left or right to see the data.  This can be accomplished by adding one line of code:
 

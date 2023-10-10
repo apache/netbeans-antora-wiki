@@ -19,15 +19,15 @@
 
 = NetBeans Certified Engineer Course
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki NetBeansCertifiedEngineerCourse
 :description: Apache NetBeans wiki NetBeansCertifiedEngineerCourse
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_support_where_to_find_examples
-:position: 8
+:page-wikidevsection: _getting_support_where_to_find_examples
+:page-position: 8
 
 
 This is a wiki page for link:http://edu.netbeans.org/courses/nbplatform-certified-training/[NetBeans Certified Engineer Course], read more at

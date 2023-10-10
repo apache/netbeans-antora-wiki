@@ -19,16 +19,16 @@
 
 = Is it possible to extend an existing project type?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq
+:page-tags: wiki, devfaq
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqPossibleToExtend
 :description: Apache NetBeans wiki DevFaqPossibleToExtend
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_types
-:position: 1
+:page-wikidevsection: _project_types
+:page-position: 1
 
 Yes.
 
-You can add new actions, tabs, nodes, and lookups to an existing project type. See the xref:../tutorials/nbm-projectextension.adoc[NetBeans Project Type Extension Module Tutorial] for details.
+You can add new actions, tabs, nodes, and lookups to an existing project type. See the xref:tutorial::tutorials/nbm-projectextension.adoc[NetBeans Project Type Extension Module Tutorial] for details.

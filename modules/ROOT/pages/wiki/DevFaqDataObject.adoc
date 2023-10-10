@@ -19,15 +19,15 @@
 
 = What is a DataObject?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDataObject
 :description: Apache NetBeans wiki DevFaqDataObject
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _files_and_data_objects
-:position: 5
+:page-wikidevsection: _files_and_data_objects
+:page-position: 5
 
 
 link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/index.html?org/openide/loaders/DataObject.html[DataObjects] wrap xref:./DevFaqFileObject.adoc[FileObjects].  (If you do not want to visualize files on disk in an explorer view or create a text editor [with syntax coloring, etc] for files, then you will never need to touch DataObjects.) A FileObject is just a container
@@ -57,8 +57,8 @@ However, this ability to represent multiple files with a single DataObject is st
 
 == Related tutorials
 
-* xref:../tutorials/nbm-copyfqn.adoc[NetBeans Java Language Infrastructure Tutorial]
-* xref:../tutorials/nbm-filetype.adoc[File Type Integration Tutorial]
+* xref:tutorial::tutorials/nbm-copyfqn.adoc[NetBeans Java Language Infrastructure Tutorial]
+* xref:tutorial::tutorials/nbm-filetype.adoc[File Type Integration Tutorial]
 ////
 == Apache Migration Information
 

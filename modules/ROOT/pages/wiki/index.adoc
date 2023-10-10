@@ -19,7 +19,7 @@
 
 = Apache NetBeans Wiki
 :page-layout: wiki
-:jbake-tags: wiki
+:page-tags: wiki
 :jbake-status: published
 :keywords: Apache NetBeans Wiki
 :description: Apache NetBeans Wiki

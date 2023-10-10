@@ -19,15 +19,15 @@
 
 = How do I hide/remove default toolbar buttons and/or menu items?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHideRemoveToolbarMenu
 :description: Apache NetBeans wiki DevFaqHideRemoveToolbarMenu
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 24
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 24
 
 
 Create a layer.xml file in a NetBeans module (in the New File wizard, choose Module Development | XML Layer). Once you have created the layer.xml file, expand it in the Important Files node, find the item you want to remove, right-click on it, choose Delete. The _hidden tag for the layer folder or file will be added to your layer.xml file.

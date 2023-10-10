@@ -19,15 +19,15 @@
 
 = How can I prevent (or override) the node deletion dialog?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeDeletionDialog
 :description: Apache NetBeans wiki DevFaqNodeDeletionDialog
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 24
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 24
 
 By default, you will be prompted to confirm your intention whenever you try to delete a node from within an explorer manager view (for example, the projects tab).  You can prevent this dialog from being shown, which is handy if the node is not important enough to warrant confirmation or if you want to instead show your own confirmation.
 

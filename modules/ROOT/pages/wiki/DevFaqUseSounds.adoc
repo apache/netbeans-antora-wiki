@@ -19,15 +19,15 @@
 
 = How to use sounds in my application?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUseSounds
 :description: Apache NetBeans wiki DevFaqUseSounds
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _using_sounds
-:position: 2
+:page-wikidevsection: _using_sounds
+:page-position: 2
 
 This is quite straight forward. This is code from a module in SodBeans but its so simple that it is easier just to copy and paste the code.
 

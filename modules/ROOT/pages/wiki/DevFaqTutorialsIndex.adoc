@@ -19,18 +19,18 @@
 
 = Any tutorials out there, please?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqTutorialsIndex
 :description: Apache NetBeans wiki DevFaqTutorialsIndex
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _tutorials_and_important_starting_points
-:position: 2
+:page-wikidevsection: _tutorials_and_important_starting_points
+:page-position: 2
 
 
-An index of tutorials for developing NetBeans modules can be found on the xref:../kb/docs/platform/index.adoc[Platform] site.
+An index of tutorials for developing NetBeans modules can be found on the xref:tutorial::kb/docs/platform/index.adoc[Platform] site.
 
 ////
 == Apache Migration Information

@@ -19,7 +19,7 @@
 
 = HTTP Proxy Basic Authentication
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :syntax: true
 :description: APITest SIGTest NetBeans

@@ -19,15 +19,15 @@
 
 = I want to set some flags or CLI arguments for running my NB RCP/Platform based application (such as disable assertions).  How do I do that?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqPlatformRuntimeProperties
 :description: Apache NetBeans wiki DevFaqPlatformRuntimeProperties
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 28
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 28
 
 
 To disable assertions or set some other VM property for your application, there are two places to pay attention to.  First, `$APP_HOME/etc/*.conf` in your distribution should set things for users of your application - do this for things that should be set for any user.

@@ -19,15 +19,15 @@
 
 = How do I register a "ProjectCustomizer" to multiple project types?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddProjectCustomizerToMultipleTypes
 :description: Apache NetBeans wiki DevFaqActionAddProjectCustomizerToMultipleTypes
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_types
-:position: 6
+:page-wikidevsection: _project_types
+:page-position: 6
 
 Use the *@Registrations* annotation to group the multiple *@Registration* annotations.
 
@@ -49,7 +49,7 @@ public class MyPluginPanelProvider implements ProjectCustomizer.CompositeCategor
 Applies to: NetBeans IDE 7.x
 Platforms: All
 
-See xref:../tutorials/nbm-projecttype.adoc#projectcustomizer[https://netbeans.apache.org/tutorials/nbm-projecttype.html#projectcustomizer]
+See xref:tutorial::tutorials/nbm-projecttype.adoc#projectcustomizer[https://netbeans.apache.org/tutorials/nbm-projecttype.html#projectcustomizer]
 
 ////
 == Apache Migration Information

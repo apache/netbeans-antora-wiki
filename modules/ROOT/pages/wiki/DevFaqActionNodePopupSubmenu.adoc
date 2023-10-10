@@ -19,15 +19,15 @@
 
 = How do I make my Node have a submenu on its popup menu?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionNodePopupSubmenu
 :description: Apache NetBeans wiki DevFaqActionNodePopupSubmenu
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 20
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 20
 
 * Override `getActions()` of your Node subclass.
 * Create a custom subclass of `javax.swing.Action` which implements the interface `Presenter.Popup`.

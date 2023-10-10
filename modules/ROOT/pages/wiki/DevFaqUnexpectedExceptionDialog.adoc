@@ -19,15 +19,15 @@
 
 = How can I suppress the Unexpected Exception dialog?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUnexpectedExceptionDialog
 :description: Apache NetBeans wiki DevFaqUnexpectedExceptionDialog
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _logging_and_error_handling
-:position: 3
+:page-wikidevsection: _logging_and_error_handling
+:page-position: 3
 
 If your code generates an uncaught exception at runtime or uses `Logger.log(Level l, String s, Throwable t)` with level => 900 (`Level.WARNING`), NetBeans will display a dialog box which can show the details of that exception to the user.
 This is a welcome alternative to simply crashing the application,

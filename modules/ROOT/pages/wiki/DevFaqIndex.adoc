@@ -19,7 +19,7 @@
 
 = Apache NetBeans Developer FAQ
 :page-layout: wikidevindex
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki index
 :description: Apache NetBeans wiki index

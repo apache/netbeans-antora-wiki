@@ -20,7 +20,7 @@
 
 = FitnessViaTimersCounter
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published
 :syntax: true
@@ -105,7 +105,7 @@ Having the probes in your code, you can always inspect their results in the Runt
 
 You can see registered objects for given keys (usually files) and number of instances. You can invoke _Find References_ to see how the instances are held in memory.
 
-image:RuntimeWatches.png[]
+image:./RuntimeWatches.png[]
 
 [[Writing_Automated_Tests]]
 === Writing Automated Tests

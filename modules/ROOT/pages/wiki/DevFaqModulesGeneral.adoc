@@ -19,15 +19,15 @@
 
 = What are the ways a module can influence the system?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModulesGeneral
 :description: Apache NetBeans wiki DevFaqModulesGeneral
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _configuration_how_modules_install_things
-:position: 1
+:page-wikidevsection: _configuration_how_modules_install_things
+:page-position: 1
 
 
 There are four basic ways a module can install configuration data or objects.

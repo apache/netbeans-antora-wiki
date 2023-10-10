@@ -19,15 +19,15 @@
 
 =  What is a TopComponent in the Window System?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsTopComponent
 :description: Apache NetBeans wiki DevFaqWindowsTopComponent
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 3
+:page-wikidevsection: _window_system
+:page-position: 3
 
 
 [link:https://bits.netbeans.org/dev/javadoc/org-openide-windows/org/openide/windows/TopComponent.html[http://bits.netbeans.org/dev/javadoc/org-openide-windows/org/openide/windows/TopComponent.html] `org.openide.windows.TopComponent`] is a `JComponent` subclass which knows how to work with

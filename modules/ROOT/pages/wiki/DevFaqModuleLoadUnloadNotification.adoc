@@ -19,15 +19,15 @@
 
 = How can code in one module be notified when other modules are loaded or unloaded?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModuleLoadUnloadNotification
 :description: Apache NetBeans wiki DevFaqModuleLoadUnloadNotification
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _module_system
-:position: 9
+:page-wikidevsection: _module_system
+:page-position: 9
 
 Let's begin by stating that you probably do not _need_ to know when other modules are loaded or unloaded.
 The module system takes care of dependency management for you,

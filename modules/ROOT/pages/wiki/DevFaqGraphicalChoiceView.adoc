@@ -19,15 +19,15 @@
 
 = How can I graphically create a ChoiceView in using the GUI designer?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGraphicalChoiceView
 :description: Apache NetBeans wiki DevFaqGraphicalChoiceView
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 27
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 27
 
 It is possible to use a ChoiceView graphically during the design of your interface in the Form Editor. As ChoiceView extends JComboBox, you can design the interface with the help of a JComboBox which is the placeholder for your ChoiceView and customize the creation code of the combo to instantiate a ChoiceView instead. 
 

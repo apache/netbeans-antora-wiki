@@ -19,15 +19,15 @@
 
 = I want my module to disable some of the modules that would normally be enabled. Possible?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSuppressExistingModule
 :description: Apache NetBeans wiki DevFaqSuppressExistingModule
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _module_system
-:position: 1
+:page-wikidevsection: _module_system
+:page-position: 1
 
 
 If you're building a complete application (for example, selecting the *Standalone Application* option for a module suite) just use the *Libraries* panel of the suite's *Properties* dialog to exclude modules you don't need from clusters you are otherwise including.
@@ -41,7 +41,7 @@ Sample:
 link:http://hg.netbeans.org/main/file/tip/versioning.system.cvss/src/org/netbeans/modules/versioning/system/cvss/ModuleLifecycleManager.java[ModuleLifecycleManager.java] of the Java CVS Module
 
 You can also go through the Auto Update Services API:
-xref:../blogs/geertjan/parsing_the_command_line_to1.adoc[Geertjan shows how]
+xref:front::blogs/geertjan/parsing_the_command_line_to1.adoc[Geertjan shows how]
 
 -
 

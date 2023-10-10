@@ -19,15 +19,15 @@
 
 = What is a layer file, or "module layer"?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModulesLayerFile
 :description: Apache NetBeans wiki DevFaqModulesLayerFile
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _configuration_how_modules_install_things
-:position: 4
+:page-wikidevsection: _configuration_how_modules_install_things
+:page-position: 4
 
 
 Layer files are small XML files provided by modules, which define a virtual filesystem (xref:./DevFaqFileSystem.adoc[DevFaqFileSystem]).

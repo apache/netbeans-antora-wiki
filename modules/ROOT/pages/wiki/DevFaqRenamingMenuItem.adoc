@@ -19,15 +19,15 @@
 
 = Some module in the IDE etc. already has a menu item I can use. I just want to rename it. Can I?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqRenamingMenuItem
 :description: Apache NetBeans wiki DevFaqRenamingMenuItem
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 26
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 26
 
 
 If you are creating a custom application (e.g. *Standalone Application* in suite project properties) you specify a _branding_ for the application. You can then override localized text strings from platform modules without modifying those modules directly; the overrides will be active whenever your branding is selected (this part is taken care of for you by the suite build harness). You will need to locate the module which defines the menu item and find the localized `Bundle.properties` which gives a label for it. Then you can create a file in your suite project like

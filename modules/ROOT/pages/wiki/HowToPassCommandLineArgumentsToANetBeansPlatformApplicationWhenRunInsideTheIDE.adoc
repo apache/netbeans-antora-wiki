@@ -19,15 +19,15 @@
 
 = How to pass command line arguments to a NetBeans Platform application when run inside the IDE
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki HowToPassCommandLineArgumentsToANetBeansPlatformApplicationWhenRunInsideTheIDE
 :description: Apache NetBeans wiki HowToPassCommandLineArgumentsToANetBeansPlatformApplicationWhenRunInsideTheIDE
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _command_line_parsing
-:position: 3
+:page-wikidevsection: _command_line_parsing
+:page-position: 3
 
 Open "nbproject/project.properties" and add there:
 

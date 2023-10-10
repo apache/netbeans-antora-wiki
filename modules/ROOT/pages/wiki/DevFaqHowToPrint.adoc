@@ -19,15 +19,15 @@
 
 = Help the Print menu item is disabled!
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToPrint
 :description: Apache NetBeans wiki DevFaqHowToPrint
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _printing
-:position: 1
+:page-wikidevsection: _printing
+:page-position: 1
 
 There are several ways to enable printing for a custom data:
 

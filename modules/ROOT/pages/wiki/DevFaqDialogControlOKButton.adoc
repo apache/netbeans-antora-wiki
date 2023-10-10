@@ -19,15 +19,15 @@
 
 = How can I control when the OK button is enabled?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDialogControlOKButton
 :description: Apache NetBeans wiki DevFaqDialogControlOKButton
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _dialogs_api
-:position: 2
+:page-wikidevsection: _dialogs_api
+:page-position: 2
 
 
 The link:https://bits.netbeans.org/dev/javadoc/org-openide-dialogs/overview-summary.html[NetBeans Dialogs API] makes it easy to create consistent dialogs that behave as users would expect.  But since you don't directly create the OK button, it may not be obvious how you can enable it or disable it.

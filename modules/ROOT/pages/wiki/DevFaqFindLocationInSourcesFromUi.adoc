@@ -19,15 +19,15 @@
 
 = Looking at the UI how do I find a module that implements a menu item?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFindLocationInSourcesFromUi
 :description: Apache NetBeans wiki DevFaqFindLocationInSourcesFromUi
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 31
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 31
 
 Looking at text in IDE such as a menu item, window title, node display name, etc. you may want to change it. But first you need to find where in the code this string is produced. It is very easy to find if you add the following switch into your `.../etc/netbeans.conf`:
 

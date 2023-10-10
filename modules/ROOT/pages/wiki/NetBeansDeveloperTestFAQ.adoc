@@ -19,15 +19,15 @@
 
 = NetBeans Developer Test FAQ
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki NetBeansDeveloperTestFAQ
 :description: Apache NetBeans wiki NetBeansDeveloperTestFAQ
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _running_and_writing_tests
-:position: 4
+:page-wikidevsection: _running_and_writing_tests
+:page-position: 4
 
 == Abstract
 

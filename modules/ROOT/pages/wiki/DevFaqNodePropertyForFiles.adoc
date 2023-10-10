@@ -19,15 +19,15 @@
 
 = I have a Node.Property for a file. How can I control the file chooser that is the custom editor?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodePropertyForFiles
 :description: Apache NetBeans wiki DevFaqNodePropertyForFiles
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 29
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 29
 
 A number of the built-in property editors in NetBeans can have their behavior controlled by passing "hints" to them.  Hints are providing by calling link:http://java.sun.com/j2se/1.5.0/docs/api/java/beans/FeatureDescriptor.html?is-external=true#setValue(java.lang.String,%20java.lang.Object)[setValue("something", someValue)] on the Node.Property.  For example, to suppress the custom editor button for a property, use
 

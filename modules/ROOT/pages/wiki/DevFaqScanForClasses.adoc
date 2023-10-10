@@ -19,15 +19,15 @@
 
 = How can I scan a classpath to find all classes of a particular type?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqScanForClasses
 :description: Apache NetBeans wiki DevFaqScanForClasses
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _programmatic_access_to_java_sources
-:position: 4
+:page-wikidevsection: _programmatic_access_to_java_sources
+:page-position: 4
 
 
 == Prerequisites

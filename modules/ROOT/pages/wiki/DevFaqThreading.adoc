@@ -19,15 +19,15 @@
 
 = I need to run some code on a background thread. Can the platform help me?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqThreading
 :description: Apache NetBeans wiki DevFaqThreading
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _threading
-:position: 2
+:page-wikidevsection: _threading
+:page-position: 2
 
 
 First, ask yourself why you need to do this and if it is really necessary.  Generally there is only one reason: _You are doing something takes some time (file I/O, computing something large and complicated, talking to a network socket) that will block the UI._

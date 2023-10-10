@@ -19,15 +19,15 @@
 
 = I want to create a TopComponent class to use as an editor, not a singleton
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqEditorTopComponent
 :description: Apache NetBeans wiki DevFaqEditorTopComponent
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 17
+:page-wikidevsection: _window_system
+:page-position: 17
 
 This entry is about creating non-text-editor (e.g. graphical) editors for files or other objects.  If you want a text editor, NetBeans has a lot of built-in support for text editors and you will probably want to use `link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/text/DataEditorSupport.html#create(org.openide.loaders.DataObject,%20org.openide.loaders.MultiDataObject.Entry,%20org.openide.nodes.CookieSet)[DataEditorSupport.create()]` and its relatives (hint: *New > File Type* will get you basic text editor support which you can build on).
 

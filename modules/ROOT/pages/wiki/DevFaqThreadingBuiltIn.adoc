@@ -19,15 +19,15 @@
 
 = What APIs come with built-in background thread handling?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqThreadingBuiltIn
 :description: Apache NetBeans wiki DevFaqThreadingBuiltIn
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _threading
-:position: 4
+:page-wikidevsection: _threading
+:page-position: 4
 
 
 A few APIs come with built in multi-threading - if you want your code to run on a background thread, you don't have to do any special set up to do that.

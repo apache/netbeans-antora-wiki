@@ -19,15 +19,15 @@
 
 =  I am creating a non-IDE application.  How do I enable/control templates?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqTemplatesInNonIdeApp
 :description: Apache NetBeans wiki DevFaqTemplatesInNonIdeApp
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _wizards_and_templates
-:position: 2
+:page-wikidevsection: _wizards_and_templates
+:page-position: 2
 
 
 If the projectui module is installed, templates are only made available inside projects.

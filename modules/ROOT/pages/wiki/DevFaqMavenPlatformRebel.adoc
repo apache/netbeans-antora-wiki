@@ -19,15 +19,15 @@
 
 =  Can I use JRebel to speed up development?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMavenPlatformRebel
 :description: Apache NetBeans wiki DevFaqMavenPlatformRebel
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _mavenized_builds
-:position: 4
+:page-wikidevsection: _mavenized_builds
+:page-position: 4
 
 Yes, you can. Once you have obtained JRebel and installed it locally, paste the following snippet into your application's root pom (parent of both the NetBeans application project and any NetBeans module projects you want to have reloaded upon change).
 

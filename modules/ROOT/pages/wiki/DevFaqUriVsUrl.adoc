@@ -19,15 +19,15 @@
 
 = URIs and URLs
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUriVsUrl
 :description: Apache NetBeans wiki DevFaqUriVsUrl
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _converting_between_common_data_types_and_finding_things
-:position: 2
+:page-wikidevsection: _converting_between_common_data_types_and_finding_things
+:page-position: 2
 
 
 *Q:* What is the difference?

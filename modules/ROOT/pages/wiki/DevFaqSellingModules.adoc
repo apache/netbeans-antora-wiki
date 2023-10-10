@@ -19,15 +19,15 @@
 
 = I have written a module. Can I sell it?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSellingModules
 :description: Apache NetBeans wiki DevFaqSellingModules
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 6
+:page-wikidevsection: _getting_started
+:page-position: 6
 
 
 Yes.  The license is very non-restrictive.  For details, see the

@@ -19,7 +19,7 @@
 
 = FitnessViaPostMortem
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published
 :syntax: true
@@ -42,7 +42,7 @@ problems. Done as part of xref:./Fitness.adoc[performance work for 6.8].
 
 == How it works?
 
-image:notification_FitnessViaPostMortem.png[]
+image:./notification_FitnessViaPostMortem.png[]
 
 * Detects that AWT thread is blocked for more than certain time (100ms in dev builds, 10s in final production build)
 * Starts self-sampling profiling

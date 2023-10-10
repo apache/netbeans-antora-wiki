@@ -19,15 +19,15 @@
 
 = When do I use which registration method?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWhenToUseWhatRegistrationMethod
 :description: Apache NetBeans wiki DevFaqWhenToUseWhatRegistrationMethod
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _when_there_are_multiple_ways_to_do_something
-:position: 2
+:page-wikidevsection: _when_there_are_multiple_ways_to_do_something
+:page-position: 2
 
 
 As described in xref:./DevFaqModulesGeneral.adoc[DevFaqModulesGeneral], there are several different declarative registration mechanisms:

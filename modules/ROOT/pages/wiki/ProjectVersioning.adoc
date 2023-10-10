@@ -19,15 +19,15 @@
 
 = How to add versioning actions like GIT, Mercurial, SVN, CVS to my own nodes?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki ProjectVersioning
 :description: Apache NetBeans wiki ProjectVersioning
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _versioning
-:position: 1
+:page-wikidevsection: _versioning
+:page-position: 1
 
 
 The paper describes how to write own project types, nodes and topcomponents that support version control actions.

@@ -19,15 +19,15 @@
 
 = How to change selected tab of Multiview?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMultiViewChangeTabInCode
 :description: Apache NetBeans wiki DevFaqMultiViewChangeTabInCode
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _xml_multiview_api
-:position: 1
+:page-wikidevsection: _xml_multiview_api
+:page-position: 1
 
 Using `org.netbeans.core.api.multiview.MultiViews` you can get an instance of `org.netbeans.core.api.multiview.MultiViewHandler`.
 

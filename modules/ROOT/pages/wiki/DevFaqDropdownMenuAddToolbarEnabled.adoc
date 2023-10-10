@@ -19,15 +19,15 @@
 
 = How do I add a dropdown menu to toolbar that is selectively enabled/disabled?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDropdownMenuAddToolbarEnabled
 :description: Apache NetBeans wiki DevFaqDropdownMenuAddToolbarEnabled
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 23
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 23
 
 
 Create an Action as described in xref:./DevFaqDropdownMenuAddToolbar.adoc[the general FAQ for to add a dropdown menu to a toolbar].

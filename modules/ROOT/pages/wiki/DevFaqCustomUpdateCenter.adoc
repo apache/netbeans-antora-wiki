@@ -19,15 +19,15 @@
 
 = How can I use AutoUpdate to deploy updates and new modules for my application?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomUpdateCenter
 :description: Apache NetBeans wiki DevFaqCustomUpdateCenter
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
-:position: 1
+:page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
+:page-position: 1
 
 An AutoUpdate server (also called an AutoUpdate Center or AUC) it not as complicated as it sounds.  It's just a server which contains a set of modules and an XML file that describes them all (the autoupdate XML descriptor).
 

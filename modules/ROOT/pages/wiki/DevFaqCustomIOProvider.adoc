@@ -19,15 +19,15 @@
 
 = How do I implement a custom IOProvider?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomIOProvider
 :description: Apache NetBeans wiki DevFaqCustomIOProvider
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _output_window
-:position: 3
+:page-wikidevsection: _output_window
+:page-position: 3
 
 
 _Note: You will only do this if you are writing a replacement for the NetBeans output window, which is a fairly unusual activity._

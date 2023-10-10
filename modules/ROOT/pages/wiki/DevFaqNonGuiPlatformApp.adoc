@@ -19,15 +19,15 @@
 
 = Can I create a console or server (non-GUI) app with the NetBeans Platform?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNonGuiPlatformApp
 :description: Apache NetBeans wiki DevFaqNonGuiPlatformApp
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _module_system
-:position: 8
+:page-wikidevsection: _module_system
+:page-position: 8
 
 
 While most documentation explains the NetBeans Platform in terms of Java desktop applications, it is possible to build a non-GUI application on the NetBeans Platform.  This might be useful, for example, when creating a platform-based application which will distribute computationally expensive work among a group of machines.  Note that this explains how to develop an application which is only ever meant to run headless, not how to develop a single application which can run in either GUI _or_ command line mode (which is described in the second half of this page).

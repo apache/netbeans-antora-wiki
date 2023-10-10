@@ -19,7 +19,7 @@
 
 = FaqListedOnCopyright
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki FaqListedOnCopyright
 :description: Apache NetBeans wiki FaqListedOnCopyright

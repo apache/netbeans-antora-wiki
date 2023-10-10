@@ -19,15 +19,15 @@
 
 = What are `{asterisk}.shadow` files?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDotShadowFiles
 :description: Apache NetBeans wiki DevFaqDotShadowFiles
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _configuration_how_modules_install_things
-:position: 9
+:page-wikidevsection: _configuration_how_modules_install_things
+:page-position: 9
 
 
 `{asterisk}.shadow` files are mainly used in the xref:./DevFaqSystemFilesystem.adoc[system filesystem]

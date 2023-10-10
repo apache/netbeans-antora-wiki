@@ -19,15 +19,15 @@
 
 = Which Way Should I Use To Register an Object in the Default Lookup?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWaysToRegisterInDefaultLookup
 :description: Apache NetBeans wiki DevFaqWaysToRegisterInDefaultLookup
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _when_there_are_multiple_ways_to_do_something
-:position: 3
+:page-wikidevsection: _when_there_are_multiple_ways_to_do_something
+:page-position: 3
 
 
 There are two ways to put something in the xref:./DevFaqLookupDefault.adoc[default Lookup]:

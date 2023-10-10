@@ -19,15 +19,15 @@
 
 = Why can't I load properties using UIDefaults?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUiDefaultsPropsNotFound
 :description: Apache NetBeans wiki DevFaqUiDefaultsPropsNotFound
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 5
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 5
 
 You may encounter this problem while porting a Swing application to the NetBeans platform or when using a third-party library like SwingX.  While the following code works in a standalone Swing application, it does not load the property in a platform-based application:
 

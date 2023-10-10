@@ -19,15 +19,15 @@
 
 = JavaHT_How can I programmatically modify a Java source file?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki JavaHT_Modification
 :description: Apache NetBeans wiki JavaHT_Modification
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _programmatic_access_to_java_sources
-:position: 2
+:page-wikidevsection: _programmatic_access_to_java_sources
+:page-position: 2
 
 
 Most modifications are done through the API. Direct document changes are not recommended. Editing source through the API has many advantages, for instance it respects formatting settings. 

@@ -19,15 +19,15 @@
 
 = How to reuse XML syntax highlighting in your own editor
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqEditorHowToReuseEditorHighlighting
 :description: Apache NetBeans wiki DevFaqEditorHowToReuseEditorHighlighting
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _editor_and_edited_files
-:position: 20
+:page-wikidevsection: _editor_and_edited_files
+:page-position: 20
 
 If you don't want to open or edit your data in a new editor TopComponent, but you still want to have nice syntax coloring in your own editor, you can get the EditorKit for the mime type and reuse it in your own JEditorPane.
 

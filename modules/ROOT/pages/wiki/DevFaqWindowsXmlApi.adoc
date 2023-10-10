@@ -19,15 +19,15 @@
 
 = How does the declarative XML API for the window system work?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsXmlApi
 :description: Apache NetBeans wiki DevFaqWindowsXmlApi
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 7
+:page-wikidevsection: _window_system
+:page-position: 7
 
 The API is not hard, just a bit baroque.
 

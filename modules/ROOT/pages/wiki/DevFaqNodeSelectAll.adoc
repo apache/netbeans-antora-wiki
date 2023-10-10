@@ -19,15 +19,15 @@
 
 = How can I implement "Select all/Deselect all/Invert selection" features?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeSelectAll
 :description: Apache NetBeans wiki DevFaqNodeSelectAll
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 22
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 22
 
 
 Applications which manage sets of data items often offer to users the capability of selecting and deselecting all the items currently on the screen with a single menu (or key shortcut). In some cases even a "Invert selection" option could be useful which selects all unselected nodes an vice versa.

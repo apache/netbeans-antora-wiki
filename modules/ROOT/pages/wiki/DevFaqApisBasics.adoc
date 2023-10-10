@@ -19,15 +19,15 @@
 
 = What are the basic things I should know about NetBeans' architecture to get started creating NetBeans Platform applications?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqApisBasics
 :description: Apache NetBeans wiki DevFaqApisBasics
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _tutorials_and_important_starting_points
-:position: 1 
+:page-wikidevsection: _tutorials_and_important_starting_points
+:page-position: 1 
 
 The most important thing you need when creating applications on top of the NetBeans Platform (a.k.a. NetBeans RCP) is to know what you are trying to do clearly, so you can find what you need to get started quickly.  Here are some basic NetBeans factoids which will either answer some questions or whet your appetite for more information:
 
@@ -43,7 +43,7 @@ The most important thing you need when creating applications on top of the NetBe
 
 A lot of things in NetBeans are based around _file recognition_ and using files to provide Java objects.  Even if your application has nothing to do with editing files, this may still be very useful to you, since the same mechanism that recognizes/displays a user's files on disk also recognizes/displays configuration data (which may not even be files in the traditional sense at all), and such "files" can actually be factories for whatever kind of object you want (and that way you get persistence of those files for free).
 
-For example, the xref:../tutorials/nbm-feedreader.adoc[FeedReader tutorial] simply serializes POJO Feed objects into the xref:./DevFaqSystemFilesystem.adoc[configuration filesystem ], and its whole UI consists of aiming a standard tree component at a folder full of those objects, and providing a few actions to let the user create more of them.  When the application shuts down, it does not need to any special code for persisting them, it is all automatic.
+For example, the xref:tutorial::tutorials/nbm-feedreader.adoc[FeedReader tutorial] simply serializes POJO Feed objects into the xref:./DevFaqSystemFilesystem.adoc[configuration filesystem ], and its whole UI consists of aiming a standard tree component at a folder full of those objects, and providing a few actions to let the user create more of them.  When the application shuts down, it does not need to any special code for persisting them, it is all automatic.
 
 For more information about how that works, see xref:./DevFaqFileRecognition.adoc[the section on file recognition].
 

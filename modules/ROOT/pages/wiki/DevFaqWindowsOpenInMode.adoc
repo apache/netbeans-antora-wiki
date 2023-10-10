@@ -19,15 +19,15 @@
 
 = My TopComponent always opens in the editor area, but I want it to open in the same place as XYZ?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsOpenInMode
 :description: Apache NetBeans wiki DevFaqWindowsOpenInMode
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 9
+:page-wikidevsection: _window_system
+:page-position: 9
 
 By default, `TopComponent.open()` opens all components in the central editor area of the
 main window.  Overriding this is simple:

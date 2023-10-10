@@ -1,11 +1,8 @@
 // 
-//     Licensed to the Apache Software Foundation (ASF) under one
-//     or more contributor license agreements.  See the NOTICE file
-//     distributed with this work for additional information
-//     regarding copyright ownership.  The ASF licenses this file
-//     to you under the Apache License, Version 2.0 (the
-//     "License"); you may not use this file except in compliance
-//     with the License.  You may obtain a copy of the License at
+//     Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file 
+//     distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you 
+//     under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
+//     You may obtain a copy of the License at
 // 
 //       http://www.apache.org/licenses/LICENSE-2.0
 // 
@@ -19,15 +16,15 @@
 
 = What API do I want to use for x, y or z?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DefFaqMapApisToTasks
 :description: Apache NetBeans wiki DefFaqMapApisToTasks
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 5
+:page-wikidevsection: _getting_started
+:page-position: 5
 
 Here is a list of common things people need to do, and a very short description of how you do them.  From here, use the Javadoc and tutorials to get more information.
 
@@ -43,7 +40,7 @@ Use the link:https://bits.netbeans.org/dev/javadoc/org-openide-io/overview-summa
 
 === Show a Tree, List or other control with a list of some objects
 
-Use the link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/overview-summary.html[Nodes API] to create a hierarchy of link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/nodes/Node.html[Node] objects, each representing one object in your data model.  Then use the link:https://bits.netbeans.org/dev/javadoc/org-openide-explorer/overview-summary.html[Explorer API] to show the Nodes - it contains tree, list, table, combo box and other controls which can show a hierarchy of Nodes.  Nodes are very easy to add popup menus to, decorate with icons and html-ized display names, etc. and are a lot less work than using Swing components directly.  See also the xref:../tutorials/nbm-nodesapi2.adoc[Nodes API Tutorial].
+Use the link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/overview-summary.html[Nodes API] to create a hierarchy of link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/nodes/Node.html[Node] objects, each representing one object in your data model.  Then use the link:https://bits.netbeans.org/dev/javadoc/org-openide-explorer/overview-summary.html[Explorer API] to show the Nodes - it contains tree, list, table, combo box and other controls which can show a hierarchy of Nodes.  Nodes are very easy to add popup menus to, decorate with icons and html-ized display names, etc. and are a lot less work than using Swing components directly.  See also the xref:tutorial::tutorials/nbm-nodesapi2.adoc[Nodes API Tutorial].
 
 === Provide an Editor for a particular kind of file
 

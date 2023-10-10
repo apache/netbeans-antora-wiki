@@ -19,15 +19,15 @@
 
 = How do I define and localise the keymap category of an action?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToDefineTheKeyMapCategoryForAnAction
 :description: Apache NetBeans wiki DevFaqHowToDefineTheKeyMapCategoryForAnAction
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 44
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 44
 
 
 == Keymap category for @ActionID

@@ -19,15 +19,15 @@
 
 = If there is more than one of a type in a Lookup, which instance will I get?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupNonSingleton
 :description: Apache NetBeans wiki DevFaqLookupNonSingleton
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _lookup
-:position: 9
+:page-wikidevsection: _lookup
+:page-position: 9
 
 
 As noted in xref:./DevFaqLookup.adoc[the overview of Lookup], a Lookup can contain more than one instance of a given class;  Lookup is often used for singletons, but not exclusively for singletons.  For example, in the link:https://bits.netbeans.org/dev/javadoc/ProjectAPI/overview-summary.html[Projects API], there is a class called link:https://bits.netbeans.org/dev/javadoc/ProjectAPI/org/netbeans/spi/project/ProjectFactory.html[ProjectFactory] that recognizes different types of user projects on disk;  each module that provides a project type registers another factory in the system.

@@ -20,7 +20,7 @@
 
 = NetBeans APIs in a Nutshell
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :markup-in-source: verbatim,quotes,macros
 :syntax: true
@@ -36,8 +36,8 @@ This overview will quickly familiarize you with how NetBeans modules interact
 with the NetBeans Platform and with each other. It is not intended as a
 comprehensive document—the
 link:https://bits.netbeans.org/dev/javadoc/index.html[NetBeans API List], the
-xref:../kb/docs/platform.adoc[NetBeans Platform Learning Trail], and the video series
-"xref:../tutorials/nbm-10-top-apis.adoc[Top 10 NetBeans APIs] go into greater detail—but should serve as a guide to
+xref:tutorial::kb/docs/platform.adoc[NetBeans Platform Learning Trail], and the video series
+"xref:tutorial::tutorials/nbm-10-top-apis.adoc[Top 10 NetBeans APIs] go into greater detail—but should serve as a guide to
 understanding the basic concepts of NetBeans module development.
 
 The key to understanding the NetBeans Platform is to realize that very often
@@ -46,7 +46,7 @@ with the user's files on disk, and another role when it comes to configuration
 information and runtime data. For example:
 
 * A link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileSystem.html[FileSystem] represents the 
-user's files, but the xref:../tutorials/nbm-glossary.adoc[System Filesystem] represents the IDE's configuration data.
+user's files, but the xref:tutorial::tutorials/nbm-glossary.adoc[System Filesystem] represents the IDE's configuration data.
 * A link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataObject.html[DataObject] represents the 
 parsed content of a Java or other file, but DataObjects also are used to instantiate a Java object installed by a module.
 * link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/Lookup.html#getDefault--[Lookup.getDefault()] is the way you 

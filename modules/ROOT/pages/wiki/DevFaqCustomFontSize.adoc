@@ -19,15 +19,15 @@
 
 = I have a custom component. How can I make it respond to --fontsize like the rest of NetBeans?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomFontSize
 :description: Apache NetBeans wiki DevFaqCustomFontSize
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _look_and_design
-:position: 2
+:page-wikidevsection: _look_and_design
+:page-position: 2
 
 [source,java]
 ----

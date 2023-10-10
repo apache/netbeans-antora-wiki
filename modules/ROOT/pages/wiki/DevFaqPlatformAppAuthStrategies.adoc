@@ -19,15 +19,15 @@
 
 = Other strategies for authentication and authorization
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqPlatformAppAuthStrategies
 :description: Apache NetBeans wiki DevFaqPlatformAppAuthStrategies
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _authentication_and_authorization_in_platform_apps
-:position: 1
+:page-wikidevsection: _authentication_and_authorization_in_platform_apps
+:page-position: 1
 
 There are cases in which you want to exercise great control over who is allowed to use your application.  You might, for example, be required to check the user's network credentials, validate client-side certificate or check a license server before the platform application is even launched.
 

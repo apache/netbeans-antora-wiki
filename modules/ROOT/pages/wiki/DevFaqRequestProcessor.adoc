@@ -19,15 +19,15 @@
 
 = When should I use RequestProcessor.getDefault() and when should I create my own RequestProcessor?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqRequestProcessor
 :description: Apache NetBeans wiki DevFaqRequestProcessor
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _threading
-:position: 3
+:page-wikidevsection: _threading
+:page-position: 3
 
 
 `RequestProcessor.getDefault()` is tempting to use, but it is also dangerous.  This FAQ item will tell you when *not* to use it.

@@ -19,15 +19,15 @@
 
 = Why can't I use system scope for a library wrapper module?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMavenSystemScope
 :description: Apache NetBeans wiki DevFaqMavenSystemScope
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _mavenized_builds
-:position: 3
+:page-wikidevsection: _mavenized_builds
+:page-position: 3
 
 System-scope dependencies, like provided scope, are never packaged with a project's artifacts.
 

@@ -19,15 +19,15 @@
 
 = What is an ExplorerManager?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqExplorerManager
 :description: Apache NetBeans wiki DevFaqExplorerManager
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 3
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 3
 
 
 You do not directly set the Node that is displayed by an xref:./DevFaqExplorerViews.adoc[Explorer view ] component (Swing components that display xref:./DevFaqWhatIsANode.adoc[Nodes ]) by calling a method on that component.  Rather, you set that kind of information by finding the _manager_ for that component - it's what is in charge of what node is displayed, selected, etc.

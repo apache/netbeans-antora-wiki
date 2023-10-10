@@ -19,15 +19,15 @@
 
 = How do I change the appearance of the menu items and toolbar buttons for my action?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqChangeMenuItemToolbarAppearanceForAction
 :description: Apache NetBeans wiki DevFaqChangeMenuItemToolbarAppearanceForAction
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 35
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 35
 
 
 The main menus and toolbars of a NetBeans Platform application are configured based on the contents of folders in the system filesystem.  There are many benefits of this approach, such as improved performance since the platform can create all the menus and toolbars without having to actually instantiate the actions with which they are associated.

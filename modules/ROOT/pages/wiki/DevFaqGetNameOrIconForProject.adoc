@@ -19,15 +19,15 @@
 
 = How to get the name or icon of a project?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGetNameOrIconForProject
 :description: Apache NetBeans wiki DevFaqGetNameOrIconForProject
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_handling
-:position: 3
+:page-wikidevsection: _project_handling
+:page-position: 3
 
 [source,java]
 ----

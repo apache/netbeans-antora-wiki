@@ -19,15 +19,15 @@
 
 = How can I define the available File types when the user right-clicks the project folder and chooses "New"?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAddFileTemplateToNewFileContentMenu
 :description: Apache NetBeans wiki DevFaqAddFileTemplateToNewFileContentMenu
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_types
-:position: 8
+:page-wikidevsection: _project_types
+:page-position: 8
 
 
 See documentation of "Privileged and Recommended Templates" at 
@@ -63,8 +63,8 @@ Taken from Geertjan @ dev@platform.netbeans.org
 
 Further examples: 
 
-* xref:../blogs/geertjan/privileged_and_recommended_templates.adoc[Privileged and Recommended Templates]
-* xref:../blogs/geertjan/nescide_an_ide_for_the.adoc[Nescide: An IDE for Hacking the TinyOS Platform ]
+* xref:front::blogs/geertjan/privileged_and_recommended_templates.adoc[Privileged and Recommended Templates]
+* xref:front::blogs/geertjan/nescide_an_ide_for_the.adoc[Nescide: An IDE for Hacking the TinyOS Platform ]
 
 ////
 == Apache Migration Information

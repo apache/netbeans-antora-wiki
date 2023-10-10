@@ -19,15 +19,15 @@
 
 = There sure are a lot of modules in the source tree.  What are they for?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSourceTreeModuleDescriptions
 :description: Apache NetBeans wiki DevFaqSourceTreeModuleDescriptions
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 12
+:page-wikidevsection: _getting_started
+:page-position: 12
 
 
 If you've unpacked or checked out the NetBeans sources, you'll see more then 600 directories.  Almost every one of these directories is a module.  Although the directory names indicate the purpose of each, sometimes it's still not clear what each does.  

@@ -19,15 +19,15 @@
 
 = What uses Lookup?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupWhere
 :description: Apache NetBeans wiki DevFaqLookupWhere
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _lookup
-:position: 2
+:page-wikidevsection: _lookup
+:page-position: 2
 
 There are a number of places xref:./DevFaqLookup.adoc[Lookup ] is commonly found/used in NetBeans.  Generally, if you have found some class and you are wondering where on earth you get an actual instance of one of those, the answer is probably "from something-or-other's Lookup".
 

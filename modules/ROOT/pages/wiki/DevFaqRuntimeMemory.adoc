@@ -19,15 +19,15 @@
 
 =  How to run a module with more memory settings
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqRuntimeMemory
 :description: Apache NetBeans wiki DevFaqRuntimeMemory
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 30
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 30
 
 When we run the module from NetBeans IDE and we want to pass JVM options to increase PermGen and Heap Memory then add the following settings to the project.properties file of your module, or module suite.
 

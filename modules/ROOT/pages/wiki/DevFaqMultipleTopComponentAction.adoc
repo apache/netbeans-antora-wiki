@@ -19,15 +19,15 @@
 
 =  I have a non-singleton TopComponent. Can I write actions which show all available instances in the main menu?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMultipleTopComponentAction
 :description: Apache NetBeans wiki DevFaqMultipleTopComponentAction
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 19
+:page-wikidevsection: _window_system
+:page-position: 19
 
 Some people applications where there is one primary kind of window component - an editor of some kind, or something that visualizes some data.  There may be several such components open at any time, and they all are just instances of the same TopComponent subclass which are showing different data.
 

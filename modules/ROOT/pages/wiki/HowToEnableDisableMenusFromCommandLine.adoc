@@ -19,18 +19,18 @@
 
 = Can something that the user sets on the command line determine whether a menu item is enabled?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki HowToEnableDisableMenusFromCommandLine
 :description: Apache NetBeans wiki HowToEnableDisableMenusFromCommandLine
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _command_line_parsing
-:position: 1
+:page-wikidevsection: _command_line_parsing
+:page-position: 1
 
 
-xref:../blogs/geertjan/parsing_the_command_line_to.adoc[Info on this here.]
+xref:front::blogs/geertjan/parsing_the_command_line_to.adoc[Info on this here.]
 
 ////
 == Apache Migration Information

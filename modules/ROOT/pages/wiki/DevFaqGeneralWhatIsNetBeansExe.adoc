@@ -19,15 +19,15 @@
 
 = What is netbeans.exe, who compiles it and why is it there?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGeneralWhatIsNetBeansExe
 :description: Apache NetBeans wiki DevFaqGeneralWhatIsNetBeansExe
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 8
+:page-wikidevsection: _getting_started
+:page-position: 8
 
 
 netbeans.exe is the Windows launcher for NetBeans.  Basically it assembles the class path string for starting up NetBeans, passes the command line arguments, etc., and launches Java with those arguments.

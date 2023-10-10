@@ -19,15 +19,15 @@
 
 = How can I override an instance in the Default Lookup?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupHowToOverride
 :description: Apache NetBeans wiki DevFaqLookupHowToOverride
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _lookup
-:position: 6
+:page-wikidevsection: _lookup
+:page-position: 6
 
 
 As a result of NetBeans design for extensibility, you'll find a lot of code like this:

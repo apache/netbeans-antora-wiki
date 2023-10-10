@@ -19,7 +19,7 @@
 
 = FaqIndex
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki FaqIndex
 :description: Apache NetBeans wiki FaqIndex

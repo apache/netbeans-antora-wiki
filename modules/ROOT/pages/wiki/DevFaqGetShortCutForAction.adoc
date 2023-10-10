@@ -19,15 +19,15 @@
 
 = How to get the shortcut/shortkey of an action at runtime?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGetShortCutForAction
 :description: Apache NetBeans wiki DevFaqGetShortCutForAction
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _key_bindings
-:position: 8
+:page-wikidevsection: _key_bindings
+:page-position: 8
 
 For example
 

@@ -19,15 +19,15 @@
 
 = Why am I getting a `ClassCastException` when the class is clearly of the right type?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModuleCCE
 :description: Apache NetBeans wiki DevFaqModuleCCE
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _module_system
-:position: 6
+:page-wikidevsection: _module_system
+:page-position: 6
 
 Q: I am getting an exception when I run my module, such as
 

@@ -19,7 +19,7 @@
 
 = FaqCanIFileByEmail
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki FaqCanIFileByEmail
 :description: Apache NetBeans wiki FaqCanIFileByEmail

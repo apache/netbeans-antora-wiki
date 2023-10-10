@@ -19,20 +19,20 @@
 
 = How can I make sortable columns in a TreeTableView?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSortableTTVColumns
 :description: Apache NetBeans wiki DevFaqSortableTTVColumns
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 20
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 20
 
 See "How to Sort Columns in a TreeTableView" in Geertjan's blog:
 
-* xref:../blogs/geertjan/enriching_your_treetableview.adoc[How to Sort Columns in a TreeTableView]
-* xref:../blogs/geertjan/how_to_suppress_editing_in.adoc[How to Suppress Editing in a TreeTableView]
+* xref:front::blogs/geertjan/enriching_your_treetableview.adoc[How to Sort Columns in a TreeTableView]
+* xref:front::blogs/geertjan/how_to_suppress_editing_in.adoc[How to Suppress Editing in a TreeTableView]
 ////
 == Apache Migration Information
 

@@ -19,15 +19,15 @@
 
 = How to specify post-install code in xref:./NBM.adoc[NBM]
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNbmPostInstall
 :description: Apache NetBeans wiki DevFaqNbmPostInstall
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
-:position: 6
+:page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
+:page-position: 6
 
 
 xref:./NBM.adoc[NBM] allows to declare its own custom code in xref:./NBM.adoc[NBM] archive. This code is called-back by `Autoupdate/Updater` at the end of installation of xref:./NBM.adoc[NBM] into IDE.

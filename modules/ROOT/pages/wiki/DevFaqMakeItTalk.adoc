@@ -19,15 +19,15 @@
 
 = How to make my application talk?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMakeItTalk
 :description: Apache NetBeans wiki DevFaqMakeItTalk
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _using_sounds
-:position: 1
+:page-wikidevsection: _using_sounds
+:page-position: 1
 
 First add a dependency to link:https://sourceforge.net/projects/phonemic/[Phonemic], the library that does the magic, which is conveniently wrapped within the SodBeans modules. Here's the link:http://sodbeans.sourceforge.net/downloads/updates/sappy/updates.xml[update center for SodBeans].
 

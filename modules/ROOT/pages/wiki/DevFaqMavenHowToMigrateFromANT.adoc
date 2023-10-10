@@ -19,15 +19,15 @@
 
 = How to convert an ANT-based NetBeans Module to a Maven-based NetBeans Module?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMavenHowToMigrateFromANT
 :description: Apache NetBeans wiki DevFaqMavenHowToMigrateFromANT
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _mavenized_builds
-:position: 5
+:page-wikidevsection: _mavenized_builds
+:page-position: 5
 
 The following list was created while converting a simple plugin with less than 20 classes, so the migration steps of large projects might vary. But you should get the basic idea.
 

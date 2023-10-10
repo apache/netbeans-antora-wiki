@@ -19,15 +19,15 @@
 
 = Using Event Bus in NetBeans
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupEventBus
 :description: Apache NetBeans wiki DevFaqLookupEventBus
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _lookup
-:position: 15
+:page-wikidevsection: _lookup
+:page-position: 15
 
 [source,java]
 ----

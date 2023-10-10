@@ -19,15 +19,15 @@
 
 = How to listen for projects to be opened/closed?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqListenForOpeningClosingProject
 :description: Apache NetBeans wiki DevFaqListenForOpeningClosingProject
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_handling
-:position: 5
+:page-wikidevsection: _project_handling
+:page-position: 5
 
 
 == Specific for a project-type
@@ -68,7 +68,7 @@ Inspired by link:https://github.com/shannah/mirah-nbm/blob/695afe895553bbcae0a2f
 
 == For all project-types
 
-See xref:../blogs/geertjan/org_netbeans_spi_project_ui.adoc[Geertjan blog: ProjectOpenedHook]
+See xref:front::blogs/geertjan/org_netbeans_spi_project_ui.adoc[Geertjan blog: ProjectOpenedHook]
 
 ////
 == Apache Migration Information

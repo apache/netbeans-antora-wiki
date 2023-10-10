@@ -19,16 +19,16 @@
 
 = What is an SPI?  How is it different from an API?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqApiSpi
 :description: Apache NetBeans wiki DevFaqApiSpi
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 9
-include::../inc/database.adoc[]
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 9
+include::front::partial$database.adoc[]
 
 
 == What is an SPI?  How is it different from an API?

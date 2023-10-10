@@ -19,15 +19,15 @@
 
 = How do I get the Open File item on the File menu into my platform application?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFileOpenAction
 :description: Apache NetBeans wiki DevFaqFileOpenAction
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 30
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 30
 
 
 The Open File menu item is a part of the *User Utilities* module, in the `ide` cluster.

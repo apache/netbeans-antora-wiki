@@ -19,15 +19,15 @@
 
 = How do you change the configuration of other modules?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToChangeSettingsFromAnExternalModules
 :description: Apache NetBeans wiki DevFaqHowToChangeSettingsFromAnExternalModules
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _settings
-:position: 7
+:page-wikidevsection: _settings
+:page-position: 7
 
 
 Without adding a dependency to the other module?

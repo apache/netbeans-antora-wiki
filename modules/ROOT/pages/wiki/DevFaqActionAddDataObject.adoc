@@ -19,15 +19,15 @@
 
 = How do I add an action to my custom node type ?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddDataObject
 :description: Apache NetBeans wiki DevFaqActionAddDataObject
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 19
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 19
 
 Override the `public Action[] getActions(boolean context)` method of your node (99% of the time you can ignore the boolean parameter).
 

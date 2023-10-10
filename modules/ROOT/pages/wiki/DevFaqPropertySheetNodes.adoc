@@ -19,15 +19,15 @@
 
 = How do I show my node's properties in the Properties view?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqPropertySheetNodes
 :description: Apache NetBeans wiki DevFaqPropertySheetNodes
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _properties_and_propertysheet
-:position: 2
+:page-wikidevsection: _properties_and_propertysheet
+:page-position: 2
 
 
 I want to have the properties of my custom nodes displayed in the Properties view when they are selected in my tree view. How do I go about doing that?

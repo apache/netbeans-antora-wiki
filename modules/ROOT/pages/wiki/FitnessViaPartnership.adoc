@@ -21,7 +21,7 @@
 
 = FitnessViaPartnership
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :syntax: true
 :description: Good Tools Make Everything Simpler
@@ -64,7 +64,7 @@ Now the time has come to analyse the dump or use the "Attach IDE Snapshot to
 bug..." button to attach it
 to already existing issue.
 
-image::Profileme_FitnessViaPartnership.png["Fitness Via Partnership"]
+image::./Profileme_FitnessViaPartnership.png["Fitness Via Partnership"]
 
 The work was meant as a joint venture of the profiler and performance teams.
 However most of the glory belongs to profiler team. It donated the sampler,

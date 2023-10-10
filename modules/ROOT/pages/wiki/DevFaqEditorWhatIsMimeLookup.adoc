@@ -19,15 +19,15 @@
 
 = What is MimeLookup?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqEditorWhatIsMimeLookup
 :description: Apache NetBeans wiki DevFaqEditorWhatIsMimeLookup
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _editor_and_edited_files
-:position: 13
+:page-wikidevsection: _editor_and_edited_files
+:page-position: 13
 
 
 The `MimeLookup` is a mechanism for extending editor functionality provided by

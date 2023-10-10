@@ -19,15 +19,15 @@
 
 = How to force to check for updates at every startup?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAutoUpdateCheckEveryStartup
 :description: Apache NetBeans wiki DevFaqAutoUpdateCheckEveryStartup
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
-:position: 10
+:page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
+:page-position: 10
 
 [source,java]
 ----

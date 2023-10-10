@@ -19,15 +19,15 @@
 
 = What is a Mode in the Windowing System?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsMode
 :description: Apache NetBeans wiki DevFaqWindowsMode
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 2
+:page-wikidevsection: _window_system
+:page-position: 2
 
 
 "Mode" refers to "docking mode".  A Mode is a place in a main window, a place between splitters. Separate "floating" window is also backed by Mode. Mode is usually visually represented by a tabbed container.  Programmatically it is represented by the class `org.openide.windows.Mode`

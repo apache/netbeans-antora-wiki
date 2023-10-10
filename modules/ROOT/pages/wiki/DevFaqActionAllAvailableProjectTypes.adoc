@@ -19,15 +19,15 @@
 
 = How determine all available project types?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAllAvailableProjectTypes
 :description: Apache NetBeans wiki DevFaqActionAllAvailableProjectTypes
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _project_types
-:position: 7
+:page-wikidevsection: _project_types
+:page-position: 7
 
 * create a new nbm-module using the "_New Project..._"-wizard and choose your target platform
 * create a layer.xml using the "_New File..._"-wizard

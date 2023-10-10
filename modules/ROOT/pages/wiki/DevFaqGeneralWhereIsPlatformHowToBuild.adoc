@@ -19,15 +19,15 @@
 
 = Where is the Platform and How Can I Build It?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGeneralWhereIsPlatformHowToBuild
 :description: Apache NetBeans wiki DevFaqGeneralWhereIsPlatformHowToBuild
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 10
+:page-wikidevsection: _getting_started
+:page-position: 10
 
 In versions of NetBeans prior to 6.0, two major products were available for download: the IDE and the platform.  The platform is the foundation on which the IDE is built, or looking at it another way, the platform is what's left over when you remove all the IDE features from the IDE.  At any rate, the platform provides user interface components, build scripts, declarative configuration and many other features that can save you a lot of time and effort in creating your own application.
 

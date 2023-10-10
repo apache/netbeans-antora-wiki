@@ -19,18 +19,18 @@
 
 = Can I add new panels to the Options window?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqExtendOptionsWindow
 :description: Apache NetBeans wiki DevFaqExtendOptionsWindow
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _settings
-:position: 2
+:page-wikidevsection: _settings
+:page-position: 2
 
 
-Use the link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/overview-summary.html[Options Dialog and SPI] as explained in the xref:../tutorials/nbm-options.adoc[NetBeans Options Window Module Tutorial].
+Use the link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/overview-summary.html[Options Dialog and SPI] as explained in the xref:tutorial::tutorials/nbm-options.adoc[NetBeans Options Window Module Tutorial].
 
 There are wizards for creating primary and secondary options panels. Use `New File.../Module Development/Options Panel` and follow the wizard.
 

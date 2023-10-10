@@ -19,15 +19,15 @@
 
 = How to change main title contents?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMainTitle
 :description: Apache NetBeans wiki DevFaqMainTitle
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 23
+:page-wikidevsection: _window_system
+:page-position: 23
 
 By default, the main title shows the branding name plus the build number.
 

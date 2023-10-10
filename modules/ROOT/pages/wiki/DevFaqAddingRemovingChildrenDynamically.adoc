@@ -19,15 +19,15 @@
 
 = Can I add or remove children of a node on the fly?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAddingRemovingChildrenDynamically
 :description: Apache NetBeans wiki DevFaqAddingRemovingChildrenDynamically
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 11
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 11
 
 
 Yes.  Have your node subclass link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/nodes/AbstractNode.html[AbstractNode]

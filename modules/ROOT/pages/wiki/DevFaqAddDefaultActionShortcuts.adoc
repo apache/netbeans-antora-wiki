@@ -19,15 +19,15 @@
 
 = How do I add default shortcuts for SystemActions (like cut, paste, etc)?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAddDefaultActionShortcuts
 :description: Apache NetBeans wiki DevFaqAddDefaultActionShortcuts
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _key_bindings
-:position: 7
+:page-wikidevsection: _key_bindings
+:page-position: 7
 
 You just need to include the defaults module _org.netbeans.modules.defaults_ that defines the key bindings for the system actions.
 

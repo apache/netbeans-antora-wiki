@@ -19,15 +19,15 @@
 
 = How to override the default size of an existing window?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqOverrideDefaultWindowSize
 :description: Apache NetBeans wiki DevFaqOverrideDefaultWindowSize
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 21
+:page-wikidevsection: _window_system
+:page-position: 21
 
 Since the window already exists and has a default size, it must be registered under a specific mode in the filesystem.
 

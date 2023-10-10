@@ -19,15 +19,15 @@
 
 =  I want to make some programmatic changes to the edited file. How can I do it so one Undo undoes it all?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMultipleProgrammaticEdits
 :description: Apache NetBeans wiki DevFaqMultipleProgrammaticEdits
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _editor_and_edited_files
-:position: 9
+:page-wikidevsection: _editor_and_edited_files
+:page-position: 9
 
 Create a `Runnable` that will do all of the code generation/munging you want to do.  Pass it to `org.openide.text.NbDocument.runAtomic(doc, runnable)`.
 

@@ -19,15 +19,15 @@
 
 = How do I make a checkable action that represents a preference option?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCheckableActionPreferenceOption
 :description: Apache NetBeans wiki DevFaqCheckableActionPreferenceOption
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 6
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 6
 
 
 See 

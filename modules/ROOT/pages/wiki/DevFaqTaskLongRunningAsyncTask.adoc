@@ -19,15 +19,15 @@
 
 = How to execute a long running task from an action without blocking the GUI?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqTaskLongRunningAsyncTask
 :description: Apache NetBeans wiki DevFaqTaskLongRunningAsyncTask
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _tasks_and_progressbar
-:position: 3
+:page-wikidevsection: _tasks_and_progressbar
+:page-position: 3
 
 The easy way if you might need to run a long task when some action is involved:
 

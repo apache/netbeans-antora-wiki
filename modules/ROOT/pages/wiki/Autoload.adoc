@@ -19,15 +19,15 @@
 
 = What is an autoload module?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki Autoload
 :description: Apache NetBeans wiki Autoload
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _module_system
-:position: 10
+:page-wikidevsection: _module_system
+:page-position: 10
 
 The *autoload* in the xref:../index.adoc[NetBeans] module system world means that certain module is turned on when _needed_. In contrast to regular modules which require some manual action (user locating a module and activating it) to turn them on, the *autoload* modules are opaque for users and managed solely by the infrastructure. As soon as there is some module needing (by dependency or require/needs token) an *autoload* module, the infrastructure enables it.
 

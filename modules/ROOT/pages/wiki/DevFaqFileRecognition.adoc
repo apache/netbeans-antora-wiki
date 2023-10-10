@@ -19,16 +19,16 @@
 
 = How does NetBeans recognize files?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFileRecognition
 :description: Apache NetBeans wiki DevFaqFileRecognition
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _files_and_data_objects
-:position: 1
-include::../inc/database.adoc[]
+:page-wikidevsection: _files_and_data_objects
+:page-position: 1
+include::front::partial$database.adoc[]
 
 
 

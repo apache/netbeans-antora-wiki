@@ -19,15 +19,15 @@
 
 = How do I add an action to a file of a given mime-type?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddFileMime
 :description: Apache NetBeans wiki DevFaqActionAddFileMime
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 9
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 9
 
 
 The simplest way is to run *File* > *New...* > *Module Development* > *Action* which creates an action for you and registers it in your `layer.xml`.

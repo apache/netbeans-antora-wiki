@@ -19,15 +19,15 @@
 
 = How to change the update center URL via code?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToChangeUpdateCenterURL
 :description: Apache NetBeans wiki DevFaqHowToChangeUpdateCenterURL
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
-:position: 11
+:page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
+:page-position: 11
 
 
 Use UpdateUnitProviderFactory link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-autoupdate-services/org/netbeans/api/autoupdate/UpdateUnitProviderFactory.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-autoupdate-services/org/netbeans/api/autoupdate/UpdateUnitProviderFactory.html]

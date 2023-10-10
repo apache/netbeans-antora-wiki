@@ -19,7 +19,7 @@
 
 = HowToConfigureXDebug
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published
 :syntax: true
@@ -44,9 +44,9 @@ See installation, configuration instructions:
 * link:debug-setup-flowchart.pdf[Flowchart showing basic XDebug installation and configuration procedure]
 * link:https://xdebug.org/find-binary.php[XDebug wizard] *'VERY USEFUL' "DON'T OVERLOOK A MUST USE"*
 * link:https://xdebug.org/docs/install[xdebug site]
-* xref:../kb/docs/php/index.adoc[PHP Learning Trail]
+* xref:tutorial::kb/docs/php/index.adoc[PHP Learning Trail]
 // * link:http://devzone.zend.com/article/2803-Introducing-xdebug[Introduction to Xdebug by ZEND]
-* link:https://www.php.net/features.commandline[Command-line PHP interpreter] and how to xref:../kb/docs/php/project-setup.adoc#_script[specify it in Netbeans]
+* link:https://www.php.net/features.commandline[Command-line PHP interpreter] and how to xref:tutorial::kb/docs/php/project-setup.adoc#_script[specify it in Netbeans]
 * Various XDebug-related threads at the NetBeans link:http://web.archive.org/web/20170206180838/http://forums.netbeans.org/php-users.html[PHP Users Forum], especially link:http://web.archive.org/web/20170222194549/http://forums.netbeans.org/viewtopic.php?t=1513&sid=1bf924860f28bbffc0f55b92fca9395e[Won't Connect to XDebug] 
 
 === General Information
@@ -277,7 +277,7 @@ xdebug.remote_port => 9000 => 9000
 * php.ini location hints for Script(CGI/CLI) for XAMP on Windows: c:\xampp\php\php.ini
 * for *Windows* use *zend_extension_ts* instead of zend_extension (e.g. zend_extension_ts=c:\path\to\php_xdebug.dll). Again c:\path\to\php_xdebug.dll must exist.
 * *NOTICE: From PHP 5.3 onwards, you need to use zend_extension and not zend_extension_ts*.
-* For more information, please see xref:../kb/docs/php/configure-php-environment-windows.adoc[Configuring PHP Development Environment in Windows]. 
+* For more information, please see xref:tutorial::kb/docs/php/configure-php-environment-windows.adoc[Configuring PHP Development Environment in Windows]. 
 
 === How to configure xdebug with WAMP
 
@@ -420,7 +420,7 @@ In php.ini, the xdebug option xdebug.file_link_format opens the given file path 
 
 === Where to ask?
 
-* xref:../community/mailing-lists.adoc[Apache NetBeans Mailing lists]
+* xref:front::community/mailing-lists.adoc[Apache NetBeans Mailing lists]
 
 === Other useful resources:
 

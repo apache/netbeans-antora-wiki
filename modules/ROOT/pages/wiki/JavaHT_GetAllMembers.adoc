@@ -19,15 +19,15 @@
 
 = How do I Get All Methods/Fields/Constructors of a Class?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki JavaHT_GetAllMembers
 :description: Apache NetBeans wiki JavaHT_GetAllMembers
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _programmatic_access_to_java_sources
-:position: 1
+:page-wikidevsection: _programmatic_access_to_java_sources
+:page-position: 1
 
 * First, you need to be in a Javac context, see xref:./JavaHT_GetIntoJavacContext.adoc[previous section] for more information.
 * Then, you need to find `javax.lang.model.element.TypeElement` you want to analyze. See `com.sun.source.tree.Trees.getElement(TreePath)` and `javax.lang.model.util.Elements.getTypeElement(String)`. You can get `Trees` and `Elements` from `org.netbeans.api.java.source.CompilationInfo`.

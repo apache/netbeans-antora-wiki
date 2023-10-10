@@ -19,15 +19,15 @@
 
 = How do I fix problems about 'ide.welcome'?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqIdeWelcome
 :description: Apache NetBeans wiki DevFaqIdeWelcome
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _javahelp
-:position: 2
+:page-wikidevsection: _javahelp
+:page-position: 2
 
 
 'ide.welcome' is the map ID of the first help topic shown in the JavaHelp window. It is defined in the 'userguide' module. If you have excluded this module, you need to define this map ID yourself, otherwise you will encounter unexpected/unpleasant behavior:

@@ -19,15 +19,15 @@
 
 = What is a module?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWhatIsAModule
 :description: Apache NetBeans wiki DevFaqWhatIsAModule
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 1
+:page-wikidevsection: _getting_started
+:page-position: 1
 
 
 NetBeans is a _modular_ application.  That means it is composed of pieces, which are discovered at runtime.  Some of those pieces may even be downloaded and installed or uninstalled at runtime.

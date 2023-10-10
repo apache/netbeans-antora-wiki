@@ -19,17 +19,17 @@
 
 = How can I change my node's appearance?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqChangeNodeAppearance
 :description: Apache NetBeans wiki DevFaqChangeNodeAppearance
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 25
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 25
 
-It's pretty simple to change the font color, style or weight for your node's label.  Simply override `getHtmlDisplayName` and provide some HTML in your return value. (An example can be found in xref:../tutorials/nbm-nodesapi2.adoc[this] tutorial.) Here is another example:
+It's pretty simple to change the font color, style or weight for your node's label.  Simply override `getHtmlDisplayName` and provide some HTML in your return value. (An example can be found in xref:tutorial::tutorials/nbm-nodesapi2.adoc[this] tutorial.) Here is another example:
 
 [source,java]
 ----

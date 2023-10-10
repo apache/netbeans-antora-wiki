@@ -19,15 +19,15 @@
 
 = How to provide non-inverted images for dark LookAndFeels like DarkMetal/Darcula?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqImagesForDarkLaf
 :description: Apache NetBeans wiki DevFaqImagesForDarkLaf
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _look_and_design
-:position: 3
+:page-wikidevsection: _look_and_design
+:page-position: 3
 
 == In short
 

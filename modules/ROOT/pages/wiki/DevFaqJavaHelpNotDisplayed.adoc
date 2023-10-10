@@ -19,15 +19,15 @@
 
 = Why doesn't my JavaHelp content show up?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqJavaHelpNotDisplayed
 :description: Apache NetBeans wiki DevFaqJavaHelpNotDisplayed
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _javahelp
-:position: 6
+:page-wikidevsection: _javahelp
+:page-position: 6
 
 The first thing to check is that your JavaHelp configuration files are correct. Since these files contain IDs and file paths, it is easy to make a mistake. Unfortunately, the JavaHelp system does not provide you with much warning when such an error occurs.
 

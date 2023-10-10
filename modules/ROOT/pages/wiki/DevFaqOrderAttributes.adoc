@@ -19,15 +19,15 @@
 
 =  How do I specify the order for my menu items/toolbar buttons/files in the system filesystem?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqOrderAttributes
 :description: Apache NetBeans wiki DevFaqOrderAttributes
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _configuration_how_modules_install_things
-:position: 11
+:page-wikidevsection: _configuration_how_modules_install_things
+:page-position: 11
 
 
 If you are using module development support the IDE,

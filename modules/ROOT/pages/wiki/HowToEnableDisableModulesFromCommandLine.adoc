@@ -19,18 +19,18 @@
 
 = Same as the above, but this time for enabling/disabling modules?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki HowToEnableDisableModulesFromCommandLine
 :description: Apache NetBeans wiki HowToEnableDisableModulesFromCommandLine
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _command_line_parsing
-:position: 2
+:page-wikidevsection: _command_line_parsing
+:page-position: 2
 
 
-xref:../blogs/geertjan/parsing_the_command_line_to1.adoc[Info on this here.]
+xref:front::blogs/geertjan/parsing_the_command_line_to1.adoc[Info on this here.]
 
 ////
 == Apache Migration Information

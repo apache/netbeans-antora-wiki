@@ -19,15 +19,15 @@
 
 = How to call EJB from NetBeans module
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCallEjbFromNbm
 :description: Apache NetBeans wiki DevFaqCallEjbFromNbm
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _using_enterprise_resources_from_netbeans_module
-:position: 2
+:page-wikidevsection: _using_enterprise_resources_from_netbeans_module
+:page-position: 2
 
 
 This How-To is based on link:https://glassfish.dev.java.net/javaee5/ejb/EJB_FAQ.html[GlassFish EJB Faq]

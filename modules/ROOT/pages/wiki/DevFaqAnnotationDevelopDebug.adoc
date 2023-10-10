@@ -19,15 +19,15 @@
 
 =  How do I develop and debug annotations for NetBeans platform apps?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAnnotationDevelopDebug
 :description: Apache NetBeans wiki DevFaqAnnotationDevelopDebug
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 41
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 41
 
 
 The NetBeans platform has API support for creating XML layer entries from annotations. The popular book "NetBeans Platform for Beginners" has several examples of writing your own annotations. Familiarity with developing annotations and annotation processing is a prerequisite. Though not specifically about NetBeans platform annotations, link:https://netbeans.org/kb/docs/java/annotations.html[Annotation Processors Support in the NetBeans IDE] may also be useful for those new to working with annotions.

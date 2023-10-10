@@ -19,15 +19,15 @@
 
 = How do I set up a NetBeans Platform in the IDE ?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNetBeansPlatformManager
 :description: Apache NetBeans wiki DevFaqNetBeansPlatformManager
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _getting_started
-:position: 11
+:page-wikidevsection: _getting_started
+:page-position: 11
 
 
 By default, a NetBeans Platform application will use the developer's copy of the IDE as the platform.  This is certainly easy, but there are also xref:./DevFaqGeneralWhereIsPlatformHowToBuild.adoc[drawbacks to using the current IDE as a platform]. With that in mind, lets check out, and reference our own copy of the NetBeans source code. This way we can also use breakpoints to step through the NetBeans source code, make changes, and create patches!

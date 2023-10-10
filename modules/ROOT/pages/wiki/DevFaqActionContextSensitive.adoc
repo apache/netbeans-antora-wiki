@@ -19,15 +19,15 @@
 
 = How do I create an Action that is automatically enabled and disabled depending on the selection?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionContextSensitive
 :description: Apache NetBeans wiki DevFaqActionContextSensitive
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 5
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 5
 
 
 There are several ways to do this, depending on what exactly you need.  The basic problems all of the available solutions are addressing is that:

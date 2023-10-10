@@ -19,15 +19,15 @@
 
 = What is the Window System?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsGeneral
 :description: Apache NetBeans wiki DevFaqWindowsGeneral
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 1
+:page-wikidevsection: _window_system
+:page-position: 1
 
 The windowing system is what creates the main application window, and makes it
 possible to open components in the UI.  The API for the windowing system is in the package

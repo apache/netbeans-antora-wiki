@@ -19,15 +19,15 @@
 
 = Java Infrastructure Developer's guide (AKA Concepts & HowTos)
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki Java_DevelopersGuide
 :description: Apache NetBeans wiki Java_DevelopersGuide
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _programmatic_access_to_java_sources
-:position: 5
+:page-wikidevsection: _programmatic_access_to_java_sources
+:page-position: 5
 
 == Concepts
 
@@ -81,11 +81,11 @@ xref:./JavaHT_GetPackagesOfAJar.adoc[How do I get the packages contained in a ja
 
 == Tutorials
 
-xref:../tutorials/nbm-copyfqn.adoc[https://netbeans.apache.org/tutorials/nbm-copyfqn.html]
+xref:tutorial::tutorials/nbm-copyfqn.adoc[https://netbeans.apache.org/tutorials/nbm-copyfqn.html]
 
-xref:../tutorials/nbm-code-generator.adoc[https://netbeans.apache.org/tutorials/nbm-code-generator.html]
+xref:tutorial::tutorials/nbm-code-generator.adoc[https://netbeans.apache.org/tutorials/nbm-code-generator.html]
 
-xref:../tutorials/nbm-java-hint.adoc[https://netbeans.apache.org/tutorials/nbm-java-hint.html]
+xref:tutorial::tutorials/nbm-java-hint.adoc[https://netbeans.apache.org/tutorials/nbm-java-hint.html]
 
 link:http://netbeans.org/projects/platform/sources/platform-content/content/trunk/tutorials/60/nbm-whichelement.html?raw=true[http://netbeans.org/projects/platform/sources/platform-content/content/trunk/tutorials/60/nbm-whichelement.html?raw=true]
 

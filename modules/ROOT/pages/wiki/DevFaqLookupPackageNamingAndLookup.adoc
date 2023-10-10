@@ -19,15 +19,15 @@
 
 = After adding my class to Lookup I get a "ClassNotFoundException" when trying to look it up, why?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupPackageNamingAndLookup
 :description: Apache NetBeans wiki DevFaqLookupPackageNamingAndLookup
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _lookup
-:position: 13
+:page-wikidevsection: _lookup
+:page-position: 13
 
 
 Q: After adding my class to lookup I get a `ClassNotFoundException` when trying to look it up, why?

@@ -19,15 +19,15 @@
 
 = How do I add an action to a project node's popup menu of my own project type?
 :page-layout: wiki
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddProjectOwnTypePopUp
 :description: Apache NetBeans wiki DevFaqActionAddProjectOwnTypePopUp
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 14
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 14
 
 
 * To add the Copy/Delete/Move/Rename action to your project's node, you should:

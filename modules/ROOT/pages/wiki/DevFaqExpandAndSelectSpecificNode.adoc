@@ -19,15 +19,15 @@
 
 = How do I make a particular node visible in the Explorer, and maybe select it?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqExpandAndSelectSpecificNode
 :description: Apache NetBeans wiki DevFaqExpandAndSelectSpecificNode
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 12
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 12
 
 
 In general you cannot. See link:https://bz.apache.org/netbeans/show_bug.cgi?id=7551[issue #7551.]

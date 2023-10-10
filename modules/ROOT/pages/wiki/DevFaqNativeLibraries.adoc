@@ -19,15 +19,15 @@
 
 = How do I add native libraries to my module?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNativeLibraries
 :description: Apache NetBeans wiki DevFaqNativeLibraries
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 14
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 14
 
 
 DLLs or SOs can be placed in the folder `release/modules/lib/` in a module project's sources (look in the *Files* tab). This will make them appear in the final NBM or application in a `lib` subdirectory beneath where the module's JAR resides. Then just use `System.loadLibrary` as usual.

@@ -19,15 +19,15 @@
 
 = How can I override JavaHelp to display my own help or documentation?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqJavaHelpOverrideCustom
 :description: Apache NetBeans wiki DevFaqJavaHelpOverrideCustom
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _javahelp
-:position: 8
+:page-wikidevsection: _javahelp
+:page-position: 8
 
 
 == Step 1: HelpCtx.Displayer

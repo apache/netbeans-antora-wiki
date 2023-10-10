@@ -19,15 +19,15 @@
 
 = What is an implementation dependency and when should I use one?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqImplementationDependency
 :description: Apache NetBeans wiki DevFaqImplementationDependency
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
-:position: 15
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 15
 
 
 Normally modules interact with one another using _public packages_: a module can (indeed, must) declare which, if any, of its Java packages are intended to be visible to other modules. When you declare a specification dependency on another module, you only get access to the public packages. This kind of dependency looks like this in the JAR manifest (which is normally constructed from `nbproject/project.xml` in sources):

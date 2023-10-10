@@ -19,15 +19,15 @@
 
 = How do i add an icon to the context menu?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAddIconToContextMenu
 :description: Apache NetBeans wiki DevFaqAddIconToContextMenu
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
-:position: 40
+:page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
+:page-position: 40
 
 
 NOTE: This is not recommended for NB RCP (it will break HMI standards on Mac OS X for example), but is still possible.

@@ -19,15 +19,15 @@
 
 = How can I create a custom Debugger for my language?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomDebugger
 :description: Apache NetBeans wiki DevFaqCustomDebugger
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _creating_a_custom_programming_language
-:position: 2
+:page-wikidevsection: _creating_a_custom_programming_language
+:page-position: 2
 
 
 Problem: I have a debugger built for my custom programming language. How do I integrate it into the NetBeans Platform?

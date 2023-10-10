@@ -19,15 +19,15 @@
 
 = Module Helpset Integration FAQs
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHelpGuidelines
 :description: Apache NetBeans wiki DevFaqHelpGuidelines
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _javahelp
-:position: 1
+:page-wikidevsection: _javahelp
+:page-position: 1
 
 == Module Helpset Integration FAQs
 

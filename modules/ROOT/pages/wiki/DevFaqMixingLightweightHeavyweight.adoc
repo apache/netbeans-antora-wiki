@@ -19,15 +19,15 @@
 
 = How to mix lightweight (Swing) and heavyweight (AWT) components?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMixingLightweightHeavyweight
 :description: Apache NetBeans wiki DevFaqMixingLightweightHeavyweight
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _window_system
-:position: 25
+:page-wikidevsection: _window_system
+:page-position: 25
 
 
 Since JDK 6 update 12 and JDK 7, support for mixing of AWT (heavyweight, native widgets) and Swing (lightweight, pure Java widgets) is available and usually works quite well. However, placing a native AWT Component within a Swing container hierarchy with customizations may cause unwanted side-effects and can therefor be disabled.

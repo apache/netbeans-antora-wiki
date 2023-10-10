@@ -19,15 +19,15 @@
 
 = Using NbModuleSuite & friends
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUsingSimpletests
 :description: Apache NetBeans wiki DevFaqUsingSimpletests
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _running_and_writing_tests
-:position: 1
+:page-wikidevsection: _running_and_writing_tests
+:page-position: 1
 
 During development of the 6.5 series, an effort was made to improve testing by inherent support for tests in NetBeans build scripts (also known as the _build harness_).  Therefore, unit and functional tests for platform applications are now supported _out of the box_ in NetBeans 6.5 and later.  This effort is sometimes called "simpletests" because it greatly simplifies the work necessary to do such tests on your application.  xref:./FitnessTestsWithoutX.adoc[More information about simpletests] can be found in the Wiki.
 

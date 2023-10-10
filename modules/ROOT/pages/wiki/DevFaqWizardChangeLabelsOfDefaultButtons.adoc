@@ -19,15 +19,15 @@
 
 = How to customize the text of default buttons in wizard dialog (Finish, Cancel, etc)?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWizardChangeLabelsOfDefaultButtons
 :description: Apache NetBeans wiki DevFaqWizardChangeLabelsOfDefaultButtons
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _wizards_and_templates
-:position: 6
+:page-wikidevsection: _wizards_and_templates
+:page-position: 6
 
 
 Need to customize the button text of the default buttons of a wizard (Finish, Cancel, etc.)?

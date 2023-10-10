@@ -19,15 +19,15 @@
 
 = Why do my nodes in the Explorer always have an expand-box by them, even though they have no children?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeChildrenDotLeaf
 :description: Apache NetBeans wiki DevFaqNodeChildrenDotLeaf
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _nodes_and_explorer
-:position: 23
+:page-wikidevsection: _nodes_and_explorer
+:page-position: 23
 
 
 Nodes are not asked for their child nodes until the user tries to expand them - to do otherwise would be very bad for performance.  If your Node is not supposed to have child nodes, use `Children.LEAF` as the children object passed to the constructor.  That will eliminate the expand handle.

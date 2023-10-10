@@ -19,15 +19,15 @@
 
 = How do I make a file template which actually creates a set of files at once?
 :page-layout: wikidev
-:jbake-tags: wiki, devfaq, needsreview
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMakeGroupTemplate
 :description: Apache NetBeans wiki DevFaqMakeGroupTemplate
 :toc: left
 :toc-title:
 :syntax: true
-:wikidevsection: _wizards_and_templates
-:position: 1
+:page-wikidevsection: _wizards_and_templates
+:page-position: 1
 
 For example, say you want to make a template which will appear in *File | New File* which will prompt the user for a name and location but then actually create several related files.
 
@@ -40,7 +40,7 @@ You may wish to reuse a standard GUI panel for picking a folder and name, as in
 
 The NetBeans 5.0 module development support has a (meta-)wizard *New Wizard*. Choose *New File* for *Registration Type* and follow the wizard steps.
 
-See also xref:../blogs/geertjan/multiple_files_from_a_single.adoc[Multiple Files from a Single Wizard] (and its comments)
+See also xref:front::blogs/geertjan/multiple_files_from_a_single.adoc[Multiple Files from a Single Wizard] (and its comments)
 ---
 
 Applies to: NetBeans 5.0, 5.5, 6.X
