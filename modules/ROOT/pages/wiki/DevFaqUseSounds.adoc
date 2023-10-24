@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqUseSounds
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _using_sounds
 :page-position: 2
 

@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki HowToParseTheCommandLine
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == Apache Migration Information
 

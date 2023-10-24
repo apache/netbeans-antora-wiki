@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqUriVsUrl
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _converting_between_common_data_types_and_finding_things
 :page-position: 2
 

@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqCanICancelCA
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == Once I have a CA on file, can I change my mind and cancel?
 

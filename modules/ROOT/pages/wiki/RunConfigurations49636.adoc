@@ -23,7 +23,7 @@
 :page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published
-:syntax: true
+:page-syntax: true
 :description: Run Configurations for Java SE Projects
 :icons: font
 :source-highlighter: pygments

@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqHowDoIFileACA
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == How do I file a completed CA?
 

@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqChangeMenuItemToolbarAppearanceForAction
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 35
 

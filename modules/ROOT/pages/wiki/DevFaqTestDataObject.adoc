@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqTestDataObject
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _running_and_writing_tests
 :page-position: 6
 

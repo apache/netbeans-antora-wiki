@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqMoreDocsOnCertainAPIs
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _getting_support_where_to_find_examples
 :page-position: 7
 

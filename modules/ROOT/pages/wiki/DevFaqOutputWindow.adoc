@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqOutputWindow
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _output_window
 :page-position: 1
 

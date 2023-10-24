@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqMavenSystemScope
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _mavenized_builds
 :page-position: 3
 

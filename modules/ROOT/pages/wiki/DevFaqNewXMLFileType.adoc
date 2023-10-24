@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqNewXMLFileType
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _files_and_data_objects
 :page-position: 12
 

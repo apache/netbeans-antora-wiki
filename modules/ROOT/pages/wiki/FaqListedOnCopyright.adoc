@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqListedOnCopyright
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == I have a JCA on file and I have made a code contribution to netbeans.org. Can I get listed on the copyright notice?
 

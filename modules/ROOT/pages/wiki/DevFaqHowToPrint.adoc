@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqHowToPrint
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _printing
 :page-position: 1
 

@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqModulesGeneral
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _configuration_how_modules_install_things
 :page-position: 1
 

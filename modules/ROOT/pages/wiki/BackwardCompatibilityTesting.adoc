@@ -22,7 +22,7 @@
 :page-layout: wiki
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:syntax: true
+:page-syntax: true
 :description: Backward Compatibility Testing of NetBeans Platform
 :icons: font
 :source-highlighter: pygments

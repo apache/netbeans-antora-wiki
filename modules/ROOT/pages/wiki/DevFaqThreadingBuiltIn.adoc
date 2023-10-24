@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqThreadingBuiltIn
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _threading
 :page-position: 4
 

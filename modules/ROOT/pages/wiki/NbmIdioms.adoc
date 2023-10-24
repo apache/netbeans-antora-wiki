@@ -23,7 +23,7 @@
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :markup-in-source: verbatim,quotes,macros
-:syntax: true
+:page-syntax: true
 :description: NetBeans APIs in a Nutshell
 :icons: font
 :source-highlighter: pygments

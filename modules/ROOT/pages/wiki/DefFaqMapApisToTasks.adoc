@@ -22,7 +22,7 @@
 :description: Apache NetBeans wiki DefFaqMapApisToTasks
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 5
 

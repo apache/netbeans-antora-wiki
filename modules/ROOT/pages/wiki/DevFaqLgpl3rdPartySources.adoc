@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqLgpl3rdPartySources
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _licensing_issues
 :page-position: 3
 

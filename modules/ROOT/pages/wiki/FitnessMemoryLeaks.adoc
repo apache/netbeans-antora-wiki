@@ -23,7 +23,7 @@
 :page-layout: wiki
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:syntax: true
+:page-syntax: true
 :description: Memory Leaks need to be eliminated to Improve NetBeans Fitness
 :icons: font
 :source-highlighter: pygments

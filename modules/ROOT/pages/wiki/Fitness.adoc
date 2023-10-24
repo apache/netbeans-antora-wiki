@@ -21,7 +21,7 @@
 :page-layout: wiki
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:syntax: true
+:page-syntax: true
 :description: NetBeans Performance Improvements
 :icons: font
 :source-highlighter: pygments

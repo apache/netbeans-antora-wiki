@@ -23,7 +23,7 @@
 :page-layout: wiki
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:syntax: true
+:page-syntax: true
 :description: Good Tools Make Everything Simpler
 :icons: font
 :source-highlighter: pygments

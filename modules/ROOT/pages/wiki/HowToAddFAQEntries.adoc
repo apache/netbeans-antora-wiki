@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki HowToAddFAQEntries
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == How to add/create a FAQ entry
 

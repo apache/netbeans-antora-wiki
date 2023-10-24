@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqOtherSunCA
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == I've already signed a CA for another Oracle project, do I need to sign another one for NetBeans?
 

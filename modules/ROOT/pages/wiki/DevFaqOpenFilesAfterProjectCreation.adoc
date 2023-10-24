@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqOpenFilesAfterProjectCreation
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _wizards_and_templates
 :page-position: 5
 
