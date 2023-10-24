@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqDependOnCore
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 23
 

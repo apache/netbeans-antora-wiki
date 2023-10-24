@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqWhatIsCA
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == What is the Contributor Agreement ("CA")?
 

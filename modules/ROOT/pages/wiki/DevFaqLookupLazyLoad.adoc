@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqLookupLazyLoad
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _lookup
 :page-position: 15
 

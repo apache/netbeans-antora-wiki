@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki index
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 
 //== Actions: How to add things to Files, Folders, Menus, Toolbars and more

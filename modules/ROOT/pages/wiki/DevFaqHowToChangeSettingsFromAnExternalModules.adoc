@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqHowToChangeSettingsFromAnExternalModules
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _settings
 :page-position: 7
 

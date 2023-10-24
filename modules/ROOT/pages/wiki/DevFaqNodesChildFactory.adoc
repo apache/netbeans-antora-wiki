@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqNodesChildFactory
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 8
 

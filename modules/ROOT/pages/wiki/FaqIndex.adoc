@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqIndex
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == NetBeans FAQ Index
 

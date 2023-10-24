@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqOpenFile
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _file_management_within_the_ideapplication
 :page-position: 1
 

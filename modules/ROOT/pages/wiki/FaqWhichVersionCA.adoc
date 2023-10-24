@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqWhichVersionCA
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == I already signed a recent version of the CA, do I need to sign the newest version?
 

@@ -26,7 +26,7 @@
 :description: Apache NetBeans wiki DevFaqRemoveStatusBar
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _branding_your_application
 :page-position: 4
 

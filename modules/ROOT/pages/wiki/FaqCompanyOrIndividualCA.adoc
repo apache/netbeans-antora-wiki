@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki FaqCompanyOrIndividualCA
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 == If my company wants me to contribute changes, who should sign the CA, me or my company?
 

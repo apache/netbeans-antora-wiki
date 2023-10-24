@@ -26,7 +26,7 @@
 :description: Maven Best Practices NetBeans 
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 
 
 In this article you will learn how to import, create and work with Apache Maven

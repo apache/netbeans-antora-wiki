@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqCallEjbFromNbm
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _using_enterprise_resources_from_netbeans_module
 :page-position: 2
 

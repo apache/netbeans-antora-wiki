@@ -25,7 +25,7 @@
 :description: Apache NetBeans wiki DevFaqGetOpenEditorWindows
 :toc: left
 :toc-title:
-:syntax: true
+:page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 1
 
