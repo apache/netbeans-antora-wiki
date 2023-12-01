@@ -54,7 +54,7 @@ gained from maintaining xref:../index.adoc[NetBeans] for past ten years to make
 the archictecture more sound and more maintainable. The goal usually is not to do
 code reviews. Subject to review are usually aspects visible externally. However
 sometimes a review can suggest better algorithms or internal data structures if
-there are for example xref:performance.adoc[performance] implications. 
+there are for example xref:./Performance.adoc[performance] implications. 
 
 
 [[How_to_Get_Involved]]

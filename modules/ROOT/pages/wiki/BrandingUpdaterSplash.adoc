@@ -30,7 +30,7 @@
 :page-position: 2
 
 
-Contributed By; xref:./TonnyKohar.adoc[Tonny Kohar]
+Contributed By; Tonny Kohar
 
 
 Adapted from: link:http://blogs.kiyut.com/tonny/2007/11/19/netbeans-platform-branding-updaterjar/[http://blogs.kiyut.com/tonny/2007/11/19/netbeans-platform-branding-updaterjar/]

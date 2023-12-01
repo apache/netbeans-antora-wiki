@@ -47,10 +47,10 @@ The title of your application is located in a resource bundle:
 
 As of NetBeans 6.9, it is possible to use the xref:./NewAndNoteWorthy#Branding_Editor.adoc[Branding Editor] to edit this resource.
 
-To remove the version number prior to 6.9, manually edit the file and remove existing {0} tokens:
+To remove the version number prior to 6.9, manually edit the file and remove existing \{0} tokens:
 
-:: *CTL_MainWindow_Title=AppBrandingName {0}*
-:: *CTL_MainWindow_Title_No_Project=AppBrandingName {0}*
+:: *CTL_MainWindow_Title=AppBrandingName \{0}*
+:: *CTL_MainWindow_Title_No_Project=AppBrandingName \{0}*
 
 so it will be as:
 

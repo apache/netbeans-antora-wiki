@@ -58,7 +58,7 @@ There are a link:http://netbeans.org/kb/trails/platform.html[huge number of tuto
 
 == FAQs
 
-There is a huge xref:./NetBeansDeveloperFAQ.adoc[Frequently Asked Questions for Module Developers] list.  It is worth bookmarking.
+There is a huge xref:./DevFaqIndex.adoc[Frequently Asked Questions for Module Developers] list.  It is worth bookmarking.
 
 == Getting the Source Code
 

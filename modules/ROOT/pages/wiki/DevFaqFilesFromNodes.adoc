@@ -29,7 +29,7 @@
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 13
 
-In general, it shall be enough to request a xref:./FileObject.adoc[FileObject] via xref:./Lookup.adoc[Lookup]:
+In general, it shall be enough to request a **FileObject** via **Lookup**:
 
 [source,java]
 ----
