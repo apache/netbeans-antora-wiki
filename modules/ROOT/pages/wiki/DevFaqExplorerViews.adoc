@@ -42,7 +42,7 @@ An explorer view is a GUI component which can display a xref:./DevFaqWhatIsANode
 * IconView - a view similar to that of the left pane in Windows Explorer - a table of equidistant icons.  Not currently used anywhere in the IDE's UI.
 * PropertySheetView - doesn't show Nodes per-se at all, but rather, shows a property sheet for editing a Node's properties
 
-With the exception of PropertySheetView, all of these classes live in the package `org.openide.explorer.view` (sources in openide/explorer in xref:./DevFaqAccessSourcesUsingCvs.adoc[NetBeans' CVS]).
+With the exception of PropertySheetView, all of these classes live in the package `org.openide.explorer.view` (sources in openide/explorer in Apache NetBeans git).
 
 An explorer view's content is controlled by its xref:./DevFaqExplorerManager.adoc[ExplorerManager] - you don't set the root node directly on the view component, you use its manager.  This is so that more than one view can share a single manager, to do master-detail views (for example, the first page of the New Project wizard is one such view - the right hand panel displays children of the left hand panel's selection).
 

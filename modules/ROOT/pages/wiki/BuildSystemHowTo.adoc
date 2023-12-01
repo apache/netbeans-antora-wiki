@@ -188,11 +188,11 @@ Ant-based projects always have an `nbproject` subdirectory in the project direct
 
 Now think about layout details specific to your project type. Perhaps you want to add another properties file for some unforeseen reason; this is up to you (almost all of the Ant-based project infrastructure classes will work happily with such a setup, except perhaps for `ReferenceHelper`, described below). Certainly you will want to decide what kinds of source files reside where and in what structure. For example, for a plain Java project, the specifics of the structure are:
 
-1. main Java sources in `${src.dir}`, default `${basedir}/src` or an external root; may be more than one such source directory
-. (optional) unit test sources in `${test.src.dir}`, default `${basedir}/test` or an external root; again, may be more than one such directory
-. (optional) JAR manifest in `${manifest.file}`, default `${basedir}/manifest.mf`
-. `${build.dir}` (default `${basedir}/build`) holds various transient build products (e.g. compiled classes not yet packed into a JAR)
-. `${dist.dir}` (default `${basedir}/dist`) holds the finished JAR as well as any generated Javadoc. Furthermore, you need to decide what project metadata you will store. This includes the structure of `project.xml` (and perhaps `private.xml` if you need to use it for anything), as well as a list of recognized keys and their semantics for `project.properties` and/or `private.properties`. For example, for a plain Java project, `project.xml` can specify: 
+1. main Java sources in `${src.dir}`, default `$\{basedir}/src` or an external root; may be more than one such source directory
+. (optional) unit test sources in `${test.src.dir}`, default `$\{basedir}/test` or an external root; again, may be more than one such directory
+. (optional) JAR manifest in `${manifest.file}`, default `$\{basedir}/manifest.mf`
+. `${build.dir}` (default `$\{basedir}/build`) holds various transient build products (e.g. compiled classes not yet packed into a JAR)
+. `${dist.dir}` (default `$\{basedir}/dist`) holds the finished JAR as well as any generated Javadoc. Furthermore, you need to decide what project metadata you will store. This includes the structure of `project.xml` (and perhaps `private.xml` if you need to use it for anything), as well as a list of recognized keys and their semantics for `project.properties` and/or `private.properties`. For example, for a plain Java project, `project.xml` can specify: 
 .. the project name
 .. a list of source roots (giving in each case the name of the Ant property specifying its actual location)
 .. the minimum Ant version needed to build (probably `1.6`)

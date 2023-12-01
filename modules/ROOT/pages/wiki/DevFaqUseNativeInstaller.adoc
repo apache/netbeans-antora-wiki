@@ -207,7 +207,7 @@ And , that's it, the NetBeans Lookup system will read it and includes that provi
 
 === Important Note
 
-Don't apply this Update Provider earlier than NetBeans 6.5 release will be out. There were several problem which had to be fixed in NetBeans 6.5. Use xref:../download/index.adoc[NetBeans 6.5] or some of recent link:http://bits.netbeans.org/dev/nightly/latest/[Development builds] rather than previous releases 6.1 or 6.0!
+Don't apply this Update Provider earlier than NetBeans 6.5 release will be out. There were several problem which had to be fixed in NetBeans 6.5. Use xref:front::/download/index.adoc[NetBeans 6.5] or some of recent link:http://bits.netbeans.org/dev/nightly/latest/[Development builds] rather than previous releases 6.1 or 6.0!
 
 -
 Do not hesitate to contact me on mailto:jrechtacek@netbeans.org if you have any question.

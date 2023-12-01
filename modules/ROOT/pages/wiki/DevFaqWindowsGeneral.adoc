@@ -35,7 +35,7 @@ possible to open components in the UI.  The API for the windowing system is in t
 `org.netbeans.core.windows` (core.windows in Mercurial repository, was core/windows in CVS).
 
 The window system defines xref:./DevFaqWindowsMode.adoc[Mode]s which are places in the main window
-occupied by tabbed containers. xref:./DevFaqWindowsTopComponents.adoc[TopComponent]s are GUI
+occupied by tabbed containers. xref:./DevFaqWindowsTopComponent.adoc[TopComponent]s are GUI
 components (instances or subclasses of `org.openide.windows.TopComponent` which
 can be put into these tabbed containers.
 

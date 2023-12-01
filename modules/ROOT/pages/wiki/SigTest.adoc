@@ -29,7 +29,7 @@
 :toc-title:
 :experimental:
 
-`SigTest` is the tool behind NetBeans xref:./SignatureTest.aadoc[signature
+`SigTest` is the tool behind NetBeans xref:./SignatureTest.adoc[signature
 testing] infrastructure. It checks for incompatibilities between different
 versions of the same API.
 

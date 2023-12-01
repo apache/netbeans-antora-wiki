@@ -55,7 +55,7 @@ a separator and that's what `MimePath` is. In our example the
 
 The embedding can go indefinitely deep and you can have `MimePath` like
 `text/x-jsp/text/html/text/el` for an expression language used in an
-HTML attribute inside a JSP file - `<a href="${myLink}">...</a>`.
+HTML attribute inside a JSP file - `<a href="$\{myLink}">...</a>`.
 
 Since `MimePath` is required when you want
 xref:./DevFaqEditorWhatIsMimeLookup.adoc[MimeLookup] and since `MimeLookup` is the
