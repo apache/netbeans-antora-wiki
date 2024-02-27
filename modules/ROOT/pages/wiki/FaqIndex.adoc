@@ -31,7 +31,7 @@
 
 === General FAQs and troubleshooting tips
 
-* xref:./NetBeansUserFAQ.adoc[NetBeans User FAQ] - Installation, configuration, packs, usage, community.
+* xref:./DevFaqIndex.adoc[NetBeans User FAQ] - Installation, configuration, packs, usage, community.
 
 * xref:./FaqArchive.adoc[FAQ Archive] - Questions and answers for NetBeans IDE 5.5 or older
 

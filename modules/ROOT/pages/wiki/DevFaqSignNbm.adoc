@@ -89,7 +89,7 @@ storepass=specialsauce
 ----
 
 You could also pass `-Dstorepass=specialsauce` on the command line.
-If you specify a keystore but `${storepass}` is undefined, you will be prompted for the password during the build.
+If you specify a keystore but `$\{storepass}` is undefined, you will be prompted for the password during the build.
 
 
 [start=5]
@@ -192,7 +192,7 @@ Ok, here's a summary:
 
 
 [start=2]
-. Using the defined module list (${modules} this is defined by the IDE itself) go to all your modules and add the keystore location and alias information in its `nbproject/private/platform-private.properties` file.
+. Using the defined module list ($\{modules} this is defined by the IDE itself) go to all your modules and add the keystore location and alias information in its `nbproject/private/platform-private.properties` file.
 
 
 [start=3]
