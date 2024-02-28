@@ -17,29 +17,30 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= How do I get the packages contained in a jar/library/dependency?
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki JavaHT GetPackagesOfAJar
+:description: Apache NetBeans wiki JavaHT GetPackagesOfAJar
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
+If you want to display it as a Node you can use:
 
-- xref:./APIDevelopment.adoc[API Development]
+[source,java]
+----
+org.netbeans.spi.java.project.support.ui.PackageView.createPackageView().
+----
 
-- xref:./API_Stability.adoc[API Stability]
+If you need just a list of packages it can be obtained by
 
-- xref:./API_Design.adoc[API Design]
+[source,java]
+----
+ClassIndex.getPackageNames()
+----
 
-[.sect2]
-== Answers & Support
+for jars which were scanned by indexing.
 
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+-- provided by Tomas Zezula 
