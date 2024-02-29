@@ -17,29 +17,15 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= JellyTools
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wik
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki JellyTools
+:description: Apache NetBeans wiki JellyTools
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
-
-- xref:./API_Stability.adoc[API Stability]
-
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+link:https://web.archive.org/web/20181005062633/wiki.netbeans.org/JellyTools[Former article page]

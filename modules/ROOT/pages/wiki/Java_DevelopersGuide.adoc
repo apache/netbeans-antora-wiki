@@ -49,7 +49,7 @@ xref:./JavaHT_ElementHandle.adoc[The ElementHandle]
 
 xref:./JavaHT_TreePathHandle.adoc[The TreePathHandle]
 
-xref:./JavaHT_ComparingTreesElements.adoc[Comparing Trees and Elements]
+// not archived xref:./JavaHT_ComparingTreesElements.adoc[Comparing Trees and Elements]
 
 xref:./JavaHT_SourceFilesVsClassFiles.adoc[Source files vs. Class Files]
 
@@ -69,7 +69,7 @@ xref:./JavaHT_TreeMaker.adoc[How to work with TreeMaker]
 
 xref:./JavaHT_TreeMakerQA.adoc[TreeMaker difficulties, Questions &amp; Answers]
 
-xref:./JavaHT_FindUsagesOfClass.adoc[How do I Find All Usages of a Class?]
+// not archived  xref:./JavaHT_FindUsagesOfClass.adoc[How do I Find All Usages of a Class?]
 
 xref:./JavaHT_GetElementFromFQN.adoc[How do I get an ElementHandle if all I have is the Project and the class name?]
 

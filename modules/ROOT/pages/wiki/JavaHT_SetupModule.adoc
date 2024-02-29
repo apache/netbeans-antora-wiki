@@ -17,29 +17,24 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+=  How to setup a module which uses the Java related APIs
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki JavaHT SetupModule
+:description: Apache NetBeans wiki JavaHT SetupModule
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
+Dependencies
 
-- xref:./API_Stability.adoc[API Stability]
+* Java Source
+* Javac API Wrapper
+* Classpath APIs
+* Parsing API
+* Java Support APIs 
 
-- xref:./API_Design.adoc[API Design]
 
-[.sect2]
-== Answers & Support
-
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+TBD: Describe necessary module dependencies 

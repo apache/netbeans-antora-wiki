@@ -17,29 +17,19 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= ElementHandle
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki JavaHT ElementHandle
+:description: Apache NetBeans wiki JavaHT ElementHandle
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
+As was mentioned above, it is not possible to hold Elements, TypeMirrors and Trees and to compare instances got from different javac instances.
 
-- xref:./APIDevelopment.adoc[API Development]
-
-- xref:./API_Stability.adoc[API Stability]
-
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+To solve this limitation, ElementHandle was introduced. 
+The ElementHandle allows to pass an Element from one javac instance to another. 
+In the first instance of javac, create the handle using ElementHandle.create(Element) method. 
+Keep the resulting handle, but do not hold the element itself. In the other instance of javac, use ElementHandle.resolve(CompilationInfo) method to resolve the ElementHandle back to the Element. 

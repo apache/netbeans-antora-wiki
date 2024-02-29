@@ -17,29 +17,27 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= How do I get a list of libraries/dependencies of a project?
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki JavaHT Overview
+:description: Apache NetBeans wiki JavaHT Overview
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
+. Get COMPILE classpaths of all Java non test source root.
++
+[source,java]
+----
+Stream<ClassPath> cps = Arrays.stream(ProjectUtil.getSources(prj)
+  .getSourceGroups(JavaProjectConstants.SOURCES_TYPE_JAVA))
+  .map((sg)->sg.getRootFolder())
+  .filter(nonTestRoot)
+  .map((fo)->ClassPath.getClassPath(fo, ClassPath.COMPILE));
+----
+. These classpaths in cps contain all the libraries.
 
-- xref:./API_Stability.adoc[API Stability]
-
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+-- provided by Tomas Zezula 

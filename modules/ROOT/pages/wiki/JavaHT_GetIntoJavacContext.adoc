@@ -1,0 +1,83 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= How do I Get into the Javac Context for a File?
+:page-layout: wiki
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT GetIntoJavacContext
+:description: Apache NetBeans wiki JavaHT GetIntoJavacContext
+:toc: left
+:toc-title:
+:page-syntax: true
+
+
+First of all, think about what are you trying to do. There are different ways to enter the javac context for different usecases. You may go and consult xref:./JavaHT_RegisteringRunningTasks.adoc[Registering/Running] tasks first. Then if you decide that this is not the way you may continue reading here.
+
+Find answers to these questions:
+
+. When the code is supposed to run
+.. On explicit user action, like when user invokes an action through menu, or when the user invokes the code completion.
+.. "When the file is parsed by the infrastructure" - like the coloring, editor hints, etc. 
+. What is the scope of the code
+.. one file - usually the one visible in the editor - like coloring, code completion, editor hints
+.. many files (eg. whole project) - like find usages 
+. Does the code require Trees?
+. Will the code make any modifications into the source code (through the TreeMaker API)? 
+
+Please note that not all combinations of answers to the above questions make sense.
+
+In all cases, you will need to create a CancellableTask, which will do the work.
+
+[cols="1,1,1,1,1"]
+|===
+| | Read-only access, one file | Read-only access, more files | Write access, one file | Write access, more files
+
+| Trees, on user action 	
+| I 	
+| II 	
+| III 	
+| IV
+
+| no trees, on user action 	
+| V 	
+| V 	
+| x (no write access without trees) 	
+| x (no write access without trees)
+
+| Trees, automatically 	
+| VI 	
+| x 	
+| x 	
+| x
+
+| no Trees, automatically 	
+| x 	
+| x 	
+| x 	
+| x
+|===
+
+
+[upperroman]
+. use JavaSource.forFileObject(/given file object/).runUserActionTask(CancellableTask<CompilationController>). Learn more on CompilationController usage ?below?.
+. use JavaSource.create(ClasspathInfo, FileObject...).runUserActionTask(CancellableTask<CompilationController>). Learn more on CompilationController usage ?below?. Please see javadoc for the JavaSource.create method for more detailed information on how this works.
+. use JavaSource.forFileObject(/given file object/).runModificationTask(CancellableTask<WorkingCopy>). Learn more on WorkingCopy usage ?below?. The runModificationTask method returns ModificationResult, which represents "textual" diff for changes the CancellableTask did. To commit these changes, perform ModificationResult.commit().
+. use JavaSource.create(ClasspathInfo, FileObject...).runModificationTask(CancellableTask<WorkingCopy>). Learn more on WorkingCopy usage ?below?. The runModificationTask method returns ModificationResult, which represents "textual" diff for changes the CancellableTask did. To commit these changes, perform ModificationResult.commit(). Please see javadoc for the JavaSource.create method for more detailed information on how this works.
+. use JavaSource.create(ClasspathInfo) 

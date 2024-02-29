@@ -1,0 +1,37 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= The Javac phases
+:page-layout: wiki
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT JavacPhases
+:description: Apache NetBeans wiki JavaHT JavacPhases
+:toc: left
+:toc-title:
+:page-syntax: true
+
+
+ 
+
+When compiling source files, javac works in phases. Knowing these phases can help you make your code more performant. When writing a task which looks into the source you should think first about what phase you need javac to be in. The less work required, the sooner your task will be run by the infrastructure. The important phases are:
+
+* *parse (syntactic analysis)* - as result of this phase the AST is created and syntax errors are reported. You can think of this phase as a step enabling the usage of the com.sun.source.tree package. However, please note, that at this point the AST is NOT resolved, i.e. no type information is available. This mean that you can't tell at this point of what type an identifier is. For example you will be able to find out that there is a field of some name in the class, but will not be able to find out what class(es) can be assigned to the field. This may seem to be an uninteresting phase but, for example, some code completion code does not require type information, so keeping the javac in the parse phase speeds up the task's completion a bit.
+* *elements resolved* - the type information is added for classes (not for local classes - innerclasses contained in bodies of methods) and their members, elements (see below) are attached to the tree. It is possible to get (resolved) return type of a method, get a type of a parameter, field, etc. The content of methods is not resolved at this phase, so no type information about the statements is available. This is the correct phase for those who want to work at the level of class, methods, fields, and other signatures but who are not interested in the code in method bodies. Yes, there are such modules. Think about stuff like JavaBeans support or a module working with Javadoc.
+* *resolved (aka attributed)* - the type information is resolved for the whole source code. You can get type information for expressions inside the methods, etc. If you need to get all information about the code then this is the right phase for you. 

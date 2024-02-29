@@ -17,29 +17,15 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= NetBeans User FAQ
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wik
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki NetBeansUserFAQ
+:description: Apache NetBeans wiki NetBeansUserFAQ
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
-
-- xref:./API_Stability.adoc[API Stability]
-
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+link:https://web.archive.org/web/20180305212130/wiki.netbeans.org/NetBeansUserFAQ[Former article page]

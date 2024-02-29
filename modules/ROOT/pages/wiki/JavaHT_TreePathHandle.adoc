@@ -17,29 +17,21 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= TreePathHandle
 :page-layout: wiki
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki JavaHT TreePathHandle
+:description: Apache NetBeans wiki JavaHT TreePathHandle
 :toc: left
 :toc-title:
 :page-syntax: true
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
+As was mentioned above, it is not possible to hold Elements, TypeMirrors and Trees and to compare instances got from different javac instances.
 
-- xref:./API_Stability.adoc[API Stability]
-
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:./DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:./Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+To solve this limitation, ElementHandle and TreePathHandlewas introduced. 
+The TreePathHandle allows to pass an TreePath from one javac instance to another. 
+In the first instance of javac, create the handle using TreePathHandle.create(Element, CompilationInfo) method. 
+Keep the resulting handle, but do not hold the tree or tree path itself. 
+In the other instance of javac, use TreePathHandle.resolve(CompilationInfo) method to resolve the TreePathHandle back to the TreePath. 

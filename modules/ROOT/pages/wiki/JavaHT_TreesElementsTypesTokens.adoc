@@ -1,0 +1,83 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Trees, Elements and Types
+:page-layout: wiki
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT TreesElementsTypesTokens
+:description: Apache NetBeans wiki JavaHT TreesElementsTypesTokens
+:toc: left
+:toc-title:
+:page-syntax: true
+
+In order to efficiently model the Java 5.0 Language, three different hierarchies are defined:
+
+* *Trees* com.sun.source.tree 
++
+Represents syntactic units in the source code, like method declaration, variable declaration, statement, etc. 
+These packages describe the structure of a Java source files in detail. 
+(See xref:./JavaHT_JavacPhases.adoc[Javac Phases] for the details about what information is included in the ASTs). 
+These packages are useful if you want to deep dive into bodies of methods or if you require detailed info about the source (e.g. position of the elements etc). The package also contains visitor interfaces and scanner classes which you will need to implement and/or extend in order to walk through the AST.
+
+* *Elements* javax.lang.model.element 
++
+This package describes a high-level model of the Java, which represent classes, interfaces, enums, annotations, methods, fields. constants etc. programming language. Element utility classes, such as filters, visitors and scanners are in the javax.lang.model.util package. The Elements class in this utility package contains several methods for working with elements.
+
+* *Types* javax.lang.model.type 
++
+Represents particular types, like int, List, List<String>. With addition of generics in Java 5 the type system of the Java language got more complicated. Notice that one class (represented by an Element) can in fact represent n types. For example, MyClass<T> can be used as MyClass<String>, MyClass<JLabel>, etc. The type system is therefore defined in a separate package. This package handles primitive types, declared types, arrays, wild cards, type variables and so on. For utility classes e.g. filters, visitors and scanners look into javax.lang.model.util. For example, in the Types class in this package you can find interesting methods for answering questions like how a method of a generic class will look like in other type. ( e.g. List.<T>get(int i) will become String get( int i) in List<String>. There are many other interesting methods included in this class.
+
+* *Tokens (lexical information)* 
++
+This is the lowest level info about the source. The information is produced by the java lexer. You can get to it using the NetBeans APIs described later. What it basically does is break up the source into tokens, each of which has its position and type assigned. You should not need this info very often. But in case you need it, it is there for your use.
+
+All three hierarchies form the javac APIs. All the hierarchies are read only; if you want to make changes to the code you will have to go and consult the NetBeans API described later.
+
+
+*PITFALL - Don't try to implement the interfaces!*
+
+Even if all the APIs are done using interfaces. These interfaces are not there for users to implement them. Trying to provide your own implementation of a Tree, an Element or a Type and putting it back as a parameter to a method call to the APIs will very likely result into ClassCastException.
+
+*PITFALL - Don't relay on instanceof!*
+
+As there are several subinterfaces for various elements or trees (e.g. MethodTree, VariableTree, ExecutableElement, VariableElement, ... ) you may be tempted to test for it using instance of e.g. writing code like:
+
+[source,java]
+----
+
+if( myTree instanceof VariableTree ) {
+    ... do something with the variable ...
+}
+----
+
+This is generally incorrect. Notice that it is not guaranteed that the interfaces that all or some of the interfaces are not implemented by the same class. Therefore results of instanceof operator may not be what you would expect.
+
+Instead of using the instanceof operator rather call a getKind() method. This method returns an enum constant which describes the kind of the Tree, Element or Type correctly. See. ElementKind, TypeKind, Tree.Kind.
+
+correct for of the code above would be
+
+[source,java]
+----
+
+if( myTree.getKind() == Tree.Kind.VARIABLE ) {
+    ... do something with the variable ...
+}
+
+----

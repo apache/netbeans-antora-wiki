@@ -1,0 +1,73 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Integration with the IDE
+:page-layout: wiki
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT IDEIntegration
+:description: Apache NetBeans wiki JavaHT IDEIntegration
+:toc: left
+:toc-title:
+:page-syntax: true
+
+
+Now you know that there is the javac, how it works and what data it produces. The question is how the integration into the IDE is done. In the IDE there can be lots of modules interested in getting information about the sources. These modules have to "compete" for the information in a well defined way. This is where the javac phases come into play. A module writer can register tasks which will run after javac completes a given phase. (There is an enum for the phases JavaSource.Phase). We will talk about how to register a task later in this document. If there are more tasks for a given phase, which usually is the case, then tasks are sorted by priority. (Again there is an enum for the priorities JavaSource.Pritority).
+
+You may wonder why you should create and register tasks. Why can't you just do some blocking calls into the infrastructure? To understand that think of javac as a scarce resource which has to be accessed by one thread only at a given time. In order to manage such resources you have to introduce some mechanism to access it e.g. locks, transactions or whatever. The NetBeans java infrastructure chose to do the access using a queue of tasks which are then run in defined order (as described above). This is very similar what Java platform does in the AWT. In AWT you also call InvokeLater(Runnable) where the runnable specifies what will be done when the task comes to run. The difference between AWT InvokeLater and a task in the Java infrastructure is that unlike in AWT the registered tasks run again when the source is modified. This approach permits the infrastructure to do some important things. E.g. cancelling currently running task and run some more important task. This may happen when the user starts typing in the editor or invokes code completion explicitly. At such events the user is more interested in seeing the result of the actions immediately rather than waiting for some low priority task to be finished.
+
+*PITFALL (big one) Don't hold objects from javac when your task finishes*
+
+This may seem strange at first look. But there is a good reason for not doing it. If you will remember a Tree, Type or Element outside of the task then the remembered object will hold all the javac created objects in memory. This may be a relatively large amount of data. Especially those classes which refer to many other classes have big closure of what has to be loaded and analysed in order to resolve the class correctly. Therefore remembering javac objects is very dangerous and may produce large memory leaks. Not only that after your task finishes the data may become useless very soon (when the file changes again). So you might be working on incorrect data which may later lead to further errors. There are ways around this problem (described later) e.g. using the ElementHandle.
+
+List of packages/classes which should be used only inside of a task
+
+[source,java]
+----
+
+com.sun.javadoc.*
+com.sun.source.tree.* (except: com.sun.source.tree.Tree.Kind and com.sun.source.tree.TreeVisitor)
+com.sun.source.util.* (except: com.sun.source.util.SimpleTreeVisitor, com.sun.source.util.TreeScanner, com.sun.source.util.TreePathScanner?)
+javax.lang.model.element.* (except: ElementKind, ElementVisitor, AnnotationValueVisitor, Modifier, NestingKind)
+javax.lang.model.type.* (except TypeKind and TypeVisitor)
+javax.lang.model.util.Elements
+javax.lang.model.util.Types
+javax.tools.Diagnostics
+org.netbeans.api.java.source.CompilationController
+org.netbeans.api.java.source.CompilationInfo
+org.netbeans.api.java.source.WorkingCopy
+org.netbeans.api.java.source.ElementUtilities                           
+org.netbeans.api.java.source.CommentUtilities  
+org.netbeans.api.java.source.TreeUtilities
+org.netbeans.api.java.source.Comment           
+org.netbeans.api.java.source.TreeMaker
+----
+
+
+*PITFALL Choose priority carefully*
+
+We've already explained why choosing the correct phase is important. The proper priority is important as well. Do not set the priority of your task too high. It is usually unnecessary and the higher priorities should remain reserved for tasks which have high demand on responsibility (e.g. code completion or coloring). Tasks which do things like putting annotations into the error stripe can usually wait a bit as it is fine to show these with some delay.
+
+*PITFALL Why tasks should be fast and really cancellable*
+
+The fact that the faster your tasks work the better for the IDE's performance is obvious. However, you should also try to make the task really cancellable. I.e. when the method cancel() is called on your task you should immediately stop the task. If you keep the task running you can considerably hurt the performance of other important tasks like editing, code completion, showing errors etc.
+
+In many cases your task will need to traverse the AST. This is usually done using a visitor or scanner. In such cases you may want to look at the org.netbeans.java.source.support.CancellableTreeScanner/CancellableTreePathScanner, which will save you the work with checking for cancellation in your visitor.
+
+Another smart thing to do when coding a module containing the tasks is to run your testing copy of the IDE with -J-Dorg.netbeans.api.java.source.JavaSource.reportSlowTasks=true which will report long running tasks and those tasks which do not react to cancel by printing them into the console. 
