@@ -56,7 +56,7 @@ link:http://www.allthingsdistributed.com/2006/11/working_backwards.html[Working 
 ** xref:./FitnessViaPartnership.adoc[Fitness Via Partnership]
 ** xref:./FitnessViaPostMortem.adoc[Fitness Via PostMortem]
 ** xref:./FitnessViaTimersCounter.adoc[Fitness Via Timers Counter]
-** xref:ResourceScalability.adoc[ResourceScalability]
+** xref:./ResourceScalability.adoc[ResourceScalability]
 ** link:http://jupiter.czech.sun.com/wiki/view/PerformanceQE/LatestResults[Comparative dashboard]
 
 [NOTE]

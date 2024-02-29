@@ -112,7 +112,7 @@ image:./RuntimeWatches.png[]
 
 It is easy to enhance existing functional tests with checkpoints asserting that all probes of a kind has been released. See xref:./FitnessMemoryLeaks.adoc[FitnessMemoryLeaks].
 
-xref:./Category:Performance:ToolsAndTests.adoc[Category:Performance:ToolsAndTests] xref:./Category:Performance:HowTo.adoc[Category:Performance:HowTo]
+xref:./Category_Performance_ToolsAndTests.adoc[Category:Performance:ToolsAndTests] xref:./Category_Performance_HowTo.adoc[Category:Performance:HowTo]
 
 [NOTE]
 ====

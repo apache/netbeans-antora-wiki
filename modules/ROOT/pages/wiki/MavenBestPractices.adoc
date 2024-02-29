@@ -493,9 +493,10 @@ dependencies and their conflicts. You can open the viewer by choosing "Show
 Dependency Graph" in a project's popup menu. The graph displays the structure
 of the project's dependencies, their paths, and also indicates conflicts and
 hints on how such conflicts are typically resolved, such as adding dependency
-exclusions or declaring a direct dependency on an artifact. The video
-xref:tutorial::kb/docs/java/maven-dependencies-screencast.adoc[Working with Maven
-Dependencies] can demonstrate how to use the dependency graph viewer.
+exclusions or declaring a direct dependency on an artifact. 
+
+// empty/invalid video The video link:https://web.archive.org/web/20121018032332/https://netbeans.org/kb/docs/java/maven-dependencies-screencast.html[Working with Maven
+// Dependencies] can demonstrate how to use the dependency graph viewer. 
 
 === Utilizing and managing Maven repositories
 
@@ -576,7 +577,7 @@ about how to develop your Maven projects with the NetBeans IDE:
 * xref:tutorial::tutorials/nbm-maven-modulesingle.adoc[Creating a NetBeans Module Using Maven]
 * xref:tutorial::tutorials/nbm-maven-modulesuite.adoc[Working with NetBeans Module Suites]
 * xref:tutorial::tutorials/nbm-maven-crud.adoc[Creating NetBeans Platform CRUD Application Using Maven]
-* xref:tutorial::kb/docs/java/maven-dependencies-screencast.adoc[Video of Working with Maven Dependencies]
+// invalid video * link:https://web.archive.org/web/20121018032332/https://netbeans.org/kb/docs/java/maven-dependencies-screencast.html[Video of Working with Maven Dependencies]
 
 == Summary
 
