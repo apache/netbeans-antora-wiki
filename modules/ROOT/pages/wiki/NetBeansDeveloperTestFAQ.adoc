@@ -35,10 +35,10 @@ Contains info how to develop tests for NetBeans plugin.
 
 == Starting to writing tests for NetBeans
 
-* xref:./FirstTests.adoc[First tests]
+// not archived * xref:./FirstTests.adoc[First tests]
 * xref:./UnitVersusQaFunctionalTests.adoc[Unit versus qa-functional tests]
 * xref:./ModuleDependenciesForTests.adoc[Module dependencies for tests]
-* xref:./DebuggingTests.adoc[Debugging tests] 
+// not archived * xref:./DebuggingTests.adoc[Debugging tests] 
 
 == NetBeans Testing Infrastructure
 
@@ -58,20 +58,20 @@ xref:./UsefulTestClassesInModules.adoc[Useful test classes in modules]
 
 * xref:./InitializationOfDefaultLookup.adoc[Initialization of default Lookup]
 * xref:./LayerInitialization.adoc[Layer initialization]
-* xref:./UsingFileSystems,Masterfs.adoc[Using FileSystems, Masterfs]
+// not archived * xref:./UsingFileSystems,Masterfs.adoc[Using FileSystems, Masterfs]
 
 == Testing NetBeans Projects
 
-* xref:./ClasspathAndQueriesTesting.adoc[Classpath and queries testing]
+// not archived * xref:./ClasspathAndQueriesTesting.adoc[Classpath and queries testing]
 * xref:./TestingThingsThatUseFileObjectDataObjectDataFolder.adoc[Testing things that use FileObjects]
 * xref:./DevFaqTestDataObject.adoc[Writing Tests for DataObjects and DataLoaders]
-* xref:./ExecutingAntScriptsInTests.adoc[Executing ant scripts in tests]
+// not archived * xref:./ExecutingAntScriptsInTests.adoc[Executing ant scripts in tests]
 * xref:./DevFaqTestUnitTestFailsNoSuchMethodError.adoc[How to fix NoSuchMethodError in com/sun/tools/javac/ when running unit tests]
 
 == Test Editor
 
-* xref:./CodeCompletionProvider.adoc[Code completion provider]
-* xref:./Lexer.adoc[Lexer]
+// not archived * xref:./CodeCompletionProvider.adoc[Code completion provider]
+// not archived * xref:./Lexer.adoc[Lexer]
 
 == Testing  new Java infrastructure
 
@@ -88,9 +88,9 @@ xref:./UsefulTestClassesInModules.adoc[Useful test classes in modules]
 
 == UI Tests
 
-* xref:./FirstUITests.adoc[First UI tests]
+// not archived * xref:./FirstUITests.adoc[First UI tests]
 * xref:./VisualLibraryAndUITests.adoc[VisualLibraryAndUITests]
-* xref:./JemmyAndJellytools.adoc[Jemmy and Jellytools]
+// not archived * xref:./JemmyAndJellytools.adoc[Jemmy and Jellytools]
 
 ==Wr
 requires.nb.javac=true

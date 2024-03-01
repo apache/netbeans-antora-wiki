@@ -235,7 +235,7 @@ To complete our work, this is the XML code to put in the layer.xml in order to a
 
 -- Main.fabriziogiudici - 06 Jul 2006
 
-xref:./CategoryNeedCleanup.adoc[PENDING: Review/cleanup]
+// category only this page xref:./CategoryNeedCleanup.adoc[PENDING: Review/cleanup]
 ////
 == Apache Migration Information
 

@@ -66,7 +66,7 @@ Applies to: NetBeans 6.8 and later
 == See also
 
 * xref:./PackagingADistributableJavaApp.adoc[Packaging A Distributable Java App]
-* xref:./DevFaqHowPackageLibraries_DE.adoc[German version]
+// another langage * xref:./DevFaqHowPackageLibraries_DE.adoc[German version]
 ////
 == Apache Migration Information
 

@@ -91,7 +91,7 @@ The properties can contain several special variables which `Autoupdate` replaces
 
 == Example
 
-* Download and unzip a project xref:./Media:samplepostinstall_DevFaqNbmPostInstall.zip.adoc[samplepostinstall_DevFaqNbmPostInstall.zip]
+* Download and unzip a project link:https://web.archive.org/web/20210117212226/http://wiki.netbeans.org/wiki/images/2/23/Samplepostinstall_DevFaqNbmPostInstall.zip[samplepostinstall_DevFaqNbmPostInstall.zip]
 * Go into `samplepostinstall/main` directory
 * In `main` directory is main class `Hello` which should use most of possibilities of _post-install_ hooks
 * Using properties `mainClass`, `relativeClassPath`, `jvm.parameters` etc.
@@ -101,7 +101,7 @@ The properties can contain several special variables which `Autoupdate` replaces
 
 To see that `samplepostinstall` project in action
 
-1. download xref:./Media:org-netbeans-samplepostinstall_DevFaqNbmPostInstall.nbm.adoc[NBM]
+1. download link:https://web.archive.org/web/20210117212226/http://wiki.netbeans.org/wiki/images/2/23/Samplepostinstall_DevFaqNbmPostInstall.zip[NBM]
 2. run NetBeans IDE (6.0 or newer)
 3. invoke _Tools|Plugins_ and switch to _Download_ tab
 4. add the downloaded NBM

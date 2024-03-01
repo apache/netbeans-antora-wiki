@@ -108,7 +108,7 @@ Use-cases related to tasks, repositories and queries management.
 
 *Scenario:*
 
-* User finds the task he wants to add (see xref:./TaskFocusedNetBeansUseCases.adoc#Search_in_Repository.adoc[Search in Repository use-case])
+* User finds the task he wants to add (see xref:#Search_in_Repository[Search in Repository use-case])
 * The user adds the task to the Task Dashboard view by using the 'Add to Task Dashboard' action on selected task 
 
 
@@ -343,7 +343,7 @@ _TODO: can be one task in several categories?_
 
 *Scenario:*
 
-* The user can edit 'Schedule date', 'Due date' or 'Estimated time' attributes of the task as a part of xref:./TaskFocusedNetBeansUseCases.adoc#Edit_Task[Edit Task use-case]  
+* The user can edit 'Schedule date', 'Due date' or 'Estimated time' attributes of the task as a part of xref:#Edit_Task[Edit Task use-case]  
 
 
 [[Repositories_Management]]
@@ -428,7 +428,7 @@ _TODO: can be one task in several categories?_
 
 *Scenario:*
 
-* User specifies a query with requested parameters (see the xref:./TaskFocusedNetBeansUseCases.adoc#Search_in_Repository[Search in Repository use-case])
+* User specifies a query with requested parameters (see the xref:#Search_in_Repository[Search in Repository use-case])
 * Using the 'Add query to Task Dashboard' action user adds the query to the Task Dashboard view
 
 

@@ -83,7 +83,7 @@ See also:
 
 * `harness/README` in your IDE distribution
 * the *Help > Contents* pages on modules and applications
-* xref:../projects/platform/articles/installation.adoc[Installation Structure]
+* xref:front::projects/platform/articles/installation.adoc[Installation Structure]
 
 === No Suites In NetBeans IDE Sources
 

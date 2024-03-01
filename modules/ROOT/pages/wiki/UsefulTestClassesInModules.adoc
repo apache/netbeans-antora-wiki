@@ -1,0 +1,47 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Useful Test Classes in Modules
+:page-layout: wiki
+:page-tags: wik
+:jbake-status: published
+:keywords: Apache NetBeans wiki UsefulTestClassesInModules
+:description: Apache NetBeans wiki UsefulTestClassesInModules
+:toc: left
+:toc-title:
+:page-syntax: true
+
+
+If you are writing unit tests, here are some helpful classes present in modules (you need a <test/> dependency in your project.xml):
+
+* org.openide.util.test.MockChangeListener
+* org.openide.util.test.MockPropertyChangeListener
+* org.openide.util.test.MockLookup 
+
+Don't be shy to add your own utilities to the appropriate modules - anything which makes it faster and less trouble-prone to write new unit tests will be good for product quality. If they are of general interest please add them here. (Some day we should put together Javadoc for them.)
+
+Do you want to know who is using unit test classes? Run
+
+ant -f nbbuild/build.xml generate-golden-files
+
+and examine nbbuild/build/generated/test-deps.txt to find out.
+Since at least for now these utilities are only available for netbeans.org modules, there is no serious compatibility issue if you need to make some signature changes - but please do update existing users. 
+You can find these by opening all projects listed as using the class in test-deps.txt and then using Find Usages to get the details.
+
+For now you need to run test-build in the module with the test API before compiling your own tests. https://bz.apache.org/netbeans/show_bug.cgi?id=102810[issue #102810].
