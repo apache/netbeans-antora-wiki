@@ -137,7 +137,7 @@ To run such test:
 
 Applies to: NetBeans 6.5 and above
 
-xref:./Category:Performance:HowTo.adoc[Category:Performance:HowTo]
+xref:./Category_Performance_HowTo.adoc[Category:Performance:HowTo]
 ////
 == Apache Migration Information
 

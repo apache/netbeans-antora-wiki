@@ -79,7 +79,7 @@ Note that all of these are _hints_ - a property editor is free to ignore them or
 
 |`java.awt.Image` |`descriptions` |`java.lang.String[]` |An array of descriptions corresponding to the array of images passed in the `images` hint 
 
-|`java.lang.Object` (yes, you can have a property of Object and there is an editor for it - the user can select from all objects of a type in the xref:./DevFaqDefaultLookup.adoc[default Lookup] or a specific lookup [see below] using a combo box) |`superClass` |`java.lang.Class` |The superclass, passed to `Lookup.getDefault().lookupAll()` to find all possible values 
+|`java.lang.Object` (yes, you can have a property of Object and there is an editor for it - the user can select from all objects of a type in the default Lookup or a specific lookup [see below] using a combo box) |`superClass` |`java.lang.Class` |The superclass, passed to `Lookup.getDefault().lookupAll()` to find all possible values 
 
 |`java.lang.Object` |`nullValue` |`java.lang.Object` (must be of the same type as the type passed in the `superClass` hint) |The value the editor should show if the property initially has a value of null 
 
@@ -87,6 +87,8 @@ Note that all of these are _hints_ - a property editor is free to ignore them or
 
 |===
 
+
+// xref:./DevFaqDefaultLookup.adoc missing in archive
 ////
 == Apache Migration Information
 

@@ -29,7 +29,7 @@
 :page-wikidevsection: _key_bindings
 :page-position: 6
 
-For an existing release you can look at e.g. xref:KeymapProfileFor60.adoc[KeymapProfileFor60] to see the specification.
+For an existing release you can look at e.g. xref:./KeymapProfileFor60.adoc[KeymapProfileFor60] to see the specification.
 
 If you are developing a module for NetBeans development builds,
 you can just look at

@@ -1,0 +1,71 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= VisualLibraryAndUITests
+:page-layout: wiki
+:page-tags: wik
+:jbake-status: published
+:keywords: Apache NetBeans wiki VisualLibraryAndUITests
+:description: Apache NetBeans wiki VisualLibraryAndUITests
+:toc: left
+:toc-title:
+:page-syntax: true
+
+
+I have created an application using Visual Library. This has a toolbar and when a button is pressed on the toolbar and then on the visual library scene, a dialog box pop up to enter some details. after entering the details a widget will be created in the visual library scene. This application functionality need to be tested using UI tests. Following is a sample code that will perform this test.
+
+[source,java]
+----
+Scene scene = getObjectScene(); //get the visual libray scene
+
+JToolBar toolbar = getDiagramToolbar();//get the toolbar of the visual library scene
+
+JComponentOperator toolbarOperator = new JComponentOperator(toolbar);
+final WidgetOperator sceneOperator = new WidgetOperator(scene);
+
+int buttonIndex = 3;//button index of toolbar button
+
+JToggleButtonOperator button = new JToggleButtonOperator(toolbarOperator, buttonIndex);
+
+button.push();
+        
+new Thread(new Runnable() {
+   @Override
+   public void run() {
+      sceneOperator.clickMouse(1);//code which clicks to open panel
+      //because it is a modal dialog and you need to handle opening of it in separate thread.
+   }
+}).start();
+
+NbDialogOperator nbdo = new NbDialogOperator("My Title");
+
+JButtonOperator jbo = new JButtonOperator(nbdo, "Inside panel");
+----
+
+
+In general, if for example a modal dialog is opened when user clicks JButton, one has to use
+
+[source,java]
+----
+JButtonOperator jbo = new JButtonOperator(nbdo, "Browse");
+
+jbo.pushNoBlock();
+----
+
+to satisfy that opening of modal dialog doesn't stop further execution of test case. 

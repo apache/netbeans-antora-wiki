@@ -1,0 +1,151 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= ModuleDependenciesForTests
+:page-layout: wiki
+:page-tags: wik
+:jbake-status: published
+:keywords: Apache NetBeans wiki ModuleDependenciesForTests
+:description: Apache NetBeans wiki ModuleDependenciesForTests
+:toc: left
+:toc-title:
+:page-syntax: true
+
+== Module Dependencies for Tests
+
+Test dependencies are defined in project.xml for projects of NetBeans 6.x. The new variant is recommended. The test dependencies allows to define:
+
+* Compile and runtime dependency to module.
+* Compile and runtime dependency for tests of modules.
+* Recursive dependecy to module. 
+
+For migrating test dependencies from nbproject/project.properties to nbproject/project.xml was implemented fix-test-dependencies ant task in NetBeans module project. You can do it from command line:
+
+[source,shell]
+----
+cd your_nbm_project_dir
+ant fix-test-dependencies
+----
+
+GUI for adding/removing test dependencies is implemented in 6.9.1 (possibly earlier?). It can also be done manually by editing project.xml file. The tags for test dependencies (defined in xml schema) are described below:
+
+[source,xml]
+----
+    <test-dependencies>
+        <! -- Dependencies for a source root with tests: -->
+        <test-type>
+            <!--
+            Name of test type. Normally you will use 'unit'.
+            netbeans.org modules also support 'qa-functional' test-type.
+            -->
+            <name>unit</name>
+            <!-- A dependency on a module or its tests: -->
+            <test-dependency>
+                <!-- Identification of module our tests depend upon: -->
+                <code-name-base>org.netbeans.modules.java.project</code-name-base>
+                <!-- Include also transitive module dependencies of that module: -->
+                <recursive/>
+                <!-- Always available when running, but to include at compile time also: -->
+                <compile-dependency/>
+                <!-- To request the tests of that module, rather than itself: -->
+                <test/>
+            </test-dependency>
+        </test-type>
+    </test-dependencies>
+----
+
+Source root for a test type: {project.dir}/test/${test-type.name}/src {project.dir}/test/unit/src - source root for unit test
+
+For example you have three modules with code name bases A,B,C. A depends on B, B depends on C. You want to add test dependencies to unit test type of module D:
+
+*Use case 1:* Runtime dependency on module.
+
+[source,xml]
+----
+<test-type>
+ <name>unit</name>
+ <test-dependency>
+    <code-name-base>A</code-name-base>
+ </test-dependency> 
+</testtype>
+----
+
+* Runtime classpath is D + A.
+* Compile classpath is D. 
+
+
+*Use case 2:* Runtime dependency on a module and its recursive runtime classpath.
+
+[source,xml]
+----
+<test-type>
+ <name>unit</name>
+ <test-dependency>
+    <code-name-base>A</code-name-base>
+    <recursive/>
+ </test-dependency> 
+</test-type>
+----
+
+* Runtime classpath is A + B + C + D.
+* Compile classpath is D. 
+
+
+*Use case 3:* Compile and runtime dependency on a module its recursive runtime classpath.
+
+[source,xml]
+----
+<test-type>
+ <name>unit</name>
+ <test-dependency>
+    <code-name-base>A</code-name-base>
+    <compile-dependency/>
+    <recursive/>
+ </test-dependency> 
+</test-type>
+----
+
+* Runtime classpath is A + B + C + D.
+* Compile classpath is A + B + C + D. 
+
+
+*Use case 4:* Compile and runtime dependency on a module, its recursive runtime classpath and tests.
+
+[source,xml]
+----
+<test-type>
+ <name>unit</name>
+ <test-dependency>
+    <code-name-base>A</code-name-base>
+    <compile-dependency/>
+    <recursive/>
+    <test/>
+ </test-dependency> 
+</test-type>
+----
+
+* Runtime classpath is A + B + C + D + A/unit tests.
+* Compile classpath is A + B + C + D + A/unit tests. 
+
+== Dependencies for non modularized libraries
+
+External testing libraries (are not NetBeans modules) can be specified in nbproject/project.properties file. For unit test are defined two properties
+
+* test.unit.cp.extra - compilation extra test classpath, it is also of runtime classpath
+* test.unit.run.cp.extra - runtime extra test classpath 

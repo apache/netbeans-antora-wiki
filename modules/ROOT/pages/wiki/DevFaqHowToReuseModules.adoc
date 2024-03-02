@@ -63,7 +63,9 @@ Once projects and clusters are added to Libraries and checked, they behave just 
 
 You can actually use older platform as long as you configure it to use newer harness (either via `Tools -> NetBeans Platforms` in IDE or by specifying xref:./DevFaqNbPlatformAndHarnessMixAndMatch.adoc[harness.dir]) and you develop in new enough IDE.
 
-If you cannot even use new harness and/or IDE, you have to use _suite chaining_, build your own platform and depend on it. See `harness/README` file for details. See also xref:./HowToReuseModules.adoc[HowToReuseModules].
+If you cannot even use new harness and/or IDE, you have to use _suite chaining_, build your own platform and depend on it. See `harness/README` file for details. 
+
+// outdated skipping ref to this file See also xref:./HowToReuseModules.adoc[HowToReuseModules].
 
 == I want to use modules installed in my IDE in my RCP applications. How to do it?
 

@@ -93,7 +93,7 @@ MockLookup and other xref:./UsefulTestClassesInModules.adoc[classes mentioned on
 
 == Converting Tests for Applications Which Previously Used XTest
 
-Essentially, you need only remove the XTest build and configuration files from your modules and replace them with a few lines of code in your tests' `suite()` method.  More information is available in the xref:XTestReplacementCookBook.adoc[XTest Replacement Cookbook]
+Essentially, you need only remove the XTest build and configuration files from your modules and replace them with a few lines of code in your tests' `suite()` method.  More information is available in the xref:./XTestReplacementCookBook.adoc[XTest Replacement Cookbook]
 ////
 == Apache Migration Information
 

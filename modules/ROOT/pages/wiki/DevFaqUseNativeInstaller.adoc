@@ -202,8 +202,8 @@ And , that's it, the NetBeans Lookup system will read it and includes that provi
 
 === A sample project having this UpdateProvider
 
-* Sources of `Foo Native Component Provider`: xref:./Media:fooupdateprovider_FaqDevComponentWithCustomInstaller.zip.adoc[fooupdateprovider_FaqDevComponentWithCustomInstaller.zip]
-* Binary NBM to playing with: xref:./Media:org-netbeans-modules-fooupdateprovider_FaqDevComponentWithCustomInstaller.nbm.adoc[org-netbeans-modules-fooupdateprovider_FaqDevComponentWithCustomInstaller.nbm]
+* Sources of `Foo Native Component Provider`: link:https://web.archive.org/web/20210118062707/http://wiki.netbeans.org/wiki/images/f/ff/Org-netbeans-modules-fooupdateprovider_FaqDevComponentWithCustomInstaller.nbm[fooupdateprovider_FaqDevComponentWithCustomInstaller.zip]
+* Binary NBM to playing with: link:https://web.archive.org/web/20210117212226/http://wiki.netbeans.org/wiki/images/c/c2/Fooupdateprovider_FaqDevComponentWithCustomInstaller.zip[org-netbeans-modules-fooupdateprovider_FaqDevComponentWithCustomInstaller.nbm]
 
 === Important Note
 

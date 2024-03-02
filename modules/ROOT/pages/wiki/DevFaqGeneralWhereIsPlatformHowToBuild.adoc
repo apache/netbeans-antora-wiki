@@ -67,7 +67,7 @@ This will build the platform into the <pre>netbeans</pre> subdirectory (i.e. `{n
 
 It's also possible to create platforms based on a different subset of the NetBeans project.  Hints for doing this can be found here:
 
-* xref:WorkingWithNetBeansSources.adoc[Working with NetBeans Sources]
+* xref:./WorkingWithNetBeansSources.adoc[Working with NetBeans Sources]
 
 == Why would you want to build your application on a separate platform instead of the IDE as a platform?
 
@@ -381,16 +381,3 @@ See also:
 * xref:./DevFaqSignNbm.adoc[Can I sign NBMs I create?] for tasks to sign all your nbm files
 * xref:./DevFaqCustomizeBuild.adoc[How can I customize the build process?] To add any custom task you might have to the build process.
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqGeneralWhereIsPlatformHowToBuild[http://wiki.netbeans.org/DevFaqGeneralWhereIsPlatformHowToBuild] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-16T19:29:10Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

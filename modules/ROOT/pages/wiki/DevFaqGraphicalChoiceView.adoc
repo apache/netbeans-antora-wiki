@@ -54,17 +54,4 @@ java.lang.ClassCastException: java.lang.String cannot be cast to org.openide.exp
 ----
 
 Finally switch to the "Source" view and fix the import errors.
---xref:./User:Tboudreau.adoc[Tboudreau] 02:40, 24 January 2010 (UTC)
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqGraphicalChoiceView[http://wiki.netbeans.org/DevFaqGraphicalChoiceView] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-01-24T02:40:27Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+--Tim Boudreau
