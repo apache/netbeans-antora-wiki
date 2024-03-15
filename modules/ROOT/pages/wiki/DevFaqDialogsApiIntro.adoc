@@ -29,13 +29,16 @@
 :page-wikidevsection: _dialogs_api
 :page-position: 1
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 The link:https://bits.netbeans.org/dev/javadoc/org-openide-dialogs/[Dialogs API] provides support for dialogs and wizards.
 
 Whenever you'd use JDialog or JOptionPane in Swing, using the Dialogs API provides some alternatives.  These are easier to use as they automatically take care of centering and other display details, but also allow you to later plug in a different implementation of how they're actually "displayed."  Instead of showing them on screen, for example, you could xref:./DevFaqLookupHowToOverride.adoc[override the default] `DialogDisplayer` class to specify your own that logged them to a printer or read them aloud using speech synthesis.
 
 I'll illustrate three of the most common use cases.  The first is when you want to simply show a dialog box with some text:
-image:./OkDialog.png[]
+image:wiki/OkDialog.png[]
 
 [source,java]
 ----
@@ -47,7 +50,7 @@ DialogDisplayer.getDefault().notify(nd);
 
 For a question to users, you'll use a similar mechanism.  
 
-image:./YesNoDialog.png[]
+image:wiki/YesNoDialog.png[]
 
 The `msg` argument is optional here:
 
@@ -66,7 +69,7 @@ if (NotifyDescriptor.OK_OPTION == result) {
 
 And to request simple user input:
 
-image:./InputDialog.png[]
+image:wiki/InputDialog.png[]
 
 [source,java]
 ----
@@ -86,7 +89,7 @@ String userInput = input.getInputText();
 
 And finally, the DialogDescriptor subclass, handles complex cases (there are many variants here; see link:https://bits.netbeans.org/dev/javadoc/org-openide-dialogs/org/openide/DialogDescriptor.html[Dialog Descriptor's Javadoc] for details):
 
-image:./CustomPanelDialog.png[]
+image:wiki/CustomPanelDialog.png[]
 
 [source,java]
 ----

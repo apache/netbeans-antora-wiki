@@ -29,6 +29,9 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 19
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 Assuming you are using version 6.8 or later, this is supported by the module development infrastructure:
 
@@ -47,13 +50,13 @@ Source: link:http://netbeans.org/projects/platform/lists/dev/archive/2010-03/mes
 
 It's possible to use non-netbeans.org modules (yours or 3rd party) directly in your suite and perform this configuration via the GUI. To do this, go to the `Properties` of your suite project, `Libraries` tab:
 
-image:./reuse-modules-1_DevFaqHowToReuseModules.png[]
+image:wiki/reuse-modules-1_DevFaqHowToReuseModules.png[]
 
 If you have sources of modules you want to reuse, click `Add Project...` button and browse for the suite or standalone module project you want to add.
 
 If you want to use 3rd party binary modules, just unpack them into a cluster folder somewhere on your disk. Preferably put the cluster under your suite's root so that you can use relative paths, which makes setup in a team environment easier. Then click the `Add Cluster...` button and browse for the cluster folder:
 
-image:./reuse-modules-2_DevFaqHowToReuseModules.png[]
+image:wiki/reuse-modules-2_DevFaqHowToReuseModules.png[]
 
 You can also add sources and/or Javadoc for binary modules, just like for the whole NetBeans Platform.
 

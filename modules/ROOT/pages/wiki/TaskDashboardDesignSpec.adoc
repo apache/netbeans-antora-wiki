@@ -30,6 +30,10 @@
 :toc-title:
 :experimental:
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
 [[Description_of_this_document]]
 == Description of this document
 
@@ -43,7 +47,7 @@ Dashboard window in Netbeans.
 
 The base look and feel of the Task Dashboard is shown here:
 
-image:./Task_Dashboard_MarkedUp.png[]
+image:wiki/Task_Dashboard_MarkedUp.png[]
 
 
 [[User_Interface_Description]]
@@ -76,7 +80,7 @@ numerical callouts shown therein:
 
 . Filtering: There are two ways to globally filter the task dashboard.  These filters will apply to the issues that appear both in Categories as well as in the Repository Query Results.  The first filter is a dynamic text filter, shown as a text box.  As you enter letters into this textbox, they are highlighted in relevant results, and non-matching results disappear.  The numbers for results and changed also update to show the number of matches based on the current query.  The second capability is a dropdown filter that gives the following options:
 
-image:./Filter_Menu.png[]
+image:wiki/Filter_Menu.png[]
 
 Notes on "Status": The idea behind status is that there will be the ability to
 specify, on a repository-by-repository basis, which statuses equate to "open"
@@ -87,7 +91,7 @@ these statuses (e.g. "resolved", "fixed", "completed).
 
 . Query Results: The query results show up both as summary text (i.e. the number of results and number of changed issues), as well as individual nodes that can be opened, edited, and/or categorized.  Users can also schedule an issue, that is, give it a due date which can be used to organize or filter it later.  It is also possible to right-click the Repository and group results by relevant attributes like priority:
 
-image:./Group_Priority.png[]
+image:wiki/Group_Priority.png[]
 
 
 
@@ -113,7 +117,7 @@ A category has the ability to show "Local Tasks", that is, tasks that are not pu
 
 Each of the elements in the Task Dashboard have context menus associated with them.  These are shown here:
 
-image:./TaskDashboard_Menus.png[]
+image:wiki/TaskDashboard_Menus.png[]
 
 Note on Repository Grouping: Each repository can supply, by API call, a set of grouping parameters.  Likely parameters are "Priority", "Severity", or project area/module.  Grouping is done via context menu.  When grouped, each named query node will have subnodes for each value of the grouping parameter, under which the relevant query results will be shown.
 

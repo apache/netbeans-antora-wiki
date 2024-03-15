@@ -29,6 +29,9 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 44
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 == Keymap category for @ActionID
 
@@ -50,7 +53,7 @@
 *Example*
 The following action is shown in the localised "Shiny new category" category.
 
-image:./keymapshinynewcategory.png[]
+image:wiki/keymapshinynewcategory.png[]
 
 [source,java]
 ----
@@ -146,7 +149,7 @@ Bundle:
 OptionsDialog/Actions/edit.multicaret=Edit (Multicaret)
 ----
 
-image:./EditorActionRegistrationKeymapCategory.png[]
+image:wiki/EditorActionRegistrationKeymapCategory.png[]
 
 == Other resources
 

@@ -28,6 +28,9 @@
 :toc-title:
 :page-syntax: true
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 In this article you will learn how to import, create and work with Apache Maven
 based projects in NetBeans IDE. To quote the link:https://maven.apache.org/[Maven project site], "Maven is a software project management and comprehension tool.
@@ -51,7 +54,7 @@ the subject.
 
 The NetBeans IDE can automatically recognize any existing Apache Maven project. If you have such a project, just use the Open Project dialog (to be invoked via Ctrl-Shift-O keyboard shortcut, icon in the toolbar or the File/Open project menu item). All the recognized Maven projects should be marked by the Maven project type icon. If you select such folder in the file chooser, you get the project's name and a list of subprojects on the right hand side.
 
-image::./Open_MavenBestPractices.png[]
+image::wiki/Open_MavenBestPractices.png[]
 
 As you can see in the picture above, the project name for Maven-based projects
 is composed of 2 elements: the POM <name> element (if not present, then
@@ -107,7 +110,7 @@ Apart from working with existing projects, the IDE also offers a way to create
 new Maven based projects from scratch. The projects are generated using
 maven-archetype-plugin.
 
-image::./Create_MavenBestPractices.png[]
+image::wiki/Create_MavenBestPractices.png[]
 
 To create a new project, invoke the File/New Project menu item, the action in
 toolbar or press Ctrl-Shift-N shortcut. In the list of available project types
@@ -168,7 +171,7 @@ You can customize 3 basic properties
 
 If you have modified the default value in any way, the action in the list will be shown in bold letters to show that you have a project specific mapping for the action.
 
-image::./Actions_MavenBestPractices.png[]
+image::wiki/Actions_MavenBestPractices.png[]
 
 Apart from the default action mappings, you can define custom executions for
 the project. That's done by clicking on the Add Custom... button. Such custom
@@ -197,7 +200,7 @@ And what does the configuration bring to your project anyway?
 * Every action triggered with the configuration will have it's profile(s) also activated for building, running or debugging the application. Thus you can have alternate setup for various plugins and easily switch between them.
 * Once configurations are enabled, other panels in the Project properties dialog (currently Actions panel for all project packagings and the Run panel for "jar" packaging) add a combobox with existing configurations and let you customize the IDE actions on a per configuration basis. For example each configuration can run the project with different main class setup. Or with different parameters passed into the main class.
 
-image::./Configurations_MavenBestPractices.png[]
+image::wiki/Configurations_MavenBestPractices.png[]
 
 Once enabled, the activated configuration can be switched by accessing the popup menu of the project. Right click the project node and select "Set Configuration" menu item. From the list of existing configurations, select the one you want to activate. If your project is setup to be the main project in the IDE (it's name is shown in bold letters), you can also quickly switch configurations using a combo box in the toolbar. Please note that due to a bug in NetBeans 6.1, the toolbar editor will not immediately appear for your main project after enabling configurations. A workaround is to restart the IDE or set a different project as main and then set it back to the old project.
 
@@ -240,7 +243,7 @@ project. Right click on the project node and select "Properties" or use the
 File/Project Properties main menu item to invoke the Project properties dialog.
 On the left hand side, select the panel named "Frameworks".
 
-image::./Frameworks_MavenBestPractices.png[]
+image::wiki/Frameworks_MavenBestPractices.png[]
 
 The panel on the right hand side lists the web frameworks that are already
 included in the project. You can customize the frameworks there. Or add more
@@ -307,7 +310,7 @@ along with a description (as described in the schema).
 
 NOTE: If you want to include an additional Maven related XML schema, please refer to "Tools/DTDs and XML Schemas" window. It contains multiple catalogs with registered DTDs and Schemas. Once you add your custom schema, the IDE should recognize your documents.
 
-image::./Completion-schema_MavenBestPractices.png[]
+image::wiki/Completion-schema_MavenBestPractices.png[]
 
 Additionally the Maven support attempts to utilize the sources of information it has about the project to provide more help.
 That includes:
@@ -315,7 +318,7 @@ That includes:
 * List of known Dependency groupId, artifactId (for given groupId) and version (for given groupId and artifactId)
 * List of known Maven Plugin groupId, artifactId (for given groupId) and version (for given groupId and artifactId)
 
-image::./Completion-value_MavenBestPractices.png[]
+image::wiki/Completion-value_MavenBestPractices.png[]
 
 * List of known Repository URLs, and a list of values for repository's update policy.
 * List of Dependency scopes
@@ -324,7 +327,7 @@ image::./Completion-value_MavenBestPractices.png[]
 * Additionally in settings.xml, list of profiles and available plugin groups.
 * Last but not least, for the most popular plugins (must be present in central maven repository) also the names of configuration parameters for the plugin's goals.
 
-image::./Completion-param_MavenBestPractices.png[]
+image::wiki/Completion-param_MavenBestPractices.png[]
 
 === Hyperlinking
 
@@ -343,7 +346,7 @@ etc. Any of the URLs will be opened in your default web browser.
 * If the pom.xml file contains declaration of sub modules, the link to the
 module opens the submodule's pom.xml file in editor.
 
-image::./Hyperlink_MavenBestPractices.png[]
+image::wiki/Hyperlink_MavenBestPractices.png[]
 
 === Code templates
 
@@ -360,7 +363,7 @@ version. Please note that you can use code completion to get help on the
 groupId/artifactId/version values. Other default code templates include
 profile, repository, plugin and plugin execution code snippets.
 
-image::./Codetemplates_MavenBestPractices.png[]
+image::wiki/Codetemplates_MavenBestPractices.png[]
 
 The code template expansion key is configurable in the Tools/Options dialog,
 the Editor/Code templates tab. At the same place you can also edit the existing
@@ -381,7 +384,7 @@ also knows about what classes are used in the artifacts in the repository. The
 hint makes use of that information and is capable of finding artifacts in
 repositories that contain any unknown class or interface.
 
-image::./Hint_MavenBestPractices.png[]
+image::wiki/Hint_MavenBestPractices.png[]
 
 When the hint is invoked, the remote repositories are searched for the given
 term and displayed in a dialog. All artifacts that contains such class are
@@ -389,7 +392,7 @@ returned in a list grouped by groupId and artifactId. When a matching artifact
 is selected, it's added to the project's pom.xml file as a dependency and
 downloaded (if not present locally).
 
-image::./Hintdialog_MavenBestPractices.png[]
+image::wiki/Hintdialog_MavenBestPractices.png[]
 
 TIP: You can use this feature as a quick and easy way of adding dependencies to
 your project. However the assumption is that you know a name of a class from
@@ -429,7 +432,7 @@ applicable dependency entries to save display space for you.
 * `NetBeans 7.0:` All "Libraries" nodes as part of Maven projects were renamed into "Dependencies".
 * `NetBeans 7.1:` Additional node "Java Dependencies" was added.
 
-image::./Dependencyinfo_MavenBestPractices.png[]
+image::wiki/Dependencyinfo_MavenBestPractices.png[]
 
 When you expand the Libraries node you get a flat listing of your project's
 dependencies. The direct dependencies (listed in your POM) are in the
@@ -478,7 +481,7 @@ Alternatively you can also checkout the sources of the artifact on your local
 machine. That's useful for debugging and submitting patches to 3rd party
 projects.
 
-image::./Dependency-checkout_MavenBestPractices.png[]
+image::wiki/Dependency-checkout_MavenBestPractices.png[]
 
 The version control checkout is using
 link:https://maven.apache.org/scm/scms-overview.html[Maven SCM] on the
@@ -518,14 +521,14 @@ leaves in the tree and single versions of the given artifact. Small icon
 annotations designate if the artifact has sources and javadoc and the text
 annotation shows what packaging the artifact is.
 
-image::./Repobrowser_MavenBestPractices.png[]
+image::wiki/Repobrowser_MavenBestPractices.png[]
 
 At the top of the browser there are 3 icons.
 
 * The left most is "Refresh" which will reindex the local repository (local repository has a brown/orange repository icon in the browser) and will check the remote locations for index updates. If there are updates or the index was not present locally yet, new index is retrieved.
 * The middle icon represents the "Add Repository" action. When you click it, a dialog shown which allows you to enter new repository locations.
 
-image::./Repository-custom_MavenBestPractices.png[]
+image::wiki/Repository-custom_MavenBestPractices.png[]
 
 TIP: If you have your own company repository manager (you should have one
 ideally, there are multiple one to choose from:
@@ -552,7 +555,7 @@ One additional action is that is worth mentioning here the "Add as Dependency
 To" action. You will be presented with a dialog popup where you can easily
 choose which project(s) you want to add the selected artifact to.
 
-image::./Addasrepository_MavenBestPractices.png[]
+image::wiki/Addasrepository_MavenBestPractices.png[]
 
 == License Header
 

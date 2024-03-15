@@ -30,6 +30,9 @@
 :toc-title:
 :experimental:
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 This is a continuation of the
 xref:./FitnessViaPartnership.adoc[FitnessViaPartnership] that enhances the
@@ -42,7 +45,7 @@ problems. Done as part of xref:./Fitness.adoc[performance work for 6.8].
 
 == How it works?
 
-image:./notification_FitnessViaPostMortem.png[]
+image:wiki/notification_FitnessViaPostMortem.png[]
 
 * Detects that AWT thread is blocked for more than certain time (100ms in dev builds, 10s in final production build)
 * Starts self-sampling profiling
@@ -140,20 +143,20 @@ We need help from profiler team to improve the snapshots themselves or simplify 
 [[Plan_to_Address_Weird_Behaviour]]
 ==== Plan to Address Weird Behaviour
 
-* image:./yes.png[] Have a meeting with profiler guys
-* image:./yes.png[] 'Jarda': Write the plan
-* image:./yes.png[] *native wait* - treat Object.wait and _link:[native.html[[native]_ state equally (e.g. zero execution time)
-* image:./yes.png[] *two times* - output two times (execution time, wall clock time) into the .nps file
-* image:./yes.png[] *display two times* - make sure the UI represents the two times in some columns
-* image:./yes.png[] *no sum for threads* - the sum of all threads execution is incorrect (in sampling or on multicore CPUs), thus hide it
-* image:./yes.png[] *JMX* - rewrite the sampler to JMX. This will open the door to possible use in VisualVM as well as provide more info about the real thread execution time
-* image:./yes.png[] *overhead* is slightly less than 10% - _Jarda_: measure overhead of sampling (I ran the sieve of erastothenes for first 100000 numbers. Without self profiling 4.1s+-100ms with profiling 4.3ms+-100ms)
-* image:./yes.png[] *inaccuracy*: compute average snapshot time and ignore intervals that are far (more than 30ms) from average. Potentially don't report these snapshots at all as a slowdown.
+* image:wiki/yes.png[] Have a meeting with profiler guys
+* image:wiki/yes.png[] 'Jarda': Write the plan
+* image:wiki/yes.png[] *native wait* - treat Object.wait and _link:[native.html[[native]_ state equally (e.g. zero execution time)
+* image:wiki/yes.png[] *two times* - output two times (execution time, wall clock time) into the .nps file
+* image:wiki/yes.png[] *display two times* - make sure the UI represents the two times in some columns
+* image:wiki/yes.png[] *no sum for threads* - the sum of all threads execution is incorrect (in sampling or on multicore CPUs), thus hide it
+* image:wiki//yes.png[] *JMX* - rewrite the sampler to JMX. This will open the door to possible use in VisualVM as well as provide more info about the real thread execution time
+* image:wiki//yes.png[] *overhead* is slightly less than 10% - _Jarda_: measure overhead of sampling (I ran the sieve of erastothenes for first 100000 numbers. Without self profiling 4.1s+-100ms with profiling 4.3ms+-100ms)
+* image:wiki//yes.png[] *inaccuracy*: compute average snapshot time and ignore intervals that are far (more than 30ms) from average. Potentially don't report these snapshots at all as a slowdown.
 
 Tentatively:
 
 * *collect wait info*: generate a subnode below Object.wait() or monitor enter(?) with a subtree of other threads activity during the blocked time
-* image:./yes.png[] *format*: change the sampling format to be (more or less) GZip of stacktraces. Processing to tree structure would occur later. Done for NetBeans 6.9
+* image:wiki/yes.png[] *format*: change the sampling format to be (more or less) GZip of stacktraces. Processing to tree structure would occur later. Done for NetBeans 6.9
 * xref:./FitnessViaPostMortem.adoc[FitnessViaPostMortem]
 
 
