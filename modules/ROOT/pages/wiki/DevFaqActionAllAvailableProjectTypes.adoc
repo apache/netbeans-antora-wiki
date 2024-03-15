@@ -29,6 +29,10 @@
 :page-wikidevsection: _project_types
 :page-position: 7
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
 * create a new nbm-module using the "_New Project..._"-wizard and choose your target platform
 * create a layer.xml using the "_New File..._"-wizard
 * expand the nodes "_Important Files/XML Layer/<this layer in context>/Projects_" within the project view
@@ -38,7 +42,7 @@ The project type can be used for extending the project properties - See xref:./D
 
 == Example of some available types in NetBeans 7.2
 
-image:./ChildnodesRepresentingProjectTypes.jpg[]
+image:wiki/ChildnodesRepresentingProjectTypes.jpg[]
 
 [source,java]
 ----

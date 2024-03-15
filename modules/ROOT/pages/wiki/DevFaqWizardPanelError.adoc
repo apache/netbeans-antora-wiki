@@ -29,7 +29,9 @@
 :page-wikidevsection: _wizards_and_templates
 :page-position: 4
 
-
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 Set the `WizardPanel_errorMessage` property in the WizardPanel instance that is related to the displayed panel. 
 
@@ -41,7 +43,7 @@ Example:
 
 * you can use `WizardDescriptor.PROP_ERROR_MESSAGE` instead of "WizardPanel_errorMessage".
 * beside `WizardDescriptor.PROP_ERROR_MESSAGE` you can also use `WizardDescriptor.PROP_WARNING_MESSAGE` for warning messages or `WizardDescriptor.PROP_INFO_MESSAGE` for information messages.
-* All kind of messages will be badged with appropriate icons: error image:./Error.gif[], warning image:./Warning.gif[], info image:./info.png[]
+* All kind of messages will be badged with appropriate icons: error image:wiki/Error.gif[], warning image:wiki/Warning.gif[], info image:wiki/info.png[]
 * To clean the message just call `wizardDescriptor.putProperty(WizardDescriptor.PROP_ERROR_MESSAGE, null);`
 
 You can obtain the instance of `WizardDescriptor` in the `WizardDescriptor.Panel.readSettings` as `settings` parameter method.

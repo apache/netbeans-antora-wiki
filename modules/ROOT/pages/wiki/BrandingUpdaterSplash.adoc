@@ -29,6 +29,9 @@
 :page-wikidevsection: _branding_your_application
 :page-position: 2
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 Contributed By; Tonny Kohar
 
@@ -40,7 +43,7 @@ Another series of Netbeans Platform branding, but this time is branding the upda
 
 After the branding of link:http://blogs.kiyut.com/tonny/2007/10/18/customize-netbeans-platform-splash-screen-and-about-dialog/[Splash Screen and About Dialog], you can also branding the updater splash image. This image will be shown by Netbeans Platform during module update and require a restart.
 
-image:./branding-updater-custom_BrandingUpdaterSplash.png[]
+image:wiki/branding-updater-custom_BrandingUpdaterSplash.png[]
 
 *note:* this is tested on Netbeans 6 RC1
 
@@ -51,7 +54,7 @@ If the folder branding/modules/ext/updater.jar does not exist, just create it, i
 
 Note: updater.jar is not a jar file, it is a folder name
 
-image:./branding-updater-folder_BrandingUpdaterSplash.png[]
+image:wiki/branding-updater-folder_BrandingUpdaterSplash.png[]
 
 Add the following in the Bundle.properties
 

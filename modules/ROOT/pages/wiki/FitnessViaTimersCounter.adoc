@@ -31,6 +31,10 @@
 :toc-title:
 :experimental:
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
 == Timers/Counters
 
 Timers/counters (a.k.a Runtime watches) is a plugin that defined a convention
@@ -105,7 +109,7 @@ Having the probes in your code, you can always inspect their results in the Runt
 
 You can see registered objects for given keys (usually files) and number of instances. You can invoke _Find References_ to see how the instances are held in memory.
 
-image:./RuntimeWatches.png[]
+image:wiki/RuntimeWatches.png[]
 
 [[Writing_Automated_Tests]]
 === Writing Automated Tests

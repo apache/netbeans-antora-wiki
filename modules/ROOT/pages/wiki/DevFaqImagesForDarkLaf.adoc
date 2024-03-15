@@ -29,6 +29,10 @@
 :page-wikidevsection: _look_and_design
 :page-position: 3
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
 == In short
 
 * All images will be inverted, when using a DarkLaF with an image filter applied and ImageUtilities is used
@@ -46,7 +50,7 @@ This filter is used when loading images/icons via
 But there are cases, you don't want to get your image inverted. 
 
 For example in the following screenshot you do not want the NB logo in the about dialog to be inverted!
-image:./YouDontwantyourImageinverted.jpg[]
+image:wiki/YouDontwantyourImageinverted.jpg[]
 
 In this case provide an image with a specific name scheme. Add "`_dark`" to the name. This image is taken as it is and no filter will be applied.
 
@@ -88,11 +92,11 @@ with
 
 Without Invert: 
 
-image:./LafWithoutInvert.png[]
+image:wiki/LafWithoutInvert.png[]
 
 With Invert enabled and *_dark.png for the logo and startpage images: 
 
-image:./LafWithInvert.png[]
+image:wiki/LafWithInvert.png[]
 
 == Related issues
 

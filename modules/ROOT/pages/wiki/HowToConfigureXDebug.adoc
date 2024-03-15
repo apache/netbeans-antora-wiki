@@ -31,6 +31,10 @@
 :experimental:
 :back: \
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
 == How to configure XDebug
 
 === Overview
@@ -205,7 +209,7 @@ Xdebug
 * For Local Web Server you can alternatively *create a phpinfo.php* file containing the line '<?php phpinfo(); ?>', ls
 run and watch whether information about Xdebug will be displayed 
 
-image::./xdebug_HowToConfigureXDebug.png[]
+image::wiki/xdebug_HowToConfigureXDebug.png[]
 
 * Optionally enable Xdebug logging by adding into php.ini also: xdebug.remote_log=/log_path/xdebug.log
 * Optionally enable NetBeans PHP debugger logging by starting NetBeans with -J-Dorg.netbeans.modules.php.dbgp.level=400 or by editing netbeans.conf 
@@ -254,7 +258,7 @@ xdebug.remote_port=9000
 * Check the installation either in a browser or in the command line, depending on whether you want to debug a web page or a cli script. The output is the same as on linux or on WIN.
 * For web page run phpinfo() again. 
 
-image::./xdebug_HowToConfigureXDebug.png[]
+image::wiki/xdebug_HowToConfigureXDebug.png[]
 
 * For command line run the following. You will get longer output but this is the most important part of the output. 
 +
@@ -332,7 +336,7 @@ xdebug.remote_port=9000
 * open localhost (or WAMP server default page) and check if xdebug is between *Loaded Extensions*
 * click on phpinfo() on default WAMP page or create file containing <? phpinfo() ?>. You should see the same as for Linux tutorial above: 
 
-image::./xdebug_HowToConfigureXDebug.png[]
+image::wiki/xdebug_HowToConfigureXDebug.png[]
 
 * You can check your configuration using simple script written by Radek Matous and posted on link:http://web.archive.org/web/20190818144610/https://blogs.oracle.com/netbeansphp/entry/howto_check_xdebug_installation[blog.oracle.com]. If you are using WAMP then you don't have php on path, most probably. All you have to do is to copy this code to php file and then call it from browser with $_GET variable in url ?XDEBUG_SESSION_START=mysession. Let's say your file i called dbgtest.php and it's in web directory. All you have to do is type link:http://localhost/dbgtest.php?XDEBUG_SESSION_START=mysession[http://localhost/dbgtest.php?XDEBUG_SESSION_START=mysession].
 * If xdebug is properly installed then script started in step 1. should print message like "connection established: Resource id #5". If no message is printed and the script is still running, then xdebug isn't installed properly or uses different port or whatever else. So, kill the running process and investigate where the problem is, but this is the other story. 
@@ -459,7 +463,7 @@ phpinfo();
 +
 you should get output like below after running it in browser
 +
-image::./phpinfo_phpversion_HowToConfigureXDebug.png[]
+image::wiki/phpinfo_phpversion_HowToConfigureXDebug.png[]
 +
 Clearly my version of php is 5.2.6-3
 . Do I need Non Thread Safe or Thread Safe version? 
@@ -531,7 +535,7 @@ Server compiled with....
 +
 the other option is to have a look on phpinfo on
 +
-image::./phpinfo_thread_safety_HowToConfigureXDebug.png[]
+image::wiki/phpinfo_thread_safety_HowToConfigureXDebug.png[]
 +
 or you can use command line Linux:
 +

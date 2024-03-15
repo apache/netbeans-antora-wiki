@@ -29,13 +29,17 @@
 :page-wikidevsection: _window_system
 :page-position: 22
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
 From time to time the available options are not enough. The available options are displayed below:
 
-image:./Netbeans_Window_Modes.jpg[]
+image:wiki/Netbeans_Window_Modes.jpg[]
 
 Here's the link:http://www.yworks.com/en/products_yed_about.html[yEd] file for the above image in case this is incorrect or needs to be modified: 
 
-// not available on webarchive image:./Netbeans_Window_Modes.graphml[]
+// not available on webarchive image:wiki/Netbeans_Window_Modes.graphml[]
 
 If you want a custom "mode" or location for a top component follow this blog from Geertjan's Blog: xref:front::blogs/geertjan/creating_a_new_mode_in.adoc[Creating A New Mode In Your Application]
 ////

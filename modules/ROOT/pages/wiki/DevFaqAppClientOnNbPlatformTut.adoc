@@ -29,6 +29,9 @@
 :page-wikidevsection: _using_enterprise_resources_from_netbeans_module
 :page-position: 2
 
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
 
 == Draft
 
@@ -66,33 +69,33 @@ This tutorial will show you how easy is to create an application client on top o
 
 Install all of the required products (installation guides are available on the product's websites). When it'll be done we have to set up a few things. First of all please start NetBeans IDE 5.5.1 and register GlassFish v2. Right click on the Servers node in the Runtime tab and select Add server (choose Sun Java Application Server).
 
-image:./addserver_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/addserver_DevFaqAppClientOnNbPlatformTut.png[]
 
 Now we need to register NetBeans Platform into IDE. It's in fact almost same as to add a new server. In menu Tools -> NetBeans Platform Manager click on a Add Platform button and pass through the wizard (as a new platform select downloaded NetBeans Platform 5.5.1).
 
-image:./addplatform_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/addplatform_DevFaqAppClientOnNbPlatformTut.png[]
 
 == Projects Creation
 
 It's time to create all projects. We need NetBeans Module Suite project, NetBeans Module (added into your NetBeans Module Suite) project and Enterprise Application project with Application Client and EJB module included. Let's do it. First of all we create NetBeans Module Suite project. Call it dbreader. As used platform choose the new one what you registered before.
 
-image:./createsuite1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createsuite1_DevFaqAppClientOnNbPlatformTut.png[]
 
-image:./createsuite2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createsuite2_DevFaqAppClientOnNbPlatformTut.png[]
 
 Then create NetBeans Module Project. Call it customers. And check that you want to add it into your dbreader suite. All other options leave as default.
 
-image:./createmodule_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createmodule_DevFaqAppClientOnNbPlatformTut.png[]
 
 Actually we have had NetBeans Modules created and now we have to create Java EE part. So let's create an Enterprise Application with Application Client and EJB module. Call it dbreader-ear. Include Application Client and EJB module. Exclude Web module. Also select Java EE 5 version and choose Sun Java Application Server as development server.
 
-image:./createear1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createear1_DevFaqAppClientOnNbPlatformTut.png[]
 
-image:./createear2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createear2_DevFaqAppClientOnNbPlatformTut.png[]
 
 Great ! You have successfully created all required projects. Now you should see something like this in Projects tab.
 
-image:./projects_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/projects_DevFaqAppClientOnNbPlatformTut.png[]
 
 == Enterprise Application Development
 
@@ -127,11 +130,11 @@ We need to modify dbreader-ear build.xml script because the dbreader suite jnlp 
 
 You are able to access build.xml file in Files view.
 
-image:./editearbuild1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/editearbuild1_DevFaqAppClientOnNbPlatformTut.png[]
 
 After editing you should see something like this.
 
-image:./editearbuild2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/editearbuild2_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Build Script Modifying (6.x)
 
@@ -167,25 +170,25 @@ If you're not using Mac then also don't forget to exclude "Apple Application Men
 
 We have dbreader-ear project infrastructure prepared. Now we have to generate entity classes from sample database. Right click on dbreader-ear-ejb project in Project tab and select New -> Entity Classes From Database. In wizard chose as datasource jdbc/sample datasource and select CUSTOMER table.
 
-image:./generateentity1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/generateentity1_DevFaqAppClientOnNbPlatformTut.png[]
 
 On the next wizard panel type package for entity classes. Type db. Then Click on create persistence unit. Persistence unit dialog will appear. Click on Create. Now finish the wizard by clicking on the Finish button.
 
-image:./generateentity2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/generateentity2_DevFaqAppClientOnNbPlatformTut.png[]
 
 Now we have generated entity classes from jdbc/sample database. Under dbreader-ear-ejb project you can see generated classes.
 
-image:./generateentity3_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/generateentity3_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Create Session Bean
 
 We need to create stateless session bean with remote interface to communicate with persistence unit. Create one and call it DataBean.
 
-image:./createsession1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createsession1_DevFaqAppClientOnNbPlatformTut.png[]
 
 When you have session bean created add business method called getData. You are able to do it by right clicking on the editor pane (in DataBean.java file opened) and select EJB Methods -> Add Business Method. Pass through the wizard and create getData method which returns <pre>java.util.List</pre>.
 
-image:./createsession2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createsession2_DevFaqAppClientOnNbPlatformTut.png[]
 
 Now use entity manager. Once again do a right click on the editor pane and select Persistence -> Use Entity Manager. Entity manager code is generated. Now implement getData method.
 
@@ -200,21 +203,21 @@ Now use entity manager. Once again do a right click on the editor pane and selec
 
 After that you should see in editor (in DataBean.java file) something like this.
 
-image:./createsession3_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createsession3_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Modify Application Client
 
 We prepared EJB module and now we have to implement functionality into dbreader-ear-app-client Application Client module. Open Main.java file in dbreader-ear-app-client project.
 
-image:./modifyappclient1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/modifyappclient1_DevFaqAppClientOnNbPlatformTut.png[]
 
 Now call your session bean DataBean. Right click on editor pane and select Enterprise Resources -> Call Enterprise Bean. In the dialog select your DataBean and click OK.
 
-image:./modifyappclient2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/modifyappclient2_DevFaqAppClientOnNbPlatformTut.png[]
 
 Now we need to implement main method and create getCustomers method. Before that add <dbreader_project_home>/build/jnlp/netbeans/boot.jar (or <dbreader_project_home>/build/jnlp/netbeans/org-netbeans-bootstrap/boot.jar in case of NetBeans 6.1) file on classpath. Do it by right clicking on dbreader-ear-app-client project and select Properties. There select Libraries and then click on Add JAR/Folder and in open file dialog select boot.jar file. Don't forget to uncheck the checkbox. We do not want to package this file with dbreader-ear-app-client module. Actually you have to run build-jnlp target on dbreader suite. Before that please perform step xref:./DevFaqAppClientOnNbPlatformTut.adoc#SetUpSuite[Set Up Suite]. Then you can right click on dbreader project and select Build JNLP Application.
 
-image:./modifyappclient3_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/modifyappclient3_DevFaqAppClientOnNbPlatformTut.png[]
 
 Implement main method by this code.
 
@@ -243,7 +246,7 @@ Now create getCustomers static method.
 
 After doing this you should see something like this in editor pane.
 
-image:./modifyappclient4_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/modifyappclient4_DevFaqAppClientOnNbPlatformTut.png[]
 
 Great ! We have finished development of the dbreader-ear Enterprise Application. Let's go to develop NetBeans Modules.
 
@@ -253,21 +256,21 @@ Great ! We have finished development of the dbreader-ear Enterprise Application.
 
 Now we set up the dbreader NetBeans module suite. We have to set it as standalone application and also we are able to change splash screen. Right click on dbreader project and select Properties. There select Application and then click on the Create Standalone Application.
 
-image:./setupsuite1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/setupsuite1_DevFaqAppClientOnNbPlatformTut.png[]
 
 Also you are able to set up your own splash screen. Do it by same way and under the Application node in project Properties click on Splash Screen.
 
-image:./setupsuite2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/setupsuite2_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Set Up Module
 
 Now we set up the customers NetBeans Module. We have to add dbreader-ear-ejb.jar, dbreader-ear-app-client.jar and javaee.jar on compile classpath. First of all set sources level of the module to 1.5. Right click on customers project and on the first panel select 1.5 for sources level.
 
-image:./setupmodule1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/setupmodule1_DevFaqAppClientOnNbPlatformTut.png[]
 
 Open project.properties file from project tab.
 
-image:./setupmodule2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/setupmodule2_DevFaqAppClientOnNbPlatformTut.png[]
 
 Add this code into project.properties file. Of course use your own path to dbreader and glassfish.
 
@@ -282,27 +285,27 @@ cp.extra=\
 
 After that you should see something like this in editor pane.
 
-image:./setupmodule3_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/setupmodule3_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Create Window Component
 
 Now we create a new window component which will serve as viewer for database data. Right click on customers project and select New -> Window Component. On the first wizard panel choose editor as Window Position and select Open on Application Start.
 
-image:./createwindow1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createwindow1_DevFaqAppClientOnNbPlatformTut.png[]
 
 On the second panel specify component Class Name Prefix (use Customers) and finish the wizard.
 
-image:./createwindow2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createwindow2_DevFaqAppClientOnNbPlatformTut.png[]
 
 After that you should see this in Project tab.
 
-image:./createwindow3_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/createwindow3_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Write Customers Top Component Logic
 
 We have to write application logic for customers top component. Open CustomersTopComponent.java file in design mode and drag and drop a jTable component from palette into it.
 
-image:./writelogic1_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/writelogic1_DevFaqAppClientOnNbPlatformTut.png[]
 
 Now switch into source view and modify constructor and add initData method.
 
@@ -340,13 +343,13 @@ Now switch into source view and modify constructor and add initData method.
 
 After that you should see something like this.
 
-image:./writelogic2_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/writelogic2_DevFaqAppClientOnNbPlatformTut.png[]
 
 == Run Application
 
 Great job !! Everything is done. Now you can run your application. Right click on dbreader-ear project and select Run Project. Wait a minute do build and glassfish to start. Enjoy your application :o)
 
-image:./runapp_DevFaqAppClientOnNbPlatformTut.png[]
+image:wiki/runapp_DevFaqAppClientOnNbPlatformTut.png[]
 
 === Debug Application
 
