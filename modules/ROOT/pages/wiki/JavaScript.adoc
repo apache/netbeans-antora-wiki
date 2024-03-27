@@ -1,0 +1,175 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= JavaScript
+:page-layout: wiki
+:page-tags: wik
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaScript
+:description: Apache NetBeans wiki JavaScript
+:toc: left
+:toc-title:
+:page-syntax: true
+
+ifdef::env-github[]
+:imagesdir: ../../images
+endif::[]
+
+== New File Templates
+
+New File templates (based on freemarker) in Other, Web and Ruby Categories.
+
+== Basic Editor Features
+
+* Syntax highlighting
+* Code Folding of methods
+* Navigator display of the file structure. Note however that the navigator file structure recognizes prototype-style class definitions as well and shows these as classes with methods. 
++
+image::wiki/navigator_JavaScript.png[]
++
+* Background parser with detailed error messages. Trying inserting an integer in an object literal, or having an unterminated literal string, etc.
+* Bracket matching: Typing a ', ", [[, ( or { will insert a matching closing symbol. Typing the closing symbol will type through the inserted one. Backspacing the opening symbol will remove the matching symbol.
+* Formatting: Pressing newline should indent the caret based on where the next line is expected to be. Pressing a } will outdent the line immediately. Reformatting a selection or the whole buffer should reindent the whole file.
+* JSON support: .json files are also treated as JavaScript and the parser runs in a special mode where it allows only an object literal expression with no functions etc. 
+
+
+== Semantic Highlighting
+
+Method declarations are shown in bold (including prototype style method declarations in object literals), global variables are shown in green, unused variables are shown in gray underline
+
+image::wiki/semantic_JavaScript.png[]
+
+== Mark occurrences
+
+Placing the caret on a symbol highlights other uses of the same variable or call. Furthermore, placing the caret on a function keyword will highlight all the returns from that method (return, throw). This should also happen if you place the caret on a return.
+
+image::wiki/exits_JavaScript.png[]
+
+== Instant Rename
+
+Press Ctrl-R on a local variable and you can instantly rename the symbol synchronously
+
+== Quick Fixes and Semantic Checks
+
+Lots of semantic checks are performed on the code and offered as quickfixes. Some things to try:
+
+* Code which has no side effects (no calls, no assignments) 
++
+image::wiki/nosideeffects_JavaScript.png[]
++
+* Using an assignment in a conditional (if x = y)
+* Having inconsistent returns from a function (where some return expressions return a value, and some do not) 
++
+image::wiki/returns_JavaScript.png[]
++
+* Reassigning a parameter 
++
+The assignment-in-conditional error in particular has several quickfixes associated with it; converting to an == expression, and adding double parentheses to turn off the warning.
++
+image::wiki/quickfix_JavaScript.png[]
+
+== Tasklist
+
+The background parser and the warning quickfixes are integrated with the tasklist, so you can open it to view errors in any of your files that are associated with JavaScript.
+
+image::wiki/tasklist_JavaScript.png[]
+
+== Code Completion and Type Analysis
+
+Code completion knows about builtin JavaScript core classes. For example, you can do a
+
+[source,javascript]
+----
+          x = "foo";
+          y = x;
+          y.
+----
+
+and code completion will show you methods available fo JavaScript strings. This works with all the literal types in JavaScript. The type analysis and code completion machinery also knows about prototype style classes, regular functions obviously, and the new operator for constructing them. However, in this build a number of things are broken so don't try to test this too much.
+
+image::wiki/completion_JavaScript.png[]
+
+== Go To Declaration
+
+Works both for local variables as well as functions - but like code completion is a bit shaky at the moment. When the IDE is not sure about the type of your variable (and therefore the target function) it will offer you a popup to disambiguate:
+
+image::wiki/gotodecl_JavaScript.png[]
+
+== Documentation
+
+Code completion shows documentation for both the core javascript APIs as well as the DOM APIs. It also works for documentation on your own functions. Ctrl-pointing at calls also shows documentation (as a tooltip).
+
+== Embedded Completion
+
+Code completion on element ids in the html should work for the Prototype.js dollar function. In other words, if you have $("f|"), then code completion should show all HTML element ids in the document that start with f and so on.
+
+image::wiki/dollar-completion2_JavaScript.png[]
+
+== Browser Compatibility
+
+The browser support for various API calls are stored in the index. (In this build, this database is incomplete; for an example of this try completing element.hasAttribute - it is not supported on internet explorer and the browser compatilibity icons should show so. In addition, there is a Target Browser dialog in the Tools menu which lets you choose which browsers you want to support, and the strikethrough in code completion is based on the delta between what's supported and what you're trying to support.
+
+image::wiki/browsers_JavaScript.png[]
+
+image::wiki/browser_JavaScript.png[]
+
+== Embedding
+
+JavaScript embedded in RHTML files should work. (This doesn't work yet in HTML or JSP files). All functionality described above should work just as it does in JavaScript files. Note: you may get "expected VALUE" parsererrors - these are coming from the Schliemann HTML support. Some more complicated embedding scenarios should work.
+
+== Open Type
+
+Ctrl-O will let you jump to any of your methods quickly (across files). NOTE - this is buggy at the moment!!!
+
+image::wiki/opentype_JavaScript.png[]
+
+* Basic file inclusion filtering is done. If file foo.js defines function foo(), and file bar.js defines function bar(), then if file hello.html only does a <script src="bar.js"></script>, then only function bar() will be shown in code completion. 
+
+== Recently Added
+
+Quickfix showing calls to unsupported functions (not supported on all browsers you're targeting):
+
+image::wiki/unsupported-calls_JavaScript.png[]
+
+More information on one of these quickfixes:
+
+image::wiki/unsupported-calls2_JavaScript.png[]
+
+Detection of incorrect documentation for functions:
+
+image::wiki/wrong-docs_JavaScript.png[]
+
+Code completion on prototype $$ functions and jQuery $ functions:
+
+image::wiki/cc-tags_JavaScript.png[]
+
+The above screenshot showed tag completion; here we're continuing into id completion:
+
+image::wiki/cc-id_JavaScript.png[]
+
+And CSS selection completion:
+
+image::wiki/cc-css_JavaScript.png[]
+
+
+//6.0 JavaScript Information
+//In NetBeans 6.0 JavaScript support is standard part of NetBeans Core IDE. Our JavaScript editing support is based on link:https://web.archive.org/web/20161104120624/http://wiki.netbeans.org/Schliemann[Generic Languages Support].
+//Links:
+//  link:https://web.archive.org/web/20161104120624/http://wiki.netbeans.org/JavaScriptUsersGuide[JavaScript editing Users Guide].
+//  link:https://web.archive.org/web/20161104120624/http://wiki.netbeans.org/JavaScriptUISpecification[JavaScript editing UI Specification]. 
