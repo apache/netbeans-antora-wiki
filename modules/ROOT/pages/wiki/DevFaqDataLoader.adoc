@@ -30,6 +30,8 @@
 :page-position: 6
 include::front::partial$database.adoc[]
 
+include::front::partial$database.adoc[]
+
 As of NetBeans 6.8, it is usually not necessary to implement DataLoader directly - today it is usually an implementation detail of writing file support, and you can simply write a xref:./DevFaqDataObject.adoc[DataObject] subclass and register it as follows:
 
 [source,java]
@@ -55,26 +57,13 @@ This registers the DataObject subclass `com.modules.foofile.FooDataObject` again
 
 == DataLoader Details
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataLoader.html[DataLoaders] are factories for DataObjects.  A DataLoader is typically associated with one or more link:{wikipedia}MIME[MIME types] (such as `text/x-java`), and is allowed to be the system-wide factory for DataObjects for individual files of that MIME type.
+link:{apidoclink}org-openide-loaders/org/openide/loaders/DataLoader.html[DataLoaders] are factories for DataObjects.  A DataLoader is typically associated with one or more link:{wikipedia}MIME[MIME types] (such as `text/x-java`), and is allowed to be the system-wide factory for DataObjects for individual files of that MIME type.
 
 MIME type is typically determined by the file extension, though it can depend on content for things like XML files. xref:./DevFaqFileRecognition.adoc[(more about how NetBeans recognizes files)].
 
-DataLoaders are factories for xref:./DevFaqDataObject.adoc[DataObjects].  Typically there is a 1:1 mapping between file-type:DataLoader-subclass and a 1:1 mapping from file:DataObject.  When a file is first encountered, and something calls [link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataObject.html#find(org.openide.filesystems.FileObject[http://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataObject.html#find(org.openide.filesystems.FileObject]) `DataObject.find(theFileObject)`], the correct DataLoader is found and used to asked to create DataObject for that file.
+DataLoaders are factories for xref:./DevFaqDataObject.adoc[DataObjects].  Typically there is a 1:1 mapping between file-type:DataLoader-subclass and a 1:1 mapping from file:DataObject.  When a file is first encountered, and something calls link:{apidoclink}org-openide-loaders/org/openide/loaders/DataObject.html#find(org.openide.filesystems.FileObject[DataObject.find(theFileObject)], the correct DataLoader is found and used to asked to create DataObject for that file.
 
 Modules that provide the ability the system to open (or otherwise use) files of a particular type will register DataLoaders for those types. So typically for each file type (as defined by MIME type, which in practice usually means file name extension, or XML subtype) there is a matching DataObject
 subclass.
 
 Note that DataLoaders do not _have_ to be tied to MIME types -- you can still write a DataLoader subclass, registered the old-fashioned way via the JAR manifest, which gets the first chance in the system to claim *any* file in the system.  However this is rarely wise or useful to do.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDataLoader[http://wiki.netbeans.org/DevFaqDataLoader] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T19:48:10Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

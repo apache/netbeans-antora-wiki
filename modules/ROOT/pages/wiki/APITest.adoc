@@ -32,16 +32,3 @@
 
 include::SigTest.adoc[leveloffset=1]
 
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/APITest[http://wiki.netbeans.org/APITest] , 
-that was last modified by NetBeans user Jtulach 
-on 2016-07-15T17:32:32Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-15, and needs to be reviewed.
-====

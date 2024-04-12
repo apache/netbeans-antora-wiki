@@ -36,16 +36,3 @@ As with any automated modification, it's a good idea to ensure that this file is
 
 
 Applies to: NetBeans 6.8 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHowToFixDependencies[http://wiki.netbeans.org/DevFaqHowToFixDependencies] , 
-that was last modified by NetBeans user Rmichalsky 
-on 2009-12-02T15:06:07Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,6 +29,8 @@
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 19
 
+include::front::partial$database.adoc[]
+
 == Show non-editable diff for files
 
 [source,java]
@@ -86,7 +88,7 @@ See
 
 * xref:front::blogs/geertjan/getting_started_with_diff_viewer.adoc[Getting Started with Diff Viewer from Scratch]
 * xref:front::blogs/geertjan/netbeans_diff_api.adoc[NetBeans Diff API]
-* link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-diff/overview-summary.html[https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-diff/overview-summary.html]
+* link:{apidoclink}org-netbeans-modules-diff/overview-summary.html[{apidoclink}org-netbeans-modules-diff/overview-summary.html]
 
 == Show editable diff for nodes with FileObject in node's lookup
 
@@ -234,16 +236,3 @@ public final class EditableDiffAction implements ActionListener {
 PS: There is a small trick to enable the "save"-action (Menubar File->Save / CTRL-S) for your new editable diff, which won't get enabled after changing content in the right editor pane of the diff viewer by default. You have to associate your node to the TopComponent – see makeDiffWindowSaveable(). Thanks to  Ondrej Vrabec for the solution – see link:http://netbeans.org/bugzilla/show_bug.cgi?id=223703[http://netbeans.org/bugzilla/show_bug.cgi?id=223703].
 
 Copied from  link:http://benkiew.wordpress.com/2013/01/24/netbeans-rcp-editable-diff-viewer-using-custom-base-source/[http://benkiew.wordpress.com/2013/01/24/netbeans-rcp-editable-diff-viewer-using-custom-base-source/]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqEditorHowToAddDiffView[http://wiki.netbeans.org/DevFaqEditorHowToAddDiffView] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-01-24T23:28:03Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

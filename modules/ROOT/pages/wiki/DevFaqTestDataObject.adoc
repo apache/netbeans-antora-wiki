@@ -101,17 +101,3 @@ so that `DataObject.find()` will find it.
 In 6.0, the *New File Type* template will set this up automatically
 by creating the correct file in `test/unit/META-INF/services`.
 (Or you can get better control by using `org.openide.util.test.MockLookup`.)
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTestDataObject[http://wiki.netbeans.org/DevFaqTestDataObject] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:02:09Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -552,18 +552,3 @@ _TODO: do we want to push only submited tasks or all locally changed tasks?_
 *Scenario:*
 
 * Tasks contained in the Task Dashboard view are synchronized automatically in the user defined period. The synchronization only start when the Dashboard in not in use (prevent refreshing while user is working with the dashboard)
-
-
-
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/TaskManagementUseCases[http://wiki.netbeans.org/TaskManagementUseCases] , 
-that was last modified by NetBeans user JPESKA 
-on 2012-06-14T08:57:58Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

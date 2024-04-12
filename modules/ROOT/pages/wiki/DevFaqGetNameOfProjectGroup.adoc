@@ -29,6 +29,7 @@
 :page-wikidevsection: _project_handling
 :page-position: 4
 
+include::front::partial$database.adoc[]
 
 == Variant I: "use OpenProjects API" (since NB7.3)
 
@@ -40,7 +41,7 @@ org.netbeans.api.project.ui.OpenProjects.getDefault().getActiveProjectGroup().ge
 
 This approach uses a public API which is known to be stable for future versions. Since 7.3.
 
-See link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-projectuiapi/org/netbeans/api/project/ui/OpenProjects.html#getActiveProjectGroup([http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-projectuiapi/org/netbeans/api/project/ui/OpenProjects.html#getActiveProjectGroup(])
+See link:{apidoclink}org-netbeans-modules-projectuiapi/org/netbeans/api/project/ui/OpenProjects.html#getActiveProjectGroup--[OpenProjects.getActiveProjectGroup()]
 
 == Variant II: "direct access to properties"-hack
 
@@ -86,17 +87,3 @@ Note: this is rather a hack. It is not guaranteed that this will work for newer 
     }
 
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqGetNameOfProjectGroup[http://wiki.netbeans.org/DevFaqGetNameOfProjectGroup] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-01-12T17:40:12Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

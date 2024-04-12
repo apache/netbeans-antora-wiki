@@ -62,17 +62,3 @@
 [start=5]
 .  There are about a dozen links on that page.  The one you want begins with "netbeans-trunk-nightly" and ends with "-src.zip"  Click
 that link to download the source archive.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAccessSourcesWeb[http://wiki.netbeans.org/DevFaqAccessSourcesWeb] , 
-that was last modified by NetBeans user Anebuzelsky 
-on 2010-06-11T14:32:19Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

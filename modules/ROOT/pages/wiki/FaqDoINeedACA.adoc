@@ -44,14 +44,3 @@ link:http://www.netbeans.org/about/legal/terms-of-use.html[Read the Terms of Use
 
 link:http://www.netbeans.org/community/contribute/web-content.html[Contribute web content -- what and how]
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqDoINeedACA[http://wiki.netbeans.org/FaqDoINeedACA] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2011-12-12T13:38:34Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

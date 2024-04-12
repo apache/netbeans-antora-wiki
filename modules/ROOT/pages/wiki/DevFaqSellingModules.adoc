@@ -33,16 +33,3 @@
 Yes.  The license is very non-restrictive.  For details, see the
 link:http://www.netbeans.org/about/legal/license.html[license].
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSellingModules[http://wiki.netbeans.org/DevFaqSellingModules] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:59:54Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

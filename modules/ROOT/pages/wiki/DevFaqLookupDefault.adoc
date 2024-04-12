@@ -29,12 +29,14 @@
 :page-wikidevsection: _configuration_how_modules_install_things _lookup
 :page-position: 2 5
 
+include::front::partial$database.adoc[]
+
 The default lookup is `Lookup.getDefault()`.
 It is the registry for global singletons and instances of objects which have been registered in the system by modules.
 (In JDK 6, `ServiceLoader` operates on the same principle.)
 The default lookup searches in two places:
 
-* The link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/Lookups.html#metaInfServices(java.lang.ClassLoader)[META-INF/services/ Lookup] contains all objects registered by modules via the link:http://java.sun.com/j2se/1.4/docs/guide/extensions/[Java Extension Mechanism] - putting files in the `META-INF/services/` directory of their module JARs (typically done using the [link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/ServiceProvider.html[http://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/ServiceProvider.html] `@ServiceProvider`] annotation)
+* The link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/Lookups.html#metaInfServices(java.lang.ClassLoader)[META-INF/services/ Lookup] contains all objects registered by modules via the link:http://java.sun.com/j2se/1.4/docs/guide/extensions/[Java Extension Mechanism] - putting files in the `META-INF/services/` directory of their module JARs (typically done using the link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/ServiceProvider.html[@ServiceProvider] annotation)
 * The contents of the `Services/` folder of the xref:./DevFaqSystemFilesystem.adoc[System (configuration) Filesystem] (this is harder and somewhat deprecated)
 
 Objects contained in the default lookup are instantiated lazily when first requested.  Objects returned by the default lookup _may_ (or may not) be garbage collected if they become unreferenced.
@@ -85,22 +87,9 @@ for (MyService s : Lookup.getDefault().lookupAll(MyService.class)) {
 == More About Lookup
 
 * xref:./DevFaqLookup.adoc[DevFaqLookup]
-* link:https://bits.netbeans.org/dev/javadoc/usecases.html#usecase-Utilities[Extension Points Tutorial] 
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/Lookup.html[Javadoc for Lookup]
+* link:{apidoclink}usecases.html#usecase-Utilities[Extension Points Tutorial] 
+* link:{apidoclink}org-openide-util-lookup/org/openide/util/Lookup.html[Javadoc for Lookup]
 
 
 
 Applies to: NetBeans 6.7 and later
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupDefault[http://wiki.netbeans.org/DevFaqLookupDefault] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:14:14Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

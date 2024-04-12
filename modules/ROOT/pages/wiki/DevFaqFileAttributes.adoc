@@ -29,6 +29,8 @@
 :page-wikidevsection: _files_and_data_objects
 :page-position: 4
 
+include::front::partial$database.adoc[]
+
 xref:./DevFaqFileObject.adoc[FileObjects] have _attributes_.  These are ad-hoc key-value
 pairs which can be associated with a file and persist across shutdown and restart.
 
@@ -38,18 +40,5 @@ Attributes are perfectly safe to use freely in `layer.xml` files.
 
 In pre-4.0 NetBeans, they were relatively commonly used for user files on disk.  They still may be used for user files, but this is now discouraged - the infrastructure has been changed to store all attributes in the xref:./DevFaqUserDir.adoc[userdir] rather than sprinking `.nbattrs` files in directories all over the user's disk.  Since they are now stored in a central location, the more attributes there are, the longer it takes to find attributes for any given file.  Using attributes for user files _on disk_ has negative performance implications.
 
-See `link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileObject.html#getAttribute(java.lang.String)[FileObject.getAttribute]` and
-`link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileObject.html#setAttribute(java.lang.String,%20java.lang.Object)[FileObject.setAttribute]`.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFileAttributes[http://wiki.netbeans.org/DevFaqFileAttributes] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-19T01:50:59Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+See `link:{apidoclink}org-openide-filesystems/org/openide/filesystems/FileObject.html#getAttribute(java.lang.String)[FileObject.getAttribute]` and
+`link:{apidoclink}org-openide-filesystems/org/openide/filesystems/FileObject.html#setAttribute(java.lang.String,%20java.lang.Object)[FileObject.setAttribute]`.

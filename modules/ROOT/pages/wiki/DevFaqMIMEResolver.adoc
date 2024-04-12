@@ -29,10 +29,11 @@
 :page-wikidevsection: _files_and_data_objects
 :page-position: 15
 
+include::front::partial$database.adoc[]
 
 There is a wizard available for NetBeans modules which does this for you. Just run *New File | Module Development | File Type*. Fill in the *MIME Type* text field and choose whether to recognize file by extension or XML root element. If you want more sophisticated recognition, choose "*by Filename Extension*" and edit created resolver xml after you finish the wizard. In the next step type in "*Class Name Prefix*" your preferred prefix and finish the wizard.
 
-Description of declarative MIME resolve can be found in link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/HOWTO-MIME.html[this document]. In most cases it should be enough to resolve files only by their extensions as the wizard does (see link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#ext[ext element]). Other types of resolution can be more time expensive, so use them only exceptionally. Useful can be link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#name[file name matching], link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#pattern[file content matching] or link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#magic[magic matching] for binary files. Also consider existence of link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#exit[exit element] intended for negative matching which can skips next conditions.
+Description of declarative MIME resolve can be found in link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/HOWTO-MIME.html[this document]. In most cases it should be enough to resolve files only by their extensions as the wizard does (see link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#ext[ext element]). Other types of resolution can be more time expensive, so use them only exceptionally. Useful can be link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#name[file name matching], link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#pattern[file content matching] or link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#magic[magic matching] for binary files. Also consider existence of link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/resolverDocumentation.html#exit[exit element] intended for negative matching which can skips next conditions.
 
 ---
 
@@ -46,16 +47,3 @@ Description of declarative MIME resolve can be found in link:https://bits.netbea
 
   Related: xref:./DevFaqFileRecognition.adoc[DevFaqFileRecognition]
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMIMEResolver[http://wiki.netbeans.org/DevFaqMIMEResolver] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:53:24Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

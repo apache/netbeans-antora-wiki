@@ -40,16 +40,3 @@ There are two ways to put something in the xref:./DevFaqLookupDefault.adoc[defau
 |Put an `.instance` file in your module layer in `Services/Hidden` |Rarely - useful if you are making services available dynamically on the fly, for example when xref:./DevFaqDynamicSystemFilesystem.adoc[dynamically changing layer contents], or when xref:./DevFaqFileAttributes.adoc[specialized registration metadata] or factory methods are needed |Declare a xref:./DevFaqInstanceDataObject.adoc[.instance file], a xref:./DevFaqDotSettingsFiles.adoc[.settings file] or similar, or a xref:./DevFaqDotShadowFiles.adoc[.shadow file] in your module's xref:./DevFaqModulesLayerFile.adoc[layer.xml file] 
 |===
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWaysToRegisterInDefaultLookup[http://wiki.netbeans.org/DevFaqWaysToRegisterInDefaultLookup] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T22:28:44Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

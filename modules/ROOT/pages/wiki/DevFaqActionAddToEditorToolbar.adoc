@@ -39,17 +39,3 @@ Use
 ----
 
 for an action with `EditorCookie` as context object
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddToEditorToolbar[http://wiki.netbeans.org/DevFaqActionAddToEditorToolbar] , 
-that was last modified by NetBeans user Markiewb 
-on 2014-03-15T08:58:41Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

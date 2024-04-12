@@ -31,6 +31,8 @@
 :toclevels: 5
 :experimental:
 
+include::front::partial$database.adoc[]
+
 If there were no external modules that could run on NetBeans, and we did not
 have the Update Center to let users mix and match modules, then handling
 versioning in NetBeans would be very easy: nothing more than labelling when
@@ -49,7 +51,7 @@ See also xref:./CompatibilityPolicy.adoc[CompatibilityPolicy].
 [[Versioning_of_APIs]]
 == Versioning of APIs
 
-The link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html[Modules API] includes a detailed description of how versions and dependencies work
+The link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/api.html[Modules API] includes a detailed description of how versions and dependencies work
 technically. This documented is intended to give a policy for how to use them
 on netbeans.org.
 
@@ -298,18 +300,3 @@ Please remember that implementation versions of modules are not intended to be o
 As a practical policy for using implementation versions, it is helpful to make them integers if they are being used in implementation dependencies from other modules, and use the build property `spec.version.base` in both producers and consumers of implementation dependencies in place of a fixed specification version. This trick makes management of complex sets of modules with implementation dependencies much easier. From the NBM project GUI, just check the checkbox *Append Implementation Versions Automatically* in the *Versioning* panel.
 
 Release engineers should assume that module manifests provide complete information about which versions of what module may be run on which version of the IDE, via their major release versions, specification versions, and dependencies. Of course these assumptions should also be tested before actually publishing something on a public update server; but if any inconsistencies are found, these are P1/P2 bugs *for the developer* and it is better to resolve them properly in the code, than to use tricks in the update server to force certain configurations of modules to be loaded.
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/VersioningPolicy[http://wiki.netbeans.org/VersioningPolicy] , 
-that was last modified by NetBeans user Jglick 
-on 2010-05-18T16:44:49Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

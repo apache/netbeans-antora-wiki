@@ -77,17 +77,3 @@ public class MYPLUGINOPTIONSPanel extends javax.swing.JPanel
 
 [3] link:http://bits.netbeans.org/8.0/javadoc/org-netbeans-modules-options-api/org/netbeans/spi/options/OptionsPanelController.Keywords.html[http://bits.netbeans.org/8.0/javadoc/org-netbeans-modules-options-api/org/netbeans/spi/options/OptionsPanelController.Keywords.html]
 
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqExtendOptionsSearch[http://wiki.netbeans.org/DevFaqExtendOptionsSearch] , 
-that was last modified by NetBeans user Markiewb 
-on 2015-03-04T10:19:38Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

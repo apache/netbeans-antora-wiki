@@ -29,6 +29,7 @@
 :page-wikidevsection: _configuration_how_modules_install_things
 :page-position: 13
 
+include::front::partial$database.adoc[]
 
 
 Sometimes you need to bundle some additional files with your module (for example native libraries or native executables).  
@@ -55,7 +56,7 @@ _Note:_ If you are bundling third party software which *has its own installer* t
 
 Now your module includes the files you need.  You still need to get access to them at runtime.
 
-To do that, use `link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/InstalledFileLocator.html[InstalledFileLocator]`.  That is a class which can find a file which was installed by a module.  You simply give it your module's code-name (the thing you typed when you created the module, which looks like a package name) and a _relative path_ (i.e. not including the `release/` directory):
+To do that, use `link:{apidoclink}org-openide-modules/org/openide/modules/InstalledFileLocator.html[InstalledFileLocator]`.  That is a class which can find a file which was installed by a module.  You simply give it your module's code-name (the thing you typed when you created the module, which looks like a package name) and a _relative path_ (i.e. not including the `release/` directory):
 
 [source,java]
 ----
@@ -69,16 +70,3 @@ File emulator = InstalledFileLocator.getDefault().locate(
 Always handle the case that the user (or disk crash, whatever) might have deleted it.
 
 If you are wondering why you don't just find the directory NetBeans is installed in and look in that directory, see the xref:./DevFaqWhatIsACluster#Why_Have_Clusters.3F.adoc[background information about clusters]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqInstalledFileLocator[http://wiki.netbeans.org/DevFaqInstalledFileLocator] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T22:11:57Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

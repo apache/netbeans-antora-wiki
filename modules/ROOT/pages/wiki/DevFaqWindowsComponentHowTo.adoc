@@ -29,6 +29,8 @@
 :page-wikidevsection: _window_system
 :page-position: 5
 
+include::front::partial$database.adoc[]
+
 Use File -> New File wizard, Module Development category and Window Component item. It will generate all necessary background code for you and open GUI Builder to design UI of your own component.
 
 == But what is behind the scenes, created by wizard?
@@ -51,17 +53,4 @@ public class MyAction extends AbstractAction {
 
 * Declarative XML descriptions of component are created following xref:./DevFaqWindowsWstcrefAndFriends.adoc[declarative XML API] principles.
 
-TopComponents are part of the link:https://bits.netbeans.org/dev/javadoc/org-openide-windows/org/openide/windows/doc-files/api.html[Windows API].
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWindowsComponentHowTo[http://wiki.netbeans.org/DevFaqWindowsComponentHowTo] , 
-that was last modified by NetBeans user Marciowb 
-on 2011-07-28T10:00:41Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+TopComponents are part of the link:{apidoclink}org-openide-windows/org/openide/windows/doc-files/api.html[Windows API].

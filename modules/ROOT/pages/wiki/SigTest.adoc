@@ -219,17 +219,3 @@ ant jar test
 Contact the developer via email jtulach (at) netbeans.org - and don't forget to
 read link:http://wiki.apidesign.org/wiki/TheAPIBook[Practical API Design] book.
 
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/SigTest[http://wiki.netbeans.org/SigTest] , 
-that was last modified by NetBeans user Jtulach 
-on 2019-04-10T05:59:08Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-15, and needs to be reviewed.
-====

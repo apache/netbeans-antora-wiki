@@ -36,16 +36,3 @@ Most likely your `DataObject` does not put itself into its own `CookieSet`/`Look
 
 getCookieSet().add(this);
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDataObjectInItsCookieSet[http://wiki.netbeans.org/DevFaqDataObjectInItsCookieSet] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:38:49Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

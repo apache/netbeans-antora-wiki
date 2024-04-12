@@ -79,17 +79,3 @@ Relevent to 6.0: If the dependencies do not show up in the selection list check 
 Hint: It is sometimes helpful to call InputOutput.select() to make sure the tab is made visible in the output window.
 
 See link:http://plugins.netbeans.org/plugin/39695/?show=true[here] for a plugin that has a convenient class for all output purposes.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOutputWindow[http://wiki.netbeans.org/DevFaqOutputWindow] , 
-that was last modified by NetBeans user Javydreamercsw 
-on 2011-08-01T14:18:43Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

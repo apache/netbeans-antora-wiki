@@ -99,14 +99,3 @@ Now, start adding those FAQs!!
 
 Source: link:http://blogs.sun.com/LongLiveThePepper/entry/adding_items_to_the_vwp[JB's Blog]
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/HowToAddFAQEntries[http://wiki.netbeans.org/HowToAddFAQEntries] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2015-08-28T15:47:14Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

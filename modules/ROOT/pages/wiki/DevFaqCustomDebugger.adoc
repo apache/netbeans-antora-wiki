@@ -33,17 +33,3 @@
 Problem: I have a debugger built for my custom programming language. How do I integrate it into the NetBeans Platform?
 
 Solution: Here is a tutorial on integrating a custom Debugger: link:http://netbeans.dzone.com/how-reuse-netbeans-debugger[http://netbeans.dzone.com/how-reuse-netbeans-debugger]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCustomDebugger[http://wiki.netbeans.org/DevFaqCustomDebugger] , 
-that was last modified by NetBeans user Stefika 
-on 2010-10-01T19:56:28Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

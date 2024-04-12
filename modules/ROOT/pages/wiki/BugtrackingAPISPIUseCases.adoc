@@ -241,11 +241,3 @@ provide Issue operations:
 * open Issues by ID
 
 
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/BugtrackingAPISPIUseCases[http://wiki.netbeans.org/BugtrackingAPISPIUseCases] , that was last modified by NetBeans user Tstupka on 2013-11-12T14:11:14Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

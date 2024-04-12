@@ -113,16 +113,3 @@ Applies to: NetBeans 6.5 and above
 Platforms: All
 
 xref:./Category_Performance_HowTo.adoc[Category:Performance:HowTo]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMemoryLeaks[http://wiki.netbeans.org/DevFaqMemoryLeaks] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T20:17:25Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

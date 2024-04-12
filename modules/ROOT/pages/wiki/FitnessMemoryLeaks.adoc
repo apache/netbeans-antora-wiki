@@ -138,18 +138,3 @@ Add
 *PERFORMANCE* and *TEST* keywords to the issue and into status whiteboard added
 *perfleak* word, that way we will be able to list all leaks fixed in 6.1 time
 frame.
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FitnessMemoryLeaks[http://wiki.netbeans.org/FitnessMemoryLeaks] , 
-that was last modified by NetBeans user Tpavek 
-on 2010-02-18T17:42:56Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-15, and needs to be reviewed.
-====

@@ -63,16 +63,3 @@ The idea behind this is that every "logical window" in NetBeans has its own Look
 Source: link:http://emilian-bold.blogspot.com/2006/11/netbeans-platform-lookupresult-garbage.html[Lookup.Result garbage collection trick]
 
 See also: xref:./DevFaqAddGlobalContext.adoc[How to Add Content to the Global Context]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTrackGlobalSelection[http://wiki.netbeans.org/DevFaqTrackGlobalSelection] , 
-that was last modified by NetBeans user Bdschubert 
-on 2012-11-21T17:33:20Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

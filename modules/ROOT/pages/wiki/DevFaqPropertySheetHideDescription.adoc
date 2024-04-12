@@ -56,16 +56,3 @@ sortOrder=0
 I found this by looking at the PropUtils class in the NBP sources.
 
 Taken from mailing list, contributed by Jean-Marc Borer
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqPropertySheetHideDescription[http://wiki.netbeans.org/DevFaqPropertySheetHideDescription] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-04-10T10:27:05Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

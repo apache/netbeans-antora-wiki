@@ -69,17 +69,3 @@ Inspired by link:https://github.com/shannah/mirah-nbm/blob/695afe895553bbcae0a2f
 == For all project-types
 
 See xref:front::blogs/geertjan/org_netbeans_spi_project_ui.adoc[Geertjan blog: ProjectOpenedHook]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqListenForOpeningClosingProject[http://wiki.netbeans.org/DevFaqListenForOpeningClosingProject] , 
-that was last modified by NetBeans user Markiewb 
-on 2015-03-12T18:54:53Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

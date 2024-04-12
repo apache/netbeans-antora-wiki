@@ -59,16 +59,3 @@ Some Java source code annotations generate layer entries for you (you do not nee
 
 
 Applies to: NetBeans 6.7 and later
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqModulesLayerFile[http://wiki.netbeans.org/DevFaqModulesLayerFile] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T22:16:01Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

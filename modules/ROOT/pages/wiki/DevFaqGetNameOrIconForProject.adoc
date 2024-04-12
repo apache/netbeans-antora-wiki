@@ -35,17 +35,3 @@
 org.netbeans.api.project.ProjectUtils.getInformation(project).getDisplayName()
 org.netbeans.api.project.ProjectUtils.getInformation(project).getIcon()
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqGetNameOrIconForProject[http://wiki.netbeans.org/DevFaqGetNameOrIconForProject] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-01-01T16:16:11Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

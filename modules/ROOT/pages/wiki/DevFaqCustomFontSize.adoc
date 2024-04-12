@@ -45,17 +45,3 @@ unusual font or similar.
 
 The code in core.swing.plaf processes the --fontsize argument and sets the
 UIManager key/value pair if it was passed on startup.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCustomFontSize[http://wiki.netbeans.org/DevFaqCustomFontSize] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-25T16:22:26Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

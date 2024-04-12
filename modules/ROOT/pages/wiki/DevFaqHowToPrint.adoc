@@ -29,6 +29,8 @@
 :page-wikidevsection: _printing
 :page-position: 1
 
+include::front::partial$database.adoc[]
+
 There are several ways to enable printing for a custom data:
 
 If the data is a Swing component which extends JComponent and shown in a TopComponent, the key PRINT_PRINTABLE with value "Boolean.TRUE" in the component must be set as a client property. See example:
@@ -94,18 +96,4 @@ Otherwise, it tries to obtain printable components among the descendants of the 
 
 If there are no printable components, printable data are retrieved from the selected nodes of the active top component. The Print manager gets EditorCookie from the DataObject of the Nodes. The StyledDocuments, returned by the editor cookies, contain printing information (text, font, color). This information is shown in the print preview. So, any textual documents (Java/C++/Php/... sources, html, xml, plain text, etc.) are printable by default. 
 
-See link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-print/org/netbeans/api/print/PrintManager.html[PrintManager] javadoc for details.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHowToPrint[http://wiki.netbeans.org/DevFaqHowToPrint] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-14T17:08:39Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+See link:{apidoclink}org-netbeans-modules-print/org/netbeans/api/print/PrintManager.html[PrintManager] javadoc for details.

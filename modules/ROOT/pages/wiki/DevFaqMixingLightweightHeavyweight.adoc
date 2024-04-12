@@ -53,16 +53,3 @@ For reference, see link:http://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-De
 
 
 Applies to: NetBeans 7.3 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMixingLightweightHeavyweight[http://wiki.netbeans.org/DevFaqMixingLightweightHeavyweight] , 
-that was last modified by NetBeans user Nhoffmann 
-on 2013-02-26T14:08:59Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

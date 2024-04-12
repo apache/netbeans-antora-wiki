@@ -42,17 +42,3 @@ Nodes form the basis of global selection in NetBeans - each xref:./DevFaqWindows
 A Node has a xref:./DevFaqLookup.adoc[Lookup ] which you can ask for objects your code is actually interested in.  You never get the selected node and then cast it to some specific Node subclass and do things to that;  the real model objects should be available from the Node's Lookup.  This helps to future-proof your code - you can have another module provide the same objects your client code is interested in from _its` Node's lookup, and the client code never has to change - it's just looking for any Node that has what it needs._
 
 Read about xref:./DevFaqNodeSubclass.adoc[how to implement your own Nodes ]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWhatIsANode[http://wiki.netbeans.org/DevFaqWhatIsANode] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:05:15Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

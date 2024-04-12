@@ -30,11 +30,13 @@
 :toc-title:
 :experimental:
 
+include::front::partial$database.adoc[]
+
 == Quick Links to Turorials and Docs
 
 * http://netbeans.apache.org/tutorials/nbm-javacc-lexer.html
 * http://netbeans.apache.org/tutorials/nbm-javacc-parser.html
-* link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-parsing-api/overview-summary.html[Official Doc (JavaDoc)]
+* link:{apidoclink}org-netbeans-modules-parsing-api/overview-summary.html[Official Doc (JavaDoc)]
 
 
 [[Motivation]]
@@ -180,18 +182,3 @@ link:http://editor.netbeans.org/issues/buglist.cgi?component=editor;subcomponent
 * link:https://bz.apache.org/netbeans/show_bug.cgi?id=127357[Parsing API Inception Review]
 * xref:./ParsingAPITCReview.adoc[Parsing API Technical Council Review ]
 * xref:./GsfToParsingAndIndexingApiMigration.adoc[Migrating GSF-based language plugins to Parsing &amp; Indexing API]
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/ParsingAPI[http://wiki.netbeans.org/ParsingAPI] , 
-that was last modified by NetBeans user Mr lou d 
-on 2015-01-08T09:23:40Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

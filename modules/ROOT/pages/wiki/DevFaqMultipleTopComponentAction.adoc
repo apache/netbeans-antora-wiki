@@ -29,6 +29,8 @@
 :page-wikidevsection: _window_system
 :page-position: 19
 
+include::front::partial$database.adoc[]
+
 Some people applications where there is one primary kind of window component - an editor of some kind, or something that visualizes some data.  There may be several such components open at any time, and they all are just instances of the same TopComponent subclass which are showing different data.
 
 In this case, it can be useful to list all such components in the main menu, to facilitate switching between components.  This involves three steps:
@@ -130,11 +132,11 @@ public class MultiTopComponent extends TopComponent {
 }
 ----
 
-This class contains _persistence_ code - particularly the `link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-settings/org/netbeans/api/settings/ConvertAsProperties.html[@ConvertAsProperties]` annotation and the methods `readProperties()``writeProperties()` and `getPersistenceType()`.  These methods save some information about our TopComponent to disk on shutdown, in the form of a `link:http://java.sun.com/javase/6/docs/api/java/util/Properties.html[Properties]` object.  If we do not want our components to be reopened after an application restart, we can just return `PERSISTENCE_NEVER` from `getPersistenceType()`, and delete the other persistence-related methods and the annotation.  Note that you can omit the `*Properties()` methods and the annotation, and the components _will_ be reopened on startup -- but without persistence code, this is done by serializing the whole component to disk, which is both slower and stores more data than necessary.  Typically, for an editor component, just storing the path to the file being edited is enough.
+This class contains _persistence_ code - particularly the `link:{apidoclink}org-netbeans-modules-settings/org/netbeans/api/settings/ConvertAsProperties.html[@ConvertAsProperties]` annotation and the methods `readProperties()``writeProperties()` and `getPersistenceType()`.  These methods save some information about our TopComponent to disk on shutdown, in the form of a `link:http://java.sun.com/javase/6/docs/api/java/util/Properties.html[Properties]` object.  If we do not want our components to be reopened after an application restart, we can just return `PERSISTENCE_NEVER` from `getPersistenceType()`, and delete the other persistence-related methods and the annotation.  Note that you can omit the `*Properties()` methods and the annotation, and the components _will_ be reopened on startup -- but without persistence code, this is done by serializing the whole component to disk, which is both slower and stores more data than necessary.  Typically, for an editor component, just storing the path to the file being edited is enough.
 
 == Writing an Action which provides an array of menu items
 
-The `link:https://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/DynamicMenuContent.html[DynamicMenuContent]` interface allows an Action to act as a factory for menu items - to control what components are shown in a menu to represent it.  It also allows a single action to produce multiple menu items.
+The `link:{apidoclink}org-openide-awt/org/openide/awt/DynamicMenuContent.html[DynamicMenuContent]` interface allows an Action to act as a factory for menu items - to control what components are shown in a menu to represent it.  It also allows a single action to produce multiple menu items.
 
 Here we will create an action which produces an array of menu items.  All of them will be shown inline in the main menu:
 
@@ -214,16 +216,3 @@ In this example, we register it in the `Actions/Window` folder and then create a
     &amp;lt;/folder&amp;gt;
 &amp;lt;/filesystem&amp;gt;
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMultipleTopComponentAction[http://wiki.netbeans.org/DevFaqMultipleTopComponentAction] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-03-11T15:01:05Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

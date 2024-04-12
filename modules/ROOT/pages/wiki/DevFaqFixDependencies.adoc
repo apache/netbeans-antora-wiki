@@ -177,16 +177,3 @@ fix-dependencies task will do the following:
 Doesn't look like much but it's a lot of work. 
 
 *Note:* You need to have defined the if task (from ant-contrib) to use the targets above. Also you'll need antelope library: link:http://antelope.tigris.org/[http://antelope.tigris.org/]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFixDependencies[http://wiki.netbeans.org/DevFaqFixDependencies] , 
-that was last modified by NetBeans user Javydreamercsw 
-on 2011-09-02T19:07:45Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

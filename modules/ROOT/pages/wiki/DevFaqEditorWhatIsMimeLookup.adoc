@@ -29,6 +29,7 @@
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 13
 
+include::front::partial$database.adoc[]
 
 The `MimeLookup` is a mechanism for extending editor functionality provided by
 NetBeans modules.
@@ -82,17 +83,4 @@ Platforms: All
 
 See also:
 xref:./DevFaqLookup.adoc[What is Lookup?], 
-link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-editor-mimelookup/index.html[MimeLookup API]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqEditorWhatIsMimeLookup[http://wiki.netbeans.org/DevFaqEditorWhatIsMimeLookup] , 
-that was last modified by NetBeans user Dbell 
-on 2010-09-30T10:33:17Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+link:{apidoclink}org-netbeans-modules-editor-mimelookup/index.html[MimeLookup API]

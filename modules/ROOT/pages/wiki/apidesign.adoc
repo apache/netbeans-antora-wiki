@@ -27,14 +27,3 @@
 :toc-title:
 :page-syntax: true
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/[http://wiki.netbeans.org/] , 
-that was last modified by NetBeans user  
-on .
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

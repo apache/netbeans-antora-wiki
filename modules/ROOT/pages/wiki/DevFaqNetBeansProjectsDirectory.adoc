@@ -48,17 +48,3 @@ System.setProperty("netbeans.projects.dir", myProjectsDir.getAbsolutePath());
 Source:
 
 link:http://osdir.com/ml/java.netbeans.modules.openide.devel/2007-12/msg00195.html[http://osdir.com/ml/java.netbeans.modules.openide.devel/2007-12/msg00195.html]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNetBeansProjectsDirectory[http://wiki.netbeans.org/DevFaqNetBeansProjectsDirectory] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T20:26:10Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

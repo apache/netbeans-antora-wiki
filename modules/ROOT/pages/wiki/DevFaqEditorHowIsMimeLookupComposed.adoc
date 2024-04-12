@@ -29,6 +29,8 @@
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 14
 
+include::front::partial$database.adoc[]
+
 In order to get xref:./DevFaqEditorWhatIsMimeLookup.adoc[MimeLookup] you have to supply
 xref:./DevFaqEditorWhatIsMimePath.adoc[MimePath]. With the default `MimeLookup`
 implementation provided by Netbeans the contents of `MimeLookup` is defined by
@@ -102,17 +104,4 @@ Platforms: All
 See also:
 xref:./DevFaqEditorWhatIsMimeLookup.adoc[What is MimeLookup?],
 xref:./DevFaqEditorWhatIsMimePath.adoc[What is MimePath?],
-link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-editor-mimelookup/index.html[MimeLookup API]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqEditorHowIsMimeLookupComposed[http://wiki.netbeans.org/DevFaqEditorHowIsMimeLookupComposed] , 
-that was last modified by NetBeans user Vstejskal 
-on 2010-06-16T14:05:24Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+link:{apidoclink}org-netbeans-modules-editor-mimelookup/index.html[MimeLookup API]

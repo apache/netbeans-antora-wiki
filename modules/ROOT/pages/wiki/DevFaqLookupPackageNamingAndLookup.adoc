@@ -33,16 +33,3 @@
 Q: After adding my class to lookup I get a `ClassNotFoundException` when trying to look it up, why?
 
 A: You might have tried to place the interface and the implementation class in different modules but used the same package name. NetBeans prohibits two or more modules to define classes in the same package. Choose a distinctive package name (or package name prefix) for each module.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupPackageNamingAndLookup[http://wiki.netbeans.org/DevFaqLookupPackageNamingAndLookup] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-01-24T02:36:53Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

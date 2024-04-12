@@ -29,8 +29,9 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 3
 
+include::front::partial$database.adoc[]
 
-* extend from link:https://bits.netbeans.org/dev/javadoc/org-openide-util-ui/org/openide/util/actions/BooleanStateAction.html[org.openide.util.actions.BooleanStateAction]
+* extend from link:{apidoclink}org-openide-util-ui/org/openide/util/actions/BooleanStateAction.html[org.openide.util.actions.BooleanStateAction]
 * in the constructor add a property-change listener to the action itself and let the action implement `PropertyChangeListener `
 * within `PropertyChangeListener#propertyChange` check for the propertyName `PROP_BOOLEAN_STATE` to distinguish the toggle event from other events
 
@@ -102,17 +103,3 @@ public final class SkipAllBreakpoints extends BooleanStateAction implements Prop
 }
 
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqToggleActionAddToEditorToolbar[http://wiki.netbeans.org/DevFaqToggleActionAddToEditorToolbar] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-06-02T21:50:34Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,6 +29,7 @@
 :page-wikidevsection: _lookup
 :page-position: 6
 
+include::front::partial$database.adoc[]
 
 As a result of NetBeans design for extensibility, you'll find a lot of code like this:
 
@@ -72,17 +73,4 @@ com.tomwheeler.example.SpecialDialogDisplayerImpl
 
 ----
 
-More information about this and other Lookup-related topics, including how to set the order of registered services, can be link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/doc-files/api.html[found in the Utilities API documentation].
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupHowToOverride[http://wiki.netbeans.org/DevFaqLookupHowToOverride] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:15:37Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+More information about this and other Lookup-related topics, including how to set the order of registered services, can be link:{apidoclink}org-openide-util/org/openide/util/doc-files/api.html[found in the Utilities API documentation].

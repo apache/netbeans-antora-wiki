@@ -29,6 +29,7 @@
 :page-wikidevsection: _files_and_data_objects
 :page-position: 2
 
+include::front::partial$database.adoc[]
 
 FileObjects are _virtual files_ which live inside a xref:./DevFaqFileSystem.adoc[FileSystem ].  They
 may represent a file on disk - or anything else walks and talks like a file, or can be made to - such as a file
@@ -40,18 +41,5 @@ FileObjects differ from `java.io.File` in certain ways:
 * You can listen for changes on FileObjects
 * `FileObjects` can have key-value pairs of ad-hoc xref:./DevFaqFileAttributes.adoc[attributes ] associated with them
 
-They are part of the link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/doc-files/api.html[Filesystems API];
-the javadoc for FileObject can be found link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileObject.html[here].
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFileObject[http://wiki.netbeans.org/DevFaqFileObject] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-19T01:44:39Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+They are part of the link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/api.html[Filesystems API];
+the javadoc for FileObject can be found link:{apidoclink}org-openide-filesystems/org/openide/filesystems/FileObject.html[here].

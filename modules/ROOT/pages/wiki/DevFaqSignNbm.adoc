@@ -270,16 +270,3 @@ to generate a key file via the keytool-maven-plugin.
 [2] link:http://www.mojohaus.org/nbm-maven-plugin/[http://www.mojohaus.org/nbm-maven-plugin/]
 
 [3] link:http://www.mojohaus.org/nbm-maven-plugin/nbm-mojo.html[http://www.mojohaus.org/nbm-maven-plugin/nbm-mojo.html]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-//This page was exported from link:http://wiki.netbeans.org/DevFaqSignNbm[http://wiki.netbeans.org/DevFaqSignNbm] , 
-that was last modified by NetBeans user Markiewb 
-on 2017-06-10T19:35:58Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

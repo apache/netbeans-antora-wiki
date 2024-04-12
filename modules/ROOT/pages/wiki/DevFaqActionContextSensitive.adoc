@@ -29,6 +29,7 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 5
 
+include::front::partial$database.adoc[]
 
 There are several ways to do this, depending on what exactly you need.  The basic problems all of the available solutions are addressing is that:
 
@@ -78,7 +79,7 @@ If you need something more featureful, there are a few options, old and new:
 
 == NodeAction
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/util/actions/NodeAction.html[NodeAction] is somewhat more flexible, but requires more code to implement.  It is just passed the array of activated nodes whenever that changes, and can choose to enable or disable itself as it wishes.  Essentially this is just an action that automagically xref:./DevFaqTrackingExplorerSelections.adoc[tracks the global Node selection].
+link:{apidoclink}org-openide-nodes/org/openide/util/actions/NodeAction.html[NodeAction] is somewhat more flexible, but requires more code to implement.  It is just passed the array of activated nodes whenever that changes, and can choose to enable or disable itself as it wishes.  Essentially this is just an action that automagically xref:./DevFaqTrackingExplorerSelections.adoc[tracks the global Node selection].
 
 == Roll your own
 
@@ -140,9 +141,9 @@ public class FooAction extends AbstractAction implements LookupListener, Context
 
 == Deprecated CookieAction
 
-In many older (pre-NB 6.8) examples you may find link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction]. It should be (but is not) deprecated. The original info is left here for reference and/or old code maintenance:
+In many older (pre-NB 6.8) examples you may find link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction]. It should be (but is not) deprecated. The original info is left here for reference and/or old code maintenance:
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction] is used to write actions that are sensitive to what is in the selected Node(s) xref:./DevFaqLookup.adoc[Lookup].  You can specify one or more classes that must be present in the selected xref:./DevFaqWhatIsANode.adoc[Node]'s Lookup, and some other semantics about enablement.
+link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction] is used to write actions that are sensitive to what is in the selected Node(s) xref:./DevFaqLookup.adoc[Lookup].  You can specify one or more classes that must be present in the selected xref:./DevFaqWhatIsANode.adoc[Node]'s Lookup, and some other semantics about enablement.
 
 Being an older class, under the hood it is using xref:./DevFaqLookupCookie.adoc[Node.getCookie()], so your action will only be sensitive to things actually returned by that method - in other words, only objects that implement the marker interface `Node.Cookie` can work here.
 
@@ -183,16 +184,3 @@ public final class CustomOpenAction extends org.netbeans.spi.actions.Single<RAFD
 ----
 
 Use `ContextAction` instead of `Single` to create actions that operate on multi-selections.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionContextSensitive[http://wiki.netbeans.org/DevFaqActionContextSensitive] , 
-that was last modified by NetBeans user Jglick 
-on 2011-12-14T00:08:16Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

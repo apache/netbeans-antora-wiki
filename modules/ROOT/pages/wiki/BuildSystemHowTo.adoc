@@ -32,6 +32,7 @@
 :experimental:
 :author: Jesse Glick
 
+include::front::partial$database.adoc[]
 
 [[Overview]]
 == Overview
@@ -61,7 +62,7 @@ Quick architectural summary:
 . Interaction between project implementations and other functionality in the IDE is normally done using queries, a pattern whereby a client can ask a concrete question (e.g. ClassPath.getClassPath(someJavaFile, ClassPath.COMPILE)) and possibly receive an answer; query implementations are registered (using `Lookup.default`) by any modules, and asked in turn. For queries mentioned here, usually the query implementation may be registered in the project (using `Project.lookup`) rather than globally, and the project associated with the file mentioned in the question (e.g. FileOwnerQuery.getOwner(someJavaFile) in the last example) will be asked to provide an answer.
 . Though project type providers are allowed a great deal of leeway in how they implement the project SPIs, there is a fairly extensive SPI support suite which assumes that the project uses Ant as a build tool, and defines a number of convenience implementations optimized towards this system.
 
-NOTE: all API classes and interfaces are referred to by simple name. You can look up the Javadoc for any of these classes quickly using the link:https://bits.netbeans.org/dev/javadocallclasses.html[master class index] for the NetBeans APIs.
+NOTE: all API classes and interfaces are referred to by simple name. You can look up the Javadoc for any of these classes quickly using the link:{apidoclink}allclasses.html[master class index] for the NetBeans APIs.
 
 
 [[How_to_Write_a_Project_Type_.28Generally.29]]
@@ -301,7 +302,7 @@ You could also manually update `build.properties` using `PropertyUtils` to defin
 In-VM tasks present in existing modules:: NetBeans has the ability to run special Ant tasks which interact with other parts of the IDE (and cannot be run outside the IDE). A few commonly required tasks ship with the IDE; if you want to use them, declare a dependency on the module which defines them. You can refer to the tasks by simple name, but when using Ant 1.6+ it is preferable to use the correct “antlib” namespace. (Note that when prototyping a build script you can use the IDE’s code completion for attributes and subelements of these tasks.)
 Web browser integration (`antlib:org.netbeans.modules.browsetask)`:: `<nbbrowse>` lets you open the IDE’s configured web browser on a given URL (or file).
 JPDA debugger integration (`antlib:org.netbeans.modules.debugger.jpda.ant`):: `<nbjpdastart>` asks the IDE’s debugger to start listening on a new JPDA port, and define an Ant property with the port so you can launch a Java process which will connect to that port as a client. `<nbjpdaconnect>` connects to an existing port; more useful for server applications. `<nbjpdareload>` reloads Java classes using “fix & continue” technology.
-Custom in-VM tasks:: You can also define your own in-VM tasks and use them the same way as the predefined ones. See the link:https://bits.netbeans.org/dev/javadocAntModuleAPI/org/apache/tools/ant/module/spi/package-summary.html#register-defs[Ant SPI] for details.
+Custom in-VM tasks:: You can also define your own in-VM tasks and use them the same way as the predefined ones. See the link:{apidoclink}org-apache-tools-ant-module/org/apache/tools/ant/module/spi/package-summary.html#register-defs[Ant SPI] for details.
 
 
 [[Parametrizing_Build_Scripts]]
@@ -509,14 +510,3 @@ Someday there may be an SPI for plugging in natures (behaviors for a project), i
 Currently the JFluid module accomplishes its profiler integration for a fixed list of known project types by relying on knowledge of the disk layout and file formats of those project types, and either running the app directly based on settings read in this way, or generating auxiliary Ant scripts in `nbproject/` which can launch the app with specialized parameters in addition to the normal properties-file-based settings.
 
 Note that you can use e.g. `ClassPath.getClassPath(FileObject)` to find various classpaths which the project claims it uses to build or run the app. How the project actually builds or runs the app is its own business; the API-exposed information is intended for use in code completion, refactoring, and similar development-time-only features, and is intentionally the bare minimum information required for these features. For example, getting the classpath for a _particular_ source root contained in the project is exposed, since the editor and refactoring features need this. Getting the main class of the project (if there is such a thing) is not exposed, since they do not.
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/BuildSystemHowTo[http://wiki.netbeans.org/BuildSystemHowTo] , that was last modified by NetBeans user Jglick on 2010-02-19T17:17:47Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

@@ -31,11 +31,13 @@
 :toc-title:
 :experimental:
 
+include::front::partial$database.adoc[]
+
 [[Overview]]
 == Overview
 
 The xref:front::index.adoc[NetBeans] project provides a rich set of
-link:https://bits.netbeans.org/dev/javadoc/[APIs] that is being developed as
+link:{apidoclink}[APIs] that is being developed as
 part of work of various groups. By distributing development of the
 xref:./API_Design.adoc[API]s to multiple people we can increase the amount of designed,
 reviewed, implemented, tuned and maintained contracts but as each module is
@@ -55,13 +57,13 @@ We understand the APIs as every aspect another piece of system can depend on and
 |===
 |Interface Name |Stability Classification |Specified in What Document? 
 
-|ProviderRegistrationRemoval |xref:./API_Design.adoc#devel[Under Development] |link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/doc-files/api.html#service-lookup[api.html] 
+|ProviderRegistrationRemoval |xref:./API_Design.adoc#devel[Under Development] |link:{apidoclink}org-openide-util/org/openide/util/doc-files/api.html#service-lookup[api.html] 
 
-|LookupAPI |xref:./API_Design.adoc#official[Official] |link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/doc-files/api.html#lookup[[lookup]] 
+|LookupAPI |xref:./API_Design.adoc#official[Official] |link:{apidoclink}org-openide-util/org/openide/util/doc-files/api.html#lookup[[lookup]] 
 
-|LookupSPI |xref:./API_Design.adoc#official[Official] |link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/lookup/package-frame.html[package-frame.html] 
+|LookupSPI |xref:./API_Design.adoc#official[Official] |link:{apidoclink}org-openide-util/org/openide/util/lookup/package-frame.html[package-frame.html] 
 
-|Set of property APIs |Individual |link:https://bits.netbeans.org/dev/javadoc/org-openide-util/architecture-summary.html#group-property[table with definitions] 
+|Set of property APIs |Individual |link:{apidoclink}org-openide-util/architecture-summary.html#group-property[table with definitions] 
 |===
 
 
@@ -133,12 +135,12 @@ be made by using `<a href="#group-name" />`.
 . *Use <usecase> tag* - when answering "arch-usecases" question, surround the
 paragraphs describing the way to use your API with `<usecase name="..."
 id="...">` and `</usecase>`. That way your paragraph will get correct heading
-in the link:https://bits.netbeans.org/dev/javadoc/usecases.html[How to use
+in the link:{apidoclink}usecases.html[How to use
 certain NetBeans APIs] page.  . *Answer "arch-what"* - the first sentence of
 your answer to "arch-what" is used as a short description in the
-link:https://bits.netbeans.org/dev/javadoc/overview-summary.html[overview page]
+link:{apidoclink}overview-summary.html[overview page]
 so write it meaningfully. The full answer is then used in
-link:https://bits.netbeans.org/dev/javadoc/overview-summary.html#def-api-Terminal%20Emulator[the
+link:{apidoclink}overview-summary.html#def-api-Terminal%20Emulator[the
 details] section, so again, make it real and useful description of your module.
 
 . *Link between documents* - important part of documentation is the description
@@ -162,7 +164,7 @@ link:https://github.com/apache/netbeans/blob/master/nbbuild/javadoctools/replace
 
 . *Use Relative Links* - please remove as much as possible of usages of
 non-relative links like
-link:https://bits.netbeans.org/dev/javadoc/[https://bits.netbeans.org/dev/javadoc/]
+link:{apidoclink}[{apidoclink}]
 and replace them with *@TOP@*, *@org-netbeans-module-name@* or *@JDK@* root
 points. The javadoc is being scanned for allowed and disallowed links (defined
 in
@@ -193,7 +195,7 @@ modules you are referring to has already been generated.
 === Publishing Javadoc
 
 All NetBeans project Javadoc sets are being daily regenerated and uploaded to
-the central link:https://bits.netbeans.org/dev/javadoc/[NetBeans API List].
+the central link:{apidoclink}[NetBeans API List].
 When your module can successfully build javadoc as described in previous
 section, it is time to consider adding it to the API list as well. 
 
@@ -235,13 +237,13 @@ link:https://github.com/apache/netbeans/blob/master/apisupport/apisupport.projec
 link:https://github.com/apache/netbeans/blob/master/apisupport/apisupport.project/apichanges.xml[apichanges.xml] and
 link:https://github.com/apache/netbeans/blob/master/apisupport/apisupport.project/nbproject/project.xml[project.xml].
 
-To see an example, check the link:https://bits.netbeans.org/dev/javadoc/org-netbeans-spi-palette/overview-summary.html[overview page of component palette api],
+To see an example, check the link:{apidoclink}org-netbeans-spi-palette/overview-summary.html[overview page of component palette api],
 that has the following structure:
 
 1. *Title and description* is taken from the `arch.xml` 's answer to question `arch-overall`.
 . *List of javadoc packages* is added by the default javadoc doclet.
-. *what is new section* lists five recent api changes listed in `apichanges.xml`. Always add at least one change as this document is used to generate what is link:https://bits.netbeans.org/dev/javadoc/apichanges.html[new for the whole release].
-. *List of usecases* is taken from the `arch.xml` answer to `arch-usecases` question. It shall contain the main introduction into the meaning and usage of the API. Links to javadoc classes and methods are welcomed. Also notice that the answer contributed to link:https://bits.netbeans.org/dev/javadoc/usecases.html[global page with usecases] for all NetBeans APIs.
+. *what is new section* lists five recent api changes listed in `apichanges.xml`. Always add at least one change as this document is used to generate what is link:{apidoclink}apichanges.html[new for the whole release].
+. *List of usecases* is taken from the `arch.xml` answer to `arch-usecases` question. It shall contain the main introduction into the meaning and usage of the API. Links to javadoc classes and methods are welcomed. Also notice that the answer contributed to link:{apidoclink}usecases.html[global page with usecases] for all NetBeans APIs.
 . *Implementation details* close the summary page. The contain answer to `arch-where` question, which shall contain link to NetBeans WebCVS with the module sources like link:https://github.com/apache/netbeans/blob/master/java/project/[https://github.com/apache/netbeans/blob/master/java/project/] for the link:https://github.com/apache/netbeans/blob/master/java/project/[java/project] module. Also an answer to `deploy-dependencies` arch question is generated so other modules know how to express dependency on this one.
 
 *XXX* need to describe: `{@link ...}`, what `package.html` can and cannot do, `@inheritDoc`, etc.
@@ -401,7 +403,7 @@ The expected scenario is that a module with an API starts its development in a C
 
 There is however one restriction. In order to make it easy for API users to find out what is stable API we have come with a simple description: "If a class is in `org.netbeans.api.*` or `org.netbeans.spi.*` packages, and is part of a stable release, then it is xref:./API_Design.adoc#stable[stable]". Such API is then called NetBeans xref:./API_Design.adoc#official[Official] API.
 
-This rule is not meant to block anyone in producing APIs. One can always create an API in less prominent package (say link:https://bits.netbeans.org/dev/javadoc/#def-api-ant[org.netbeans.modules.ant.api]), publish it on netbeans.org as xref:./API_Design.adoc#stable[stable] one and use all the infrastructure for API development that is available. Moreover this approach is not as strict and allows the API to be part of a release even if it has not reached enough stability for unlimited amount of time.
+This rule is not meant to block anyone in producing APIs. One can always create an API in less prominent package (say link:{apidoclink}#def-api-ant[org.netbeans.modules.ant.api]), publish it on netbeans.org as xref:./API_Design.adoc#stable[stable] one and use all the infrastructure for API development that is available. Moreover this approach is not as strict and allows the API to be part of a release even if it has not reached enough stability for unlimited amount of time.
 
 
 [[Support_for_Early_Adoption]]
@@ -416,18 +418,8 @@ There can be situations when strictly following the "official namespace restrict
 The purpose of this "temporary release" is to encourage early adopters to test the APIs in real world and provide feedback to make them better. The publishers of the APIs in return promise to stabilize them soon and do that carefully considering the user impact. As a result NetBeans should be able to deliver important APIs as soon as possible, offer them to early adopters and increase API quality by incorporating the feedback. The adopters could be sure that the APIs will be stabilized in a given time frame and that they will not need to do major changes (like repackaging of all import statements, which was the current strategy) when the API becomes stable. In order to clearly communicate the exceptional state of the APIs, there should be a visible and non-ignorable stamp that such APIs are  xref:./API_Design.adoc#devel[under development]:
 
 * the javadoc documentation headers shall contain visible warnings 
-* the module name shall indicate that it is not stable yet. This shall be done using "/0" in module name, for example `org.netbeans.api.projects.ant/0`. As this string has to be used by every module writer to specify module dependency it forms appropriate warning. When stable version of the module is produced and is incompatible with the "/0" version, the name should change to `org.netbeans.api.projects.ant/2`. If the stable version remains compatible the name of the module should be `org.netbeans.api.projects.ant/1` and appropriate link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html#refactoring[ModuleAutoDeps] shall be provided to upgrade dependencies of modules that used the "/0" version.
+* the module name shall indicate that it is not stable yet. This shall be done using "/0" in module name, for example `org.netbeans.api.projects.ant/0`. As this string has to be used by every module writer to specify module dependency it forms appropriate warning. When stable version of the module is produced and is incompatible with the "/0" version, the name should change to `org.netbeans.api.projects.ant/2`. If the stable version remains compatible the name of the module should be `org.netbeans.api.projects.ant/1` and appropriate link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/api.html#refactoring[ModuleAutoDeps] shall be provided to upgrade dependencies of modules that used the "/0" version.
 
 These suggestions shall ensure that the right balance is achieved between produces and consumers of any NetBeans API. It should however be stated that nobody shall be restricted by "Official namespace restriction" or bound by a time limit of the "temporary release", because if one does not want to create stable API, one does not have to. Contributing to xref:./API_Design.adoc#official[official] API set shall be a privilege as such effort requires more attention and increased amount of work that only those who really care are willing to invest.
 
 Comments or corrections to link:mailto:dev@netbeans.apache.org[dev@netbeans.apache.org]
-
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-//This page was exported from link:http:///wiki.netbeans.org/APIDevelopment[http://wiki.netbeans.org/APIDevelopment] , 
-that was last modified by NetBeans user Jtulach on 2014-01-06T11:46:32Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

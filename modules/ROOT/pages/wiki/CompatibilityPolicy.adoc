@@ -31,6 +31,8 @@
 :toclevels: 5
 :experimental:
 
+include::front::partial$database.adoc[]
+
 == Introduction
 
 We have long had a general xref:./VersioningPolicy.adoc[VersioningPolicy]
@@ -55,11 +57,11 @@ We can call such an API _separable_ and changes to such APIs are relatively stra
 
 When a whole class is deprecated, it is best to move this class to a deprecated module.
 Over time we can collect deprecated classes and safely package them up.
-A link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html#deprecation[deprecated module]
+A link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/api.html#deprecation[deprecated module]
 is marked with `OpenIDE-Module-Deprecated: true`
 and can include a localizable `OpenIDE-Module-Deprecation-Message` as well.
 
-You can use the link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html#refactoring[module refactoring facility]
+You can use the link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/api.html#refactoring[module refactoring facility]
 to retain binary compatibility for old client modules still referring to the class
 in its original module.
 They can migrate on their own schedule.
@@ -229,17 +231,3 @@ If there is a policy of using major release version ranges to accommodate planne
 then abrupt incompatible changes would need to be accompanied by increments of the major release version of the API module by 2 or more
 (i.e., one more than the minimum grace period length).
 
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/CompatibilityPolicy[http://wiki.netbeans.org/CompatibilityPolicy] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-18T15:24:35Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-15, and needs to be reviewed.
-====

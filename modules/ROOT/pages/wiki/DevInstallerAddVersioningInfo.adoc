@@ -88,16 +88,3 @@ With this NBI will take care of setting the Registry Keys.
 How you actually override the ConfigurationLogic.java file depends if you're using Ant or Maven. You should be able to figure it out with some Googling.
 
 Provided in the platform-dev mailing list by Peter Hansson
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevInstallerAddVersioningInfo[http://wiki.netbeans.org/DevInstallerAddVersioningInfo] , 
-that was last modified by NetBeans user Markiewb 
-on 2014-12-28T20:56:56Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

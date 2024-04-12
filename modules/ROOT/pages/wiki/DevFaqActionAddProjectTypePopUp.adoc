@@ -82,17 +82,3 @@ For example
 </ul>
 
 Applies to: NetBeans 7.0+
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddProjectTypePopUp[http://wiki.netbeans.org/DevFaqActionAddProjectTypePopUp] , 
-that was last modified by NetBeans user Markiewb 
-on 2017-02-08T22:29:09Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

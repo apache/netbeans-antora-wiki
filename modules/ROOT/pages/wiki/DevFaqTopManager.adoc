@@ -41,16 +41,3 @@ If you were calling `TopManager.getDefault().getPlaces().nodes().projectDesktop(
 
 
 Applies to: NetBeans 4.0+
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTopManager[http://wiki.netbeans.org/DevFaqTopManager] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:02:29Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,6 +29,8 @@
 :page-wikidevsection: _getting_started
 :page-position: 2
 
+include::front::partial$database.adoc[]
+
 The NetBeans Platform has a learning curve.  
 The goal of this FAQ is to get you over the basic humps quickly.  
 Being proficient does not necessarily mean knowing everything there is to know.  
@@ -37,7 +39,7 @@ It means being able to find what you need to know quickly when you need it.  Her
 == Javadoc
 
 The reference documentation for all of NetBeans APIs can be found on the web here:
-link:https://bits.netbeans.org/dev/javadoc/index.html[http://bits.netbeans.org/dev/javadoc/index.html].
+link:{apidoclink}index.html[Apache NetBeans APIs].
 
 If you want a local copy of it, you can either download it from the update center, or build it from your source checkout
 
@@ -113,16 +115,3 @@ Note: dev@platform.netbeans.org was formerly dev@openide.netbeans.org - older ar
 
 Ask questions, and when you can answer them, do that too.  There is a very healthy and helpful community there.
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqBecomingProficient[http://wiki.netbeans.org/DevFaqBecomingProficient] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-13T23:38:26Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -104,16 +104,3 @@ public class ExplorerManagerProviderPanel extends JPanel
 [2] link:https://netbeans.org/projects/platform/lists/dev/archive/2008-01/message/370[https://netbeans.org/projects/platform/lists/dev/archive/2008-01/message/370]
 
 [3] link:http://netbeansrcp.wordpress.com/2009/04/01/adding-explorer-components-into-the-netbeans-palette/[http://netbeansrcp.wordpress.com/2009/04/01/adding-explorer-components-into-the-netbeans-palette/]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqExplorerViewsInMantisse[http://wiki.netbeans.org/DevFaqExplorerViewsInMantisse] , 
-that was last modified by NetBeans user Markiewb 
-on 2014-11-23T11:36:09Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -51,17 +51,3 @@ to see which module (by code name) contributes each layer file (or folder),
 including menu items and so on.
 You can also just look at the trunk version of this file
 link:http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/build/generated/layers.txt[here].
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFindLocationInSourcesFromUi[http://wiki.netbeans.org/DevFaqFindLocationInSourcesFromUi] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:44:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

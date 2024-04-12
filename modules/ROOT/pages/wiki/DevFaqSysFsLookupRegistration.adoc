@@ -29,6 +29,7 @@
 :page-wikidevsection: _lookup
 :page-position: 16
 
+include::front::partial$database.adoc[]
 
 In short, you probably do not want to.
 The typical way of registering services is via `META-INF/services` registration: xref:./DevFaqLookupDefault.adoc[DevFaqLookupDefault].
@@ -86,7 +87,7 @@ replace `instanceClass` with `instanceCreate`, e.g.:
 ----
 
 It is also possible to pass parameters to the factory method;
-see link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/doc-files/api.html#instances[API documentation] for details.
+see link:{apidoclink}org-openide-util/org/openide/util/doc-files/api.html#instances[API documentation] for details.
 
 Client code is unaware of the registration mechanism, so the code used to look up a registered implementation of the interface would be the same as always; for example:
 
@@ -97,16 +98,3 @@ SampleInterface intf = Lookup.getDefault().lookup(SampleInterface.class);
 // now do something with intf...
 
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSysFsLookupRegistration[http://wiki.netbeans.org/DevFaqSysFsLookupRegistration] , 
-that was last modified by NetBeans user Silhanek 
-on 2011-01-28T21:16:34Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

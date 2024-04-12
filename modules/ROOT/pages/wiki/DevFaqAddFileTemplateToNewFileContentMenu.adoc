@@ -29,9 +29,10 @@
 :page-wikidevsection: _project_types
 :page-position: 8
 
+include::front::partial$database.adoc[]
 
 See documentation of "Privileged and Recommended Templates" at 
-link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-projectuiapi/org/netbeans/spi/project/ui/templates/support/package-summary.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-projectuiapi/org/netbeans/spi/project/ui/templates/support/package-summary.html]
+link:{apidoclink}org-netbeans-modules-projectuiapi/org/netbeans/spi/project/ui/templates/support/package-summary.html[Package org.netbeans.spi.project.ui.templates.support]
 
 Example:
 `
@@ -65,17 +66,3 @@ Further examples:
 
 * xref:front::blogs/geertjan/privileged_and_recommended_templates.adoc[Privileged and Recommended Templates]
 * xref:front::blogs/geertjan/nescide_an_ide_for_the.adoc[Nescide: An IDE for Hacking the TinyOS Platform ]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAddFileTemplateToNewFileContentMenu[http://wiki.netbeans.org/DevFaqAddFileTemplateToNewFileContentMenu] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-08-10T16:08:13Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

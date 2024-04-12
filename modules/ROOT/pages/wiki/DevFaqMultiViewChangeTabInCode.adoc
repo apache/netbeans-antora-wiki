@@ -29,6 +29,8 @@
 :page-wikidevsection: _xml_multiview_api
 :page-position: 1
 
+include::front::partial$database.adoc[]
+
 Using `org.netbeans.core.api.multiview.MultiViews` you can get an instance of `org.netbeans.core.api.multiview.MultiViewHandler`.
 
 For example: Get the handler for the current TopComponent
@@ -46,18 +48,4 @@ Using this handler you can call
 * `requestActive/requestVisible(MultiViewPerspective desc)` to activate the tab
 
 See also
-link:https://bits.netbeans.org/dev/javadoc/org-netbeans-core-multiview/org/netbeans/core/api/multiview/MultiViewHandler.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-core-multiview/org/netbeans/core/api/multiview/MultiViewHandler.html]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMultiViewChangeTabInCode[http://wiki.netbeans.org/DevFaqMultiViewChangeTabInCode] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-02-10T19:04:50Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+link:{apidoclink}org-netbeans-core-multiview/org/netbeans/core/api/multiview/MultiViewHandler.html[MultiViewHandler]

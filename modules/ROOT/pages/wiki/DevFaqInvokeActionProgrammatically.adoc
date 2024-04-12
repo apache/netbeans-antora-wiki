@@ -29,6 +29,7 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 42
 
+include::front::partial$database.adoc[]
 
 Use `FileUtil.getConfigObject()`
 
@@ -64,19 +65,5 @@ action.actionPerformed(ev);
 
 See 
 
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileUtil.html#getConfigObject(java.lang.String,%20java.lang.Class[http://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileUtil.html#getConfigObject(java.lang.String,%20java.lang.Class])
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/Actions.html#forID(java.lang.String,%20java.lang.String[http://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/Actions.html#forID(java.lang.String,%20java.lang.String])
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqInvokeActionProgrammatically[http://wiki.netbeans.org/DevFaqInvokeActionProgrammatically] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-07-23T12:51:30Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+* link:{apidoclink}org-openide-filesystems/org/openide/filesystems/FileUtil.html#getConfigObject(java.lang.String,%20java.lang.Class[FileUtil.getConfigObject(java.lang.String, java.lang.Class])
+* link:{apidoclink}org-openide-awt/org/openide/awt/Actions.html#forID(java.lang.String,%20java.lang.String[Actions.forID(java.lang.String, java.lang.String])

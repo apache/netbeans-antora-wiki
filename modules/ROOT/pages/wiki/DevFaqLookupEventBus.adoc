@@ -29,6 +29,8 @@
 :page-wikidevsection: _lookup
 :page-position: 15
 
+include::front::partial$database.adoc[]
+
 [source,java]
 ----
 
@@ -47,17 +49,17 @@ Dne Monday 26 November 2007 17:37:48 Rob Ratcliff napsal(a):
 ----
 
 I've been thinking about this for a while and I believe that there is event 
-bus like system in NetBeans. It is link:http://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/Utilities.html#actionsGlobalContext()[Utilities.actionsGlobalContext()]
+bus like system in NetBeans. It is link:{apidoclink}org-openide-util/org/openide/util/Utilities.html#actionsGlobalContext()[Utilities.actionsGlobalContext()]
 
 We have our event bus and it is accessible via 
-link:http://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/Utilities.html#actionsGlobalContext()[Utilities.actionsGlobalContext()]. Indeed it may not be perfect, but it plays 
+link:{apidoclink}org-openide-util/org/openide/util/Utilities.html#actionsGlobalContext()[Utilities.actionsGlobalContext()]. Indeed it may not be perfect, but it plays 
 exactly the role described in the presentation. Menu, Toolbar, etc. listen on 
 it, while somebody else updates it.
 
 Indeed, there could be some improvements. We do not support merging of events 
 or network access, but if one really cares, there is a way to plug into the 
 system. All one needs to do is to implement 
-link:http://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/ContextGlobalProvider.html[ContextGlobalProvider]
+link:{apidoclink}org-openide-util/org/openide/util/ContextGlobalProvider.html[ContextGlobalProvider]
 One sample implelemention is in openide/windows and second in 
 imagine.dev.java.net.
 
@@ -70,7 +72,7 @@ It is a place to contain events or objects that somehow appear in the system.
 It allows anyone to selectively listen on what is happening in link:https://spar.dev.java.net/source/browse/spar/trunk/code/plugins/spar/src/com/jasperpotts/spar/event/application/[the bus]
 
 So in fact event bus is a central listener. Just like 
-link:http://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/Utilities.html#actionsGlobalContext()[Utilities.actionsGlobalContext()].
+link:{apidoclink}org-openide-util/org/openide/util/Utilities.html#actionsGlobalContext()[Utilities.actionsGlobalContext()].
 
 Indeed it could be improved. Is there anyone who would like to contribute in 
 improving our actionsGlobalContext? If so, what should be done?
@@ -142,16 +144,3 @@ would be useful to you.
 Thanks!
 Rob
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupEventBus[http://wiki.netbeans.org/DevFaqLookupEventBus] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:51:59Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

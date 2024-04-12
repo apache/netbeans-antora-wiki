@@ -82,16 +82,3 @@ for (SomeService s : Lookup.getDefault().lookupAll(SomeService.class)) {
     // ...
 }
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupGenerics[http://wiki.netbeans.org/DevFaqLookupGenerics] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-19T00:29:05Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

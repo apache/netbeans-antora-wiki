@@ -290,16 +290,3 @@ autoupdate.catalog.url2=url2
 .
 autoupdate.catalog.urlx=urlx
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAutomaticPlatformDownload[http://wiki.netbeans.org/DevFaqAutomaticPlatformDownload] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-17T22:37:38Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

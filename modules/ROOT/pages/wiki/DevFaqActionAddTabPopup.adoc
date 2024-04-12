@@ -34,17 +34,3 @@
 
 Applies to: NetBeans IDE 7.1 and above
 Platforms: All
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddTabPopup[http://wiki.netbeans.org/DevFaqActionAddTabPopup] , 
-that was last modified by NetBeans user Jglick 
-on 2011-12-14T00:16:38Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

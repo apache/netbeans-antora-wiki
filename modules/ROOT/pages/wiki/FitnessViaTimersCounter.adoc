@@ -35,11 +35,13 @@ ifdef::env-github[]
 :imagesdir: ../../images
 endif::[]
 
+include::front::partial$database.adoc[]
+
 == Timers/Counters
 
 Timers/counters (a.k.a Runtime watches) is a plugin that defined a convention
 based on
-link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/doc-files/logging.html#structured[structured logging] 
+link:{apidoclink}org-openide-util/org/openide/util/doc-files/logging.html#structured[structured logging] 
 for communicating some performance metrics. It depends on <<Probes,probes>> spread over the code of
 interest, but the probes themselves don't depend on the plugin.
 
@@ -117,13 +119,3 @@ image:wiki/RuntimeWatches.png[]
 It is easy to enhance existing functional tests with checkpoints asserting that all probes of a kind has been released. See xref:./FitnessMemoryLeaks.adoc[FitnessMemoryLeaks].
 
 xref:./Category_Performance_ToolsAndTests.adoc[Category:Performance:ToolsAndTests] xref:./Category_Performance_HowTo.adoc[Category:Performance:HowTo]
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FitnessViaTimersCounter[http://wiki.netbeans.org/FitnessViaTimersCounter] , that was last modified by NetBeans user Tpavek on 2010-02-18T17:46:48Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

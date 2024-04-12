@@ -158,14 +158,3 @@ Tentatively:
 * *collect wait info*: generate a subnode below Object.wait() or monitor enter(?) with a subtree of other threads activity during the blocked time
 * image:wiki/yes.png[] *format*: change the sampling format to be (more or less) GZip of stacktraces. Processing to tree structure would occur later. Done for NetBeans 6.9
 * xref:./FitnessViaPostMortem.adoc[FitnessViaPostMortem]
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FitnessViaPostMortem[http://wiki.netbeans.org/FitnessViaPostMortem] , that was last modified by NetBeans user Pjiricka on 2011-04-06T15:24:36Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

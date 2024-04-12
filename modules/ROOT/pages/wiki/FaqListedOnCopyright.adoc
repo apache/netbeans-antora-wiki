@@ -30,15 +30,3 @@
 == I have a JCA on file and I have made a code contribution to netbeans.org. Can I get listed on the copyright notice?
 
 It is impractical to include the names of all contributors to netbeans.org in the copyright notice. Instead, Oracle includes a list of all contributors to the netbeans.org project among others at: link:http://www.oracle.com/technetwork/goto/oca[http://www.oracle.com/technetwork/goto/oca]. If you are not listed, and should be, please contact link:mailto:jiri.kovalsky@oracle.com[Jiri Kovalsky], NetBeans Community Manager.
-
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqListedOnCopyright[http://wiki.netbeans.org/FaqListedOnCopyright] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2011-12-12T14:41:18Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

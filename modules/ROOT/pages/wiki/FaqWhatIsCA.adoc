@@ -39,14 +39,3 @@ The OCA defines various types of contribution, covers its copyrights, patents an
 
 * List of link:https://netbeans.org/about/legal/approved-contributors.html[approved contributors]
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqWhatIsCA[http://wiki.netbeans.org/FaqWhatIsCA] , 
-that was last modified by NetBeans user Jtulach 
-on 2014-02-08T04:35:18Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

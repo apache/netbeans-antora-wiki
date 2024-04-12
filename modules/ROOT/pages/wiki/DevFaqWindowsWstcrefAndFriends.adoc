@@ -42,16 +42,3 @@ So what happens is, if the user changes the position of windows, the selected ta
 One handy way to generate all of those files, rather than doing it by hand, is to just create an action in your module that will open your `TopComponent`.  Run it on a clean userdir, open your TopComponent, and put it where you want it to appear.  Shut down.  Go into your xref:./DevFaqUserDir.adoc[user dir], and copy the files the IDE persisted into your module.  Edit to taste, add references in your module's layer file (any module that opens a component is a good example - try core/navigation) and voila.
 
 You may want to look at the xref:./DevFaqSampleCode.adoc[samples] - there are example modules that use all of the declarative window system APIs and file formats.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWindowsWstcrefAndFriends[http://wiki.netbeans.org/DevFaqWindowsWstcrefAndFriends] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:06:37Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

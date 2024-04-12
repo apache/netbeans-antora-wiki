@@ -36,15 +36,3 @@ When you create a new window system component (xref:./DevFaqWindowsTopComponent.
 ---
 
 Applies to: NetBeans 5.0, 5.5, 6.x
-
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWindowsMatisse[http://wiki.netbeans.org/DevFaqWindowsMatisse] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:05:57Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

@@ -111,17 +111,3 @@ for
 There is still more to do. Like to configure export packages, signing, homepage and so one. Most of these configuration settings defined in the original project.properties have a counterpart in the plugin configuration of the nbm-maven-plugin. See the detailed goal documentation at link:http://mojo.codehaus.org/nbm-maven/nbm-maven-plugin/nbm-mojo.html[http://mojo.codehaus.org/nbm-maven/nbm-maven-plugin/nbm-mojo.html]
 
 Copied from link:http://benkiew.wordpress.com/2013/10/21/how-convert-an-ant-based-netbeans-module-to-a-maven-based-netbeans-module/[http://benkiew.wordpress.com/2013/10/21/how-convert-an-ant-based-netbeans-module-to-a-maven-based-netbeans-module/]. Tested with NB7.4
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMavenHowToMigrateFromANT[http://wiki.netbeans.org/DevFaqMavenHowToMigrateFromANT] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-10-22T19:52:24Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

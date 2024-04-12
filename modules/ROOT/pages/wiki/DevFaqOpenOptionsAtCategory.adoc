@@ -29,23 +29,11 @@
 :page-wikidevsection: _settings
 :page-position: 6
 
+include::front::partial$database.adoc[]
 
-See link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/org/netbeans/api/options/OptionsDisplayer.html#open-java.lang.String-[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/org/netbeans/api/options/OptionsDisplayer.html#open-java.lang.String-]
+See link:{apidoclink}org-netbeans-modules-options-api/org/netbeans/api/options/OptionsDisplayer.html#open-java.lang.String-[OptionsDisplayer.html(String)]
 
 For example
 `
 OptionsDisplayer.getDefault().open("Java"+ "/de.markiewb.netbeans.plugins.eclipse.formatter.options");
 `
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOpenOptionsAtCategory[http://wiki.netbeans.org/DevFaqOpenOptionsAtCategory] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-02-13T11:36:25Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

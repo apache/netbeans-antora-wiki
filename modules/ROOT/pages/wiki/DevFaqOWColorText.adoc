@@ -63,16 +63,3 @@ See link:http://plugins.netbeans.org/plugin/39695/?show=true[here] for a plugin 
 
 
 Applies to: NetBeans 6.7 or later, (IOColorPrint 6.8 or later).
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOWColorText[http://wiki.netbeans.org/DevFaqOWColorText] , 
-that was last modified by NetBeans user Jhavlin 
-on 2011-12-12T13:36:25Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

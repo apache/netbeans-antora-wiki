@@ -29,10 +29,11 @@
 :page-wikidevsection: _properties_and_propertysheet
 :page-position: 2
 
+include::front::partial$database.adoc[]
 
 I want to have the properties of my custom nodes displayed in the Properties view when they are selected in my tree view. How do I go about doing that?
 
-Listen for changes in the selected nodes in the [link:https://bits.netbeans.org/dev/javadoc/org-openide-explorer/org/openide/explorer/ExplorerManager.html[http://bits.netbeans.org/dev/javadoc/org-openide-explorer/org/openide/explorer/ExplorerManager.html] `ExplorerManager`], and set the `activatedNodes` property on the parent [[DevFaqWindowsTopComponent| `TopComponent`]] which contains your tree view:
+Listen for changes in the selected nodes in the [link:{apidoclink}org-openide-explorer/org/openide/explorer/ExplorerManager.html[ExplorerManager], and set the `activatedNodes` property on the parent xref:wiki/DevFaqWindowsTopComponent.adoc[TopComponent] which contains your tree view:
 
 [source,java]
 ----
@@ -61,17 +62,3 @@ public class MyComponent extends TopComponent implements PropertyChangeListener 
 ----
 
 Note that the example above is not a complete `TopComponent` implementation with a tree view and nodes. It is simply demonstrating how to have the selected node's properties shown in the Properties view.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqPropertySheetNodes[http://wiki.netbeans.org/DevFaqPropertySheetNodes] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-25T16:17:19Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

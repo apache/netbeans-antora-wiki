@@ -38,16 +38,3 @@ What you need is for your libraries to _be_ a module; see xref:./DevFaqWrapperMo
 
 
 Applies to: NetBeans 6.8 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNetBeansClasspath[http://wiki.netbeans.org/DevFaqNetBeansClasspath] , 
-that was last modified by NetBeans user Rmichalsky 
-on 2009-12-02T13:40:32Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

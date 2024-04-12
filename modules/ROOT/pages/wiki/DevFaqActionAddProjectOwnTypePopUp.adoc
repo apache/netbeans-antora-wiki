@@ -29,6 +29,7 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 14
 
+include::front::partial$database.adoc[]
 
 * To add the Copy/Delete/Move/Rename action to your project's node, you should:
 1. Implement the corresponding interface such as `org.netbeans.spi.project.CopyOperationImplementation`.
@@ -90,18 +91,4 @@ public @Override Action[] getActions(boolean context) {
 * To add the other actions specified in the Project API such as `closeProjectAction`, just add it to the list of actions of your node.
 * To add an action you created yourself, just add it to the list of actions of your node.
 
-See also: link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-projectuiapi/org/netbeans/spi/project/ui/support/CommonProjectActions.html[Common Project Actions]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddProjectOwnTypePopUp[http://wiki.netbeans.org/DevFaqActionAddProjectOwnTypePopUp] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:31:30Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+See also: link:{apidoclink}org-netbeans-modules-projectuiapi/org/netbeans/spi/project/ui/support/CommonProjectActions.html[Common Project Actions]

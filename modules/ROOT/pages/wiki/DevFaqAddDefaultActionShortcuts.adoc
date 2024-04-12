@@ -42,16 +42,3 @@ For Maven, add the following dependency to your app:
       <version>${netbeans.version}</version>        
   </dependency>
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAddDefaultActionShortcuts[http://wiki.netbeans.org/DevFaqAddDefaultActionShortcuts] , 
-that was last modified by NetBeans user Jmborer 
-on 2013-09-13T07:52:53Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -53,16 +53,3 @@ T obj=FileUtil.getConfigObject("Actions/Window/org-foo-B.instance", T.class)
 Action action=FileUtil.getConfigObject("Actions/Window/org-netbeans-core-windows-actions-ResetWindowsAction.instance", Action.class) 
 
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFindInstance[http://wiki.netbeans.org/DevFaqFindInstance] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-03-31T16:20:03Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

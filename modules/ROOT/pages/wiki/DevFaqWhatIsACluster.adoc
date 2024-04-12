@@ -29,6 +29,8 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 17
 
+include::front::partial$database.adoc[]
+
 A cluster is a directory on disk.  A cluster contains xref:./DevFaqWhatIsAModule.adoc[modules].  If you are writing a small NetBeans-based application, you probably do not need to be too concerned about clusters, although you may encounter the concept if you need to bundle additional files (native executables, for example) with a module.  Clusters become important if you are writing an extensible application (or multiple applications) of your own, where you are sharing some common modules between multiple applications.
 
 The NetBeans launcher is passed a list of _cluster directories_ on startup (see `$NB_HOME/etc/netbeans.clusters` in the IDE - the names in this file are relative paths from the IDE install directory - but they could also be absolute paths on disk).  The launcher looks for the modules (JAR files) which it should load in those &quot;cluster directories&quot;.  A NetBeans-based application typically consists of, at a minimum, the `platform` cluster and at least one application-specific cluster which contains modules that implement the business logic of that application.
@@ -43,7 +45,7 @@ The NetBeans platform expects cluster directories to have a certain minimal stru
 
 A cluster may contain additional files and folders as needed.  For example, it is common for modules which bundle 3rd-party libraries to include those JAR files in `modules/ext/`.  A cluster can contain whatever other files a module needs at runtime - for example, a module that installs a mobile phone emulator would probably include the native emulator executable.
 
-To include additional files in your cluster, simply create a directory `release/` underneath your module's project directory (_not_ the `src/` directory for your module, but its parent folder - the one that _is_ your module project).  Anything under `$PROJECT/release/` will be copied into your cluster by the build process.  To find the file at runtime, use link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/InstalledFileLocator.html[InstalledFileLocator], e.g.
+To include additional files in your cluster, simply create a directory `release/` underneath your module's project directory (_not_ the `src/` directory for your module, but its parent folder - the one that _is_ your module project).  Anything under `$PROJECT/release/` will be copied into your cluster by the build process.  To find the file at runtime, use link:{apidoclink}org-openide-modules/org/openide/modules/InstalledFileLocator.html[InstalledFileLocator], e.g.
 
 [source,java]
 ----
@@ -67,7 +69,7 @@ Here's the history of clusters:
 * The platform, and other parts of NetBeans therefore should be able to be shared among multiple applications and used by them at the same time.
 * Therefore, a NetBeans-based application should not assume that all of its parts ("clusters" of modules which interdepend) are underneath the same directory on disk -- the platform might be in one directory, while the Java modules are someplace else entirely.
 * Before this, a typical way to find a file underneath a NetBeans install was new File(System.getProperty("netbeans.home")) to get the NB install directory;  then you could try to find a file somewhere under that directory.
-* If there is not necessarily an "install directory" at all, then you need something like link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/InstalledFileLocator.html[InstalledFileLocator], which knows about the cluster directories being used in the running application, and can look in all of them.  That is much cleaner than you having to write the code to figure out where all of those directories are and look in each one.
+* If there is not necessarily an "install directory" at all, then you need something like link:{apidoclink}org-openide-modules/org/openide/modules/InstalledFileLocator.html[InstalledFileLocator], which knows about the cluster directories being used in the running application, and can look in all of them.  That is much cleaner than you having to write the code to figure out where all of those directories are and look in each one.
 
 In short, while it is typical for all of the parts of an application to be under a common parent directory, that is neither required nor guaranteed.
 
@@ -132,16 +134,3 @@ A _cluster_ is a compatibility unit and has a version. It is set of modules that
 
 Most of the reasoning that lead to creation of the concept can be found in:
 xref:front::projects/platform/articles/installation.adoc[Installation Structure]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWhatIsACluster[http://wiki.netbeans.org/DevFaqWhatIsACluster] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T19:56:39Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

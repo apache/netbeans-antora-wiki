@@ -219,16 +219,3 @@ of modules on _both_ sides of the dependency.
 Applies to: NetBeans 5.x, 6.x
 
 Platforms: all
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqImplementationDependency[http://wiki.netbeans.org/DevFaqImplementationDependency] , 
-that was last modified by NetBeans user Jglick 
-on 2011-08-03T14:59:11Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

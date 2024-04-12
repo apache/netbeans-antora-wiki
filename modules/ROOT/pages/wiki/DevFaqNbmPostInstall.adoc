@@ -112,16 +112,3 @@ To see that `samplepostinstall` project in action
 _I'm not author of this feature, it's only my investigation._
 
 Do not hesitate to contact me on mailto:jrechtacek@netbeans.org if you have any question.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNbmPostInstall[http://wiki.netbeans.org/DevFaqNbmPostInstall] , 
-that was last modified by NetBeans user Jtulach 
-on 2011-07-14T09:51:25Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

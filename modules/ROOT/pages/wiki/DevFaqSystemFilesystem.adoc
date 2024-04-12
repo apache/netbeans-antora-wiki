@@ -29,6 +29,7 @@
 :page-wikidevsection: _configuration_how_modules_install_things
 :page-position: 5
 
+include::front::partial$database.adoc[]
 
 The system filesystem is the central repository for configuration data in NetBeans.
 It is composed at runtime of a stack of XML layers (xref:./DevFaqModulesLayerFile.adoc[DevFaqModulesLayerFile])
@@ -75,23 +76,10 @@ There are several things which affect how objects are used, all or some of which
 
 == Available documentation on System Filesystem contents
 
-link:https://bits.netbeans.org/dev/javadoc/layers.html[List of files and folders in the system filesystem]
+link:{apidoclink}layers.html[List of files and folders in the system filesystem]
 in NetBeans API Javadoc lists some locations.
 Feel free to file documentation bugs for modules you know read other locations
 but which fail to list them in their `arch.xml` file.
 
 
 Applies to: NetBeans 6.5 and newer
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSystemFilesystem[http://wiki.netbeans.org/DevFaqSystemFilesystem] , 
-that was last modified by NetBeans user Jglick 
-on 2009-12-03T13:51:54Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

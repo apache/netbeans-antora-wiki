@@ -42,17 +42,3 @@ somePropertySet.putValue ("tabName", NbBundle.getMessage (getClass(), "KEY_Somet
 (the above code gets you a localized string - you can also pass a hard-coded one if you are sure your UI will never need to be translated).
 
 All `PropertySet`s that have the same value will be included under the same button/tab in the property sheet.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqPropertySheetTabs[http://wiki.netbeans.org/DevFaqPropertySheetTabs] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:58:53Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

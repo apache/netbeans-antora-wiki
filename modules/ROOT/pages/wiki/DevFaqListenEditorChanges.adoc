@@ -29,6 +29,7 @@
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 3
 
+include::front::partial$database.adoc[]
 
 == EditorRegistry
 
@@ -60,21 +61,8 @@ Please read javadoc on `EditorRegistry` to see details about the properties deli
 
 If you have a `EditorCookie` you can use `NbDocument.findRecentEditorPane`
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-text/org/openide/text/NbDocument.html#findRecentEditorPane-org.openide.cookies.EditorCookie-[http://bits.netbeans.org/dev/javadoc/org-openide-text/org/openide/text/NbDocument.html#findRecentEditorPane-org.openide.cookies.EditorCookie-]
+link:{apidoclink}org-openide-text/org/openide/text/NbDocument.html#findRecentEditorPane-org.openide.cookies.EditorCookie-[NbDocument.findRecentEditorPane(org.openide.cookies.EditorCookie)]
 
 Applies to: Netbeans 6.x and later
 
 Platforms: All
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqListenEditorChanges[http://wiki.netbeans.org/DevFaqListenEditorChanges] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-02-22T22:27:20Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

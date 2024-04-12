@@ -55,17 +55,3 @@ use
 * xref:./DevFaqActionAddMenuBar.adoc[How do I add an action to the NetBeans menu bar? ]
 * xref:./DevFaqActionAddToolBar.adoc[How do I add an action to the NetBeans tool bar? ]
 * xref:./DevFaqActionAddDataObject.adoc[How do I add an action to my custom node? ]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddEditorPopup[http://wiki.netbeans.org/DevFaqActionAddEditorPopup] , 
-that was last modified by NetBeans user Markiewb 
-on 2014-12-31T11:45:54Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

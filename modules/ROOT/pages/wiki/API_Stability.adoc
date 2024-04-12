@@ -130,12 +130,4 @@ replacement. After that time the API can be removed from the product, while
 trying to preserve it for old clients by making it available in alternative
 ways (e. g. autoupdate centers).
 
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/API%20Stability[http://wiki.netbeans.org/API%20Stability] , that was last modified by NetBeans user Jtulach on 2012-01-07T22:32:21Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====
 

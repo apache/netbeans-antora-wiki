@@ -40,17 +40,3 @@ xref:./DevFaqActionAddFileMime.adoc[DevFaqActionAddFileMime].
 * xref:./DevFaqActionAddEditorPopup.adoc[How do I add an action to the text-editor popup menu?]
 * xref:./DevFaqActionAddMenuBar.adoc[How do I add an action to the NetBeans menu bar?]
 * xref:./DevFaqActionAddToolBar.adoc[How do I add an action to the NetBeans tool bar?]
-
-////
-=== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddDataObject[http://wiki.netbeans.org/DevFaqActionAddDataObject] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:33:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

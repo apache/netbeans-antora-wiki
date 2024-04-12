@@ -29,6 +29,8 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 2
 
+include::front::partial$database.adoc[]
+
 The nuts and bolts of module dependencies are as follows:
 
 * Modules can load classes from modules they depend on.   They have to declare a dependency on them.
@@ -62,21 +64,8 @@ The data saved there is then used to generate the appropriate manifest entries f
 If you are writing a module that will use some third party libraries,
 you probably want to read xref:./DevFaqWrapperModules.adoc[DevFaqWrapperModules] and also xref:./DevFaqWhenUseWrapperModule.adoc[DevFaqWhenUseWrapperModule].
 
-For more details, see the link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/classpath.html[reference documentation about classloading in NetBeans].
+For more details, see the link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/classpath.html[reference documentation about classloading in NetBeans].
 
 
 
 Applies to: NetBeans 6.8 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqModuleDependencies[http://wiki.netbeans.org/DevFaqModuleDependencies] , 
-that was last modified by NetBeans user Rmichalsky 
-on 2009-12-02T13:40:56Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

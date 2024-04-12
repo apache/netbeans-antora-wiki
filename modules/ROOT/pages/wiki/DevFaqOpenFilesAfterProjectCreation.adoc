@@ -36,17 +36,3 @@ A: your new project wizard iterator should be a WizardIterator<Set<FileObject>> 
 
 
 Taken from nbdev mailing list. April 2013
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOpenFilesAfterProjectCreation[http://wiki.netbeans.org/DevFaqOpenFilesAfterProjectCreation] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-04-29T21:18:22Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

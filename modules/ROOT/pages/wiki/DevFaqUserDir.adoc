@@ -29,6 +29,7 @@
 :page-wikidevsection: _configuration_how_modules_install_things
 :page-position: 10
 
+include::front::partial$database.adoc[]
 
 The userdir is a directory passed to NetBeans on startup by the launch script.
 You can specify it on the command line, e.g.:
@@ -58,7 +59,7 @@ tries to contact the running instance via a socket,
 to determine if the lock file is stale or not.
 If it does not make contact, it will display a warning
 and ask the user if startup should continue.
-This same protocol also supports link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-sendopts/overview-summary.html[command-line options].
+This same protocol also supports link:{apidoclink}org-netbeans-modules-sendopts/overview-summary.html[command-line options].
 
 You can find the path to the userdir at runtime if you need to,
 using the system property `netbeans.user`.
@@ -68,16 +69,3 @@ to work with the `config/` subdirectory.
 
 
 Applies to: NetBeans 6.7 and later
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqUserDir[http://wiki.netbeans.org/DevFaqUserDir] , 
-that was last modified by NetBeans user Frederic.deniger 
-on 2012-11-01T17:21:20Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

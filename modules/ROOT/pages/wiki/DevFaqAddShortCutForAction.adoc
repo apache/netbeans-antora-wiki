@@ -42,16 +42,3 @@ Register a shortcut at the "Shortcuts" folder in the layer.xml.
         </file>
     </folder>
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAddShortCutForAction[http://wiki.netbeans.org/DevFaqAddShortCutForAction] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-08-06T14:53:22Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

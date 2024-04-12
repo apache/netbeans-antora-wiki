@@ -44,16 +44,3 @@ editorPane.setText(xml);
 ----
 
 And you will get nice syntax coloring. However you won't get line numbers and other editing facilities since they are not provided by the EditorKit.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqEditorHowToReuseEditorHighlighting[http://wiki.netbeans.org/DevFaqEditorHowToReuseEditorHighlighting] , 
-that was last modified by NetBeans user Jmborer 
-on 2013-09-27T09:13:03Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

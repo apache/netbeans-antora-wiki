@@ -123,16 +123,3 @@ dependencies, etc.  looks like this
 
 
 Applies to: NetBeans 6.5 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWhatIsNbm[http://wiki.netbeans.org/DevFaqWhatIsNbm] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-16T08:13:22Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

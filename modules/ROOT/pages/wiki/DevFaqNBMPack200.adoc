@@ -38,16 +38,3 @@ There are several options to override that behaviour :
 * Set _pack200.excludes=modules/somecodename.jar_ (supports standard Ant's patterns) to exclude particular module jar files. This can be used to disable compression for some jars in case pack200 cause troubles for there jars after installation.
 
 More info: xref:./FitnessForNBMs.adoc[FitnessForNBMs]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNBMPack200[http://wiki.netbeans.org/DevFaqNBMPack200] , 
-that was last modified by NetBeans user Dlipin 
-on 2010-06-15T12:07:10Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

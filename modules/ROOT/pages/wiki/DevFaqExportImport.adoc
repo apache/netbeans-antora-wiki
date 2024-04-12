@@ -29,23 +29,10 @@
 :page-wikidevsection: _settings
 :page-position: 3
 
+include::front::partial$database.adoc[]
 
 The idea is to register patterns for export/import into module's layer. 
 
-See the official API documentation at link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/overview-summary.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/overview-summary.html]
+See the official API documentation at link:{apidoclink}org-netbeans-modules-options-api/overview-summary.html[Options Dialog and SPI]
 
 For historical interests the design document can be found at xref:./ExportImportOptions.adoc#section-ExportImportOptions-ImplementationDetails[Export/Import Options in NetBeans - Proposal].
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqExportImport[http://wiki.netbeans.org/DevFaqExportImport] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-02-23T19:24:33Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

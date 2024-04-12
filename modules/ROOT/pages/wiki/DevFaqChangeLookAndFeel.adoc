@@ -34,17 +34,3 @@ Generally, you can change the look and feel either by passing command line argum
 or do so programmatically on startup in a module's `xref:./DevFaqModulesGeneral.adoc[ModuleInstall]` class. Generally if you're installing a custom look and feel, you probably want to have a separate module to do that. Some look and feels provide NetBeans modules to make it easy to use them.
 
 If you want to test running with a different look and feel during development of your application, and you know it will be on the application's classpath, see the example in xref:./HowToPassCommandLineArgumentsToANetBeansPlatformApplicationWhenRunInsideTheIDE.adoc[HowToPassCommandLineArgumentsToANetBeansPlatformApplicationWhenRunInsideTheIDE] for how to include `--laf` in the runtime arguments to your module suite.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqChangeLookAndFeel[http://wiki.netbeans.org/DevFaqChangeLookAndFeel] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-16T19:56:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

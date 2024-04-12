@@ -29,27 +29,15 @@
 :page-wikidevsection: _tasks_and_progressbar
 :page-position: 4
 
+include::front::partial$database.adoc[]
 
 Use the "External Execution Support API".
 
-* link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-extexecution/overview-summary.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-extexecution/overview-summary.html]
-* link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-extexecution/org/netbeans/api/extexecution/ExecutionService.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-extexecution/org/netbeans/api/extexecution/ExecutionService.html]
+* link:{apidoclink}org-netbeans-modules-extexecution/overview-summary.html[External Execution API]
+* link:{apidoclink}org-netbeans-modules-extexecution/org/netbeans/api/extexecution/ExecutionService.html[ExecutionService]
 * link:https://blogs.oracle.com/phejl/entry/external_execution_support_1_2[https://blogs.oracle.com/phejl/entry/external_execution_support_1_2]
 * link:https://blogs.oracle.com/phejl/entry/external_execution_support_2_2[https://blogs.oracle.com/phejl/entry/external_execution_support_2_2]
 
 Please not that some of the API mentioned in the links above got deprecated in NB 8.1. Please use `extexecution.base` instead. 
 For more details see link:https://bz.apache.org/netbeans/show_bug.cgi?id=244308[https://bz.apache.org/netbeans/show_bug.cgi?id=244308]
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqExternalExecution[http://wiki.netbeans.org/DevFaqExternalExecution] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-08-21T11:34:42Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

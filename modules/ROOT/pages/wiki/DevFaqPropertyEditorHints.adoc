@@ -29,10 +29,11 @@
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 30
 
+include::front::partial$database.adoc[]
 
 NetBeans built-in property editors support a number of "hints" which will affect how the property editor behaves.  A few are global to all property editors;  the rest are specific to property editors for specific types.
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-explorer/org/openide/explorer/doc-files/propertyViewCustomization.html[http://bits.netbeans.org/dev/javadoc/org-openide-explorer/org/openide/explorer/doc-files/propertyViewCustomization.html]
+link:{apidoclink}org-openide-explorer/org/openide/explorer/doc-files/propertyViewCustomization.html[propertyViewCustomization]
 
 Note that all of these are _hints_ - a property editor is free to ignore them or not support them in the future.  However all of these have been present since NetBeans 3.6 and are _should_ still work as of NetBeans 6.9.
 
@@ -43,7 +44,7 @@ Note that all of these are _hints_ - a property editor is free to ignore them or
 
 |Any |`valueIcon` |`javax.swing.Icon` |Causes the property not to show an icon beside the value (should be 16x16 or smaller) when not in edit mode 
 
-|Most editors (string, etc.) |`htmlDisplayValue` |`java.lang.String` |An HTML-ized string which should be rendered using HTML rendering, not literally.  The subset of HTML supported by link:https://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/HtmlRenderer.html[org.openide.awt.HtmlRenderer] is supported.  Generally the value should be a formatted variant of the actual value - otherwise when the user edits the value, it will suddenly seem to have changed. 
+|Most editors (string, etc.) |`htmlDisplayValue` |`java.lang.String` |An HTML-ized string which should be rendered using HTML rendering, not literally.  The subset of HTML supported by link:{apidoclink}org-openide-awt/org/openide/awt/HtmlRenderer.html[org.openide.awt.HtmlRenderer] is supported.  Generally the value should be a formatted variant of the actual value - otherwise when the user edits the value, it will suddenly seem to have changed. 
 
 |All property editors |`nameIcon` |`java.awt.Image` or `javax.swing.Icon` |An icon which should be displayed next to the property name in the property sheet (16x16 or smaller) 
 
@@ -89,18 +90,3 @@ Note that all of these are _hints_ - a property editor is free to ignore them or
 
 
 // xref:./DevFaqDefaultLookup.adoc missing in archive
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqPropertyEditorHints[http://wiki.netbeans.org/DevFaqPropertyEditorHints] , 
-that was last modified by NetBeans user Jmborer 
-on 2015-02-05T15:53:11Z.
-
- 
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

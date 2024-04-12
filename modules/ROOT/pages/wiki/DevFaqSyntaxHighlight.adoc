@@ -33,17 +33,3 @@
 Problem: I have a custom programming language that I want to make available in the NetBeans platform. How do I add syntax highlighting for my language?
 
 Solution: Here is a tutorial on syntax highlighting for custom languages: link:http://wiki.netbeans.org/SyntaxColoringANTLR[http://wiki.netbeans.org/SyntaxColoringANTLR]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSyntaxHighlight[http://wiki.netbeans.org/DevFaqSyntaxHighlight] , 
-that was last modified by NetBeans user Stefika 
-on 2010-10-01T19:56:10Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

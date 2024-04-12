@@ -29,6 +29,8 @@
 :page-wikidevsection: _module_system
 :page-position: 9
 
+include::front::partial$database.adoc[]
+
 Let's begin by stating that you probably do not _need_ to know when other modules are loaded or unloaded.
 The module system takes care of dependency management for you,
 so your module should never be loaded unless all of its stated dependencies are loaded too.
@@ -65,15 +67,15 @@ Instead:
 
 If you simply want to run some code when _your_ module loads or unloads,
 registering an instance of
-link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/ModuleInstall.html[ModuleInstall]
+link:{apidoclink}org-openide-modules/org/openide/modules/ModuleInstall.html[ModuleInstall]
 will do the trick.
 There is even a wizard in the IDE for setting this up.
 
 But in the very rare case that you want to be notified when _other_ modules are loaded or unloaded,
 it is possible because:
 
-1. You can use link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/Lookup.Result.html[Lookup.Result] to listen to changes in the contents of a `Lookup`, even the global lookup.
-2. Every module installs an instance of link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/ModuleInfo.html[ModuleInfo] into the default `Lookup` so the module system (or other code) can find out details about the module including its code name base, version numbers and display name.
+1. You can use link:{apidoclink}org-openide-util/org/openide/util/Lookup.Result.html[Lookup.Result] to listen to changes in the contents of a `Lookup`, even the global lookup.
+2. Every module installs an instance of link:{apidoclink}org-openide-modules/org/openide/modules/ModuleInfo.html[ModuleInfo] into the default `Lookup` so the module system (or other code) can find out details about the module including its code name base, version numbers and display name.
 
 By using these two facts together, it is possible to listen to changes in the installed modules by running code like this at some point in the application's lifecycle (xref:./DevFaqAppLifecycleHooks.adoc[DevFaqAppLifecycleHooks]):
 
@@ -94,16 +96,3 @@ Once you detect that a module has been created you may also want to register a `
 
 
 Applies to: NetBeans 6.7 and later
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqModuleLoadUnloadNotification[http://wiki.netbeans.org/DevFaqModuleLoadUnloadNotification] , 
-that was last modified by NetBeans user Jglick 
-on 2009-12-03T14:18:59Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -31,17 +31,3 @@
 
 
 xref:front::blogs/geertjan/parsing_the_command_line_to.adoc[Info on this here.]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/HowToEnableDisableMenusFromCommandLine[http://wiki.netbeans.org/HowToEnableDisableMenusFromCommandLine] , 
-that was last modified by NetBeans user Anebuzelsky 
-on 2011-12-27T16:33:28Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

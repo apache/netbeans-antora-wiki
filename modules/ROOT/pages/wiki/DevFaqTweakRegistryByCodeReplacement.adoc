@@ -107,17 +107,3 @@ Refer to xref:./TaT_HackingNetBeansXMLLayerPartOne.adoc[TaT_HackingNetBeansXMLLa
 See also xref:./DevFaqKeybindings.adoc[DevFaqKeybindings].
 
 (Reposted from link:http://netbeans.dzone.com/tips/play-with-xml-layer[this entry on NetBeans Zone].)
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTweakRegistryByCodeReplacement[http://wiki.netbeans.org/DevFaqTweakRegistryByCodeReplacement] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:39:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

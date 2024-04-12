@@ -31,11 +31,13 @@
 :toc-title:
 :experimental:
 
+include::front::partial$database.adoc[]
+
 == Run Configurations for Java SE Projects
 
 Links:
 
-* link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-projectapi/org/netbeans/spi/project/doc-files/configurations.html[Technical specification]
+* link:{apidoclink}org-netbeans-modules-projectapi/org/netbeans/spi/project/doc-files/configurations.html[Technical specification]
 * link:https://bz.apache.org/netbeans/show_bug.cgi?id=49636[Tracking issue for Java SE projects]
 * link:https://bz.apache.org/netbeans/show_bug.cgi?id=49652[Tracking issue for API]
 * xref:./NewAndNoteWorthyMilestone3#RunConfigurationsForJavaSEProjects.adoc[Release note]
@@ -139,18 +141,3 @@ compile:
 Generally, anything normally set in `project.properties` can be overridden on a
 per-configuration basis. The *Properties* dialog outside the *Run* panel will
 only show the contents of `project.properties`, however.
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/RunConfigurations49636[http://wiki.netbeans.org/RunConfigurations49636] , 
-that was last modified by NetBeans user Jglick 
-on 2010-02-19T17:02:01Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

@@ -29,15 +29,16 @@
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 11
 
+include::front::partial$database.adoc[]
 
-Yes.  Have your node subclass link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/nodes/AbstractNode.html[AbstractNode]
+Yes.  Have your node subclass link:{apidoclink}org-openide-nodes/org/openide/nodes/AbstractNode.html[AbstractNode]
 or whatever else you like.
 
 *NB 6 > m9 Specific*:
 Implement `ChildFactory`.  To create the `Children` object for your Node, pass it to `Children.create()`.  When the child list needs updating, call `refresh()` on your `ChildFactory`.  Its `createKeys` method will be called again and you can update the set of key objects as needed;  Nodes for objects that remain in the list of keys will simply continue to exist;  additions and removals will be handled.
 
 *NB 5 And Earlier*:
-Have your `Children` object subclass link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/nodes/Children.Keys.html[Children.Keys].
+Have your `Children` object subclass link:{apidoclink}org-openide-nodes/org/openide/nodes/Children.Keys.html[Children.Keys].
 As needed, call `setKeys()` on the `Children.Keys` object.
 Just by passing a larger or smaller (or reordered) list of keys, you will be adding or removing (or reordering) children.
 
@@ -48,16 +49,3 @@ people try to add child nodes to nodes for things like Java files.  If it works 
 ---
 
 Applies to: NetBeans 4.0, 4.1, 5.0
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAddingRemovingChildrenDynamically[http://wiki.netbeans.org/DevFaqAddingRemovingChildrenDynamically] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:36:07Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

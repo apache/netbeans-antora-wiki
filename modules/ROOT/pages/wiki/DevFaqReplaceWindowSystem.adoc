@@ -46,16 +46,3 @@ The `DummyWindowManager` is used as a last resort when no other window manager i
 * Do not include the `Core - Windows` or `Core` modules in your application.  Including `Core` will result in an error message from the NonGui class because it seems to expect an implementation of the `NbTopManager.WindowManager` class which you cannot (easily) provide.  
 
 * No windows will be shown by default on startup.  Use a `ModuleInstall` class' `restored()` method to display your TopComponent.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqReplaceWindowSystem[http://wiki.netbeans.org/DevFaqReplaceWindowSystem] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:59:14Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

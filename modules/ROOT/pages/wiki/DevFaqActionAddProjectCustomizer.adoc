@@ -52,16 +52,3 @@ public class BlaPanelProvider implements ProjectCustomizer.CompositeCategoryProv
 
 See also link:http://blogs.sun.com/gridbag/entry/project_properties_gui_for_custom[Project Properties GUI for custom project templates] and link:http://netbeans.dzone.com/new-tabs-netbeans-project-props[Adding New Tabs to the Project Properties Dialog in NetBeans IDE].
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddProjectCustomizer[http://wiki.netbeans.org/DevFaqActionAddProjectCustomizer] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T23:00:56Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

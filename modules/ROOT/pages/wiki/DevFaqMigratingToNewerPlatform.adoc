@@ -29,6 +29,8 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 37
 
+include::front::partial$database.adoc[]
+
 When migrating a module suite application to use a newer version of the platform you may want to be aware of the following issues:
 
 * *The newer platform may contain new modules in the platform and/or ide cluster that are not excluded in your platform.properties*
@@ -70,22 +72,8 @@ When migrating a module suite application to use a newer version of the platform
 </dependency>
 ----
 
-* *API-changes/New or Deprecated API/Incompatibilities*
-* link:https://bits.netbeans.org/dev/javadoc/apichanges.html[http://bits.netbeans.org/dev/javadoc/apichanges.html]
+* link:{apidoclink}apichanges.html[API Changes]
 
 == Further Resources
 
 * link:http://bruehlicke.blogspot.com/2016/10/porting-my-nb-65-rcp-app-to-nb-82.html[http://bruehlicke.blogspot.com/2016/10/porting-my-nb-65-rcp-app-to-nb-82.html]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMigratingToNewerPlatform[http://wiki.netbeans.org/DevFaqMigratingToNewerPlatform] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-11-24T13:02:17Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
