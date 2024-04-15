@@ -142,4 +142,4 @@ public class ActionRegistrationService {
 ----
 
 Taken from mailing list link:http://forums.netbeans.org/topic65421.html[http://forums.netbeans.org/topic65421.html]
-Based on link:https://blogs.oracle.com/geertjan/entry/dynamically_creating_menu_items_part[https://blogs.oracle.com/geertjan/entry/dynamically_creating_menu_items_part]
+Based on xref:front::blogs/geertjan/dynamically_creating_menu_items_part[]

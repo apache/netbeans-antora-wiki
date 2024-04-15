@@ -30,7 +30,7 @@
 :page-position: 23
 
 
-No.  Not if you want your module to work in the future.  Copy the code instead.  If it is a thing that seems generally useful, link:http://www.netbeans.org/issues/enter_bug.cgi[file an enhancement request] requesting an API for the thing you need to do (and make sure there isn't already a supported way to do it).
+No.  Not if you want your module to work in the future.  Copy the code instead.  If it is a thing that seems generally useful, xref:front::participate/report-issue.adoc[file an enhancement request] requesting an API for the thing you need to do (and make sure there isn't already a supported way to do it).
 
 Anything under `org.netbeans.core` is non-public, not an API, and subject to change without notice.  An API is a contract - an agreement about compatibility.  There is no such contract for this namespace, under any circumstances.  The class or method you are using may not even exist in the future.  Depend on it at your peril.
 

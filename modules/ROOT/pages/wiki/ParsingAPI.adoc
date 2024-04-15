@@ -34,8 +34,8 @@ include::front::partial$database.adoc[]
 
 == Quick Links to Turorials and Docs
 
-* http://netbeans.apache.org/tutorials/nbm-javacc-lexer.html
-* http://netbeans.apache.org/tutorials/nbm-javacc-parser.html
+* xref:tutorial::tutorials/nbm-javacc-lexer.adoc[]
+* xref:tutorial::tutorials/nbm-javacc-parser.adoc[]
 * link:{apidoclink}org-netbeans-modules-parsing-api/overview-summary.html[Official Doc (JavaDoc)]
 
 
@@ -162,14 +162,14 @@ API must be well documented. Developer documentation is a must.
 == Tasks
 
 We have been tracking all tasks related to Parsing API in IssueZilla under *Editor / Parsing &amp; Indexing* category. Please use the following
-link:http://editor.netbeans.org/issues/buglist.cgi?component=editor;subcomponent=Parsing%20%26%20Indexing;issue_status=NEW;issue_status=STARTED;issue_status=REOPENED;&order=issues.priority%2C%20issues.issue_id[query] to see all unresolved issues sorted by their priority.
+link:https://bz.apache.org/netbeans/buglist.cgi?component=Parsing%20%26%20Indexing;bug_status=NEW;bug_status=STARTED;bug_status=REOPENED;&order=issues.priority%2C%20issues.issue_id[query] to see all unresolved issues sorted by their priority.
 
 
 [[Bugs]]
 == Bugs
 
-* link:http://www.netbeans.org/issues/buglist.cgi?issue_status=NEW&issue_status=STARTED&issue_status=REOPENED&email1=&emailtype1=exact&emailassigned_to1=1&email2=&emailtype2=exact&emailreporter2=1&issueidtype=include&issue_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=substring&long_desc=&long_desc_type=substring&issue_file_loc=&issue_file_loc_type=substring&status_whiteboard=parsingapi&status_whiteboard_type=substring&keywords=&keywords_type=anytokens&field0-0-0=status_whiteboard&type0-0-0=notequals&value0-0-0=works_in_parsingapi&cmdtype=doit&namedcmd=my-projects&newqueryname=&order=Reuse+same+sort+as+last+time&Submit+query=Submit+query[List of bugs specific to the parsing api]
-* link:http://www.netbeans.org/issues/buglist.cgi?issue_status=NEW&issue_status=STARTED&issue_status=REOPENED&status_whiteboard=works_in_parsingapi&status_whiteboard_type=substring[List of (trunk) bugs fixed by the parsing API]
+* link:https://bz.apache.org/netbeans/buglist.cgi?bug_status=NEW&bug_status=STARTED&bug_status=REOPENED&email1=&emailtype1=exact&emailassigned_to1=1&email2=&emailtype2=exact&emailreporter2=1&issueidtype=include&issue_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=substring&long_desc=&long_desc_type=substring&issue_file_loc=&issue_file_loc_type=substring&status_whiteboard=parsingapi&status_whiteboard_type=substring&keywords=&keywords_type=anytokens&field0-0-0=status_whiteboard&type0-0-0=notequals&value0-0-0=works_in_parsingapi&cmdtype=doit&namedcmd=my-projects&newqueryname=&order=Reuse+same+sort+as+last+time&Submit+query=Submit+query[List of bugs specific to the parsing api]
+* link:https://bz.apache.org/netbeans/buglist.cgi?bug_status=NEW&bug_status=STARTED&bug_status=REOPENED&status_whiteboard=works_in_parsingapi&status_whiteboard_type=substring[List of (trunk) bugs fixed by the parsing API]
 
 
 [[Additional_information]]

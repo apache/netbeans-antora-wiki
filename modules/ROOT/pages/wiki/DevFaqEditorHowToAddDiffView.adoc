@@ -150,7 +150,7 @@ public final class EditableDiffAction implements ActionListener {
     /**
      * Put the node of dataObject of the fileObject into "globallookup". This
      * allows saving via CTRL-S shortkey from within the editable diff TC. See
-     * http://netbeans.org/bugzilla/show_bug.cgi?id=223703
+     * https://bz.apache.org/netbeans/show_bug.cgi?id=223703
      *
      * @param tc
      * @param fileObject
@@ -233,6 +233,6 @@ public final class EditableDiffAction implements ActionListener {
 
 ----
 
-PS: There is a small trick to enable the "save"-action (Menubar File->Save / CTRL-S) for your new editable diff, which won't get enabled after changing content in the right editor pane of the diff viewer by default. You have to associate your node to the TopComponent – see makeDiffWindowSaveable(). Thanks to  Ondrej Vrabec for the solution – see link:http://netbeans.org/bugzilla/show_bug.cgi?id=223703[http://netbeans.org/bugzilla/show_bug.cgi?id=223703].
+PS: There is a small trick to enable the "save"-action (Menubar File->Save / CTRL-S) for your new editable diff, which won't get enabled after changing content in the right editor pane of the diff viewer by default. You have to associate your node to the TopComponent – see makeDiffWindowSaveable(). Thanks to  Ondrej Vrabec for the solution – see link:https://bz.apache.org/netbeans/show_bug.cgi?id=223703[https://bz.apache.org/netbeans/show_bug.cgi?id=223703].
 
 Copied from  link:http://benkiew.wordpress.com/2013/01/24/netbeans-rcp-editable-diff-viewer-using-custom-base-source/[http://benkiew.wordpress.com/2013/01/24/netbeans-rcp-editable-diff-viewer-using-custom-base-source/]
