@@ -40,7 +40,7 @@ link:http://openide.netbeans.org/tutorial/test-patterns.html#memory[assertGC]
 with cooperation of JUnit or Jemmy/Jelly tests is good enough to allow us to
 write reliable tests looking memory leaks up, providing enough info to easily
 fix them and preventing their re-appearance in the system.
-link:http://openide.netbeans.org/issues/show_bug.cgi?id=121855[issue 121855] or
+link:https://bz.apache.org/netbeans/show_bug.cgi?id=121855[issue 121855] or
 proposal for reuse of xref:./FitnessViaTimersCounter.adoc[timers/counters]
 infrastructure demonstrates the initial attempts in this area. 
 
@@ -56,7 +56,7 @@ and that they will continuously look for memory leaks in their code. We need
 the performance team to write the tests and moreover
 write them in a way that can discover errors in foreign code. This requires
 combination of good imagination and of integration testing, however issue
-link:http://openide.netbeans.org/issues/show_bug.cgi?id=121855[issue 121855]
+link:https://bz.apache.org/netbeans/show_bug.cgi?id=121855[issue 121855]
 shows that this is possible in principle.
 
 The *Memory Leak Testing Infrastructure* was created and is currently maintained by Jaroslav Tulach.
@@ -138,18 +138,3 @@ Add
 *PERFORMANCE* and *TEST* keywords to the issue and into status whiteboard added
 *perfleak* word, that way we will be able to list all leaks fixed in 6.1 time
 frame.
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FitnessMemoryLeaks[http://wiki.netbeans.org/FitnessMemoryLeaks] , 
-that was last modified by NetBeans user Tpavek 
-on 2010-02-18T17:42:56Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-15, and needs to be reviewed.
-====

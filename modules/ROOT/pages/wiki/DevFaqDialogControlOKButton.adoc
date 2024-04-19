@@ -29,8 +29,9 @@
 :page-wikidevsection: _dialogs_api
 :page-position: 2
 
+include::front::partial$database.adoc[]
 
-The link:https://bits.netbeans.org/dev/javadoc/org-openide-dialogs/overview-summary.html[NetBeans Dialogs API] makes it easy to create consistent dialogs that behave as users would expect.  But since you don't directly create the OK button, it may not be obvious how you can enable it or disable it.
+The link:{apidoclink}org-openide-dialogs/overview-summary.html[NetBeans Dialogs API] makes it easy to create consistent dialogs that behave as users would expect.  But since you don't directly create the OK button, it may not be obvious how you can enable it or disable it.
 
 You can enable the OK button by calling <pre>setValid(true)</pre> and disable it by calling <pre>setValid(false)</pre>
 
@@ -119,17 +120,3 @@ desc.setValid(false);
 DialogDisplayer.getDefault().notify(desc);
 desc.setValid(true); //OK button doesnot get enabled
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDialogControlOKButton[http://wiki.netbeans.org/DevFaqDialogControlOKButton] , 
-that was last modified by NetBeans user Darrshan 
-on 2010-06-15T05:06:37Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -42,16 +42,3 @@ Here's the link:http://www.yworks.com/en/products_yed_about.html[yEd] file for t
 // not available on webarchive image:wiki/Netbeans_Window_Modes.graphml[]
 
 If you want a custom "mode" or location for a top component follow this blog from Geertjan's Blog: xref:front::blogs/geertjan/creating_a_new_mode_in.adoc[Creating A New Mode In Your Application]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCustomWindowMode[http://wiki.netbeans.org/DevFaqCustomWindowMode] , 
-that was last modified by NetBeans user Maehem 
-on 2012-06-02T00:37:26Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

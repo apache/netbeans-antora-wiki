@@ -29,9 +29,11 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 27
 
-* Create your action and let it implement link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/actions/Presenter.Menu.html[Presenter.Menu]
-* Return a special `JMenuItem` subclass that implements link:https://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/DynamicMenuContent.html[DynamicMenuContent] from `getMenuPresenter()`
-* Implement link:https://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/DynamicMenuContent.html[DynamicMenuContent] methods to return the desired menu content, using link:https://bits.netbeans.org/dev/javadoc/org-openide-windows/org/openide/windows/TopComponent.Registry.html[TopComponent.Registry] for finding the selected file in the editor.
+include::front::partial$database.adoc[]
+
+* Create your action and let it implement link:{apidoclink}org-openide-util/org/openide/util/actions/Presenter.Menu.html[Presenter.Menu]
+* Return a special `JMenuItem` subclass that implements link:{apidoclink}org-openide-awt/org/openide/awt/DynamicMenuContent.html[DynamicMenuContent] from `getMenuPresenter()`
+* Implement link:{apidoclink}org-openide-awt/org/openide/awt/DynamicMenuContent.html[DynamicMenuContent] methods to return the desired menu content, using link:{apidoclink}org-openide-windows/org/openide/windows/TopComponent.Registry.html[TopComponent.Registry] for finding the selected file in the editor.
 
 link:https://bitbucket.org/jglick/dynamicmenudemo/[https://bitbucket.org/jglick/dynamicmenudemo/] also does something similar.
 
@@ -69,17 +71,3 @@ To hide a menu or toolbar you have to edit your `layer.xml` and append `_hidden`
 It's generally much easier to do this from the NetBeans IDE, link:http://forums.netbeans.org/post-77476.html[as described here].
 
 Note that to hide the Navigate menu one has to declare GoTo_hidden instead of Navigate_hidden (the menu was originally named GoTo, but was later renamed to Navigate by the means of Bundle.properties).
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSwitchingMenusByContext[http://wiki.netbeans.org/DevFaqSwitchingMenusByContext] , 
-that was last modified by NetBeans user Jglick 
-on 2011-12-14T00:20:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,6 +29,8 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 18
 
+include::front::partial$database.adoc[]
+
 Register to 
 
 * *UI/ToolActions/Files*  
@@ -36,18 +38,4 @@ Register to
 
 NOTE: The tools menu is available in the context menu of a file in the project view/files view
 
-See link:https://bits.netbeans.org/dev/javadoc/org-openide-actions/architecture-summary.html[http://bits.netbeans.org/dev/javadoc/org-openide-actions/architecture-summary.html]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddTools[http://wiki.netbeans.org/DevFaqActionAddTools] , 
-that was last modified by NetBeans user Markiewb 
-on 2015-03-08T18:19:45Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+See link:{apidoclink}org-openide-actions/architecture-summary.html[Actions architecture-summary]

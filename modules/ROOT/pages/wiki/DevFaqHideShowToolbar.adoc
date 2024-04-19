@@ -116,17 +116,3 @@ To hide/show a toolbar dynamically in the NetBeans Platform, you should predefin
 ToolbarPool.getDefault().setConfiguration("Developing");
 
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHideShowToolbar[http://wiki.netbeans.org/DevFaqHideShowToolbar] , 
-that was last modified by NetBeans user Tjansson 
-on 2010-11-04T19:40:00Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,13 +29,15 @@
 :page-wikidevsection: _authentication_and_authorization_in_platform_apps
 :page-position: 1
 
+include::front::partial$database.adoc[]
+
 There are cases in which you want to exercise great control over who is allowed to use your application.  You might, for example, be required to check the user's network credentials, validate client-side certificate or check a license server before the platform application is even launched.
 
-It is important to note that because the platform has not been initialized at this point, none of the usual platform capabilities will be available. If you simply want to enable a single module based on some criteria (for example, the existence of a license file), you can use link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/ModuleInstall.html#validate()[ModuleInstall.validate()].
+It is important to note that because the platform has not been initialized at this point, none of the usual platform capabilities will be available. If you simply want to enable a single module based on some criteria (for example, the existence of a license file), you can use link:{apidoclink}org-openide-modules/org/openide/modules/ModuleInstall.html#validate()[ModuleInstall.validate()].
 
 A platform application is typically started from an executable launcher (Windows) or shell script (Unix).
 This invokes the `org.netbeans.core.startup.Main.main` method.
-However, as described in the link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/architecture-summary.html[Module System documentation], you can use the `netbeans.mainclass` xref:./DevFaqPlatformRuntimeProperties.adoc[system property] to specify a different class to run at startup.  
+However, as described in the link:{apidoclink}org-openide-modules/architecture-summary.html[Module System documentation], you can use the `netbeans.mainclass` xref:./DevFaqPlatformRuntimeProperties.adoc[system property] to specify a different class to run at startup.  
 
 This class should exist in a JAR file in the startup classpath (you can put it alongside `core.jar` in the `platform/core` directory).  This class must also have a main method which can invoke whatever authorization logic you like.  If authorization fails, you'll probably want to show a dialog and call `System.exit`.  If it succeeds, you can invoke the `org.netbeans.core.startup.Main` class' `main` method yourself to continue the normal NetBeans startup procedure.  But because `org.netbeans.core.startup.Main` is not a public API, you will need to invoke it indirectly using reflection.  Here is an example of a custom startup class that does this:
 
@@ -77,17 +79,3 @@ The easiest thing to do is create a Java Class Library project (not a module pro
 You will probably want to put this system property in the application's configuration file (where you'd add JVM memory flags) so it will be permanent.  
 
 Clever users could work around this by editing the command line and bypassing the restriction, so the security of this approach is limited by itself.  If this is a concern, you may overcome it by having your custom main class encrypt a flag value (which perhaps contains a nonce/timestamp to prevent replay attacks) and passing it (e.g. as a system property) to your platform application which will then decrypt and verify it.  Thus, the logic for validating the user is entirely in the custom main class (or the code which it invokes), while the platform application need only verify that this step has actually been performed.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqPlatformAppAuthStrategies[http://wiki.netbeans.org/DevFaqPlatformAppAuthStrategies] , 
-that was last modified by NetBeans user Tomwheeler 
-on 2011-08-16T18:17:04Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

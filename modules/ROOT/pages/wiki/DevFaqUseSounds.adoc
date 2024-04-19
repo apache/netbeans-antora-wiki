@@ -207,17 +207,3 @@ SoundPlayer.instance().play("<file name>");
 ----
 
 To make your application talk, see xref:./DevFaqMakeItTalk.adoc[DevFaqMakeItTalk]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqUseSounds[http://wiki.netbeans.org/DevFaqUseSounds] , 
-that was last modified by NetBeans user Javydreamercsw 
-on 2011-09-19T21:46:28Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -31,6 +31,8 @@
 :toc-title:
 :experimental:
 
+include::front::partial$database.adoc[]
+
 NetBeans contains deprecated obsolete code, which is typically left in place
 for several releases. In addition to add polution to the API, it also increases
 the number of dependencies to both ancient modules and Java platform. The
@@ -50,7 +52,7 @@ The following techniques can be used for backward compatibility:
 
 A compatible implementation may need to access the internals possibly from a
 different module (classloader).
-link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/PatchedPublic.html[@PatchedPublic]
+link:{apidoclink}org-openide-modules/org/openide/modules/PatchedPublic.html[@PatchedPublic]
 annotation currently serves this purpose. 
 
 The annotated method is *patched* to be public at runtime, while the class is
@@ -281,12 +283,3 @@ In effect, the bytecode generator creates a constructor in `JarFileSystem`:
      }
 ----
 
-
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/BackwardCompatibilityPatches[http://wiki.netbeans.org/BackwardCompatibilityPatches] , that was last modified by NetBeans user Sdedic on 2014-05-07T12:45:06Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

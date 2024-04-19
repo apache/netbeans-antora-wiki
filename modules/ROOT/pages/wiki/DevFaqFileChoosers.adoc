@@ -29,19 +29,8 @@
 :page-wikidevsection: _files_and_data_objects
 :page-position: 18
 
-As of NetBeans 6.7, `link:https://bits.netbeans.org/dev/javadoc/org-openide-filesystems/org/openide/filesystems/FileChooserBuilder.html[org.openide.filesystems.FileChooserBuilder]` makes this easy.
+include::front::partial$database.adoc[]
+
+As of NetBeans 6.7, `link:{apidoclink}org-openide-filesystems/org/openide/filesystems/FileChooserBuilder.html[org.openide.filesystems.FileChooserBuilder]` makes this easy.
 Pass a `Class` or unique `String` key to the constructor of a `FileChooserBuilder`.
 The next time the same key is passed, the new file chooser will automatically be rooted on the directory selected the last time.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFileChoosers[http://wiki.netbeans.org/DevFaqFileChoosers] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:42:34Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

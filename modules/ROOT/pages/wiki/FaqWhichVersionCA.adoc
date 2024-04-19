@@ -32,15 +32,3 @@
 We encourage all contributors to sign the new Oracle Contributor Agreement 1.7.1 which contains the latest language updates. However signing it again is not absolutely required, if you already signed the previous version.
 
 xref:./FaqHowDoIFileACA.adoc[How do I file a Contributor Agreement?]
-
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqWhichVersionCA[http://wiki.netbeans.org/FaqWhichVersionCA] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-17T22:07:43Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

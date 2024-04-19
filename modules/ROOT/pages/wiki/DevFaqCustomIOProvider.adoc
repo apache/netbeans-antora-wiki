@@ -79,16 +79,3 @@ Add "OpenIDE-Module-Provides: org.openide.windows.IOProvider" to your module man
 Then instance of your provider could be obtained by `IOProvider.get("My IO provider")`
 
 Applies to: NetBeans 6.7 or higher
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCustomIOProvider[http://wiki.netbeans.org/DevFaqCustomIOProvider] , 
-that was last modified by NetBeans user Jhavlin 
-on 2011-12-12T13:12:12Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

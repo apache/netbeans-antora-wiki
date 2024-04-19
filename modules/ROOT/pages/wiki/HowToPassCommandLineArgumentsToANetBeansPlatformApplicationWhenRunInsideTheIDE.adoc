@@ -32,17 +32,3 @@
 Open "nbproject/project.properties" and add there:
 
 run.args.extra=-arg1 --argument2
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/HowToPassCommandLineArgumentsToANetBeansPlatformApplicationWhenRunInsideTheIDE[http://wiki.netbeans.org/HowToPassCommandLineArgumentsToANetBeansPlatformApplicationWhenRunInsideTheIDE] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T18:21:32Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

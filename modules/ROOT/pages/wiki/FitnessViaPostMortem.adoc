@@ -133,7 +133,7 @@ Thanks in advance for your help!
 There are some things that can confuse those who evaluate the profiler snapshots taken by the slowness detector. Please be patient, the improvements are in the queue:
 
 * *Sum of time of all threads is wrong* - currently the time of all threads is summed up, which is wrong. We use sampling and we are measuring the real time, not CPU time. The sum for all threads shall be max of all thread times. Confusion among poor developers would be lowered.
-* *Object.wait() interpretation is almost impossible* - Just try to analyse dump from link:http://openide.netbeans.org/issues/show_bug.cgi?id=168536[IZ 168536] and find out why the AWT thread is blocked. Quite hard and some simplification is needed.
+* *Object.wait() interpretation is almost impossible* - Just try to analyse dump from link:https://bz.apache.org/netbeans/show_bug.cgi?id=168536[IZ 168536] and find out why the AWT thread is blocked. Quite hard and some simplification is needed.
 * *Hotspots Tab Unusable* - most developers start understanding of a slowness problem by looking at Hotspots tab of the snapshot. However this is currently unusable as it primarily shows CLI Handler and XAWT-Dispatch threads as the biggest bottleneck (they are waiting for socketAccept or other I/O). This results in large confusion, useless close/reopen bug lifecycle stage, etc.
 * *Inaccurate Snapshots* - the accuracy of the snapshot's data depends on regular execution of the time (e.g. each 10ms a thread dump shall be taken). This may not be satisfied all the time, especially if the system is being awaken from hibernation, etc. This needs to be detected and indicated.
 
@@ -158,14 +158,3 @@ Tentatively:
 * *collect wait info*: generate a subnode below Object.wait() or monitor enter(?) with a subtree of other threads activity during the blocked time
 * image:wiki/yes.png[] *format*: change the sampling format to be (more or less) GZip of stacktraces. Processing to tree structure would occur later. Done for NetBeans 6.9
 * xref:./FitnessViaPostMortem.adoc[FitnessViaPostMortem]
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FitnessViaPostMortem[http://wiki.netbeans.org/FitnessViaPostMortem] , that was last modified by NetBeans user Pjiricka on 2011-04-06T15:24:36Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

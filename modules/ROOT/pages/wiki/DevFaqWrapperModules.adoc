@@ -29,6 +29,8 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 11
 
+include::front::partial$database.adoc[]
+
 If your module uses some external library,
 you will probably use a wrapper module to make classes from that library available to your module at runtime.
 
@@ -200,7 +202,7 @@ first cleans as usual, then cleans `my-project`.
 
 Some libraries come with a native counterpart.
 The current Library Wrapper wizard doesn't cater to this.
-As per the JNI section in link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html#jni[this document],
+As per the JNI section in link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/api.html#jni[this document],
 you simply need to create a `lib` directory under `<my-wrapper>/release/modules`
 (which gets created by the wizard),
 alongside the `ext` directory mentioned earlier in this document.
@@ -215,14 +217,3 @@ To add later more, use the project's properties dialog.
 
 Applies to: NetBeans 6.8 and later
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWrapperModules[http://wiki.netbeans.org/DevFaqWrapperModules] , 
-that was last modified by NetBeans user Mwisnicki 
-on 2010-11-29T15:53:52Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

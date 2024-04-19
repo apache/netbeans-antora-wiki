@@ -32,14 +32,3 @@
 You can stop your participation in a project at any time, but you cannot rescind your assignments or grants with respect to prior contributions. This protects the whole community, allowing Oracle and downstream users of the code base to rely
 on it. Oracle cannot terminate its responsibilities under the OCA either.
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqCanICancelCA[http://wiki.netbeans.org/FaqCanICancelCA] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2011-12-12T14:27:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

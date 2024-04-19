@@ -29,6 +29,7 @@
 :page-wikidevsection: _javahelp
 :page-position: 8
 
+include::front::partial$database.adoc[]
 
 == Step 1: HelpCtx.Displayer
 
@@ -118,7 +119,7 @@ public class CustomHelp extends Help {
 
 == Step 3: Connecting UI To JavaHelp
 
-See link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/help-guide.html[Connecting Help In NetBeans].
+See link:{apidoclink}org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/help-guide.html[Connecting Help In NetBeans].
 
 == Step 4: Add the JavaHelp Integration Module
 
@@ -133,16 +134,3 @@ This module is not "eager", so to force it to load, at least one module must dep
 
 Applies to: NetBeans IDE 7.2
 Platforms: All
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqJavaHelpOverrideCustom[http://wiki.netbeans.org/DevFaqJavaHelpOverrideCustom] , 
-that was last modified by NetBeans user Michael.Bishop 
-on 2013-03-08T19:33:37Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

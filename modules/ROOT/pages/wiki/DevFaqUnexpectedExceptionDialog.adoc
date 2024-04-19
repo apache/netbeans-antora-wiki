@@ -45,16 +45,3 @@ but using a very high value such as `99999` should prevent the dialog from ever 
 The above on its own doesn't suppress the exception dialog entirely - the dialog will still be shown if the user clicks on the error icon. To suppress that too, set `netbeans.exception.alert.min.level` to a high value as well (i.e. `99999`). This means your users will not even know there was a problem, and will have no opportunity to find out (or report it) unless they scan their log file.
 
 See link:http://forums.netbeans.org/ptopic16746.html[http://forums.netbeans.org/ptopic16746.html] for details on how to set properties within NetBeans and in final applications.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqUnexpectedExceptionDialog[http://wiki.netbeans.org/DevFaqUnexpectedExceptionDialog] , 
-that was last modified by NetBeans user Jglick 
-on 2011-08-29T14:59:19Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

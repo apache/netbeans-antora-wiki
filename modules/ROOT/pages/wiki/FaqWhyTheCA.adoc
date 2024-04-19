@@ -35,14 +35,3 @@ Most importantly, having joint ownership of copyright allows Oracle to offer com
 
 See policy statement for more details at link:http://www.oracle.com/technetwork/oca-faq-405384.pdf[http://www.oracle.com/technetwork/oca-faq-405384.pdf]
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqWhyTheCA[http://wiki.netbeans.org/FaqWhyTheCA] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2011-12-12T14:38:30Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

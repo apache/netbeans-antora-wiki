@@ -48,17 +48,3 @@ This is simple to do but hard to figure out.
 . Build your application.
 
 NOTE: The above will work with any distribution method (i.e. zip, installer, etc...)
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqJavaStartParms[http://wiki.netbeans.org/DevFaqJavaStartParms] , 
-that was last modified by NetBeans user Javydreamercsw 
-on 2011-09-21T20:28:28Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

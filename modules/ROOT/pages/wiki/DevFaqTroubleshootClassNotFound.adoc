@@ -59,18 +59,4 @@ verify-class-linkage: Warning: a.SomeImplementation cannot access b.publicapi.So
 
 This tells us that the module which provides `SomeImplementation` needs to declare a dependency on the module which provides `SomeInterface`.
 
-For more background, see .
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTroubleshootClassNotFound[http://wiki.netbeans.org/DevFaqTroubleshootClassNotFound] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:02:57Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+For more background, see link:.

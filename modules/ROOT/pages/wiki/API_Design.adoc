@@ -31,6 +31,8 @@
 :toc-title:
 :experimental:
 
+include::front::partial$database.adoc[]
+
 Please visit link:http://wiki.apidesign.org/wiki/Main_Page[apidesign.org] for more information on API Design, and links for the "Practical API Design" book.
 
 A description of good design practices when design any APIs with especially closer look to the case of an API based on NetBeans infrastructure is content of this evolving document.
@@ -390,7 +392,7 @@ So the way of evolution depends on the type of the interface: API additions are 
 ==== Example
 
 As an example let us choose `DataObject` class, a part of the
-link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataObject.html[Data
+link:{apidoclink}org-openide-loaders/org/openide/loaders/DataObject.html[Data
 System API]. It is used for by clients to obtain a logical, representation of a
 file or set of files, and logically manipulate their contents:
 
@@ -410,7 +412,7 @@ if (o != null) {
 
 But the problem is that this client API is mixed together with a lot of methods
 provided just for subclasses (those that are protected in
-link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/loaders/DataObject.html[javadoc]).
+link:{apidoclink}org-openide-loaders/org/openide/loaders/DataObject.html[javadoc]).
 They pointlessly clutter the API and moreover prevent the API from being
 extended in future.  Moreover not only do the API and SPI conflict and make
 evolution difficult, but the execution flow between API and SPI resulted in a
@@ -441,7 +443,7 @@ By separating the API from SPI and fully controlling the flow between them we ca
 The new data systems should be an example of good design that is aware that _what's good for SPI implementors isn't necessarily good for API clients_, tries to give the API a chance to evolve and also _restrict SPI implementors as little as possible_.
 
 Another example in case you are not yet convinced: 
-link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-project-ant/org/netbeans/api/project/ant/AntArtifact.html[AntArtifact]
+link:{apidoclink}org-netbeans-modules-project-ant/org/netbeans/api/project/ant/AntArtifact.html[AntArtifact]
 was originally made an abstract class, rather than an interface, so that some
 final methods like `getArtifactFile` and `getScriptFile` could be added for
 clients, and `getID` could be defaulted. It seemed reasonable at the time. Of
@@ -585,7 +587,7 @@ Please notice that similar pattern is used by java listeners. Every listener is 
 [[FileObject]]
 ==== FileObject
 
-Another example from NetBeans is the link:https://github.com/apache/netbeans/tree/master/platform//openide/src/org/openide/filesystems/FileObject.java?content-type=text/plain[ FileObject ] (part of the link:https://bits.netbeans.org/dev/javadocorg-openide-filesystems/org/openide/filesystems/doc-files/api.html[filesystem API]). This type usage seems very close to the TopManager example (but is not as obvious): There are very few people directly subclassing `FileObject` (javadoc's HttpFileSystem, Kyley and Niclas) and tons of client API users (every NetBeans module).
+Another example from NetBeans is the link:https://github.com/apache/netbeans/tree/master/platform//openide/src/org/openide/filesystems/FileObject.java?content-type=text/plain[ FileObject ] (part of the link:{apidoclink}org-openide-filesystems/org/openide/filesystems/doc-files/api.html[filesystem API]). This type usage seems very close to the TopManager example (but is not as obvious): There are very few people directly subclassing `FileObject` (javadoc's HttpFileSystem, Kyley and Niclas) and tons of client API users (every NetBeans module).
 
 The amount of people directly subclassing link:https://github.com/apache/netbeans/tree/master/platform//openide/src/org/openide/filesystems/FileSystem.java?content-type=text/plain[ FileSystem ] is the same as those doing that for `FileObject`, so it seems fine to choose abstract class for both types, but it is true that the filesystem would probably work as interface too.
 
@@ -780,12 +782,3 @@ In spite of that the service provider API has changed completely, the whole chan
 
 Having good API design skills is very important for people who work and create an open source framework like NetBeans. It is indeed fine to read and study some [api-design.html API design guidelines], however there is no better learning approach than practicing the design in a situation simulating the reality. Read the [api-fest.html article about API Fest] to learn about the game called _API Fest_ that the NetBeans core team created and played as part of improving their design skills.
 
-
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/API_Design[http://wiki.netbeans.org/API_Design], that was last modified by NetBeans user Jtulach on 2012-01-07T22:30:47Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

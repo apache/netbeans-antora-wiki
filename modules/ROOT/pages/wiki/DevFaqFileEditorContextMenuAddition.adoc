@@ -39,16 +39,3 @@ In NetBeans 4.1 you just need to insert an action (e.g. `*.instance` ) into the 
 Applies to: all versions of NetBeans
 
 Related: xref:./DevFaqFileContextMenuAddition.adoc[DevFaqFileContextMenuAddition]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFileEditorContextMenuAddition[http://wiki.netbeans.org/DevFaqFileEditorContextMenuAddition] , 
-that was last modified by NetBeans user Vstejskal 
-on 2010-06-16T13:36:58Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

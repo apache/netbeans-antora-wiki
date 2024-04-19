@@ -707,17 +707,3 @@ xslt.project=XSLT Project.
 xslt.tmap=Transformmap Core.
 xslt.validation=XSLT Validation.
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSourceTreeModuleDescriptions[http://wiki.netbeans.org/DevFaqSourceTreeModuleDescriptions] , 
-that was last modified by NetBeans user Geertjan 
-on 2009-12-02T12:27:06Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

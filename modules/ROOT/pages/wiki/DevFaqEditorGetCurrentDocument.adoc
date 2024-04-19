@@ -35,16 +35,3 @@
 JTextComponent ed = org.netbeans.api.editor.EditorRegistry.lastFocusedComponent();
 Document doc = ed.getDocument();
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqEditorGetCurrentDocument[http://wiki.netbeans.org/DevFaqEditorGetCurrentDocument] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:40:29Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

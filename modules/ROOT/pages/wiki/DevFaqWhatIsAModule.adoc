@@ -43,17 +43,3 @@ A module JAR contains some additional entries in its META-INF/MANIFEST.MF file, 
 One distinction about NetBeans modules, as opposed to just working with JAR files on your classpath is that the NetBeans runtime xref:./DevFaqModuleDependencies.adoc[enforces dependency management] between modules - to call code in another module from yours, your module must _declare a dependency_ on the other module.
 
 Another significant distinction is that a module can specify which (if any) packages it makes visible to modules that depend on it - so it is possible to have Java packages in a module's JAR file which are visible only to other classes within that JAR file.  That, in effect, extends Java's class visibility-scoping rules (public, protected, private, package-private) to include _public only within this JAR file_.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWhatIsAModule[http://wiki.netbeans.org/DevFaqWhatIsAModule] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-12T20:09:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

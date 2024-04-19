@@ -29,6 +29,8 @@
 :page-wikidevsection: _javahelp
 :page-position: 1
 
+include::front::partial$database.adoc[]
+
 == Module Helpset Integration FAQs
 
 === How to Create a Help Set in a Module
@@ -36,7 +38,7 @@
 1. In the IDE, right-click the node of the project to which you want to add the help set and choose New | Other.
 2. In the Module Development category, choose JavaHelp Help Set and complete the wizard.
 
-See also the documentation on link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/api.html[NetBeans JavaHelp Integration API].
+See also the documentation on link:{apidoclink}org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/api.html[NetBeans JavaHelp Integration API].
 
 === What Modules are the NetBeans Help Sets In?
 
@@ -55,7 +57,7 @@ To change the position of a help set:
 
 === How should I set help IDs?
 
-See this document: link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/help-guide.html[http://bits.netbeans.org/dev/javadoc/org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/help-guide.html]
+See this document: link:{apidoclink}org-netbeans-modules-javahelp/org/netbeans/api/javahelp/doc-files/help-guide.html[help-guide]
 
 This document boils down to two ways to set a help ID:
 
@@ -317,16 +319,3 @@ To check inter-helpset links:
 3. Now, on the build.xml file again, choose Run Target > check-javahelpbin.
 
 *NOTE* - This latter check is based on built modules. If you make or update changes in the files, you have to rebuild the modules before the changes will be recognized by the link check. Running the check-javahelp target for the module that you have updated does the trick (you do not necessarily have to rebuild the whole IDE).
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHelpGuidelines[http://wiki.netbeans.org/DevFaqHelpGuidelines] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-03-05T16:16:11Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

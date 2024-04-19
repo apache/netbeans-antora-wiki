@@ -29,9 +29,11 @@
 :page-wikidevsection: _properties_and_propertysheet
 :page-position: 7
 
+include::front::partial$database.adoc[]
+
 You can customize your properties by using the setValue method.
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-explorer/org/openide/explorer/doc-files/propertyViewCustomization.html[http://bits.netbeans.org/dev/javadoc/org-openide-explorer/org/openide/explorer/doc-files/propertyViewCustomization.html]
+link:{apidoclink}org-openide-explorer/org/openide/explorer/doc-files/propertyViewCustomization.html[propertyViewCustomization]
 
 Example:
 
@@ -50,17 +52,3 @@ javaVersionProperty.setValue("suppressCustomEditor", true);
 ----
 
 Taken from mailing list, contributed by Jean-Marc Borer
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqPropertySheetReadonlyProperty[http://wiki.netbeans.org/DevFaqPropertySheetReadonlyProperty] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-04-10T10:30:21Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

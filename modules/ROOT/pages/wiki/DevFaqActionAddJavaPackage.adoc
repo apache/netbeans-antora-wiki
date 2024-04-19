@@ -62,14 +62,3 @@ public final class OnJavaPackageAction implements ActionListener {
 }
 ----
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddJavaPackage[http://wiki.netbeans.org/DevFaqActionAddJavaPackage] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-07-07T19:43:15Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

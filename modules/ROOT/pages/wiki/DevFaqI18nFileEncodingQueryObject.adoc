@@ -70,16 +70,3 @@ Platforms: All
 
 See also:
 xref:./FaqI18nProjectEncoding.adoc[How do I set or modify the language encoding for a project?]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqI18nFileEncodingQueryObject[http://wiki.netbeans.org/DevFaqI18nFileEncodingQueryObject] , 
-that was last modified by NetBeans user Vstejskal 
-on 2010-06-16T14:13:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

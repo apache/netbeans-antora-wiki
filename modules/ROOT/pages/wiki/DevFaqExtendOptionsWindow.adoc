@@ -29,21 +29,8 @@
 :page-wikidevsection: _settings
 :page-position: 2
 
+include::front::partial$database.adoc[]
 
-Use the link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-options-api/overview-summary.html[Options Dialog and SPI] as explained in the xref:tutorial::tutorials/nbm-options.adoc[NetBeans Options Window Module Tutorial].
+Use the link:{apidoclink}org-netbeans-modules-options-api/overview-summary.html[Options Dialog and SPI] as explained in the xref:tutorial::tutorials/nbm-options.adoc[NetBeans Options Window Module Tutorial].
 
 There are wizards for creating primary and secondary options panels. Use `New File.../Module Development/Options Panel` and follow the wizard.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqExtendOptionsWindow[http://wiki.netbeans.org/DevFaqExtendOptionsWindow] , 
-that was last modified by NetBeans user Markiewb 
-on 2015-03-04T10:01:58Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

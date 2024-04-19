@@ -122,17 +122,3 @@ image:wiki/TaskDashboard_Menus.png[]
 Note on Repository Grouping: Each repository can supply, by API call, a set of grouping parameters.  Likely parameters are "Priority", "Severity", or project area/module.  Grouping is done via context menu.  When grouped, each named query node will have subnodes for each value of the grouping parameter, under which the relevant query results will be shown.
 
 
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/TaskDashboardDesignSpec[http://wiki.netbeans.org/TaskDashboardDesignSpec] , 
-that was last modified by NetBeans user RichGunther 
-on 2012-05-10T19:15:28Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====
-

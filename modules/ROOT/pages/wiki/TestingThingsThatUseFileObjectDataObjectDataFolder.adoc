@@ -63,17 +63,3 @@ public @Override void setUp() throws Exception {
 ----
 
 If you want to write tests for a `DataObject` or `DataLoader`, you may also want to set the mime type correctly: xref:./DevFaqTestDataObject.adoc[DevFaqTestDataObject]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/TestingThingsThatUseFileObjectDataObjectDataFolder[http://wiki.netbeans.org/TestingThingsThatUseFileObjectDataObjectDataFolder] , 
-that was last modified by NetBeans user Geertjan 
-on 2011-05-13T13:08:00Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

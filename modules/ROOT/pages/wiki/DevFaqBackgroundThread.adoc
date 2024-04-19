@@ -49,17 +49,3 @@ If you are running on some background thread, but need to modify some Swing comp
 ----
 
 Note that the caveat about Swing includes creating components - it is probably not safe to even construct Swing components on a background thread, because of synchronization on `Component.getTreeLock()`.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqBackgroundThread[http://wiki.netbeans.org/DevFaqBackgroundThread] , 
-that was last modified by NetBeans user Braiam 
-on 2010-03-03T21:56:44Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -183,17 +183,3 @@ LOG_LookupAction=Attempting to find Action instance at {0}{1}
 LOG_FoundAction=Found Action ''{0}''; calling actionPerformed()
 LOG_WindowClosed=TopComponent with ID ''{0}'' is closed or not instantiated
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLogActionStartup[http://wiki.netbeans.org/DevFaqLogActionStartup] , 
-that was last modified by NetBeans user Jglick 
-on 2011-12-14T00:23:24Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

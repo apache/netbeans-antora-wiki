@@ -55,17 +55,3 @@ for (FileObject curRoot : GlobalPathRegistry.getDefault().getSourceRoots()) {
 In the `if` block you can do something with the source file you found.
 For example, you can open it in the Java editor.
 xref:./DevFaqOpenFileAtLine.adoc[DevFaqOpenFileAtLine] describes how.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqObtainSourcesOfAJavaClass[http://wiki.netbeans.org/DevFaqObtainSourcesOfAJavaClass] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:57:14Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

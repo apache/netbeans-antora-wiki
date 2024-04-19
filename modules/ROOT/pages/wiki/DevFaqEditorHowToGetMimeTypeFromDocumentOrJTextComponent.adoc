@@ -29,6 +29,7 @@
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 7
 
+include::front::partial$database.adoc[]
 
 WARNING: The API described here is not official! Check the javadoc for its
 stability level.
@@ -57,17 +58,4 @@ works fine in 5.0 and 5.5, but the method is not public.
 
 Platforms: All
 
-See also: link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-editor/index.html[Editor Module API]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqEditorHowToGetMimeTypeFromDocumentOrJTextComponent[http://wiki.netbeans.org/DevFaqEditorHowToGetMimeTypeFromDocumentOrJTextComponent] , 
-that was last modified by NetBeans user Vstejskal 
-on 2010-06-16T14:07:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
+See also: link:{apidoclink}org-netbeans-modules-editor/index.html[Editor Module API]

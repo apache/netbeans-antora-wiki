@@ -87,17 +87,3 @@ UpdaterFrame.isGradient=false
 The above bundles properties values are example only, you may need to change it to reflects your own branding color scheme.
 
 Then create any image file that you like to be a replacement for the default splash. In Netbeans 6 RC1, there is no size limit or constraints for the updater splash image, although I use the size of 400×191. However, it must be named *updatersplash.gif*
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/BrandingUpdaterSplash[http://wiki.netbeans.org/BrandingUpdaterSplash] , 
-that was last modified by NetBeans user Mithun gonsalvez 
-on 2011-08-19T06:41:46Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,6 +29,7 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 31
 
+include::front::partial$database.adoc[]
 
 When you attach a listener to another object, via, for example, an `addPropertyChangeListener()` method, that other object now holds a _reference_ to that listener.
 
@@ -36,7 +37,7 @@ In Java, any object that is referenced by another object which is still in use (
 
 Since listeners are often implemented as inner (non-static) classes of some other object, and an inner class keeps a reference to the object that created it, the outer object instance is kept in memory too.
 
-`link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/WeakListeners.html[WeakListeners]` is a factory class which wraps your event listener in another one, but it only _weakly_ (using `java.lang.ref.WeakReference`) references your actual listener.  That means that, even though you are listening for changes, that will not block your listener from being garbage collected if nothing _else_ still references it.
+`link:{apidoclink}org-openide-util/org/openide/util/WeakListeners.html[WeakListeners]` is a factory class which wraps your event listener in another one, but it only _weakly_ (using `java.lang.ref.WeakReference`) references your actual listener.  That means that, even though you are listening for changes, that will not block your listener from being garbage collected if nothing _else_ still references it.
 
 There is one caveat to using WeakListeners - if you do something like this:
 
@@ -51,16 +52,3 @@ someObject.addPropertyChangeListener(WeakListeners.propertyChange(new PropertyCh
 ----
 
 in fact you _are not listening_ on someObject for any amount of time - the anonymous PropertyChangeListener you created will be instantly garbage-collected.  So keep a reference to your listener when using WeakListeners.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWeakListener[http://wiki.netbeans.org/DevFaqWeakListener] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-01-24T06:12:27Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

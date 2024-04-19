@@ -29,9 +29,11 @@
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 7
 
+include::front::partial$database.adoc[]
+
 When you serialize your nodes, you save them to disk so that when the application restarts, they can be used again in the application in the state that they were when the application shut down.
 
-From link:https://bits.netbeans.org/dev/javadoc/org-openide-nodes/org/openide/nodes/doc-files/api.html#serial[ Serialization and traversal] in the NetBeans Javadoc:
+From link:{apidoclink}org-openide-nodes/org/openide/nodes/doc-files/api.html#serial[ Serialization and traversal] in the NetBeans Javadoc:
 
 ''"If you need to store (serialize) a node for any reason, this is generally impossible due to the welter of Java-level references connecting it to the rest of the system. Rather, you must use a special serializable handle which represents the node by its position in the hierarchy, and permits finding the original node again after deserialization (if it still exists). To create a handle, just call Node.getHandle(), and to restore the node call Node.Handle.getNode().
 
@@ -43,16 +45,3 @@ Some concrete examples:
 
 * xref:front::blogs/geertjan/serializing_nodes.adoc[Serializing Nodes]
 * xref:front::blogs/geertjan/multiple_nodes_serialization.adoc[Serializing Marilyn Monroe]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNodeSerialize[http://wiki.netbeans.org/DevFaqNodeSerialize] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:56:25Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

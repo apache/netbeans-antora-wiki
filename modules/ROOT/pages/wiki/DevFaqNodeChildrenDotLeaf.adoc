@@ -59,16 +59,3 @@ void myModelChanged() {
     }
 } 
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNodeChildrenDotLeaf[http://wiki.netbeans.org/DevFaqNodeChildrenDotLeaf] , 
-that was last modified by NetBeans user Markiewb 
-on 2012-12-27T13:42:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

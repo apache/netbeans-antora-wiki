@@ -37,16 +37,3 @@ If the file is not modified in the editor (easily checkable via `DataObject.isMo
 If the file _is_ modified you can make changes to the open editor buffer: use `EditorCookie` to acquire the Swing `Document` and make changes through that. It may be considered impolite to then save the file if it was modified before.
 
 Applies to: NetBeans 4.0 and newer
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqModifyOpenFile[http://wiki.netbeans.org/DevFaqModifyOpenFile] , 
-that was last modified by NetBeans user Vstejskal 
-on 2010-06-16T13:28:10Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -52,16 +52,3 @@ public void actionPerformed(ActionEvent ev) {
 This way you don't even need to care about threading yourself, GUI will be updated as long as the task is finished.
 
 Taken from dev@platform.netbeans.org (Oct 2013)
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTaskLongRunningAsyncTask[http://wiki.netbeans.org/DevFaqTaskLongRunningAsyncTask] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-10-03T17:04:13Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

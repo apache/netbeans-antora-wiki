@@ -89,14 +89,3 @@ xref:tutorial::tutorials/nbm-java-hint.adoc[https://netbeans.apache.org/tutorial
 
 link:http://netbeans.org/projects/platform/sources/platform-content/content/trunk/tutorials/60/nbm-whichelement.html?raw=true[http://netbeans.org/projects/platform/sources/platform-content/content/trunk/tutorials/60/nbm-whichelement.html?raw=true]
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/Java[http://wiki.netbeans.org/Java] DevelopersGuide , 
-that was last modified by NetBeans user Markiewb 
-on 2015-01-29T21:05:26Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

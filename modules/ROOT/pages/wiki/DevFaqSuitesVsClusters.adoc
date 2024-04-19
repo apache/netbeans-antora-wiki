@@ -94,16 +94,3 @@ It uses a historical build infrastructure which partially overlaps the external 
 Module projects physically inside the netbeans.org source tree cannot be "standalone" modules nor "suite component" modules.  They are simply netbeans.org modules, and as such use a (slightly) different format for metadata, and have access to somewhat different facilities specific to netbeans.org practices.  
 
 The resulting build artifacts are, nonetheless, clusters. These clusters are simply built using a different build-infrastructure, where the cluster names and contents are defined in `.properties` files in `$NB_SRC/nbbuild/`.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSuitesVsClusters[http://wiki.netbeans.org/DevFaqSuitesVsClusters] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T20:02:33Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

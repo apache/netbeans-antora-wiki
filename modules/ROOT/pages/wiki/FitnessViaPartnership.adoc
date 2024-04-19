@@ -83,7 +83,7 @@ well. The automatic analysis of slowness can be also very helpful during
 testing and help NetBeans faster understand own performance
 problems.
 
-link:http://openide.netbeans.org/issues/show_bug.cgi?id=153[IZ 153]
+link:https://bz.apache.org/netbeans/show_bug.cgi?id=153221[IZ 153221]
 
 
 [[Am_I_Leaking]]
@@ -102,19 +102,5 @@ start) to send this file to NetBeans.
 Requires changes to launcher to pass in additional parameter and a way to
 transfer 400MB file to issuezilla.
 
-link:http://openide.netbeans.org/issues/show_bug.cgi?id=153220[IZ 153220]
+link:https://bz.apache.org/netbeans/show_bug.cgi?id=153220[IZ 153220]
 
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FitnessViaPartnership[http://wiki.netbeans.org/FitnessViaPartnership] , 
-that was last modified by NetBeans user Cyhelsky 
-on 2013-10-04T12:02:43Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-14, and needs to be reviewed.
-====

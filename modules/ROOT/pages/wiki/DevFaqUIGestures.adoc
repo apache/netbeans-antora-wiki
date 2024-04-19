@@ -29,12 +29,13 @@
 :page-wikidevsection: _logging_and_error_handling
 :page-position: 2
 
+include::front::partial$database.adoc[]
 
 A perfect tool to get you know users of your application. xref:./UIGesturesCollector.adoc[Read more...].
 
 == How should the LogRecords be named
 
-Use link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/doc-files/logging.html[structured logging] e.g. use just a machine name for a log record's message and keep its localized version in a Bundle. Set the logger name to be below the namespace {org.netbeans.ui} in some meaningful subpackage.
+Use link:{apidoclink}org-openide-util/org/openide/util/doc-files/logging.html[structured logging] e.g. use just a machine name for a log record's message and keep its localized version in a Bundle. Set the logger name to be below the namespace {org.netbeans.ui} in some meaningful subpackage.
 
 The statistic on the server shall then recognize the logger name as well as the message.
 
@@ -45,16 +46,3 @@ Make sure the interactive gestures collector is installed. Make "Memory" toolbar
 == How to find out existing logger
 
 They are listed at xref:./UIGesturesCollector.adoc[UIGesturesCollector].
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqUIGestures[http://wiki.netbeans.org/DevFaqUIGestures] , 
-that was last modified by NetBeans user Dsimonek 
-on 2009-12-03T16:04:18Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

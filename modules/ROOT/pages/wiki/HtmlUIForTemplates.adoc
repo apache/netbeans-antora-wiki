@@ -34,6 +34,8 @@ ifdef::env-github[]
 :imagesdir: ../../images
 endif::[]
 
+include::front::partial$database.adoc[]
+
 // KnockoutJS former wiki are missing from archive
 
 xref:./Html4Java.adoc[Html4Java] allows us to easily use HTML based UI in
@@ -52,7 +54,7 @@ for the template creation wizards.
 [[Your_Portable_HTML5_Wizard]]
 == Your Portable HTML5 Wizard
 
-To register your HTML based wizard with your template, use  link:https://bits.netbeans.org/dev/javadoc/org-netbeans-api-templates/org/netbeans/api/templates/TemplateRegistration.html[@TemplateRegistration] annotation and provide reference to your HTML page:
+To register your HTML based wizard with your template, use  link:{apidoclink}org-netbeans-api-templates/org/netbeans/api/templates/TemplateRegistration.html[@TemplateRegistration] annotation and provide reference to your HTML page:
 
 [source,java,subs="{markup-in-source}"]
 ----
@@ -258,18 +260,3 @@ Currently the JavaScript version of the wizard initializes itself in the HTML pa
 It has been demonstrated that one can avoid it by returning the whole JavaScript initialization code from the method annotated by @TemplateRegistration. So solution exists. 
 
 Of course it is not suitable for browser like environment as they may not have the Java method at all. But we will only see once we prototype such browser solutions. Then we will update the "wizard generating the HTML/JS wizard" to layout files more properly so sharing between different environments gets even smoother.
-
-
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/HtmlUIForTemplates[http://wiki.netbeans.org/HtmlUIForTemplates] , 
-that was last modified by NetBeans user Jtulach 
-on 2014-12-22T10:15:41Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====
-

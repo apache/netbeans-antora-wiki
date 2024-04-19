@@ -45,16 +45,3 @@ So do unit tests using `NbTestCase` (though they would rarely need it anyway).
 
 
 Applies to: NetBeans 6.5 and later
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDisableAutoupdate[http://wiki.netbeans.org/DevFaqDisableAutoupdate] , 
-that was last modified by NetBeans user Jglick 
-on 2009-12-03T14:06:05Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

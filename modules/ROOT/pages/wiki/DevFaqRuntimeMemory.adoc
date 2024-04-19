@@ -42,16 +42,3 @@ run.args.extra=-J-Xmx512m
 ----
 
 Please write the complete setting in one line.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqRuntimeMemory[http://wiki.netbeans.org/DevFaqRuntimeMemory] , 
-that was last modified by NetBeans user Tusharvjoshi 
-on 2011-11-13T05:35:47Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

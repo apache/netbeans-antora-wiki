@@ -29,10 +29,11 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 4
 
+include::front::partial$database.adoc[]
 
 == Overview
 
-This FAQ item should be a companion to the main link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/classpath.html[classpath documentation]. Please refer to the original document for additional details.
+This FAQ item should be a companion to the main link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/classpath.html[classpath documentation]. Please refer to the original document for additional details.
 
 == Class loaders in the NetBeans platform
 
@@ -107,16 +108,3 @@ and can refer to classes in `org-netbeans-modules-a.jar`.
 
 
 Applies to: NetBeans 6.8 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqClassLoaders[http://wiki.netbeans.org/DevFaqClassLoaders] , 
-that was last modified by NetBeans user Rmichalsky 
-on 2009-12-02T13:43:15Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

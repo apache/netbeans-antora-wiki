@@ -42,16 +42,3 @@ xref:./DevFaqLookup.adoc[Lookup] is the most modern and generic version of this 
 
 1. Its return type is `java.lang.Object`, so it can be used directly with anything
 2. Having objects _own_ a lookup rather than directly providing a `lookup(Class c)` method makes it easier to replace or proxy the Lookup of some object
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupCookie[http://wiki.netbeans.org/DevFaqLookupCookie] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:51:49Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

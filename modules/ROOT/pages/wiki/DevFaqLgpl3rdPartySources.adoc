@@ -70,17 +70,3 @@ platform/modules/ext/platform-3.4.0.jar |link:https://netbeans.osuosl.org/binari
 |JNA 4.0.0 |platform/modules/ext/jna-4.0.0.jar
 platform/modules/ext/jna-platform-4.0.0.jar |link:https://netbeans.osuosl.org/binaries/6C7D7616D86B35623DA5E590B54EB95448D7117C-jna-4.0.0-src.zip[jna-4.0.0-src.zip] 
 |===
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLgpl3rdPartySources[http://wiki.netbeans.org/DevFaqLgpl3rdPartySources] , 
-that was last modified by NetBeans user Pjiricka 
-on 2013-11-06T10:37:17Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

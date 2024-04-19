@@ -29,25 +29,13 @@
 :page-wikidevsection: _lookup
 :page-position: 8
 
+include::front::partial$database.adoc[]
 
 It is not uncommon to be subclassing a class, such as xref:./DevFaqWindowsTopComponent.adoc[TopComponent] or xref:./DevFaqWhatIsANode.adoc[Node] which has a method `getLookup()`, and to need to add to or filter the original Lookup's contents.  There are a number of convenience factories and classes which make it easy to do this:
 
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/ProxyLookup.html[ProxyLookup] - a Lookup which takes an array of Lookups and merges them together.  Typical use is taking an existing lookup and providing it plus a lookup created with one of the convenience methods below
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/Lookups.html#fixed(java.lang.Object...)[Lookups.fixed(Object... arr)] - a static method that creates a Lookup with an array of persistent objects as its contents
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/Lookups.html#singleton(java.lang.Object)[Lookups.singleton (Object single)] - a static method that creates a Lookup with one object as its content
-* link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/AbstractLookup.html[AbstractLookup] - a Lookup which can have dynamic content - use it in conjunction with link:https://bits.netbeans.org/dev/javadoc/org-openide-util-lookup/org/openide/util/lookup/InstanceContent.html[InstanceContent], which you can add/remove things from
+* link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/ProxyLookup.html[ProxyLookup] - a Lookup which takes an array of Lookups and merges them together.  Typical use is taking an existing lookup and providing it plus a lookup created with one of the convenience methods below
+* link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/Lookups.html#fixed(java.lang.Object...)[Lookups.fixed(Object... arr)] - a static method that creates a Lookup with an array of persistent objects as its contents
+* link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/Lookups.html#singleton(java.lang.Object)[Lookups.singleton (Object single)] - a static method that creates a Lookup with one object as its content
+* link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/AbstractLookup.html[AbstractLookup] - a Lookup which can have dynamic content - use it in conjunction with link:{apidoclink}org-openide-util-lookup/org/openide/util/lookup/InstanceContent.html[InstanceContent], which you can add/remove things from
 
 If you need to customize a Node's lookup, read xref:./DevFaqNodesCustomLookup.adoc[the FAQ item on how to do that].
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLookupImplement[http://wiki.netbeans.org/DevFaqLookupImplement] , 
-that was last modified by NetBeans user Geertjan 
-on 2010-03-26T08:00:37Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

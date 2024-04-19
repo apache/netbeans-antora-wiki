@@ -57,17 +57,3 @@ Next annotate this class with @ActionReference, @ActionReferences:
 ----
 
 This class will be used as action reference configuration and the annotation preprocessor will create the proper entries the the generated layer.xml file. Notice the embeded @ActionID? This refers to the existing Action.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHowOrganizeOrReuseExistingActionsWithAnnotations[http://wiki.netbeans.org/DevFaqHowOrganizeOrReuseExistingActionsWithAnnotations] , 
-that was last modified by NetBeans user Jmborer 
-on 2014-01-09T14:05:20Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -49,16 +49,3 @@ Typically you'll want to make the model object from `createKeys` available on th
 ----
 
 ChildFactory can also simplify creating Nodes synchronously, and has the convenience that by using generics, your code can be type safe with respect to key objects.  Generally it can be used anywhere `Children.Keys` would be used (it uses `Children.Keys` under the hood).
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNodesChildFactory[http://wiki.netbeans.org/DevFaqNodesChildFactory] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T18:45:00Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -95,16 +95,3 @@ Example "How to open a document at line and at a specific column"
     Line line = lc.getLineSet().getOriginal(lineNumber);
     line.show(Line.ShowOpenType.OPEN, Line.ShowVisibilityType.FRONT, colNumber);
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOpenFileAtLine[http://wiki.netbeans.org/DevFaqOpenFileAtLine] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-08-28T10:23:11Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -77,16 +77,3 @@ public class MyView extends TopComponent implements ExplorerManager.Provider {
 ----
 
 The primary difference between the above code and ExplorerPanel is that ExplorerPanel automatically persisted paths from the selected nodes to the root, so that it could be deserialized on restart with the same selection it had before shutdown (assuming that selection still existed - this was never terribly robust).
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCreateExplorerPanel[http://wiki.netbeans.org/DevFaqCreateExplorerPanel] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T18:46:31Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

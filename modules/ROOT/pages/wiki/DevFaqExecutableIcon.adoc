@@ -114,16 +114,3 @@ Since Netbeans 6.9 (link:https://bz.apache.org/netbeans/show_bug.cgi?id=182230+&
 == Related links
 
 * xref:front::blogs/geertjan/icons_for_netbeans_platform_applications.adoc[Icons for NetBeans Platform Applications on Windows]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqExecutableIcon[http://wiki.netbeans.org/DevFaqExecutableIcon] , 
-that was last modified by NetBeans user Jmborer 
-on 2015-04-28T11:14:08Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

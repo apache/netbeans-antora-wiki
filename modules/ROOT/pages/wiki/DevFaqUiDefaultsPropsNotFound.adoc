@@ -64,16 +64,3 @@ Note: An (untested) possible workaround is to first call UIManager.put ("ClassLo
 
 
 Applies to: NetBeans 6.8 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqUiDefaultsPropsNotFound[http://wiki.netbeans.org/DevFaqUiDefaultsPropsNotFound] , 
-that was last modified by NetBeans user Jpirek 
-on 2011-11-28T08:19:13Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

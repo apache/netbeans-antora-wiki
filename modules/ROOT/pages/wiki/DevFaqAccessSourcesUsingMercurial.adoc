@@ -52,17 +52,3 @@ To build, simply run `ant`.
 The build will appear in `nbbuild/netbeans/`.
 
 xdoc:HgHowTos.adoc[More info about using Mercurial with NetBeans sources...]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAccessSourcesUsingMercurial[http://wiki.netbeans.org/DevFaqAccessSourcesUsingMercurial] , 
-that was last modified by NetBeans user Jglick 
-on 2009-11-12T22:37:30Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

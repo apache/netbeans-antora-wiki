@@ -75,8 +75,8 @@ import org.openide.util.actions.Presenter;
 /**
  * Shows the usage of the extensionpoints of the context menu in the members and
  * hierarchy views. This is new to NetBeans 7.3. See
- * http://netbeans.org/bugzilla/show_bug.cgi?id=220057 and
- * http://netbeans.org/bugzilla/show_bug.cgi?id=224499.
+ * https://bz.apache.org/netbeans/show_bug.cgi?id=220057 and
+ * https://bz.apache.org/netbeans/show_bug.cgi?id=224499.
  *
  * @author markiewb@netbeans.org
  */
@@ -137,24 +137,11 @@ public final class SampleAction extends CookieAction implements Presenter.Popup 
 
 See 
 
-[1] link:http://netbeans.org/bugzilla/show_bug.cgi?id=220057[http://netbeans.org/bugzilla/show_bug.cgi?id=220057]
+[1] link:https://bz.apache.org/netbeans/show_bug.cgi?id=220057[https://bz.apache.org/netbeans/show_bug.cgi?id=220057]
 
-[2] link:http://netbeans.org/bugzilla/show_bug.cgi?id=224499[http://netbeans.org/bugzilla/show_bug.cgi?id=224499]
+[2] link:https://bz.apache.org/netbeans/show_bug.cgi?id=224499[https://bz.apache.org/netbeans/show_bug.cgi?id=224499]
 
 [3] link:https://github.com/markiewb/nb-api-samples/tree/master/ExtendMembersAndHierarchyView[https://github.com/markiewb/nb-api-samples/tree/master/ExtendMembersAndHierarchyView]
 
 [4] link:http://benkiew.wordpress.com/2013/01/06/netbeans-ide-7-3-how-to-extend-the-context-menu-of-the-members-and-hierarchy-view/[http://benkiew.wordpress.com/2013/01/06/netbeans-ide-7-3-how-to-extend-the-context-menu-of-the-members-and-hierarchy-view/]
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAddActionToMembersOrHierarchyView[http://wiki.netbeans.org/DevFaqAddActionToMembersOrHierarchyView] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-01-06T22:53:28Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

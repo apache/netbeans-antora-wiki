@@ -31,17 +31,3 @@
 
 
 xref:front::blogs/geertjan/parsing_the_command_line_to1.adoc[Info on this here.]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/HowToEnableDisableModulesFromCommandLine[http://wiki.netbeans.org/HowToEnableDisableModulesFromCommandLine] , 
-that was last modified by NetBeans user Anebuzelsky 
-on 2011-12-27T16:33:57Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -96,16 +96,3 @@ These cover most of the typical cases. If you're not doing something like these 
 For a more detailed discussion, which this FAQ entry was assembled from, see link:http://netbeans.org/projects/platform/lists/dev/archive/2010-01/message/315[this thread on the dev@platform mailing list]
 
 See also: xref:./DevFaqWhenToUseWhatRegistrationMethod.adoc[When To Use Various Declarative Registration Mechanisms]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWhenLookup[http://wiki.netbeans.org/DevFaqWhenLookup] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:18:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

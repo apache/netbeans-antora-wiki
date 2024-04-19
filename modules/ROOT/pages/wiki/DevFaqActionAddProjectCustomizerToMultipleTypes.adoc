@@ -50,17 +50,3 @@ Applies to: NetBeans IDE 7.x
 Platforms: All
 
 See xref:tutorial::tutorials/nbm-projecttype.adoc#projectcustomizer[https://netbeans.apache.org/tutorials/nbm-projecttype.html#projectcustomizer]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAddProjectCustomizerToMultipleTypes[http://wiki.netbeans.org/DevFaqActionAddProjectCustomizerToMultipleTypes] , 
-that was last modified by NetBeans user Markiewb 
-on 2012-10-07T13:56:52Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

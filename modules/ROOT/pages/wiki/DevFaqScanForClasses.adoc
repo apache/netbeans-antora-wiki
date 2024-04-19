@@ -69,17 +69,3 @@ private Set<ElementHandle<TypeElement>> findAllSubTypes(ClassPath on, ElementHan
 == Getting FileObjects corresponding to ElementHandles
 
 The FileObject corresponding to a given ElementHandle<TypeElement> can be found using SourceUtils.getFile.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqScanForClasses[http://wiki.netbeans.org/DevFaqScanForClasses] , 
-that was last modified by NetBeans user Jlahoda 
-on 2011-12-15T08:29:15Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

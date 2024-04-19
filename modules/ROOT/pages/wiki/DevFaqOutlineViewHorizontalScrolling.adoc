@@ -37,16 +37,3 @@ The OutlineView component already contains a JScrollPane, but the component's de
 outlineView.getOutline().setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOutlineViewHorizontalScrolling[http://wiki.netbeans.org/DevFaqOutlineViewHorizontalScrolling] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T19:39:19Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

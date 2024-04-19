@@ -120,16 +120,3 @@ permit.jdk6.builds=true
 ----
 
 _This tutorial applies to: versions 6.7 and earlier of the NetBeans Java IDE.  _
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNetBeansPlatformManager[http://wiki.netbeans.org/DevFaqNetBeansPlatformManager] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-01-24T05:10:20Z.
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

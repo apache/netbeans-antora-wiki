@@ -213,18 +213,3 @@ This check for incompatibilities is done by xref:./APITest.adoc[NetBeans' own ve
 
 * xref:./FindBugsTest.adoc[FindBugsTest]
 
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/SignatureTest[http://wiki.netbeans.org/SignatureTest] , 
-that was last modified by NetBeans user Jtulach 
-on 2018-12-31T04:42:32Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====
-

@@ -113,17 +113,3 @@ for (TopComponent tc: comps) {
 
 
 *Reference-* link:http://nbguru.wordpress.com/2008/07/25/tat-editor-windows-reactivated-8/[Editor Windows Reactivated]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqGetOpenEditorWindows[http://wiki.netbeans.org/DevFaqGetOpenEditorWindows] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-10-26T20:35:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

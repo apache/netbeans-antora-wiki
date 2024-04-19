@@ -67,16 +67,3 @@ Applies to: NetBeans 6.8 and later
 
 * xref:./PackagingADistributableJavaApp.adoc[Packaging A Distributable Java App]
 // another langage * xref:./DevFaqHowPackageLibraries_DE.adoc[German version]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHowPackageLibraries[http://wiki.netbeans.org/DevFaqHowPackageLibraries] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-11T20:07:20Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

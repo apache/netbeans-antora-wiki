@@ -121,16 +121,3 @@ There is a wizard in the development support to create and register such a class
 
 
 Applies to: NetBeans 6.7 and later
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqModulesGeneral[http://wiki.netbeans.org/DevFaqModulesGeneral] , 
-that was last modified by NetBeans user Jglick 
-on 2011-12-13T23:55:02Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

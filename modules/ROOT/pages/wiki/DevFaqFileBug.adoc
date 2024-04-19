@@ -43,17 +43,3 @@ If you think you have found a bug in the NetBeans Platform or IDE which affects 
 . What you would expect to see happen.
 . What you actually see happen.
 . Be patient as the bug is assigned and evaluated, and provide additional information if requested. If all goes well it should be fixed for a future NetBeans release. The evaluator may also be able to offer some workarounds for use in current releases.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFileBug[http://wiki.netbeans.org/DevFaqFileBug] , 
-that was last modified by NetBeans user Anebuzelsky 
-on 2011-12-27T16:23:44Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -53,14 +53,3 @@ Oracle must have a fax or hard copy of the CA on file before Oracle can accept c
 [start=4]
 . If you have other questions, please consult the link:http://www.oracle.com/technetwork/oca-faq-405384.pdf[General FAQs guide].
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqHowDoIFileACA[http://wiki.netbeans.org/FaqHowDoIFileACA] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2011-10-13T06:39:47Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

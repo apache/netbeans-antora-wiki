@@ -29,10 +29,11 @@
 :wikidevsection: _getting_started
 :position: 9
 
+include::front::partial$database.adoc[]
 
 There is no separate set of Javadoc for the NetBeans Platform.  However, as the Platform is just a subset of the IDE, the Javadoc for the IDE will apply.
 
-You can link:https://bits.netbeans.org/dev/javadoc/index.html[browse the Javadoc online] (this link always points to the latest development version).
+You can link:{apidoclink}index.html[browse the Javadoc online] (this link always points to the latest development version).
 
 You can also download the Javadoc for a particular NetBeans release:
 
@@ -57,17 +58,3 @@ Finally, you can go to the update center (*Tools > Plugin Manager*) in the NetBe
 Applies to: NetBeans 5.x, 6.x, 7.x
 
 Platforms: all
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqGeneralWhereIsJavadoc[http://wiki.netbeans.org/DevFaqGeneralWhereIsJavadoc] , 
-that was last modified by NetBeans user Anebuzelsky 
-on 2011-12-22T17:26:33Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -48,17 +48,3 @@ The second link shows the correct location:
 
    branding/modules/org-netbeans-core.jar/org/netbeans/core/ui/Bundle.properties
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/BrandingAboutDialog[http://wiki.netbeans.org/BrandingAboutDialog] , 
-that was last modified by NetBeans user Tomwheeler 
-on 2011-05-20T14:52:03Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

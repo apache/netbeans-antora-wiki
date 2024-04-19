@@ -49,16 +49,3 @@ Be careful with bindings using `Alt`, as these often clash with mnemonics,
 Linux window manager shortcuts, etc.
 If at all possible, use a multistroke binding:
 for example, `Shortcuts/D-J R C.shadow` binds the 3-stroke sequence `Ctrl-J R C`.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqKeybindingsInUse[http://wiki.netbeans.org/DevFaqKeybindingsInUse] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:50:58Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

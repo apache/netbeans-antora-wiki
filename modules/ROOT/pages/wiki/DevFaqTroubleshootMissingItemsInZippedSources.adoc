@@ -36,17 +36,3 @@ The link:http://www.7-zip.org/[7-Zip application] is free, open source and is kn
 link:http://www.info-zip.org/[Info-ZIP] is a free command-line unzip utility for Windows and OS/2 which has been around for more than a decade.
 
 Alternatively, you could write a simple Ant script to use the `unzip` task for decompressing the archive, or use a ported version of a Unix unzip utility for Windows.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTroubleshootMissingItemsInZippedSources[http://wiki.netbeans.org/DevFaqTroubleshootMissingItemsInZippedSources] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-01-24T02:31:21Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

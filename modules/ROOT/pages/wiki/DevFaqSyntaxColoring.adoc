@@ -35,16 +35,3 @@ Yes, but it is not trivial. There is a tutorial on the subject: link:http://wiki
 
 
 Applies to: NetBeans 6.7 and later, but most concepts (not the exact APIs) have been available since 6.0
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSyntaxColoring[http://wiki.netbeans.org/DevFaqSyntaxColoring] , 
-that was last modified by NetBeans user Vstejskal 
-on 2010-06-16T14:00:28Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -61,16 +61,3 @@ The build harness has many capabilities not exposed through the GUI.
 
 Applies to: NetBeans IDE 6.x
 Platforms: All
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaq2SrcPaths[http://wiki.netbeans.org/DevFaq2SrcPaths] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:33:06Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

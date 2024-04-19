@@ -29,10 +29,11 @@
 :page-wikidevsection: _files_and_data_objects
 :page-position: 5
 
+include::front::partial$database.adoc[]
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/index.html?org/openide/loaders/DataObject.html[DataObjects] wrap xref:./DevFaqFileObject.adoc[FileObjects].  (If you do not want to visualize files on disk in an explorer view or create a text editor [with syntax coloring, etc] for files, then you will never need to touch DataObjects.) A FileObject is just a container
+link:{apidoclink}org-openide-loaders/index.html?org/openide/loaders/DataObject.html[DataObjects] wrap xref:./DevFaqFileObject.adoc[FileObjects].  (If you do not want to visualize files on disk in an explorer view or create a text editor [with syntax coloring, etc] for files, then you will never need to touch DataObjects.) A FileObject is just a container
 for data;  it happens to have a MIME type, but like `java.io.File`, it doesn't know or care what kind
-of file it represents, or what data it contains.  DataObject is part of the link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/overview-summary.html[Loaders API] - a good overview of this API can be found link:https://bits.netbeans.org/dev/javadoc/org-openide-loaders/overview-summary.html[here].
+of file it represents, or what data it contains.  DataObject is part of the link:{apidoclink}org-openide-loaders/overview-summary.html[Loaders API] - a good overview of this API can be found link:{apidoclink}org-openide-loaders/overview-summary.html[here].
 
 A DataObject represents one or more (typically only one) FileObjects. A DataObject knows what kind of a file it represents.  It may represent the parsed contents of a file such as a `.java` file.  Or,
 as in the case of xref:./DevFaqInstanceDataObject.adoc[InstanceDataObject], the file _name_ may have semantic meaning.  For example, a file with the name `org-netbeans-modules-speech-SpeakAction.instance` literally is an instruction to "Load the class `org.netbeans.modules.speech.SpeakAction`, and create an instance of it using its default (no argument) constructor"  (this technique is commonly used in the xref:./DevFaqSystemFilesystem.adoc[system filesystem] to register Java objects installed by modules - more about that xref:./DevFaqFolderOfInstances.adoc[here]).
@@ -59,16 +60,3 @@ However, this ability to represent multiple files with a single DataObject is st
 
 * xref:tutorial::tutorials/nbm-copyfqn.adoc[NetBeans Java Language Infrastructure Tutorial]
 * xref:tutorial::tutorials/nbm-filetype.adoc[File Type Integration Tutorial]
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDataObject[http://wiki.netbeans.org/DevFaqDataObject] , 
-that was last modified by NetBeans user Geertjan 
-on 2012-01-16T22:44:07Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

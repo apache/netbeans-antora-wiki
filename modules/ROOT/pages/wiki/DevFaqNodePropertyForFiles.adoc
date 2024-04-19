@@ -58,16 +58,3 @@ The built-in property editors for files and arrays of files support a number of 
 |===
 
 The built-in bean property editors in NetBeans are found in the package `org.netbeans.beaninfo` editors in the module `o.n.core` in NetBeans' sources.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqNodePropertyForFiles[http://wiki.netbeans.org/DevFaqNodePropertyForFiles] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T19:22:43Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

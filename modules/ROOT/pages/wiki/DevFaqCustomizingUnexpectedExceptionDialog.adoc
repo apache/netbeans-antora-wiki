@@ -165,16 +165,3 @@ This could be done in a module's `Installer` class.
 Applies to: NetBeans IDE 6.0 and newer
 
 Platforms: All
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCustomizingUnexpectedExceptionDialog[http://wiki.netbeans.org/DevFaqCustomizingUnexpectedExceptionDialog] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-17T22:39:45Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

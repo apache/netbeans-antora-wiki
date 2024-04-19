@@ -85,16 +85,3 @@ org.netbeans.api.editor.EditorRegistry.lastFocusedComponent().getCaretPosition()
 ---
 
 Applies to: NetBeans 4.0 and newer
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFindCaretPositionInEditor[http://wiki.netbeans.org/DevFaqFindCaretPositionInEditor] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-03-05T13:25:27Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

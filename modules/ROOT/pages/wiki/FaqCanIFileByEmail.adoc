@@ -33,14 +33,3 @@ You may send your signed and completed OCA to Oracle by by fax (number available
 
 xref:./FaqHowDoIFileACA.adoc[How do I file the CA?]
 
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FaqCanIFileByEmail[http://wiki.netbeans.org/FaqCanIFileByEmail] , 
-that was last modified by NetBeans user Jkovalsky 
-on 2012-04-17T09:28:08Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

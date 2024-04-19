@@ -76,16 +76,3 @@ Dialog d = DialogDisplayer.getDefault().createDialog(wd);
 
         d.toFront();
 ----
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWindowsAndDialogs[http://wiki.netbeans.org/DevFaqWindowsAndDialogs] , 
-that was last modified by NetBeans user Saubrecht 
-on 2009-12-07T10:43:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

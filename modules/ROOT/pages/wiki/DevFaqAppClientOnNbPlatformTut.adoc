@@ -375,17 +375,3 @@ To run the "Debug platform (Attach-debug) target, right-click on the 'build.xml'
 The idea is to call the already-existing "run" target, but specify arguments to be passed to the JVM when its launched. The above arguments will launch the JVM in debug mode, asking it to wait for a connection (default behavior) and the address will be 9009. You could even specify a different port number if you want to run Glassfish in debug mode at the same time (note that the debugger can only attach to one JVM at a time, so you have to detach from the client and then attach to the server).
 
 For more details about the JPDA debugging arguments, see link:http://java.sun.com/javase/6/docs/technotes/guides/jpda/conninv.html[here].
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAppClientOnNbPlatformTut[http://wiki.netbeans.org/DevFaqAppClientOnNbPlatformTut] , 
-that was last modified by NetBeans user Newacct 
-on 2010-04-17T00:46:56Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

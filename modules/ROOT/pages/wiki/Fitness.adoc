@@ -58,16 +58,3 @@ link:http://www.allthingsdistributed.com/2006/11/working_backwards.html[Working 
 ** xref:./FitnessViaTimersCounter.adoc[Fitness Via Timers Counter]
 ** xref:./ResourceScalability.adoc[ResourceScalability]
 ** link:http://jupiter.czech.sun.com/wiki/view/PerformanceQE/LatestResults[Comparative dashboard]
-
-[NOTE]
-====
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/Fitness[http://wiki.netbeans.org/Fitness] , 
-that was last modified by NetBeans user Ashleygibbs 
-on 2012-06-19T11:27:59Z.
-
-
-This document was automatically converted to the AsciiDoc format on 2020-03-14, and needs to be reviewed.
-====

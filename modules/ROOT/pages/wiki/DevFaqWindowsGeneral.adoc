@@ -49,16 +49,3 @@ However, the main API modules use the xref:./DevFaqWindowsWstcrefAndFriends.adoc
 * Singletonization:  You wouldn't want to have 5 Projects tabs in the IDE.  Using the XML API correctly, you can easily refer to the singleton instance of your component once it's instantiated (almost) for free.
 * Persistence: The window system associates components with unique IDs;  to properly persist your component across sessions, you need to use the XML APIs
 
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWindowsGeneral[http://wiki.netbeans.org/DevFaqWindowsGeneral] , 
-that was last modified by NetBeans user Cvdenzen 
-on 2012-02-16T12:52:35Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

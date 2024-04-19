@@ -154,17 +154,3 @@ image:wiki/EditorActionRegistrationKeymapCategory.png[]
 == Other resources
 
 * link:http://blogs.kiyut.com/tonny/2007/08/04/netbeans-platform-i18n-and-localization/[http://blogs.kiyut.com/tonny/2007/08/04/netbeans-platform-i18n-and-localization/]
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqHowToDefineTheKeyMapCategoryForAnAction[http://wiki.netbeans.org/DevFaqHowToDefineTheKeyMapCategoryForAnAction] , 
-that was last modified by NetBeans user Markiewb 
-on 2016-07-21T20:58:18Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

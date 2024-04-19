@@ -100,17 +100,3 @@ There are multiple levels of compatibility. Ability to compile old code against 
 * Fell free to mail us results of your backward compatibility testing anytime
 * Fill bugs about your problems
 
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/BackwardCompatibilityTesting[http://wiki.netbeans.org/BackwardCompatibilityTesting] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-04T20:54:25Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-15, and needs to be reviewed.
-====

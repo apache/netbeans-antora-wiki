@@ -29,12 +29,13 @@
 :page-wikidevsection: _module_system
 :page-position: 1
 
+include::front::partial$database.adoc[]
 
 If you're building a complete application (for example, selecting the *Standalone Application* option for a module suite) just use the *Libraries* panel of the suite's *Properties* dialog to exclude modules you don't need from clusters you are otherwise including.
 
 If you have a single module which you want to install in an existing application (e.g. the NetBeans IDE) and disable another module, it's a little trickier. You can do it in your `ModuleInstall.restored()` method:
 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html#listing[Modules API - List of Modules]
+link:{apidoclink}org-openide-modules/org/openide/modules/doc-files/api.html#listing[Modules API - List of Modules]
 
 Sample:
 
@@ -46,17 +47,3 @@ xref:front::blogs/geertjan/parsing_the_command_line_to1.adoc[Geertjan shows how]
 -
 
 Applies to: NetBeans 6.5 and later
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqSuppressExistingModule[http://wiki.netbeans.org/DevFaqSuppressExistingModule] , 
-that was last modified by NetBeans user Jglick 
-on 2009-12-03T14:01:41Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

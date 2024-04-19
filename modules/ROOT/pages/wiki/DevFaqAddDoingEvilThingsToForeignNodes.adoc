@@ -45,18 +45,5 @@ They offer an API for doing this sort of thing (for example, adding Actions to `
 
 If you want to modify the children/properties/actions/etc. of a Node you did not create, look for an API that lets you do that in a supported way.  
 
-If one does not exist, link:http://www.netbeans.org/issues/enter_bug.cgi[file an enhancement request] against the module that actually creates these nodes, asking for an appropriate API for doing what you want (and be clear about exactly what you want or why).  
+If one does not exist, xref:front::participate/report-issue.adoc[file an enhancement request] against the module that actually creates these nodes, asking for an appropriate API for doing what you want (and be clear about exactly what you want or why).  
 If you really want to expedite it, write a patch that creates such an API (look at how other modules do this sort of thing and aim to follow a similar pattern) - it's hard to say no to working code.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAddDoingEvilThingsToForeignNodes[http://wiki.netbeans.org/DevFaqAddDoingEvilThingsToForeignNodes] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:36:02Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

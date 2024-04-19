@@ -29,6 +29,7 @@
 :page-wikidevsection: _window_system
 :page-position: 2
 
+include::front::partial$database.adoc[]
 
 "Mode" refers to "docking mode".  A Mode is a place in a main window, a place between splitters. Separate "floating" window is also backed by Mode. Mode is usually visually represented by a tabbed container.  Programmatically it is represented by the class `org.openide.windows.Mode`
 
@@ -38,7 +39,7 @@ Think of a `Mode` as synonymous with a one of the tabbed containers you see in t
 
 Modes can contain one or more xref:./DevFaqWindowsTopComponent.adoc[TopComponent]s.  They may be visible or non-visible at any given time.
 
-The xref:./DevFaqCustomWindowMode.adoc[DevFaqCustomWindowMode] page has a visual representation of the available modes, and link:https://bits.netbeans.org/dev/javadoc/org-openide-windows/org/openide/windows/doc-files/api.html[http://bits.netbeans.org/dev/javadoc/org-openide-windows/org/openide/windows/doc-files/api.html] has details about the contents of wstcref and settings files.
+The xref:./DevFaqCustomWindowMode.adoc[DevFaqCustomWindowMode] page has a visual representation of the available modes, and link:{apidoclink}org-openide-windows/org/openide/windows/doc-files/api.html[api] has details about the contents of wstcref and settings files.
 
 == Pre-Defined Modes
 
@@ -73,16 +74,3 @@ myMode.dockInto(myTopComponent);
 
 ''The ID string of the TopComponent can usually be found in that TopComponent's Java file where it gets registered using annotations, or in the layer.xml.
 ''
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqWindowsMode[http://wiki.netbeans.org/DevFaqWindowsMode] , 
-that was last modified by NetBeans user Maehem 
-on 2012-11-13T01:09:52Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

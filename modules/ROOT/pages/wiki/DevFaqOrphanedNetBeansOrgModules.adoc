@@ -86,16 +86,3 @@ If not, you can still add popup Javadoc capability for all published APIs:
 
 
 Applies to: NetBeans 6.8 and above
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOrphanedNetBeansOrgModules[http://wiki.netbeans.org/DevFaqOrphanedNetBeansOrgModules] , 
-that was last modified by NetBeans user Jglick 
-on 2010-06-14T20:10:34Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -67,17 +67,3 @@ Note: The list is incomplete. There will be more project types, if you enable su
 
 Applies to: NetBeans IDE 7.x
 Platforms: All
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqActionAllAvailableProjectTypes[http://wiki.netbeans.org/DevFaqActionAllAvailableProjectTypes] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-16T19:53:47Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -47,17 +47,3 @@ Just wanted to put the core of it here for future reference as this was not easy
 Remember to add references to Project API and Project UI API.
 
 Go to the link:http://wiki.netbeans.org/OpenProjectsProgramaticallyInNetBeansIDE[link] to see the explanation of the code.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOpenProjectProgramatically[http://wiki.netbeans.org/DevFaqOpenProjectProgramatically] , 
-that was last modified by NetBeans user Javydreamercsw 
-on 2011-07-28T14:00:45Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

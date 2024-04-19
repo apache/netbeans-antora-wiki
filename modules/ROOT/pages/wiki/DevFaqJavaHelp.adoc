@@ -29,8 +29,9 @@
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 21
 
+include::front::partial$database.adoc[]
 
-Yes. See the link:https://bits.netbeans.org/dev/javadoc/org-netbeans-modules-javahelp/overview-summary.html[JavaHelp Integration API]
+Yes. See the link:{apidoclink}org-netbeans-modules-javahelp/overview-summary.html[JavaHelp Integration API]
 which describes how to include JavaHelp documentation in a module under *Help > Contents*;
 and you can provide rich context help
 rather easily, linking into the same documentation.
@@ -39,16 +40,3 @@ There is an IDE wizard for creating a help set for your module.
 
 Applies to: NetBeans 5.x, 6.x
 Platforms: all
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqJavaHelp[http://wiki.netbeans.org/DevFaqJavaHelp] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:47:15Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

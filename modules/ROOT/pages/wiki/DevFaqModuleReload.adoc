@@ -43,16 +43,3 @@ A: You have several options:
 5. Do not run the project; just select Reload in Development IDE from the context menu. Similar to #3 but reloads inside the current IDE, not in a separate target platform.
 
 Procedure #2 is safest. #1 is fine for minor tweaks. #4 basically supersedes #3 if you do not mind using an added tool, and is most convenient when you are making a lot of nontrivial changes in rapid succession. #5 is not recommended except for demos.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqModuleReload[http://wiki.netbeans.org/DevFaqModuleReload] , 
-that was last modified by NetBeans user Skygo 
-on 2013-12-17T22:36:39Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

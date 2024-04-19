@@ -29,12 +29,12 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 6
 
+include::front::partial$database.adoc[]
 
 See 
-link:https://bits.netbeans.org/dev/javadoc/org-openide-awt/org/openide/awt/Actions.html[org-openide-awt/org.openide.awt.Actions.checkbox(...)]
+link:{apidoclink}org-openide-awt/org/openide/awt/Actions.html[org-openide-awt/org.openide.awt.Actions.checkbox(...)]
 
 Here an example for a checkable action which represents the state of the "ignoreCase" property within the property file "org/netbeans/modules/diff.properties"
-`
 
 [source,xml]
 ----
@@ -51,17 +51,3 @@ Here an example for a checkable action which represents the state of the "ignore
        </folder>
    </folder>
 ----
-
-`
-
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqCheckableActionPreferenceOption[http://wiki.netbeans.org/DevFaqCheckableActionPreferenceOption] , 
-that was last modified by NetBeans user Markiewb 
-on 2013-05-03T21:46:57Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.

@@ -29,8 +29,10 @@
 :page-wikidevsection: _tutorials_and_important_starting_points
 :page-position: 3
 
-* link:https://bits.netbeans.org/dev/javadoc/index.html[NetBeans Platform API starting point]
-* link:https://bits.netbeans.org/dev/javadoc/usecases.html[How to use certain NetBeans APIs] includes introductions to:
+include::front::partial$database.adoc[]
+
+* link:{apidoclink}index.html[NetBeans Platform API starting point]
+* link:{apidoclink}usecases.html[How to use certain NetBeans APIs] includes introductions to:
 * Actions
 * Ant-Based Project Support
 * Ant integration module
@@ -90,17 +92,3 @@
 * Visual Library
 * Web
 * Window System
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqTutorialsAPI[http://wiki.netbeans.org/DevFaqTutorialsAPI] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T16:03:13Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

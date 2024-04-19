@@ -35,17 +35,3 @@ Make a class in your module that extends `org.openide.modules.ModuleInstall`. Th
 
 Override the `closing` method and insert your special logic.
 If you return `false` the application will not exit.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMainwindowClosingAction[http://wiki.netbeans.org/DevFaqMainwindowClosingAction] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-06T15:52:58Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

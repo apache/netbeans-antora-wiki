@@ -41,16 +41,3 @@ All Alt-bound keybindings in the IDE are specified with O so that they are rebou
 Any alt-bound keybinding on mac is a bug.  If you use the logical syntax for keybindings, your app will always work intuitively on any platform.
 
 Note that the mapping handling does skip key combinations that simply can't work on Mac - for example, Command-H and Command-Q are always consumed by the OS, so D-H and D-Q map to Ctrl-H and Ctrl-Q, respectively, everywhere.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqLogicalKeybindings[http://wiki.netbeans.org/DevFaqLogicalKeybindings] , 
-that was last modified by NetBeans user Tboudreau 
-on 2010-02-24T21:17:52Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

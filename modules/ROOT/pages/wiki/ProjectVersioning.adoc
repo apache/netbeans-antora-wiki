@@ -129,7 +129,7 @@ Project nodes use special case registration that is specific for them
 (it allows version control support module to show actions that make sense
 on projects only such as _Update with Dependencies_ and
 _Import Project into Repository_).
-Your project nodes must honor contract link:http://javacvs.netbeans.org/nonav/issues/show_bug.cgi?id=57874[#57874].
+Your project nodes must honor contract link:https://bz.apache.org/netbeans/show_bug.cgi?id=57874[#57874].
 
 Sample getAction() code for Nodes representing project:
 
@@ -282,17 +282,3 @@ Filesystem annotation mechanism, mentioned above, can be used for setting HTML n
 The developer implementing new `org.openide.nodes.Node` subclass can easily add support for executing and presenting version control actions; and can use the filesystem status annotation mechanism to alter icon and display name.
 
 Since 5.0 there is no API that directly supports version control operations execution.
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/ProjectVersioning[http://wiki.netbeans.org/ProjectVersioning] , 
-that was last modified by NetBeans user Newacct 
-on 2011-11-25T00:42:33Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

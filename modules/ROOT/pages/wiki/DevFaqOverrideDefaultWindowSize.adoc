@@ -34,16 +34,3 @@ Since the window already exists and has a default size, it must be registered un
 Find the file defining the size, i.e., the "wsmode" file that defines the mode under which it is registered, and change it. Then register the changed mode under the same name as the original mode in the layer. If you want to make sure that yours overrides the default, set a dependency in your module on the module that defines the original mode.
 
 Generally it is better to create a whole new mode, since you then will never have a conflict between two different definitions.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqOverrideDefaultWindowSize[http://wiki.netbeans.org/DevFaqOverrideDefaultWindowSize] , 
-that was last modified by NetBeans user Geertjan 
-on 2010-09-14T06:50:23Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -72,16 +72,3 @@ In the other direction you can use `DataObject.find` and then `DataObject.getNod
 to get a node representing a file object.
 
 Also see xref:./DevFaqFileVsFileObject.adoc[DevFaqFileVsFileObject] if you need `java.io.File` for some reason.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqFilesFromNodes[http://wiki.netbeans.org/DevFaqFilesFromNodes] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T18:53:56Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

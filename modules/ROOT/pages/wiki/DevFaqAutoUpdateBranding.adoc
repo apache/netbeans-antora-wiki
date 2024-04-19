@@ -74,16 +74,3 @@ Finally, run the "nbms" Ant target on your suite and deploy the updates to your 
 Note that you link:https://bz.apache.org/netbeans/show_bug.cgi?id=122815[may encounter problems doing this in NetBeans 6.0].
 
 Thanks to Matteo Di Giovinazzo for sharing how to do this on the dev@openide list.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqAutoUpdateBranding[http://wiki.netbeans.org/DevFaqAutoUpdateBranding] , 
-that was last modified by NetBeans user Bruehlicke 
-on 2012-02-24T03:15:05Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -29,10 +29,11 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 23
 
+include::front::partial$database.adoc[]
 
 Create an Action as described in xref:./DevFaqDropdownMenuAddToolbar.adoc[the general FAQ for to add a dropdown menu to a toolbar].
 
-In this case, your action also needs to implement link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/ContextAwareAction.html[ContextAwareAction].  A ContextAwareAction is a factory for other Action instances which are tied to a specific Lookup (so that, if selection changes after the popup menu for a Node is shown, the Action does not operate on the wrong object).  You can start with a subclass of javax.swing.AbstractAction, and you will need two constructors:
+In this case, your action also needs to implement link:{apidoclink}org-openide-util/org/openide/util/ContextAwareAction.html[ContextAwareAction].  A ContextAwareAction is a factory for other Action instances which are tied to a specific Lookup (so that, if selection changes after the popup menu for a Node is shown, the Action does not operate on the wrong object).  You can start with a subclass of javax.swing.AbstractAction, and you will need two constructors:
 
 [source,java]
 ----
@@ -165,17 +166,3 @@ A bit of bookkeeping is required in getToolbarPresenter() - at least until link:
 If we want the drop-down button to do something when it is clicked on the right side (not in the popup area with the down-arrow), we can implement actionPerformed(ActionEvent) to do whatever that is.
 
 For an older detailed example of manually creating a context-aware drop-down toolbar button (without DropDownButtonFactory, circa NetBeans 6.0), see link:http://article.gmane.org/gmane.comp.java.netbeans.modules.openide.devel/35436[see this post], posted in link:http://thread.gmane.org/gmane.comp.java.netbeans.modules.openide.devel/35424[on the old dev@openide NetBeans mailing lists].
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDropdownMenuAddToolbarEnabled[http://wiki.netbeans.org/DevFaqDropdownMenuAddToolbarEnabled] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:35:21Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

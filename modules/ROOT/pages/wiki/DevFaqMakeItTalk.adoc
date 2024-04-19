@@ -55,17 +55,3 @@ If you want your application to be blind accessible just include Sappy dependenc
 And your application talks. Since link:https://sourceforge.net/projects/phonemic/[Phonemic] is a plain jar you can use it out of the platform as well.
 
 You can read more about Phonemic link:https://sourceforge.net/apps/trac/phonemic/[here].
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqMakeItTalk[http://wiki.netbeans.org/DevFaqMakeItTalk] , 
-that was last modified by NetBeans user Javydreamercsw 
-on 2011-09-19T18:21:04Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

@@ -380,17 +380,3 @@ but also in `nbms-and-javadoc` (to check experimental modules).
 * Clean up experimental modules.
  link:http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastSuccessfulBuild/testReport/org.netbeans.core.projects/ValidateLayerConsistencyTest/testFolderOrdering/[Current errors]
  _(done)_
-
-
-[NOTE]
-====
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/FolderOrdering103187[http://wiki.netbeans.org/FolderOrdering103187] , 
-that was last modified by NetBeans user Admin 
-on 2009-11-04T22:49:12Z.
-
-This document was automatically converted to the AsciiDoc format on 2020-03-12, and needs to be reviewed.
-====

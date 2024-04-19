@@ -29,9 +29,11 @@
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 22
 
+include::front::partial$database.adoc[]
+
 To add a drop-down menu to a component in a toolbar, you can either extend `CallableSystemAction` and override
 `public Component getToolbarPresenter()`,
-or implement `javax.swing.Action` or any subclass thereof, and implement `link:https://bits.netbeans.org/dev/javadoc/org-openide-util/org/openide/util/actions/Presenter.Toolbar.html[Presenter.Toolbar]`
+or implement `javax.swing.Action` or any subclass thereof, and implement `link:{apidoclink}org-openide-util/org/openide/util/actions/Presenter.Toolbar.html[Presenter.Toolbar]`
 which defines that method.
 
 You might want to create a `JToggleButton`, and when the button is pressed, show a `JPopupMenu`. (Also try `org.openide.awt.DropDownButtonFactory`.)
@@ -205,17 +207,3 @@ public class PickDrawingLineAction extends CallableSystemAction {
 }
 
 ----
-
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqDropdownMenuAddToolbar[http://wiki.netbeans.org/DevFaqDropdownMenuAddToolbar] , 
-that was last modified by NetBeans user Jtulach 
-on 2010-07-24T20:33:44Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////

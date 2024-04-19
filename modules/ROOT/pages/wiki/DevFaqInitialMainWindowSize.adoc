@@ -76,16 +76,3 @@ The snippet from _windowmanager.wswmgr_ above opens the main window in the upper
 * keep the rest of _windowmanager.wswmgr_ as it was
 
 *Note:* This way you can also define the default main window state - maximized/minimized/restored, see link:http://java.sun.com/j2se/1.5.0/docs/api/java/awt/Frame.html#setExtendedState(int)[JavaDoc] for possible values.
-////
-== Apache Migration Information
-
-The content in this page was kindly donated by Oracle Corp. to the
-Apache Software Foundation.
-
-This page was exported from link:http://wiki.netbeans.org/DevFaqInitialMainWindowSize[http://wiki.netbeans.org/DevFaqInitialMainWindowSize] , 
-that was last modified by NetBeans user Simpatico 
-on 2010-11-02T01:43:02Z.
-
-
-*NOTE:* This document was automatically converted to the AsciiDoc format on 2018-02-07, and needs to be reviewed.
-////
