@@ -3,3 +3,7 @@ title: Apache NetBeans Wiki
 version: main
 display_version: '1.0'
 start_page: wiki/index.adoc
+nav:
+ - modules/netbeansdevelopperfaq/nav.adoc
+ - modules/netbeansusersfaq/nav.adoc
+ - modules/ROOT/nav.adoc
