@@ -17,29 +17,19 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= Where can I find examples of how to use various APIs?
 :page-layout: wikidev
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki DevFaqSampleCode
+:description: Apache NetBeans wiki DevFaqSampleCode
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-wikidevsection: _getting_support_where_to_find_examples
+:page-position: 5
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
+There are a large number of samples. Many of these correspond to the tutorials. You can find the samples in module `platform` in `main/misc` repository at `hg.netbeans.org`. They are in the `samples/` subdirectory.
 
-- xref:./API_Stability.adoc[API Stability]
-
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:wiki:netbeansdevelopperfaq:DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:wiki:javahowto:Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+The `platform/samples/` folder can be link:http://hg.netbeans.org/main/misc/file/tip/platform/samples/[browsed online here]. But for really trying things out it is usually more useful to xref:wiki::wiki/HgHowTos.adoc[have a local copy] - then you can open them as projects in the IDE.

@@ -53,4 +53,4 @@ You can also add and remove services while the test runs. Every call to setServi
 
 Code which directly looks in META-INF/services/* - for example, calls to java.util.Service, as well as many subsystems such as JAXP - should also see services registered this way.
 
-If you wish to register individual instances to default lookup, without the requirement that they be default instances of public classes, you can also use MockLookup. See xref:./UsefulTestClassesInModules.adoc[UsefulTestClassesInModules]. 
+If you wish to register individual instances to default lookup, without the requirement that they be default instances of public classes, you can also use MockLookup. See xref:wiki:netbeanstestfaq:UsefulTestClassesInModules.adoc[UsefulTestClassesInModules]. 
