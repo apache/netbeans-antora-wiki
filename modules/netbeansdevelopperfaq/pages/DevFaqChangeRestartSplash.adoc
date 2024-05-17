@@ -17,29 +17,28 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= How Can I Change the NetBeans Splash Screen Shown When A User Installs a Module Requiring Restart?
 :page-layout: wikidev
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki DevFaqChangeRestartSplash
+:description: Apache NetBeans wiki DevFaqChangeRestartSplash
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-wikidevsection: _module_system
+:page-position: 4
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
+The splash screen is here:
 
-- xref:./API_Stability.adoc[API Stability]
+[source,java]
+----
 
-- xref:./API_Design.adoc[API Design]
+autoupdate.services/libsrc/org/netbeans/updater/resources/updatersplash.gif
+----
 
-[.sect2]
-== Answers & Support
+You can brand this in your application; see: xref:wiki::wiki/BrandingUpdaterSplash.adoc[BrandingUpdaterSplash]
 
-- xref:wiki:netbeansdevelopperfaq:DevFaqIndex.adoc[NetBeans Developer FAQ]
 
-- xref:wiki:javahowto:Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+Applies to: NetBeans 6.5 and later

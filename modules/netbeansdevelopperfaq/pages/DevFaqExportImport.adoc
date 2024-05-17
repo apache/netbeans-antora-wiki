@@ -17,29 +17,22 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= How to register options for export/import to module's layer?
 :page-layout: wikidev
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki DevFaqExportImport
+:description: Apache NetBeans wiki DevFaqExportImport
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-wikidevsection: _settings
+:page-position: 3
 
-[.sect1]
-== Developing Apache NetBeans IDE
+include::front::partial$database.adoc[]
 
-- xref:./APIDevelopment.adoc[API Development]
+The idea is to register patterns for export/import into module's layer. 
 
-- xref:./API_Stability.adoc[API Stability]
+See the official API documentation at link:{apidoclink}org-netbeans-modules-options-api/overview-summary.html[Options Dialog and SPI]
 
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:wiki:netbeansdevelopperfaq:DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:wiki:javahowto:Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+For historical interests the design document can be found at xref:wiki::wiki/ExportImportOptions.adoc#section-ExportImportOptions-ImplementationDetails[Export/Import Options in NetBeans - Proposal].

@@ -30,3 +30,39 @@
 :page-position: 7
 
 When you use @ActionRegistration the META-INF/generated-layer.xml may contain:
+
+[source,xml]
+----
+
+<folder name="Actions">
+   <folder name="Build">
+     <file name="com-foo-SomeAction.instance"/>
+   </folder>
+</folder>
+<folder name="Menu">
+   <folder name="Build">
+     <file name="pointerToComFooSomeAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/Build/com-foo-SomeAction.instance"/>
+     </file>
+   </folder>
+</folder>
+
+----
+
+And you may have noticed that actions are usually put, not directly into the `Menu/` folders, but into subfolders of this `Actions/` folder.  Then we create xref:./DevFaqDotShadowFiles.adoc[.shadow files ] that act like symbolic links, pointing to the real xref:./DevFaqInstanceDataObject.adoc[.instance file ].  Why all this indirection?
+
+Older versions of the NetBeans UI included the ability to rearrange, and even delete, whole menus or individual menu items, and future ones may again.
+(Many applications built on NetBeans will not want to expose such customizability, but some do.)
+The current UI does include a key binding editor;
+the `Actions/` folder can be used from this editor to list available actions, even those which are not currently bound to any keystroke.
+
+Additionally, for actions which are `javax.swing.Action` but not `SystemAction`,
+creating the action instance in only a single place
+ensures that it acts as a singleton.
+(While the action class likely has no declared instance fields,
+it does have some state,
+notably information about keyboard accelerators which should be displayed in menu presenters.)
+
+
+
+Applies to: NetBeans 6.7 and above

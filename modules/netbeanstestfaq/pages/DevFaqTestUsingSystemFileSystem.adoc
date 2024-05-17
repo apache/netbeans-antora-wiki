@@ -17,29 +17,22 @@
 //     under the License.
 //
 
-= Apache NetBeans Wiki
+= How do I test something which uses the System Filesystem?
 :page-layout: wikidev
-:page-tags: wiki
+:page-tags: wiki, devfaq, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans Wiki
-:description: Apache NetBeans Wiki
+:keywords: Apache NetBeans wiki DevFaqTestUsingSystemFileSystem
+:description: Apache NetBeans wiki DevFaqTestUsingSystemFileSystem
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-wikidevsection: _running_and_writing_tests
+:page-position: 7
 
-[.sect1]
-== Developing Apache NetBeans IDE
 
-- xref:./APIDevelopment.adoc[API Development]
+There is a fake System FileSystem provided by as soon as FileSystem xref:wiki::wiki/API_Design.adoc[API] is on classpath. It understands xref:front::index.adoc[NetBeans] layer definitions and is generally suitable for running unit tests.
 
-- xref:./API_Stability.adoc[API Stability]
+In case you see difference from expected behavior:
 
-- xref:./API_Design.adoc[API Design]
-
-[.sect2]
-== Answers & Support
-
-- xref:wiki:netbeansdevelopperfaq:DevFaqIndex.adoc[NetBeans Developer FAQ]
-
-- xref:wiki:javahowto:Java_DevelopersGuide.adoc[Java Infrastructure Developer's guide (AKA Concepts & HowTos)]
-
+* Try to run tests in xref:./DevFaqUsingSimpletests.adoc[real mode]
+* Report xref:front::index.adoc[NetBeans] a bug (product platform/filesystems) with a test case
