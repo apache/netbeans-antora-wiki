@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
 :page-position: 6
-
+:page-aliases: ROOT:wiki/DevFaqNbmPostInstall.adoc
 
 xref:wiki::wiki/NBM.adoc[NBM] allows to declare its own custom code in xref:wiki::wiki/NBM.adoc[NBM] archive. This code is called-back by `Autoupdate/Updater` at the end of installation of xref:wiki::wiki/NBM.adoc[NBM] into IDE.
 

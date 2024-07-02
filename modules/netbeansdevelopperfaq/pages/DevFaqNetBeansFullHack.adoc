@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 34
-
+:page-aliases: ROOT:wiki/DevFaqNetBeansFullHack.adoc
 
 If you set the system property `netbeans.full.hack` to `true`,
 the following IDE behaviors will be disabled

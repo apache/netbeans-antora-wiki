@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _properties_and_propertysheet
 :page-position: 6
-
+:page-aliases: ROOT:wiki/DevFaqPropertySheetHideDescription.adoc
 
 By tweaking the preferences of the "showDescriptionArea". In any layer.xml file (for example the one of branding) add
 

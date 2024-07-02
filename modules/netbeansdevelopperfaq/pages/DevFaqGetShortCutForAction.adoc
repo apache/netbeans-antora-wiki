@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 8
+:page-aliases: ROOT:wiki/DevFaqGetShortCutForAction.adoc
 
 For example
 

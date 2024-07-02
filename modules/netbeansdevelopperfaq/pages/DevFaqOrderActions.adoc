@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 4
-
+:page-aliases: ROOT:wiki/DevFaqOrderActions.adoc
 
 Yes.  Use xref:./DevFaqOrderAttributes.adoc[ordering attributes] in the xref:./DevFaqModulesLayerFile.adoc[layer file] for your module.
 

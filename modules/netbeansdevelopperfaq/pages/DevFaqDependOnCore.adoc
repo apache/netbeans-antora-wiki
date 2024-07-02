@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 23
-
+:page-aliases: ROOT:wiki/DevFaqDependOnCore.adoc
 
 No.  Not if you want your module to work in the future.  Copy the code instead.  If it is a thing that seems generally useful, xref:front::participate/report-issue.adoc[file an enhancement request] requesting an API for the thing you need to do (and make sure there isn't already a supported way to do it).
 

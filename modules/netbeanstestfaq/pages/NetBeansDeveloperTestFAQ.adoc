@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _running_and_writing_tests
 :page-position: 4
+:page-aliases: ROOT:wiki/NetBeansDeveloperTestFAQ.adoc
 
 == Abstract
 

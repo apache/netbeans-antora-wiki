@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _logging_and_error_handling
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqUIGestures.adoc
 
 include::front::partial$database.adoc[]
 

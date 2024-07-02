@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _mavenized_builds
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqMavenSystemScope.adoc
 
 System-scope dependencies, like provided scope, are never packaged with a project's artifacts.
 

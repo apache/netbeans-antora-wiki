@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _settings
 :page-position: 7
-
+:page-aliases: ROOT:wiki/DevFaqHowToChangeSettingsFromAnExternalModules.adoc
 
 Without adding a dependency to the other module?
 

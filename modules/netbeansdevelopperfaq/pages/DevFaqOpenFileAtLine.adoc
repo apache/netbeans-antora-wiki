@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqOpenFileAtLine.adoc
 
 Here is the basic idea (there are variations depending on your needs, so read the Javadoc):
 

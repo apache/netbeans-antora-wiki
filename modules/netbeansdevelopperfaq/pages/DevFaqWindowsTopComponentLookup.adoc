@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 10
+:page-aliases: ROOT:wiki/DevFaqWindowsTopComponentLookup.adoc
 
 The windowing system is what manages xref:./DevFaqTrackGlobalSelection.adoc[global selection].  In olden times, selection meant the activated xref:./DevFaqWhatIsANode.adoc[Node].
 

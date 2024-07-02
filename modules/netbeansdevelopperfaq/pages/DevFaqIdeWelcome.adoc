@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _javahelp
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqIdeWelcome.adoc
 
 
 'ide.welcome' is the map ID of the first help topic shown in the JavaHelp window. It is defined in the 'userguide' module. If you have excluded this module, you need to define this map ID yourself, otherwise you will encounter unexpected/unpleasant behavior:

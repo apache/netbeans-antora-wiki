@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 11
-
+:page-aliases: ROOT:wiki/DevFaqNetBeansPlatformManager.adoc
 
 By default, a NetBeans Platform application will use the developer's copy of the IDE as the platform.  This is certainly easy, but there are also xref:./DevFaqGeneralWhereIsPlatformHowToBuild.adoc[drawbacks to using the current IDE as a platform]. With that in mind, lets check out, and reference our own copy of the NetBeans source code. This way we can also use breakpoints to step through the NetBeans source code, make changes, and create patches!
 

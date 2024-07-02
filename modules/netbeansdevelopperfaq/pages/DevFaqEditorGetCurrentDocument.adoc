@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqEditorGetCurrentDocument.adoc
 
 [source,java]
 ----

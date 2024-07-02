@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqCustomUpdateCenter.adoc
 
 An AutoUpdate server (also called an AutoUpdate Center or AUC) it not as complicated as it sounds.  It's just a server which contains a set of modules and an XML file that describes them all (the autoupdate XML descriptor).
 

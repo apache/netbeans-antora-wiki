@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 29
+:page-aliases: ROOT:wiki/DevFaqMainwindowClosingAction.adoc
 
 When you click the close button in the top right corner the application closes. If you want to do something before the application closes (e.g. show a dialog with OK and Cancel options) or prevent it from closing, this is possible.
 

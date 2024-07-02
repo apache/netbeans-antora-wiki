@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 10
+:page-aliases: ROOT:wiki/DevFaqSpecifyJdkVersion.adoc
 
 Add a line to your manifest, specifying which version of Java you need. E.g. to only run on JDK 6 and higher, not 5:
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _lookup
 :page-position: 12
+:page-aliases: ROOT:wiki/DevFaqWhenLookup.adoc
 
 
 For most things in NetBeans coding, you will want to write normal Java code - if you need an object of a particular type, just call it.

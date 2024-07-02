@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqKeybindingsInUse.adoc
 
 For an existing release you can look at e.g. xref:wiki::wiki/KeymapProfileFor60.adoc[KeymapProfileFor60] to see the specification.
 

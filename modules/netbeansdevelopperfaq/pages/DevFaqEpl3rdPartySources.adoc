@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _licensing_issues
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqEpl3rdPartySources.adoc
 
 == The following third-party components licensed under EPL license have the sources available for download from netbeans.org:
 

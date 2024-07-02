@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 10
+:page-aliases: ROOT:wiki/Autoload.adoc
 
 The *autoload* in the xref:front::index.adoc[NetBeans] module system world means that certain module is turned on when _needed_. 
 In contrast to regular modules which require some manual action (user locating a module and activating it) to turn them on, the *autoload* modules are opaque for users and managed solely by the infrastructure. 

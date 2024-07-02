@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 21
+:page-aliases: ROOT:wiki/DevFaqNodeViewCapability.adoc
 
 Let's say that you've added support for a new file type in your application.  You want to be able to provide an action by which users can "view" the file, which might open it up in the source editor (for text-based files) or a custom editor you've created in Swing.  How can you add this view action?
 

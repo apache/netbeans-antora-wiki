@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _logging_and_error_handling
 :page-position: 4
-
+:page-aliases: ROOT:wiki/DevFaqCustomizingUnexpectedExceptionDialog.adoc
 
 Problem: How do I add new functionality to the Unexpected Exception dialog?
 

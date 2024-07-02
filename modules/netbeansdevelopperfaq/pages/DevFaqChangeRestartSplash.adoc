@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqChangeRestartSplash.adoc
 
 
 The splash screen is here:

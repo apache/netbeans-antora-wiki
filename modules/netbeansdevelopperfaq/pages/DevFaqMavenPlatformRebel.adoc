@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _mavenized_builds
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqMavenPlatformRebel.adoc
 
 Yes, you can. Once you have obtained JRebel and installed it locally, paste the following snippet into your application's root pom (parent of both the NetBeans application project and any NetBeans module projects you want to have reloaded upon change).
 

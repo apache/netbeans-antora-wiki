@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 24
+:page-aliases: ROOT:wiki/DevFaqCustomizeWindowSystem.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

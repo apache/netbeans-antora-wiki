@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _files_and_data_objects
 :page-position: 8
-
+:page-aliases: ROOT:wiki/DevFaqListenForOpenEvents.adoc
 
 [source,java]
 ----

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 8
+:page-aliases: ROOT:wiki/DevFaqSignNbm.adoc
 
 . xref:./DevFaqSignNbm.adoc#_can_i_sign_ant_based_nbms_i_create[Can I sign Ant based NBMs I create?]
 . xref:./DevFaqSignNbm.adoc#_isnt_there_an_easier_way[Isn't there an easier way?]

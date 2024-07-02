@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 28
+:page-aliases: ROOT:wiki/DevFaqExplorerViewsInMantisse.adoc
 
 There is an open RFE [1] to include explorer views in the GUI designer palettes by default, but until it is implemented, you can follow the following procedure. (digested from the mailing list)
 

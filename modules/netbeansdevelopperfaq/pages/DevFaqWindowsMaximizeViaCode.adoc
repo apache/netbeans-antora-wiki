@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 26
+:page-aliases: ROOT:wiki/DevFaqWindowsMaximizeViaCode.adoc
 
 
 Example: How to open the output window in maximized state?

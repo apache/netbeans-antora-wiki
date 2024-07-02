@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _output_window
 :page-position: 4
-
+:page-aliases: ROOT:wiki/DevFaqOWTabEmbedding.adoc
 
 You have to create `IOContainer` which provides access (for `IOProvider`) to your component where you want to embed OW tab (IO tab). Then you need to pass `IOContainer` instance to `IOProvider.getIO(String name, Actionlink:_.asciidoc[ ] actions, IOContainer ioContainer)`. `IOContainer` is created by `IOContainer.create(IOContainer.Provider)`. The following code demonstrates how to add OW to custom TopComponent.:
 

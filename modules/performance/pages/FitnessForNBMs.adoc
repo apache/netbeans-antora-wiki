@@ -26,6 +26,6 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/FitnessForNBMs.adoc
 
 link:https://web.archive.org/web/20210118062712/http://wiki.netbeans.org/FitnessForNBMs[Former article page]

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _application_lifecycle_and_hooks
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqAppLifecycleHooks.adoc
 
 include::front::partial$database.adoc[]
 

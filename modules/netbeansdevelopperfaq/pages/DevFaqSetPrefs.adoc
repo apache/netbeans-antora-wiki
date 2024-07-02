@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _settings
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqSetPrefs.adoc
 
 include::front::partial$database.adoc[]
 

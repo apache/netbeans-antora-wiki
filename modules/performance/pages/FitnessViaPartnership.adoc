@@ -30,6 +30,7 @@
 :toc: left
 :toc-title:
 :experimental:
+:page-aliases: ROOT:wiki/FitnessViaPartnership.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

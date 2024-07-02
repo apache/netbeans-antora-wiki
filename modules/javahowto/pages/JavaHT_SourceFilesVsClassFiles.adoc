@@ -26,7 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/JavaHT_SourceFilesVsClassFiles.adoc
 
 Parsing a file from the source code is time and memory consuming task, compared to simple loading of a class file. 
 So, it is important for all the authors of a code in the IDE to know if their code requires parsing a source file or if it is sufficient to use data from a class file.

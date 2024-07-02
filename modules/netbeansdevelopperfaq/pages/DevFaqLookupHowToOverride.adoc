@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _lookup
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqLookupHowToOverride.adoc
 
 include::front::partial$database.adoc[]
 

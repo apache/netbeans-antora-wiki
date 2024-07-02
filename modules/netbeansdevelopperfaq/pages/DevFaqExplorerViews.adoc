@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqExplorerViews.adoc
 
 include::front::partial$database.adoc[]
 

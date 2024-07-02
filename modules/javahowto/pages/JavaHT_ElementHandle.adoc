@@ -26,6 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_ElementHandle.adoc
 
 As was mentioned above, it is not possible to hold Elements, TypeMirrors and Trees and to compare instances got from different javac instances.
 

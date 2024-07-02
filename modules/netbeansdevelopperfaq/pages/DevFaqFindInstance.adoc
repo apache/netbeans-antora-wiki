@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _converting_between_common_data_types_and_finding_things
 :page-position: 10
+:page-aliases: ROOT:wiki/DevFaqFindInstance.adoc
 
 Using `InstanceCookie` (note that if you have an entire folder of `.instance` files, there's a xref:./DevFaqFolderOfInstances.adoc[more efficient way ] to get all of them):
 

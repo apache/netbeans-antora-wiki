@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqDisableAutoupdate.adoc
 
 The IDE often checks for updates on startup.
 This behavior may not be desired in some cases;

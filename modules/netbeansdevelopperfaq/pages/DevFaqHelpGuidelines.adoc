@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _javahelp
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqHelpGuidelines.adoc
 
 include::front::partial$database.adoc[]
 

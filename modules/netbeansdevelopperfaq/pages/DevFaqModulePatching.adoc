@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 25
+:page-aliases: ROOT:wiki/DevFaqModulePatching.adoc
 
 
 If you need to patch an existing module, you can place a JAR file relative to the original.

@@ -29,6 +29,7 @@
 :toc: left
 :toc-title:
 :experimental:
+:page-aliases: ROOT:wiki/FitnessViaPostMortem.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

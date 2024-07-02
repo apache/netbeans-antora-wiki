@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _tasks_and_progressbar
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqTaskLongRunningAsyncTask.adoc
 
 The easy way if you might need to run a long task when some action is involved:
 

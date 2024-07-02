@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 2
-
+:page-aliases: ROOT:wiki/DevFaqExplorer.adoc
 
 There is thing that is explorer;  the name is historical - very old versions of NetBeans had a window named "Explorer" that contained a tree of files and other components.  Colloquially, the term is still used to refer to the area in the left side of the main window where the Files and Projects tabs live in the IDE - but NetBeans has long since stopped having names for or frames around tabbed containers.
 There is an API in NetBeans which contains Swing components that can render xref:./DevFaqWhatIsANode.adoc[Nodes ], which is called the Explorer API.

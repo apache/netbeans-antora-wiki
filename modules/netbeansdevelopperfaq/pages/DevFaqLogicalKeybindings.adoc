@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqLogicalKeybindings.adoc
 
 
 (Wondering what this is about?  See the xref:./DevFaqKeybindings.adoc[general FAQ item on keybindings]).

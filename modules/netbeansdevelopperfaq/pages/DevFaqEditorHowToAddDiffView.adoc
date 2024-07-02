@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 19
+:page-aliases: ROOT:wiki/DevFaqEditorHowToAddDiffView.adoc
 
 include::front::partial$database.adoc[]
 

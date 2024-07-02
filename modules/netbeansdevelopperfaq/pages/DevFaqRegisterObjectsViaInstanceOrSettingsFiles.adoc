@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _when_there_are_multiple_ways_to_do_something
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqRegisterObjectsViaInstanceOrSettingsFiles.adoc
 
 include::front::partial$database.adoc[]
 

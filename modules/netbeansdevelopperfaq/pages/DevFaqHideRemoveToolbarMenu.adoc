@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 24
+:page-aliases: ROOT:wiki/DevFaqHideRemoveToolbarMenu.adoc
 
 
 Create a layer.xml file in a NetBeans module (in the New File wizard, choose Module Development | XML Layer). Once you have created the layer.xml file, expand it in the Important Files node, find the item you want to remove, right-click on it, choose Delete. The _hidden tag for the layer folder or file will be added to your layer.xml file.

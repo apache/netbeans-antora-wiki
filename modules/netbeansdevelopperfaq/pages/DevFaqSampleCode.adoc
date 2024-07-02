@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_support_where_to_find_examples
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqSampleCode.adoc
 
 
 There are a large number of samples. Many of these correspond to the tutorials. You can find the samples in module `platform` in `main/misc` repository at `hg.netbeans.org`. They are in the `samples/` subdirectory.

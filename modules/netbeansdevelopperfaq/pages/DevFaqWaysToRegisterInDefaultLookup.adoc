@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _when_there_are_multiple_ways_to_do_something
 :page-position: 3
-
+:page-aliases: ROOT:wiki/DevFaqWaysToRegisterInDefaultLookup.adoc
 
 There are two ways to put something in the xref:./DevFaqLookupDefault.adoc[default Lookup]:
 

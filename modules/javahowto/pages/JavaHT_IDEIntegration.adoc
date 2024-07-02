@@ -26,7 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/JavaHT_IDEIntegration.adoc
 
 Now you know that there is the javac, how it works and what data it produces. The question is how the integration into the IDE is done. In the IDE there can be lots of modules interested in getting information about the sources. These modules have to "compete" for the information in a well defined way. This is where the javac phases come into play. A module writer can register tasks which will run after javac completes a given phase. (There is an enum for the phases JavaSource.Phase). We will talk about how to register a task later in this document. If there are more tasks for a given phase, which usually is the case, then tasks are sorted by priority. (Again there is an enum for the priorities JavaSource.Pritority).
 

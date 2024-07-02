@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 3
-
+:page-aliases: ROOT:wiki/DevFaq2SrcPaths.adoc
 
 Adding an extra source directories is possible in case you need to create a separate output JARs (besides the module itself), generally with its own special classpath.
 

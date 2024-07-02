@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _threading
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqBackgroundThread.adoc
 
 
 As with most user interface (UI) toolkits, Swing is _single threaded_.  That means there is one and only one thread that should create or alter the state of UI components, and that is the AWT Event Dispatch Thread (also known as the EDT or the "event thread").  It processes things like key and mouse events and calls components to respond to them.  

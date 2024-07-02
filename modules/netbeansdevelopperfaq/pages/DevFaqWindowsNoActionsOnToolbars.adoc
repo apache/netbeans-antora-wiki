@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 11
+:page-aliases: ROOT:wiki/DevFaqWindowsNoActionsOnToolbars.adoc
 
 There is no canonical (or pretty) way to do this, but there is a hack you can do - it works in NetBeans 5.0, 5.5 and 6.x (and probably earlier versions but this wasn't tested).  
 

@@ -25,6 +25,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 5
+:page-aliases: ROOT:wiki/DefFaqMapApisToTasks.adoc
 
 include::front::partial$database.adoc[]
 

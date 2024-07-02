@@ -21,11 +21,12 @@
 :page-layout: wiki
 :page-tags: wik
 :jbake-status: published
-:keywords: Apache NetBeans wiki NetBeansUserFAQ
-:description: Apache NetBeans wiki NetBeansUserFAQ
+:keywords: Apache NetBeans wiki DevFaqTestUnitTestFailsNoSuchMethodError
+:description: Apache NetBeans wiki DevFaqTestUnitTestFailsNoSuchMethodError
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/DevFaqTestUnitTestFailsNoSuchMethodError.adoc
 
 == Problem
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _using_sounds
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqMakeItTalk.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 43
+:page-aliases: ROOT:wiki/DevFaqHowOrganizeOrReuseExistingActionsWithAnnotations.adoc
 
 Usually you need to know the original location of the action you want to use and then refer to it as shadow in your layer.xml file. This requires you to create such as file what you want less and less.
 

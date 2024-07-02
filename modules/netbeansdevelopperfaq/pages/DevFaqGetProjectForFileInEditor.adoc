@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_handling
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqGetProjectForFileInEditor.adoc
 
 
 * get the project from the lookup of the active TopComponent AND/OR

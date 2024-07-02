@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_types
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqActionAllAvailableProjectTypes.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

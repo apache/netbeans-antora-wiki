@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 8
+:page-aliases: ROOT:wiki/DevFaqNonGuiPlatformApp.adoc
 
 include::front::partial$database.adoc[]
 

@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 10
-
+:page-aliases: ROOT:wiki/DevFaqSyntaxColoring.adoc
 
 Yes, but it is not trivial. There is a tutorial on the subject: link:http://wiki.netbeans.org/How_to_create_support_for_a_new_language[http://wiki.netbeans.org/How_to_create_support_for_a_new_language]
 

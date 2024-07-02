@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _logging_and_error_handling
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqAddTimestampToLogs.adoc
 
 This FAQ entry demonstrates how to prepend a timestamp to your log file entries. For example:
 

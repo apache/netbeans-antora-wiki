@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _tutorials_and_important_starting_points
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqTutorialsIndex.adoc
 
 
 An index of tutorials for developing NetBeans modules can be found on the xref:tutorial::kb/docs/platform/index.adoc[Platform] site.

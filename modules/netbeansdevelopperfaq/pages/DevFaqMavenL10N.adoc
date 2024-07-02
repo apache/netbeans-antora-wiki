@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _mavenized_builds
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqMavenL10N.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

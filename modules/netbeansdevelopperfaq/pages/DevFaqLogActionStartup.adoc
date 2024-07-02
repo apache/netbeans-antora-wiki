@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 36
+:page-aliases: ROOT:wiki/DevFaqLogActionStartup.adoc
 
 
 Problem: In a NetBeans Platform application, it is conceivable that the Output window's only use could be to show logging messages to the user. In this case, since the Output TopComponent is always persisted, and the IDE log is only attached via an Action, the Action should be invoked whenever the Output window is open.

@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 40
-
+:page-aliases: ROOT:wiki/DevFaqAddIconToContextMenu.adoc
 
 NOTE: This is not recommended for NB RCP (it will break HMI standards on Mac OS X for example), but is still possible.
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _programmatic_access_to_java_sources
 :page-position: 5
+:page-aliases: ROOT:wiki/Java_DevelopersGuide.adoc
 
 == Concepts
 

@@ -26,6 +26,6 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/TestDistribution.adoc
 
 link:https://web.archive.org/web/20210118062358/http://wiki.netbeans.org/TestDistribution[Former article page]

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _programmatic_access_to_java_sources
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqObtainSourcesOfAJavaClass.adoc
 
 
 Sometimes it is necessary to open source code for a Java file from your NetBeans plug-in.

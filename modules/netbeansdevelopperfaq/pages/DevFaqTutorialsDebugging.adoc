@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 2
-
+:page-aliases: ROOT:wiki/DevFaqTutorialsDebugging.adoc
 
 Once your module is installed all error messages are sent to your `(NetBeans user directory)/var/log/messages.log`; use that for watching what's going on.
 

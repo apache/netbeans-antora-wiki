@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 18
-
+:page-aliases: ROOT:wiki/DevFaqFileEditorContextMenuAddition.adoc
 
 Yes. In NetBeans 5.0 and later there is a wizard available for NetBeans modules which does this for you. Just run *New File | NetBeans Module Development | Action*, as an action type choose *Conditionally Enabled*. On the next step choose `text/x-java` in the *Editor Context Menu Item* combobox, finish the wizard and you are done. For more information you may press the *Help* button available at the bottom of each step of the wizard.
 

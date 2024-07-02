@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _when_things_go_wrong_troubleshooting
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqTroubleshootMissingItemsInZippedSources.adoc
 
 If you've downloaded and unpacked the ZIP file containing NetBeans sources but find that it seems incomplete, try using another application to unpack the ZIP file.  It seems that the popular WinZip application cannot properly handle this file.
 

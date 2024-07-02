@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_support_where_to_find_examples
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqMoreDocsOnCertainAPIs.adoc
 
 include::front::partial$database.adoc[]
 

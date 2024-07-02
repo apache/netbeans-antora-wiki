@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 9
+:page-aliases: ROOT:wiki/DevFaqCreateExplorerPanel.adoc
 
 xref:./DevFaqExplorerViews.adoc[Explorer views ] are generic Swing components, not subclasses of xref:./DevFaqWindowsTopComponent.adoc[TopComponent ], the Swing panel class that is used for top level components (tabs) in the main window.  So an explorer view component is added to a TopComponent, using the TopComponent as a Swing container for the view.
 

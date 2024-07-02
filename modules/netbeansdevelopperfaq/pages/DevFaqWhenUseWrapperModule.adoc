@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 12
+:page-aliases: ROOT:wiki/DevFaqWhenUseWrapperModule.adoc
 
 The New Module Wizard offers easy support for creating a wrapper module:
 *File > New Project > NetBeans Modules > Library Wrapper Module* and since NetBeans 6.8 it is similarly easy to either edit Library Wrapper Module after it has been created or package library directly to your module via *Project Properties > Libraries > Wrapped JARs*. 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 33
+:page-aliases: ROOT:wiki/DevFaqProfiling.adoc
 
 There are many possibilities how to profile Java applications and that can be applied to NetBeans profiling.
 For different task it can be good to select different ways because each of them has its strengths and weaknesses.

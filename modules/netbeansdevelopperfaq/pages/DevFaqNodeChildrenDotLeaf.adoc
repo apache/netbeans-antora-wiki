@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 23
+:page-aliases: ROOT:wiki/DevFaqNodeChildrenDotLeaf.adoc
 
 
 Nodes are not asked for their child nodes until the user tries to expand them - to do otherwise would be very bad for performance.  If your Node is not supposed to have child nodes, use `Children.LEAF` as the children object passed to the constructor.  That will eliminate the expand handle.

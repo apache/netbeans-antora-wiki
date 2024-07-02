@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _using_sounds
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqUseSounds.adoc
 
 This is quite straight forward. This is code from a module in SodBeans but its so simple that it is easier just to copy and paste the code.
 

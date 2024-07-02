@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _configuration_how_modules_install_things _lookup
 :page-position: 2 5
+:page-aliases: ROOT:wiki/DevFaqLookupDefault.adoc
 
 include::front::partial$database.adoc[]
 

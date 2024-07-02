@@ -28,6 +28,8 @@
 :page-syntax: true
 :page-wikidevsection: _project_types
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqIdentifyMain.adoc
+
 
 [source,java]
 ----

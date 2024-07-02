@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 19
+:page-aliases: ROOT:wiki/DevFaqActionAddDataObject.adoc
 
 Override the `public Action[] getActions(boolean context)` method of your node (99% of the time you can ignore the boolean parameter).
 

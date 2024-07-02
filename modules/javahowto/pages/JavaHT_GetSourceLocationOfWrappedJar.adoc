@@ -26,7 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/JavaHT_GetSourceLocationOfWrappedJar.adoc
 
 Q: I am looking for a way to get the source location for a wrapped jar that has source specified. The Sources/SourceGroup code does not find sources attached to wrapped jars.
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 30
+:page-aliases: ROOT:wiki/DevFaqPropertyEditorHints.adoc
 
 include::front::partial$database.adoc[]
 
@@ -58,7 +59,7 @@ Note that all of these are _hints_ - a property editor is free to ignore them or
 
 |Any editor that shows a combo box in the property sheet |`canEditAsText` |`java.lang.Boolean` |Causes the combo box to be editable by text entry 
 
-|`java.io.File` and `java.io.File[]` |_See the xref:./DevFaqNodePropertyForFiles.adoc[separate FAQ entry for File properties]_ 
+|`java.io.File` and `java.io.File[]` |_See the xref:./DevFaqNodePropertyForFiles.adoc[separate FAQ entry for File properties]_ |{nbsp} |
 
 |`java.lang.String[]` (array of strings) |`item.separator` |`java.lang.String` |The delimiter for splitting a user entered string into an array (the default is a , character) 
 

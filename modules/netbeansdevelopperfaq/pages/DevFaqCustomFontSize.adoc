@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _look_and_design
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqCustomFontSize.adoc
 
 [source,java]
 ----

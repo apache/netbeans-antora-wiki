@@ -31,7 +31,7 @@
 :toc-title:
 :toclevels: 5
 :experimental:
-
+:page-aliases: ROOT:wiki/FitnessMemoryLeaks.adoc
 
 Memory leaks seem to be one area not well covered by automated test yet. That
 shall change, especially as it does not require any major changes into the

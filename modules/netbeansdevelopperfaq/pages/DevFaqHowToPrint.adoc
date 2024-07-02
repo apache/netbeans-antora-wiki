@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _printing
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqHowToPrint.adoc
 
 include::front::partial$database.adoc[]
 

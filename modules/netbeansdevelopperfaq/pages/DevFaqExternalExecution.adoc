@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _tasks_and_progressbar
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqExternalExecution.adoc
 
 include::front::partial$database.adoc[]
 

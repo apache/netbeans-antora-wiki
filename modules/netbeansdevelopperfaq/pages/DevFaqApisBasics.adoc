@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _tutorials_and_important_starting_points
 :page-position: 1 
+:page-aliases: ROOT:wiki/DevFaqApisBasics.adoc
 
 include::front::partial$database.adoc[]
 

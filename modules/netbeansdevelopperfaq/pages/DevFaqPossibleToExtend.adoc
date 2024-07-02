@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_types
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqPossibleToExtend.adoc
 
 Yes.
 

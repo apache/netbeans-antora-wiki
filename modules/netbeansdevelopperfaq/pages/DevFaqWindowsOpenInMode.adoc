@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 9
+:page-aliases: ROOT:wiki/DevFaqWindowsOpenInMode.adoc
 
 By default, `TopComponent.open()` opens all components in the central editor area of the
 main window.  Overriding this is simple:

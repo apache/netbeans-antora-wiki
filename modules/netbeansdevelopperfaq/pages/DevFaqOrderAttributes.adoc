@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _configuration_how_modules_install_things
 :page-position: 11
-
+:page-aliases: ROOT:wiki/DevFaqOrderAttributes.adoc
 
 If you are using module development support the IDE,
 you can manage the order of menu or toolbar items

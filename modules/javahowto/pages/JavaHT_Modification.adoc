@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _programmatic_access_to_java_sources
 :page-position: 2
-
+:page-aliases: ROOT:wiki/JavaHT_Modification.adoc
 
 Most modifications are done through the API. Direct document changes are not recommended. Editing source through the API has many advantages, for instance it respects formatting settings. 
 

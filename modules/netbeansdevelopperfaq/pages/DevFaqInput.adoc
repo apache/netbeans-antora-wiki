@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _output_window
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqInput.adoc
 
 This is an example on how to get inout from the Output Window. Just change what's done on the read method (listener implementation) to customize the behavior. Things that come to mind: chat client, text based games, etc...
 

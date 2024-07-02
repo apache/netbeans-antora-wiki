@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 16
-
+:page-aliases: ROOT:wiki/DevFaqI18nFileEncodingQueryObject.adoc
 
 NetBeans implements the FileEncodingQuery object (FEQ) to determine the language encoding for projects and files. The *FEQ* is an interface for obtaining information about which encoding should be used for reading from/writing to a particular file. It can be best defined as a _layer model_ that adheres to the following precedence rules (level of importance from top to bottom):
 

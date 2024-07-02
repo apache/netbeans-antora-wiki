@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 26
-
+:page-aliases: ROOT:wiki/DevFaqNbPlatformAndHarnessMixAndMatch.adoc
 
 Yes, you can use a pristine platform download (or platform built from sources)
 and use an external harness from another platform version without sacrificing repeatable builds.

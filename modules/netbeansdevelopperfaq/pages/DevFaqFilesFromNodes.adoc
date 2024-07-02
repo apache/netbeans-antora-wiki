@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 13
+:page-aliases: ROOT:wiki/DevFaqFilesFromNodes.adoc
 
 In general, it shall be enough to request a **FileObject** via **Lookup**:
 

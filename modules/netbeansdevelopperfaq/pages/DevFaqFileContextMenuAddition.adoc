@@ -28,5 +28,6 @@
 :page-syntax: true
 :page-wikidevsection: _files_and_data_objects
 :page-position: 10
+:page-aliases: ROOT:wiki/DevFaqFileContextMenuAddition.adoc
 
 Yes. In NetBeans 5.0 and later there is a wizard available for NetBeans modules which does this for you. Just run *New File | Module Development | Action*, as an action type choose *Conditionally Enabled*. Choose "*Data Object*" in Cookie Class(es) combobox. On the next step select "*File Type Context Menu Item*" and choose `text/x-java` in the *File Type Context Menu Item* combobox, finish the wizard and you are done. For more information you may press the *Help* button available at the bottom of each step of the wizard.

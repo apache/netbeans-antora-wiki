@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_handling
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqOpenProjectProgramatically.adoc
 
 Here's the link:http://wiki.netbeans.org/OpenProjectsProgramaticallyInNetBeansIDE[source] of this FAQ: 
 

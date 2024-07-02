@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 29
+:page-aliases: ROOT:wiki/DevFaqNodePropertyForFiles.adoc
 
 A number of the built-in property editors in NetBeans can have their behavior controlled by passing "hints" to them.  Hints are providing by calling link:http://java.sun.com/j2se/1.5.0/docs/api/java/beans/FeatureDescriptor.html?is-external=true#setValue(java.lang.String,%20java.lang.Object)[setValue("something", someValue)] on the Node.Property.  For example, to suppress the custom editor button for a property, use
 

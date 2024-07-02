@@ -26,7 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/JavaHT_TreeMakerQA.adoc
 
 == Question: How to rewrite Java/MDR modification code to new API?
 

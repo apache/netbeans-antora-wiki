@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _files_and_data_objects
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqFileSystem.adoc
 
 
 If you use a Unix-based operating system, this concept will be familiar;  if not, it may require some explanation.

@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 25
-
+:page-aliases: ROOT:wiki/DevFaqMixingLightweightHeavyweight.adoc
 
 Since JDK 6 update 12 and JDK 7, support for mixing of AWT (heavyweight, native widgets) and Swing (lightweight, pure Java widgets) is available and usually works quite well. However, placing a native AWT Component within a Swing container hierarchy with customizations may cause unwanted side-effects and can therefor be disabled.
 

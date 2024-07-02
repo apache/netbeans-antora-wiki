@@ -26,6 +26,6 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/XTestReplacementCookBook.adoc
 
 link:https://web.archive.org/web/20151003082025/wiki.netbeans.org/XTestReplacementCookBook[Former article page]

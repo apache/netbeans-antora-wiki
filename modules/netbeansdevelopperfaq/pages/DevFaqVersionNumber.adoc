@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _branding_your_application
 :page-position: 3
-
+:page-aliases: ROOT:wiki/DevFaqVersionNumber.adoc
 
 There are two ways to set the version number shown in the Help... About dialog.
 

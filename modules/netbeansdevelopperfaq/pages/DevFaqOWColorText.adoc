@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _output_window
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqOWColorText.adoc
 
 You can use IO extension classes like `IOColorPrint`, `IOColorLines`. Default colors can be changed via `IOColors`.
 

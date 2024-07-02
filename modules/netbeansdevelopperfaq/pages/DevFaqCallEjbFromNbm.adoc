@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _using_enterprise_resources_from_netbeans_module
 :page-position: 2
-
+:page-aliases: ROOT:wiki/DevFaqCallEjbFromNbm.adoc
 
 This How-To is based on link:https://glassfish.dev.java.net/javaee5/ejb/EJB_FAQ.html[GlassFish EJB Faq]
 

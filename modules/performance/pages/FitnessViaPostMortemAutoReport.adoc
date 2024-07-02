@@ -26,6 +26,6 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/FitnessViaPostMortemAutoReport.adoc
 
 link:https://web.archive.org/web/20161014092904/http://wiki.netbeans.org/FitnessViaPostMortemAutoReport[Former article page]

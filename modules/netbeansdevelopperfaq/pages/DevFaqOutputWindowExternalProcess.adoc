@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _output_window
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqOutputWindowExternalProcess.adoc
 
 *NetBeans 6.8 and up:* Use the External Execution API.  Implement a Callable which will actually start the process:
 

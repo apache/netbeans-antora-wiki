@@ -26,6 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_GettingToJavacInfromation.adoc
 
 After brief description of how the infrastructure works we need to look at writing a task in more detail. The interface you need to implement looks like:
 

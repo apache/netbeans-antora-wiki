@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 29
+:page-aliases: ROOT:wiki/DevFaqMemoryLeaks.adoc
 
 
 The first problem is to identify what is the root problem causing memory to not be used effectively.

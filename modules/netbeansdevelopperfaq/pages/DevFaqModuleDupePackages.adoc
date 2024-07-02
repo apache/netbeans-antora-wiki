@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqModuleDupePackages.adoc
 
 
 Yes, NetBeans does permit multiple modules to load from a single package.

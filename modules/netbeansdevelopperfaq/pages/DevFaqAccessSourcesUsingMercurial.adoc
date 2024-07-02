@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqAccessSourcesUsingMercurial.adoc
 
 First, make sure you have link:http://www.selenic.com/mercurial/[Mercurial] installed on your machine, along with its requirements such as Python.
 

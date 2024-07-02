@@ -28,6 +28,8 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqFindCaretPositionInEditor.adoc
+
 
 You need to first get the selected node (which if the Editor is selected, should correspond to the file being edited); get the most recent editor pane open on it; and then access the caret:
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqWindowsComponentHowTo.adoc
 
 include::front::partial$database.adoc[]
 

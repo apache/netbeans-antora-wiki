@@ -26,6 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_GetPackagesOfAJar.adoc
 
 If you want to display it as a Node you can use:
 

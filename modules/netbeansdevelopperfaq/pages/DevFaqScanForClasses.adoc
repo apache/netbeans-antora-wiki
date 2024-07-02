@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _programmatic_access_to_java_sources
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqScanForClasses.adoc
 
 
 == Prerequisites

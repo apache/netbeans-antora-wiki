@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqAutoUpdateAPIJavadoc.adoc
 
 include::front::partial$database.adoc[]
 

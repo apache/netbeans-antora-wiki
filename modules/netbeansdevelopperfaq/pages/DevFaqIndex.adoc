@@ -26,7 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/DevFaqIndex.adoc
 
 //== Actions: How to add things to Files, Folders, Menus, Toolbars and more
 // dzone https://web.archive.org/web/20170617115833/http://netbeans.dzone.com/news/which-netbeans-platform-action|

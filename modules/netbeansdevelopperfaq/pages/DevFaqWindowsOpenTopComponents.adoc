@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 20
+:page-aliases: ROOT:wiki/DevFaqWindowsOpenTopComponents.adoc
 
 If you need to know which TopComponents are opened use the following:
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 21
+:page-aliases: ROOT:wiki/DevFaqOverrideDefaultWindowSize.adoc
 
 Since the window already exists and has a default size, it must be registered under a specific mode in the filesystem.
 

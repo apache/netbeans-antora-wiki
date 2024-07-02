@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 9
+:page-aliases: ROOT:wiki/DevFaqMultipleProgrammaticEdits.adoc
 
 Create a `Runnable` that will do all of the code generation/munging you want to do.  Pass it to `org.openide.text.NbDocument.runAtomic(doc, runnable)`.
 

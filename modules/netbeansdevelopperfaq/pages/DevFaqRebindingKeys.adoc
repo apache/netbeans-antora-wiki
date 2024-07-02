@@ -28,6 +28,8 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqRebindingKeys.adoc
+
 
 The simple answer is no:  The
 global keymap (get `Keymap` from Lookup)

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _creating_a_custom_programming_language
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqCustomDebugger.adoc
 
 
 Problem: I have a debugger built for my custom programming language. How do I integrate it into the NetBeans Platform?

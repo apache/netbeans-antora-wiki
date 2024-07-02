@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 25
+:page-aliases: ROOT:wiki/DevFaqHideShowToolbar.adoc
 
 
 To hide/show a toolbar dynamically in the NetBeans Platform, you should predefine a toolbar configuration first, then activate it.

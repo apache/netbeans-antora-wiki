@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _running_and_writing_tests
 :page-position: 7
-
+:page-aliases: ROOT:wiki/DevFaqTestUsingSystemFileSystem.adoc
 
 There is a fake System FileSystem provided by as soon as FileSystem xref:wiki::wiki/API_Design.adoc[API] is on classpath. It understands xref:front::index.adoc[NetBeans] layer definitions and is generally suitable for running unit tests.
 

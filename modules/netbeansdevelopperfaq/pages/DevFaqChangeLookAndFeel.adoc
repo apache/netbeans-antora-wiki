@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _look_and_design
 :page-position: 1
-
+:page-aliases: ROOT:wiki/DevFaqChangeLookAndFeel.adoc
 
 Generally, you can change the look and feel either by passing command line arguments, e.g. ``netbeans --laf javax.swing.plaf.metal.MetalLookAndFeel``
 or do so programmatically on startup in a module's `xref:./DevFaqModulesGeneral.adoc[ModuleInstall]` class. Generally if you're installing a custom look and feel, you probably want to have a separate module to do that. Some look and feels provide NetBeans modules to make it easy to use them.

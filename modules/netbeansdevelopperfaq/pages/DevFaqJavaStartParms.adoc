@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _settings
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqJavaStartParms.adoc
 
 This is simple to do but hard to figure out.
 

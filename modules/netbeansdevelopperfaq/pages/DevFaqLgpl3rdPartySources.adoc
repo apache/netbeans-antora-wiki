@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _licensing_issues
 :page-position: 3
-
+:page-aliases: ROOT:wiki/DevFaqLgpl3rdPartySources.adoc
 
 The following third-party components licensed under LGPL license have the sources available for download from netbeans.org:
 

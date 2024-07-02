@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _dialogs_api
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqDialogsApiIntro.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

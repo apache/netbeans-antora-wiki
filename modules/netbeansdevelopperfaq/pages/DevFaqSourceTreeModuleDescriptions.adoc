@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 12
+:page-aliases: ROOT:wiki/DevFaqSourceTreeModuleDescriptions.adoc
 
 
 If you've unpacked or checked out the NetBeans sources, you'll see more then 600 directories.  Almost every one of these directories is a module.  Although the directory names indicate the purpose of each, sometimes it's still not clear what each does.  

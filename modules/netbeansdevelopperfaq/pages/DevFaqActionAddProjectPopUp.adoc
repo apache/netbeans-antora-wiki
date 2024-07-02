@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more _project_types
 :page-position: 12 3
+:page-aliases: ROOT:wiki/DevFaqActionAddProjectPopUp.adoc
 
 Just use `@ActionReference(path="Projects/Actions")`. The action should take a context parameter in its constructor.
 

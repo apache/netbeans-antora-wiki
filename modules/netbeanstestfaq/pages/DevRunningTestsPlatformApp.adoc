@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _running_and_writing_tests
 :page-position: 2
-
+:page-aliases: ROOT:wiki/DevRunningTestsPlatformApp.adoc
 
 The following article describes some of the ways you can run tests (whether unit or functional) on a NetBeans Platform application.
 

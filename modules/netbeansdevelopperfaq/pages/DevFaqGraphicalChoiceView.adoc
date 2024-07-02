@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 27
+:page-aliases: ROOT:wiki/DevFaqGraphicalChoiceView.adoc
 
 It is possible to use a ChoiceView graphically during the design of your interface in the Form Editor. As ChoiceView extends JComboBox, you can design the interface with the help of a JComboBox which is the placeholder for your ChoiceView and customize the creation code of the combo to instantiate a ChoiceView instead. 
 

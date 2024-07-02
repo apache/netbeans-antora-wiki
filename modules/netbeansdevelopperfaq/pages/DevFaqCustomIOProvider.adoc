@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _output_window
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqCustomIOProvider.adoc
 
 
 _Note: You will only do this if you are writing a replacement for the NetBeans output window, which is a fairly unusual activity._

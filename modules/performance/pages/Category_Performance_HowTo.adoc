@@ -26,6 +26,6 @@
 :toc: left
 :toc-title:
 :page-syntax: true
-
+:page-aliases: ROOT:wiki/Category_Performance_HowTo.adoc
 
 link:https://web.archive.org/web/20210118044141/http://wiki.netbeans.org/Category:Performance:HowTo[Former article page]

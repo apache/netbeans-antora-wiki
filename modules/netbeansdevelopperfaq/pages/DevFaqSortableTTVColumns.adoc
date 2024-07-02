@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 20
+:page-aliases: ROOT:wiki/DevFaqSortableTTVColumns.adoc
 
 See "How to Sort Columns in a TreeTableView" in Geertjan's blog:
 

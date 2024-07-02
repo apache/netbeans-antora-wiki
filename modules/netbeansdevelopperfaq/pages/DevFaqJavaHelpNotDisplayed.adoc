@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _javahelp
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqJavaHelpNotDisplayed.adoc
 
 The first thing to check is that your JavaHelp configuration files are correct. Since these files contain IDs and file paths, it is easy to make a mistake. Unfortunately, the JavaHelp system does not provide you with much warning when such an error occurs.
 

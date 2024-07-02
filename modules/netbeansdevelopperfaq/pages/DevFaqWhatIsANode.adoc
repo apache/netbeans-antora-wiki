@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqWhatIsANode.adoc
 
 Nodes are presentation objects.  They have actions, properties and localized display names - they are the place where the architecture meets the human.  Nodes typically wrap some model object and provide human-readable names, icons, etc.  They are at the heart of a lot of NetBeans selection and user interface systems.
 

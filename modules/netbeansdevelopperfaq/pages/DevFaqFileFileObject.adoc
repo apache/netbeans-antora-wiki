@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _converting_between_common_data_types_and_finding_things
 :page-position: 3
-
+:page-aliases: ROOT:wiki/DevFaqFileFileObject.adoc
 
 [source,java]
 ----

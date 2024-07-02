@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _files_and_data_objects
 :page-position: 6
-include::front::partial$database.adoc[]
+:page-aliases: ROOT:wiki/DevFaqDataLoader.adoc
 
 include::front::partial$database.adoc[]
 

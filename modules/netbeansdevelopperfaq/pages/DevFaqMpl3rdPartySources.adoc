@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _licensing_issues
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqMpl3rdPartySources.adoc
 
 The following third-party components licensed under MPL license have the sources available for download from netbeans.org:
 

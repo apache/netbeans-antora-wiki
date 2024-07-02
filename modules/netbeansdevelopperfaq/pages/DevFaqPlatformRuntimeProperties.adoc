@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 28
-
+:page-aliases: ROOT:wiki/DevFaqPlatformRuntimeProperties.adoc
 
 To disable assertions or set some other VM property for your application, there are two places to pay attention to.  First, `$APP_HOME/etc/*.conf` in your distribution should set things for users of your application - do this for things that should be set for any user.
 

@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 1
-
+:page-aliases: ROOT:wiki/DevFaqNetBeansClasspath.adoc
 
 Setting `$CLASSPATH` or `%CLASSPATH%` on the command line will not affect anything -
 NetBeans uses its own class loader system to find classes from modules.

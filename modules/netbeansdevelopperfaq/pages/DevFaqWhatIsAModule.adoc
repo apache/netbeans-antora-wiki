@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqWhatIsAModule.adoc
 
 
 NetBeans is a _modular_ application.  That means it is composed of pieces, which are discovered at runtime.  Some of those pieces may even be downloaded and installed or uninstalled at runtime.

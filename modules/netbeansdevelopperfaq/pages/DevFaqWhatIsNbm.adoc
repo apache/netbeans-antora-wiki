@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqWhatIsNbm.adoc
 
 An NBM file is a NetBeans module packaged for delivery via the web.
 The principal differences between it and a module JAR are:

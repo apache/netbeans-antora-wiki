@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _wizards_and_templates
 :page-position: 4
+:page-aliases: ROOT:wiki/DevFaqWizardPanelError.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

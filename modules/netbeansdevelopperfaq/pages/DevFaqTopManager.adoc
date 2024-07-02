@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 22
-
+:page-aliases: ROOT:wiki/DevFaqTopManager.adoc
 
 The O'Reilly book is old (written between 2001 and 2002) - the chapters on architectural background will still work, but many of the examples won't.
 

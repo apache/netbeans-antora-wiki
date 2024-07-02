@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 6
-
+:page-aliases: ROOT:wiki/DevFaqHowPackageLibraries.adoc
 
 Generally if it's a third party library
 (you didn't write it, you can't or don't want to change it),

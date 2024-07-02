@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _logging_and_error_handling
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqLogging.adoc
 
 include::front::partial$database.adoc[]
 

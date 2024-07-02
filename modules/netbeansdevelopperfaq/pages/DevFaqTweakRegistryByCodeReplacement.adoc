@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 34
+:page-aliases: ROOT:wiki/DevFaqTweakRegistryByCodeReplacement.adoc
 
 The *New Action* wizard allows you to uncheck both menu and toolbar placement for your action and only assign a keyboard shortcut. To learn how to do this manually, read on.
 Refer to xref:wiki::wiki/TaT_HackingNetBeansXMLLayerPartOne.adoc[TaT_HackingNetBeansXMLLayerPartOne] for more details.

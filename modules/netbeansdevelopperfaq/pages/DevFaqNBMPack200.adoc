@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
 :page-position: 9
-
+:page-aliases: ROOT:wiki/DevFaqNBMPack200.adoc
 
 Starting with NetBeans 6.9 we have possibility to significantly decrease NBM file size by using pack200 compression. By default, all modules are now compressed during the build. 
 There are several options to override that behaviour :

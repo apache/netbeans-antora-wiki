@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqGeneralPackageNamingConventions.adoc
 
 There is a naming convention for APIs in NetBeans.  Generally when a new API is introduced, it will be under development and not stable for a while.  During that period, the naming convention for its package is `org.netbeans.modules.something.api`.  So, if you rely on an API with a name like that, your code could break.  Generally it is the responsibility of the author of that API to refactor all modules in NetBeans source repository when the API graduates to "official" status.
 

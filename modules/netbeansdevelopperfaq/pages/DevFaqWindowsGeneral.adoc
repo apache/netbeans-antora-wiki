@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqWindowsGeneral.adoc
 
 The windowing system is what creates the main application window, and makes it
 possible to open components in the UI.  The API for the windowing system is in the package

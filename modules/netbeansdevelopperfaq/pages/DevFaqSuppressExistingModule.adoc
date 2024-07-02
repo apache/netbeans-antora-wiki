@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqSuppressExistingModule.adoc
 
 include::front::partial$database.adoc[]
 

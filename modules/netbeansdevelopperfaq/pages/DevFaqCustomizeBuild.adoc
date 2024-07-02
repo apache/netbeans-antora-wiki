@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 35
-
+:page-aliases: ROOT:wiki/DevFaqCustomizeBuild.adoc
 
 Problem: Customization of the build process is not documented properly
 

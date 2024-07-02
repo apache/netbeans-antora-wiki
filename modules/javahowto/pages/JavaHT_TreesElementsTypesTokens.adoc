@@ -26,6 +26,8 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_TreesElementsTypesTokens.adoc
+
 
 In order to efficiently model the Java 5.0 Language, three different hierarchies are defined:
 

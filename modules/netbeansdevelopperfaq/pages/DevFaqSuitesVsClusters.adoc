@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 18
+:page-aliases: ROOT:wiki/DevFaqSuitesVsClusters.adoc
 
 
 A suite is a project which bundles together a number of xref:./DevFaqWhatIsAModule.adoc[module] projects, lets you build them all together, and puts the resulting JARs in a directory structure the NetBeans Platform understands.

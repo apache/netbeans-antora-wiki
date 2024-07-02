@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _module_system
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqModuleObfuscation.adoc
 
 If you want to protect a NetBeans module from disassembly, you can obfuscate it.
 For example you can use link:http://proguard.sourceforge.net/[ProGuard], an open-source obfuscator.

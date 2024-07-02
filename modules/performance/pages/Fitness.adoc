@@ -28,6 +28,7 @@
 :toc: left
 :toc-title:
 :experimental:
+:page-aliases: ROOT:wiki/Fitness.adoc
 
 This is the home page for NetBeans performance work.
 

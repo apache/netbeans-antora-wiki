@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 17
+:page-aliases: ROOT:wiki/DevFaqEditorTopComponent.adoc
 
 include::front::partial$database.adoc[]
 

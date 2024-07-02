@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqAddDefaultActionShortcuts.adoc
 
 You just need to include the defaults module _org.netbeans.modules.defaults_ that defines the key bindings for the system actions.
 

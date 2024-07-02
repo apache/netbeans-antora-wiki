@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 8
+:page-aliases: ROOT:wiki/DevFaqGeneralWhatIsNetBeansExe.adoc
 
 
 netbeans.exe is the Windows launcher for NetBeans.  Basically it assembles the class path string for starting up NetBeans, passes the command line arguments, etc., and launches Java with those arguments.

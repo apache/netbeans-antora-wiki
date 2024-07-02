@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 10
-
+:page-aliases: ROOT:wiki/DevFaqAddDoingEvilThingsToForeignNodes.adoc
 
 No.
 

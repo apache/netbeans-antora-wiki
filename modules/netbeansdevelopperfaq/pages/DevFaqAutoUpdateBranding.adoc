@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _deploying_changes_through_autoupdate_and_using_autoupdate_api
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqAutoUpdateBranding.adoc
 
 It's easy to distribute new and/or updated modules via AutoUpdate, but you might also like to update branding items like the splash screen and version number in the application's title bar to reflect the changes.
 

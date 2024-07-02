@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_handling
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqGetNameOrIconForProject.adoc
 
 [source,java]
 ----

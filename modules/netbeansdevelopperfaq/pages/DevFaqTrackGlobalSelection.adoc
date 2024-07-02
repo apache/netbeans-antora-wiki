@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 16
+:page-aliases: ROOT:wiki/DevFaqTrackGlobalSelection.adoc
 
 
 If you are writing an action, consider using one of the 

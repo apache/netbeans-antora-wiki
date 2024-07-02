@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_types
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqActionAddProjectCustomizer.adoc
 
 Create and register the panel (here for Java SE projects):
 

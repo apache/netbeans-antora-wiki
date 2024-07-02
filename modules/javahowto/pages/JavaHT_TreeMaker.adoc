@@ -26,6 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_TreeMaker.adoc
 
 == Implementing run() method
 

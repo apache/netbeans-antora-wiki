@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _javahelp
 :page-position: 7
+:page-aliases: ROOT:wiki/DevFaqJavaHelpForNodeProperties.adoc
 
 
 Generally speaking, you can implement HelpCtx.Provider for objects in your platform application to associate them with a JavaHelp context (page).  For some reason, this approach does not work with node properties.  You can set the "helpID" value to associate JavaHelp with an individual property or an entire set, as shown below:

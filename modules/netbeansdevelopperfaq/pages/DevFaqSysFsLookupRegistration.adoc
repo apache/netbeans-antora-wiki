@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _lookup
 :page-position: 16
+:page-aliases: ROOT:wiki/DevFaqSysFsLookupRegistration.adoc
 
 include::front::partial$database.adoc[]
 

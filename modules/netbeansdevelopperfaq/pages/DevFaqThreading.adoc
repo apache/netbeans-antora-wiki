@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _threading
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqThreading.adoc
 
 include::front::partial$database.adoc[]
 

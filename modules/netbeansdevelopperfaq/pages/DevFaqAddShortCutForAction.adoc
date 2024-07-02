@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _key_bindings
 :page-position: 9
+:page-aliases: ROOT:wiki/DevFaqAddShortCutForAction.adoc
 
 
 Register a shortcut at the "Shortcuts" folder in the layer.xml.

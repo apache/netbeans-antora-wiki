@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _properties_and_propertysheet
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqPropertySheetTabs.adoc
 
 This is only really useful if you have a *lot* of properties - and having lots of properties is usually not a great idea, as the user has to search for the things they want to change.
 

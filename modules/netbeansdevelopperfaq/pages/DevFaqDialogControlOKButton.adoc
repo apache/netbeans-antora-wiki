@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _dialogs_api
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqDialogControlOKButton.adoc
 
 include::front::partial$database.adoc[]
 

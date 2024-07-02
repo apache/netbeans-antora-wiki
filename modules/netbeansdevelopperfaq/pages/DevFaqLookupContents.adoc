@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _lookup
 :page-position: 10
+:page-aliases: ROOT:wiki/DevFaqLookupContents.adoc
 
 The simplest way is to call `Lookup.toString()`.  If you want the output in a more readable form, do the following and print/format the resulting collection as you wish:
 

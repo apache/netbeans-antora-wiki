@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _wizards_and_templates
 :page-position: 2
-
+:page-aliases: ROOT:wiki/DevFaqTemplatesInNonIdeApp.adoc
 
 If the projectui module is installed, templates are only made available inside projects.
 

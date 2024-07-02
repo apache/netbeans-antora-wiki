@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 8
-
+:page-aliases: ROOT:wiki/DevFaqModifyOpenFile.adoc
 
 It is not safe to modify a `FileObject` (via `getOutputStream`) which is open and _modified_ in the editor. In fact, it is not possible: calling `FileObject.lock()` will fail. If you modify the `java.io.File` (bypassing the Filesystems API) you may cause a conflict.
 

@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _licensing_issues
 :page-position: 1
-
+:page-aliases: ROOT:wiki/DevFaqLic3rdPartyComponents.adoc
 
 You can find the information about NetBeans code license at link:http://netbeans.org/about/legal/index.html[http://netbeans.org/about/legal/index.html].
 

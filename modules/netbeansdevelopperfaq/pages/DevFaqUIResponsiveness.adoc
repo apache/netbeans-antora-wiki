@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 27
-
+:page-aliases: ROOT:wiki/DevFaqUIResponsiveness.adoc
 
 All NetBeans modules should behave responsibly with regard to performance. They must not affect startup time negatively, they must not increase memory footprint significantly, and they must be responsive at all times.
 

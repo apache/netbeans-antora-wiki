@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 21
+:page-aliases: ROOT:wiki/DevFaqEditorHowToAddCodeTemplates.adoc
 
 1. Create your template file
 

@@ -26,6 +26,8 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/ModuleDependenciesForTests.adoc
+
 
 == Module Dependencies for Tests
 

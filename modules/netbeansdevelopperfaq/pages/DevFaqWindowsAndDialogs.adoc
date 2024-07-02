@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqWindowsAndDialogs.adoc
 
 
 == Can I just open up my own frames and dialogs?

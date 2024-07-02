@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _converting_between_common_data_types_and_finding_things
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqFileVsFileObject.adoc
 
 What exactly is the difference between a filename on disk and a
 `FileObject`? How do I convert them?

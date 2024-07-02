@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _mavenized_builds
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqMavenHowToMigrateFromANT.adoc
 
 The following list was created while converting a simple plugin with less than 20 classes, so the migration steps of large projects might vary. But you should get the basic idea.
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _settings
 :page-position: 5
+:page-aliases: ROOT:wiki/DevFaqExtendOptionsSearch.adoc
 
 
 == Quicksearch

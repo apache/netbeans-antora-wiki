@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _look_and_design
 :page-position: 3
+:page-aliases: ROOT:wiki/DevFaqImagesForDarkLaf.adoc
 
 ifdef::env-github[]
 :imagesdir: ../../images

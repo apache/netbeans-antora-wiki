@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _deployment_using_installers_nbi
 :page-position: 1
+:page-aliases: ROOT:wiki/DevInstallerAddVersioningInfo.adoc
 
 Question from mailing list: _"How to add version information into windows control panel for NetBeans platform applications? When the installer ran then it only added "Installed On" information for my application."_
 

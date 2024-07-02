@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_handling
 :page-position: 5
-
+:page-aliases: ROOT:wiki/DevFaqListenForOpeningClosingProject.adoc
 
 == Specific for a project-type
 

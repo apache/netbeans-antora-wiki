@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 23
+:page-aliases: ROOT:wiki/DevFaqMainTitle.adoc
 
 By default, the main title shows the branding name plus the build number.
 

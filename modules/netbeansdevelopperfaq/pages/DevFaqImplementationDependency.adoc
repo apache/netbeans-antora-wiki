@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 15
+:page-aliases: ROOT:wiki/DevFaqImplementationDependency.adoc
 
 
 Normally modules interact with one another using _public packages_: a module can (indeed, must) declare which, if any, of its Java packages are intended to be visible to other modules. When you declare a specification dependency on another module, you only get access to the public packages. This kind of dependency looks like this in the JAR manifest (which is normally constructed from `nbproject/project.xml` in sources):

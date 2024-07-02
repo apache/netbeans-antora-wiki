@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _wizards_and_templates
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqMakeGroupTemplate.adoc
 
 include::front::partial$database.adoc[]
 

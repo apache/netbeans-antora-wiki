@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _properties_and_propertysheet
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqPropertySheetNodes.adoc
 
 include::front::partial$database.adoc[]
 

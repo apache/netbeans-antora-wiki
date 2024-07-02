@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _file_management_within_the_ideapplication
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqOpenFile.adoc
 
 == Approach 1
 

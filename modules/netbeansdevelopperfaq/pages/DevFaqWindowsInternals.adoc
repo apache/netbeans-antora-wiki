@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 13
+:page-aliases: ROOT:wiki/DevFaqWindowsInternals.adoc
 
 Below is a blow-by-blow account of what actually goes on during NetBeans startup, put together by, well, reading the code.  It's here as much for the author's edification (if you read through it and document it, you understand it) as yours.
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _xml_multiview_api
 :page-position: 1
+:page-aliases: ROOT:wiki/DevFaqMultiViewChangeTabInCode.adoc
 
 include::front::partial$database.adoc[]
 

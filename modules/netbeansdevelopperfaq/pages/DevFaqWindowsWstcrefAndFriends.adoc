@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _window_system
 :page-position: 8
+:page-aliases: ROOT:wiki/DevFaqWindowsWstcrefAndFriends.adoc
 
 The window system on screen is composed of tabbed areas called "modes" (originally this was intended as "docking mode" as in the way a component is docked into the main window - yes, it's a lousy name).  These correspond to the class org.openide.windows.Mode.  In the xref:./DevFaqSystemFilesystem.adoc[system filesystem], each Mode is represented by a folder.
 

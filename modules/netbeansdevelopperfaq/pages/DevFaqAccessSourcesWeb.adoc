@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 4
-
+:page-aliases: ROOT:wiki/DevFaqAccessSourcesWeb.adoc
 
 (as of June, 2010)
 

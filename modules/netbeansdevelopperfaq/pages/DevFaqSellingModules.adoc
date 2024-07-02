@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _getting_started
 :page-position: 6
-
+:page-aliases: ROOT:wiki/DevFaqSellingModules.adoc
 
 Yes.  The license is very non-restrictive.  For details, see the
 link:http://www.netbeans.org/about/legal/license.html[license].

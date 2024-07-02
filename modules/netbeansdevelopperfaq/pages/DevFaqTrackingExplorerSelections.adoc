@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 14
+:page-aliases: ROOT:wiki/DevFaqTrackingExplorerSelections.adoc
 
 include::front::partial$database.adoc[]
 

@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _project_types
 :page-position: 6
+:page-aliases: ROOT:wiki/DevFaqActionAddProjectCustomizerToMultipleTypes.adoc
 
 Use the *@Registrations* annotation to group the multiple *@Registration* annotations.
 

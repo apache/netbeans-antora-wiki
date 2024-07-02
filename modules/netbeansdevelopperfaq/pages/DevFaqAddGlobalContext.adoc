@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 39
+:page-aliases: ROOT:wiki/DevFaqAddGlobalContext.adoc
 
 
 The NetBeans Platform provides the ability to enable and disable Actions based upon what is selected in the current logical window--this is known as the "_global selection_". In this article I show how to extend this selection concept to include objects that are global to the entire application. Using this technique, you'll be able to leverage existing idioms for creating context-sensitive actions and querying the global selection, but the scope of your operations will be expanded from the context of the current window to the context of the entire application. That's a pretty powerful extension point that demonstrates the strength and versatility of the NetBeans Platform APIs.

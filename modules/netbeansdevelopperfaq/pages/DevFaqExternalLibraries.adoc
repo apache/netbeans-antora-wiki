@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
 :page-position: 13
+:page-aliases: ROOT:wiki/DevFaqExternalLibraries.adoc
 
 
 In the spirit of building on the shoulders of giants,

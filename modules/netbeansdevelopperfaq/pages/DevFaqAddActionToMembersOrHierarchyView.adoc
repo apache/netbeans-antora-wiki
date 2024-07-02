@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _actions_how_to_add_things_to_files_folders_menus_toolbars_and_more
 :page-position: 26
-
+:page-aliases: ROOT:wiki/DevFaqAddActionToMembersOrHierarchyView.adoc
 
 Since 7.3 ([1], [2]) it is possible to extend the context menu of the newly redesigned members and hierarchy view.
 

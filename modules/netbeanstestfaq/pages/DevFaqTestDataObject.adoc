@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _running_and_writing_tests
 :page-position: 6
-
+:page-aliases: ROOT:wiki/DevFaqTestDataObject.adoc
 
 Quite easy. At least in NetBeans 6.5 and newer. Everything shall work as 
 declarative MIME resolvers are loaded automatically from unit tests and 

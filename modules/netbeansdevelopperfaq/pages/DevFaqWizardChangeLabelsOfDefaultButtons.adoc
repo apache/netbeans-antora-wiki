@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _wizards_and_templates
 :page-position: 6
-
+:page-aliases: ROOT:wiki/DevFaqWizardChangeLabelsOfDefaultButtons.adoc
 
 Need to customize the button text of the default buttons of a wizard (Finish, Cancel, etc.)?
 

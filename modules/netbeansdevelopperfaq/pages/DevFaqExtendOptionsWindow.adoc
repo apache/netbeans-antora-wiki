@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _settings
 :page-position: 2
+:page-aliases: ROOT:wiki/DevFaqExtendOptionsWindow.adoc
 
 include::front::partial$database.adoc[]
 

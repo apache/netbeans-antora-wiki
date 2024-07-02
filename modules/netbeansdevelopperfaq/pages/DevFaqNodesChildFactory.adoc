@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _nodes_and_explorer
 :page-position: 8
-
+:page-aliases: ROOT:wiki/DevFaqNodesChildFactory.adoc
 
 If you have a Node that needs to provide child Nodes, and computing the objects the child nodes represent is slow or expensive (i.e. you need to parse a file, connect to a database, or do some sort of I/O), you do not want to compute the child nodes in the event thread (which is what happens by default).
 

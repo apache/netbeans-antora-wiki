@@ -28,7 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _editor_and_edited_files
 :page-position: 5
-
+:page-aliases: ROOT:wiki/DevFaqOpenReadOnly.adoc
 
 You will need to make a special file editor which refuses to take a write lock:
 

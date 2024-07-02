@@ -26,6 +26,7 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+:page-aliases: ROOT:wiki/Category_Performance_ToolsAndTests.adoc
 
 
 link:https://web.archive.org/web/20210118044142/http://wiki.netbeans.org/Category:Performance:ToolsAndTests[Former article page]

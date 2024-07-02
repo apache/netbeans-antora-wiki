@@ -28,6 +28,7 @@
 :page-syntax: true
 :page-wikidevsection: _lookup
 :page-position: 13
+:page-aliases: ROOT:wiki/DevFaqLookupPackageNamingAndLookup.adoc
 
 
 Q: After adding my class to lookup I get a `ClassNotFoundException` when trying to look it up, why?
