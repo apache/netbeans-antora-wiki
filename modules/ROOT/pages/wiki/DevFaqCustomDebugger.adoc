@@ -32,4 +32,4 @@
 
 Problem: I have a debugger built for my custom programming language. How do I integrate it into the NetBeans Platform?
 
-Solution: Here is a tutorial on integrating a custom Debugger: link:http://netbeans.dzone.com/how-reuse-netbeans-debugger[http://netbeans.dzone.com/how-reuse-netbeans-debugger]
+Solution: Here is a tutorial on integrating a custom Debugger: link:https://web.archive.org/web/20150526060757/http://netbeans.dzone.com/how-reuse-netbeans-debugger[http://netbeans.dzone.com/how-reuse-netbeans-debugger]
