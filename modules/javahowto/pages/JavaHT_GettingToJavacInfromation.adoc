@@ -1,0 +1,60 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Getting to the javac information = writing a java infrastructure task
+:page-layout: wiki
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT GettingToJavacInfromation
+:description: Apache NetBeans wiki JavaHT GettingToJavacInfromation
+:toc: left
+:toc-title:
+:page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_GettingToJavacInfromation.adoc
+
+After brief description of how the infrastructure works we need to look at writing a task in more detail. The interface you need to implement looks like:
+
+[source,java]
+----
+
+public interface CancellableTask<P> {
+
+    public void cancel();
+
+    public void run( P parameter ) throws Exception;
+
+}
+----
+
+We already mentioned what is the cancel() method good for. The more interesting and more important method obviously is the run() method. You may see that it takes a parameter of type P. P can be generally anything as the interface can be used in other context than the java infrastructure as well. However, when using it for implementation of the java related tasks the P can become: CompilationInfo, CompilationController or WorkingCopy. It depends in how you registered or started your task. Considering the ordering each of the parameter types adds some functionality you may use.
+
+. CompilationInfo - Used for read only tasks invoked by the infrastructure at given phase. 
+** Permits for getting information about the source (Trees, Elements, Types)
+** Provides some utility classes for working with Trees, Elements and Types.
+** Knows FileObject and optionally the Document corresponding with the JavaSource
+** Knows the the errors (Diagnostics) the javac run into
+** Knows the token hierarchy
+** Knows the phase the compiler is in 
+. CompilationController - Used for read-only tasks which should be invoked on user's action. Permits for moving Javac into given phase. 
+** Can do everything what the CompilationInfo does
+** Can move javac to given phase 
+. WorkingCopy - Used for tasks which do modifications to the source 
+** Does everything what the CompilationController does
+** Permits for doing modifications to the source 
+
