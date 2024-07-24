@@ -18,7 +18,7 @@
 //
 
 = Can I add submenus to context or main menus, instead of single menu items?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUsingSubmenus

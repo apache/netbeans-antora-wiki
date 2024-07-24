@@ -18,7 +18,7 @@
 //
 
 = How do I add an action to my custom node type ?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddDataObject

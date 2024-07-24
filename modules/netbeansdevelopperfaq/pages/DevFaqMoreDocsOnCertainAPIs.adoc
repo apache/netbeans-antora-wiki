@@ -18,7 +18,7 @@
 //
 
 = Where can I find more documentation on certain APIs?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMoreDocsOnCertainAPIs

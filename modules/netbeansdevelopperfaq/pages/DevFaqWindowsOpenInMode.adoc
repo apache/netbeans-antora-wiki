@@ -18,7 +18,7 @@
 //
 
 = My TopComponent always opens in the editor area, but I want it to open in the same place as XYZ?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsOpenInMode

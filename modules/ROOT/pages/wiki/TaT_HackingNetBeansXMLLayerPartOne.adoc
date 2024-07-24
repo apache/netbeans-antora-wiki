@@ -18,7 +18,7 @@
 //
 
 = Hacking Module's XML Layer In NetBeans (Part 1)
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki TaT HackingNetBeansXMLLayerPartOne

@@ -18,7 +18,7 @@
 //
 
 = There is a class under org.netbeans.core that does what I need. Can I call/use/depend on it?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDependOnCore

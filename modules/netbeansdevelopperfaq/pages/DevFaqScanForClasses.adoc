@@ -18,7 +18,7 @@
 //
 
 = How can I scan a classpath to find all classes of a particular type?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqScanForClasses

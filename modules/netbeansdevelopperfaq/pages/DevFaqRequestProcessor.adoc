@@ -18,7 +18,7 @@
 //
 
 = When should I use RequestProcessor.getDefault() and when should I create my own RequestProcessor?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqRequestProcessor

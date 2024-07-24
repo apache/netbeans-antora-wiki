@@ -18,7 +18,7 @@
 //
 
 = Help the Print menu item is disabled!
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToPrint

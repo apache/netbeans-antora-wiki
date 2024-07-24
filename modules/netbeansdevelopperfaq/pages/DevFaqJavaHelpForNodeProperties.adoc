@@ -18,7 +18,7 @@
 //
 
 = How Can I Hook Up JavaHelp to Property Sets or Individual Properties?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqJavaHelpForNodeProperties

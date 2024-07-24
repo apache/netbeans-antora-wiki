@@ -18,7 +18,7 @@
 //
 
 = Can I sign NBMs I create?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSignNbm

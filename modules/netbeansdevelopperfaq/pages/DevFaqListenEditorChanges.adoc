@@ -18,7 +18,7 @@
 //
 
 =  How can I track what file the user is currently editing?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqListenEditorChanges

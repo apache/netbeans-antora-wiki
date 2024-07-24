@@ -18,7 +18,7 @@
 //
 
 = How can I control when the OK button is enabled?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDialogControlOKButton

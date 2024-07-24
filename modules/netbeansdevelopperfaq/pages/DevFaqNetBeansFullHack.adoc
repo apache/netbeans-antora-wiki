@@ -18,7 +18,7 @@
 //
 
 = Can I test changes to the IDE without going through the license check and so on?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNetBeansFullHack

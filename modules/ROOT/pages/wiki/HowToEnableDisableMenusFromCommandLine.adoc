@@ -18,7 +18,7 @@
 //
 
 = Can something that the user sets on the command line determine whether a menu item is enabled?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki HowToEnableDisableMenusFromCommandLine

@@ -18,7 +18,7 @@
 //
 
 = What is the Actions folder in the system filesystem, and why should I use it?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionsFolder

@@ -18,7 +18,7 @@
 //
 
 = Is it possible to extend an existing project type?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqPossibleToExtend

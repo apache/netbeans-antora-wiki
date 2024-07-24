@@ -18,7 +18,7 @@
 //
 
 = How to add versioning information to be shown in "Installed Programs" (Windows-only)?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevInstallerAddVersioningInfo

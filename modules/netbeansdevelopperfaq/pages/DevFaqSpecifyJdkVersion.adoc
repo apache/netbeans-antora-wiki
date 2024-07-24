@@ -18,7 +18,7 @@
 //
 
 = My module requires JDK 6; how do I keep it from being loaded in JDK 5?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSpecifyJdkVersion

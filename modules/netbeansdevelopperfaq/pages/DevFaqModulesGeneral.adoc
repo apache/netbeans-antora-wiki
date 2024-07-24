@@ -18,7 +18,7 @@
 //
 
 = What are the ways a module can influence the system?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModulesGeneral

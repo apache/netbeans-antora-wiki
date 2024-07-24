@@ -18,7 +18,7 @@
 //
 
 = How to get the project for the actual file in the editor?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGetProjectForFileInEditor

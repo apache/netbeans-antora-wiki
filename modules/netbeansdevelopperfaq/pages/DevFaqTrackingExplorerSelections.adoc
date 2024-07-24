@@ -18,7 +18,7 @@
 //
 
 = How should I keep track of what the current nodeselection in the Explorer window is? Should I use the `ExplorerManager` ?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqTrackingExplorerSelections

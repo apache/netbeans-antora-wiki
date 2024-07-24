@@ -18,7 +18,7 @@
 //
 
 = How to open files in editor after project creation?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqOpenFilesAfterProjectCreation

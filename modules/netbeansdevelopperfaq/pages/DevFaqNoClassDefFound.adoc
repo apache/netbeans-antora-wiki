@@ -18,7 +18,7 @@
 //
 
 = My module uses some class from NetBeans' APIs. It compiles, but I get a NoClassDefFoundError at runtime. Why?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNoClassDefFound

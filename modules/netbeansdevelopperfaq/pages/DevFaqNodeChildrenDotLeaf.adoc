@@ -18,7 +18,7 @@
 //
 
 = Why do my nodes in the Explorer always have an expand-box by them, even though they have no children?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeChildrenDotLeaf

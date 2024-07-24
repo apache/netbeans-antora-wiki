@@ -18,7 +18,7 @@
 //
 
 = How can I register services into the default lookup using the system filesystem?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSysFsLookupRegistration

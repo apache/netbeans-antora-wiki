@@ -18,7 +18,7 @@
 //
 
 = How do I get the source location of a wrapped jar?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki JavaHT GetSourceLocationOfWrappedJar

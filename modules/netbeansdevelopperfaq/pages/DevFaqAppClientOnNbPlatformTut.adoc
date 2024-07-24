@@ -18,7 +18,7 @@
 //
 
 = Java EE Application Client on top of the NetBeans Platform Tutorial
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAppClientOnNbPlatformTut

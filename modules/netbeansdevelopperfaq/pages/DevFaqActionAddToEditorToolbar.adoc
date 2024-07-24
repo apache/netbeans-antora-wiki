@@ -18,7 +18,7 @@
 //
 
 = How do I add an action to the toolbar of the editor?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddToEditorToolbar

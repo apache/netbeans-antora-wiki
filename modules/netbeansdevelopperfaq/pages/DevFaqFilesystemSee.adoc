@@ -18,7 +18,7 @@
 //
 
 = How can I see the system filesystem (`FileUtil.getConfigRoot()`)?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFilesystemSee

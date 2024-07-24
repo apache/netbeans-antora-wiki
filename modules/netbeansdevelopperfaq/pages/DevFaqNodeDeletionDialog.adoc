@@ -18,7 +18,7 @@
 //
 
 = How can I prevent (or override) the node deletion dialog?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeDeletionDialog

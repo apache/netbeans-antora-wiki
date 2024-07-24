@@ -18,7 +18,7 @@
 //
 
 = How do I add a new panel to a Project Properties dialog?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddProjectCustomizer

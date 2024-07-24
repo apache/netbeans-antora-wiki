@@ -18,7 +18,7 @@
 //
 
 = What are editor-specific keybindings and how are they different from global ones?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGlobalVsEditorKeybindings

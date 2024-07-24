@@ -18,7 +18,7 @@
 //
 
 = Do I need to restart NetBeans every time to debug new changes?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModuleReload

@@ -18,7 +18,7 @@
 //
 
 = Why use this strange convention - wouldn't a Map be good enough?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLookupVsHashmap

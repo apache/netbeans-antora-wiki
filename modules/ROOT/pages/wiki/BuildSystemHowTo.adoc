@@ -19,7 +19,7 @@
 
 
 = NetBeans 4.x Project & Build System How-To
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published

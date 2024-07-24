@@ -18,7 +18,7 @@
 //
 
 = How can I graphically create a ChoiceView in using the GUI designer?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGraphicalChoiceView

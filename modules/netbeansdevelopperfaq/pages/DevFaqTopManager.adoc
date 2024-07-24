@@ -18,7 +18,7 @@
 //
 
 = Where is `TopManager`? I'm trying to do the examples from the O'Reilly book
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqTopManager

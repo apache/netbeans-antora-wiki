@@ -15,7 +15,7 @@
 //
 
 = What API do I want to use for x, y or z?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DefFaqMapApisToTasks

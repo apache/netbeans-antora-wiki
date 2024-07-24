@@ -18,7 +18,7 @@
 //
 
 = How can I to add actions to the Java package node?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddJavaPackage

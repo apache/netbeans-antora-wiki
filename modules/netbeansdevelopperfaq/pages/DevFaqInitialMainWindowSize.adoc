@@ -18,7 +18,7 @@
 //
 
 = How do I adjust the initial size/position of the main window?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqInitialMainWindowSize

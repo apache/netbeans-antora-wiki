@@ -18,7 +18,7 @@
 //
 
 = Can I add syntax coloring for my own data object/MIME type?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSyntaxColoring

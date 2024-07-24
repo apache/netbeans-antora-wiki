@@ -18,7 +18,7 @@
 //
 
 = How to use sounds in my application?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqUseSounds

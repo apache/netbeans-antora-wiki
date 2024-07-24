@@ -18,7 +18,7 @@
 //
 
 = I have a Node.Property for a file. How can I control the file chooser that is the custom editor?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodePropertyForFiles

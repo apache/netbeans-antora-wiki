@@ -18,7 +18,7 @@
 //
 
 = How do you invoke the View/IDE Log Action programmatically?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLogActionStartup

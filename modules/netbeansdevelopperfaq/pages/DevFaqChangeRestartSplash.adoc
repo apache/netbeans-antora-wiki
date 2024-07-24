@@ -18,7 +18,7 @@
 //
 
 = How Can I Change the NetBeans Splash Screen Shown When A User Installs a Module Requiring Restart?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqChangeRestartSplash

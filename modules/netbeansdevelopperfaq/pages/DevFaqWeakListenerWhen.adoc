@@ -18,7 +18,7 @@
 //
 
 = When should I use a WeakListener ?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWeakListenerWhen

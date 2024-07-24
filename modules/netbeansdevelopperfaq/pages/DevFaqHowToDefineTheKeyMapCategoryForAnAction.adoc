@@ -18,7 +18,7 @@
 //
 
 = How do I define and localise the keymap category of an action?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToDefineTheKeyMapCategoryForAnAction

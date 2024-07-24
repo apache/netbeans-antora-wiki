@@ -18,7 +18,7 @@
 //
 
 = Can I create a console or server (non-GUI) app with the NetBeans Platform?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNonGuiPlatformApp

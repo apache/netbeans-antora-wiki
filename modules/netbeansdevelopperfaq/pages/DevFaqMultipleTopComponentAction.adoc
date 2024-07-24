@@ -18,7 +18,7 @@
 //
 
 =  I have a non-singleton TopComponent. Can I write actions which show all available instances in the main menu?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMultipleTopComponentAction

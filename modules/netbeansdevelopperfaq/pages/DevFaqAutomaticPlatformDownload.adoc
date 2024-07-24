@@ -18,7 +18,7 @@
 //
 
 = How can I have my application compiled in a specific version of the platform ?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAutomaticPlatformDownload

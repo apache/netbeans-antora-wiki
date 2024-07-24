@@ -18,7 +18,7 @@
 //
 
 = How do I create a TopComponent to show an explorer view?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCreateExplorerPanel

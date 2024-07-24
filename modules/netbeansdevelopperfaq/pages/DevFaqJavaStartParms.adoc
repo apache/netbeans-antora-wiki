@@ -18,7 +18,7 @@
 //
 
 = How do I change the application's Java start parameters?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqJavaStartParms

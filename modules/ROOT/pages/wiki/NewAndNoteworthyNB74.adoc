@@ -18,7 +18,7 @@
 //
 
 = NetBeans 74 NewAndNoteworthy
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki NetBeans 74 NewAndNoteworthy

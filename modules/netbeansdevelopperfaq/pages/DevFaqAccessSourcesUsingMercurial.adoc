@@ -18,7 +18,7 @@
 //
 
 = How do I get access to NetBeans sources using Mercurial (hg)?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAccessSourcesUsingMercurial

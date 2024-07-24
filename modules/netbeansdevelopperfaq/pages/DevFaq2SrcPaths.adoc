@@ -18,7 +18,7 @@
 //
 
 = How do I have two source directories within one module?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaq2SrcPaths

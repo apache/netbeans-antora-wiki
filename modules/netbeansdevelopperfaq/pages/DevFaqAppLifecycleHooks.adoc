@@ -18,7 +18,7 @@
 //
 
 = What are some of the hooks in the application's lifecycle I can plug into?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wikidev, devfaq, needsreview, position1, lifecyclesection
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAppLifecycleHooks

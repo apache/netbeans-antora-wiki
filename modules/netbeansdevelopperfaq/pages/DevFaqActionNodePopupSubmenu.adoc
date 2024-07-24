@@ -18,7 +18,7 @@
 //
 
 = How do I make my Node have a submenu on its popup menu?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionNodePopupSubmenu

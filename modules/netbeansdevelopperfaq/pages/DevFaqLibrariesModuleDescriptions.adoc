@@ -18,7 +18,7 @@
 //
 
 = In the Libraries tab of my application's Project Properties, there sure are a lot of modules listed. What are they for?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLibrariesModuleDescriptions

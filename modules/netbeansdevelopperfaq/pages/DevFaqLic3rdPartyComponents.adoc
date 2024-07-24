@@ -18,7 +18,7 @@
 //
 
 = What third party libraries are in the Platform and what are their licenses?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLic3rdPartyComponents

@@ -18,7 +18,7 @@
 //
 
 = Migrating to a newer version of the Platform
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMigratingToNewerPlatform

@@ -19,7 +19,7 @@
 
 
 = Best Practices for Apache Maven in NetBeans
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Maven Best Practices NetBeans 

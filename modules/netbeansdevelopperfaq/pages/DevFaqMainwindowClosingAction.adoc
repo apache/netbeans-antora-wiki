@@ -18,7 +18,7 @@
 //
 
 = How do I change the closing action of the MainWindow?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqMainwindowClosingAction

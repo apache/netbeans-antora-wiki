@@ -1,4 +1,4 @@
-.DEV FAQ
+.xref:DevFaqIndex.adoc[Developper FAQ]
 * Getting Started
 ** xref:DevFaqWhatIsAModule.adoc[]
 ** xref:DevFaqBecomingProficient.adoc[]

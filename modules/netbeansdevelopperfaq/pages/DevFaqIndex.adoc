@@ -18,7 +18,7 @@
 //
 
 = Apache NetBeans Developer FAQ
-:page-layout: wikidevindex
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki index

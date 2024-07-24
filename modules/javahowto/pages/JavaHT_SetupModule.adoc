@@ -18,7 +18,7 @@
 //
 
 =  How to setup a module which uses the Java related APIs
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki JavaHT SetupModule

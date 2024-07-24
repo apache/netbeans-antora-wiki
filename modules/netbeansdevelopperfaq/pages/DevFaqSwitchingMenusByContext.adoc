@@ -18,7 +18,7 @@
 //
 
 = How can I change the contents of a menu according to the selected file in the editor?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSwitchingMenusByContext

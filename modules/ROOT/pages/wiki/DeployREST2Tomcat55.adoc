@@ -18,7 +18,7 @@
 //
 
 = Setting Up NetBeans IDE to Run RESTful Web Applications on Tomcat 6.0
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki DeployREST2Tomcat55

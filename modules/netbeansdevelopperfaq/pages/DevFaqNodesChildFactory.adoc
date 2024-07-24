@@ -18,7 +18,7 @@
 //
 
 = I need to show Nodes for objects that are slow to create. How do I compute Node children on a background thread? 
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodesChildFactory

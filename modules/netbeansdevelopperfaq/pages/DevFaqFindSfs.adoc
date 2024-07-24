@@ -18,7 +18,7 @@
 //
 
 = How do I get a reference to the system filesystem?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFindSfs

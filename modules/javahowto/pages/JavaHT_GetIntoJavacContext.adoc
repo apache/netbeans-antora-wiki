@@ -18,7 +18,7 @@
 //
 
 = How do I Get into the Javac Context for a File?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki JavaHT GetIntoJavacContext

@@ -18,7 +18,7 @@
 //
 
 = When should I use a library wrapper module and when should I just package the library into my module?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWhenUseWrapperModule

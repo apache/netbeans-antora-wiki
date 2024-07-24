@@ -18,7 +18,7 @@
 //
 
 = How do I preserve the column attributes of a TreeTableView?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqViewSaveTTVColumns

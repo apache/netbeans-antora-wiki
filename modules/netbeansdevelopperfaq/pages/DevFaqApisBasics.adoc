@@ -18,7 +18,7 @@
 //
 
 = What are the basic things I should know about NetBeans' architecture to get started creating NetBeans Platform applications?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqApisBasics

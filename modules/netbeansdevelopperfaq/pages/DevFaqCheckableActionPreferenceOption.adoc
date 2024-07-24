@@ -18,7 +18,7 @@
 //
 
 = How do I make a checkable action that represents a preference option?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCheckableActionPreferenceOption

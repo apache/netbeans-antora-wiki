@@ -18,7 +18,7 @@
 //
 
 = How do I create an Action that is automatically enabled and disabled depending on the selection?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionContextSensitive

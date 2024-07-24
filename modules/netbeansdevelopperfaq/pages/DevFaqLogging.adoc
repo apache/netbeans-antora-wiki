@@ -18,7 +18,7 @@
 //
 
 = Using java.util.logging in NetBeans
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqLogging

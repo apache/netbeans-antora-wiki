@@ -18,7 +18,7 @@
 //
 
 = How do I add a dropdown menu to toolbar that is selectively enabled/disabled?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDropdownMenuAddToolbarEnabled

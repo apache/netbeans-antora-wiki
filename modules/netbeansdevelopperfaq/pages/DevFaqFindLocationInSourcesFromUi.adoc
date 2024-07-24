@@ -18,7 +18,7 @@
 //
 
 = Looking at the UI how do I find a module that implements a menu item?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFindLocationInSourcesFromUi

@@ -18,7 +18,7 @@
 //
 
 = How can I reuse and/or organise actions only by using annotations (@ActionReferences)?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowOrganizeOrReuseExistingActionsWithAnnotations

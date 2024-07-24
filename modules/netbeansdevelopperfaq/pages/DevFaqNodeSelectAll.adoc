@@ -18,7 +18,7 @@
 //
 
 = How can I implement "Select all/Deselect all/Invert selection" features?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeSelectAll

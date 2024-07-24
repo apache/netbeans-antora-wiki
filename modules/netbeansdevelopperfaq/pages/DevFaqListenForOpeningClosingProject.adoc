@@ -18,7 +18,7 @@
 //
 
 = How to listen for projects to be opened/closed?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqListenForOpeningClosingProject

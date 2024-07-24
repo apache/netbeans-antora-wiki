@@ -18,7 +18,7 @@
 //
 
 = How can I define the available File types when the user right-clicks the project folder and chooses "New"?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAddFileTemplateToNewFileContentMenu

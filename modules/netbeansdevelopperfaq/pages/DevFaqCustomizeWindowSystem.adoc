@@ -18,7 +18,7 @@
 //
 
 = How can I customize the window system via the latest 7.1 techniques/enhancements?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomizeWindowSystem

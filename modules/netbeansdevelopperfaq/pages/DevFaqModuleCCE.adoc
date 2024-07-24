@@ -18,7 +18,7 @@
 //
 
 = Why am I getting a `ClassCastException` when the class is clearly of the right type?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModuleCCE

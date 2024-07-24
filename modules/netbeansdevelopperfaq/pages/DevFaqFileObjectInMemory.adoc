@@ -18,7 +18,7 @@
 //
 
 = How can I create a FileObject in memory?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFileObjectInMemory

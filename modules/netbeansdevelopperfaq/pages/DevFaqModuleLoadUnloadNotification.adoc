@@ -18,7 +18,7 @@
 //
 
 = How can code in one module be notified when other modules are loaded or unloaded?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqModuleLoadUnloadNotification

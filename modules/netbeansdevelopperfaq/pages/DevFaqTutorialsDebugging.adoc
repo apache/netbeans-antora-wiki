@@ -18,7 +18,7 @@
 //
 
 = How do I debug a module I'm building?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqTutorialsDebugging

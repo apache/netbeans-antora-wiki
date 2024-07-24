@@ -18,7 +18,7 @@
 //
 
 = How can I add actions to all folder nodes?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAddAnyFolder

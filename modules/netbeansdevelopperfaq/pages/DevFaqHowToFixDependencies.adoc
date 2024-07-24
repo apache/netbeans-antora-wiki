@@ -18,7 +18,7 @@
 //
 
 = My `project.xml` lists more dependencies than I really need. How can I fix it?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqHowToFixDependencies

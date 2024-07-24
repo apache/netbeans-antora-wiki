@@ -18,7 +18,7 @@
 //
 
 = How can I get the position of the caret in the currently selected editor window?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqFindCaretPositionInEditor

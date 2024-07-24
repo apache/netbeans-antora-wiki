@@ -18,7 +18,7 @@
 //
 
 = A Visual Database Explorer for NetBeans
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki A Visual Database Explorer for NetBeans

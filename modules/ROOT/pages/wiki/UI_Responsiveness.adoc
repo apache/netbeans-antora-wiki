@@ -18,7 +18,7 @@
 //
 
 = UI Responsiveness
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki UI_Responsiveness

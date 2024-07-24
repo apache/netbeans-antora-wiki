@@ -18,7 +18,7 @@
 //
 
 = How do I create my own tab in the output window and write to it?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqOutputWindow

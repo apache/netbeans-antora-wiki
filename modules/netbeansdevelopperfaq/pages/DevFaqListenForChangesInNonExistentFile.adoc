@@ -18,7 +18,7 @@
 //
 
 = I want to listen for changes in a file that may not exist or may be deleted and re-created
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqListenForChangesInNonExistentFile

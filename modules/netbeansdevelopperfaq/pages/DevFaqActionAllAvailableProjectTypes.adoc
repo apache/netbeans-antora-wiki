@@ -18,7 +18,7 @@
 //
 
 = How determine all available project types?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqActionAllAvailableProjectTypes

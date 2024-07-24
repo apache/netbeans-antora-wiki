@@ -18,7 +18,7 @@
 //
 
 = How do I add a toggle-able action to the toolbar/main menu?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqToggleActionAddToEditorToolbar

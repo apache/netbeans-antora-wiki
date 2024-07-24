@@ -18,7 +18,7 @@
 //
 
 = What is the Dialogs API and How Do I Use It?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqDialogsApiIntro

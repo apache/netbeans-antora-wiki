@@ -18,7 +18,7 @@
 //
 
 = Apache NetBeans Wiki
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki
 :jbake-status: published
 :keywords: Apache NetBeans Wiki

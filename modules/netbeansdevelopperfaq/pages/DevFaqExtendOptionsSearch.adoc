@@ -18,7 +18,7 @@
 //
 
 = How can configure my options panel to be found by global quicksearch or options search?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqExtendOptionsSearch

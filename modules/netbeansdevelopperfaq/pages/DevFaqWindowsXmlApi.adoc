@@ -18,7 +18,7 @@
 //
 
 = How does the declarative XML API for the window system work?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsXmlApi

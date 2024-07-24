@@ -18,7 +18,7 @@
 //
 
 = How can I use AutoUpdate to deploy updates and new modules for my application?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqCustomUpdateCenter

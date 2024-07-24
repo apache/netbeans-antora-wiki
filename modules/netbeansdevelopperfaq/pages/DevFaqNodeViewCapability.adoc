@@ -18,7 +18,7 @@
 //
 
 = How can I add a "View" capability for data my node represents
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqNodeViewCapability

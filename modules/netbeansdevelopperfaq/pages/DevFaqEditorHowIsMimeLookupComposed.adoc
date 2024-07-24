@@ -18,7 +18,7 @@
 //
 
 = How is MimeLookup composed?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqEditorHowIsMimeLookupComposed

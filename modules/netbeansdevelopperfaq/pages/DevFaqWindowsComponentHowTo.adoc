@@ -18,7 +18,7 @@
 //
 
 = I want to show my own component(s) in the main window - where do I start?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqWindowsComponentHowTo

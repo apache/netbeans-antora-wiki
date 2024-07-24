@@ -19,7 +19,7 @@
 
 
 = APITest
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :page-syntax: true

@@ -18,7 +18,7 @@
 //
 
 = I have a reference to an existing Node from some other module. Can I add cookies/properties/actions/children?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAddDoingEvilThingsToForeignNodes

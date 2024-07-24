@@ -18,7 +18,7 @@
 //
 
 =  How do I develop and debug annotations for NetBeans platform apps?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqAnnotationDevelopDebug

@@ -18,7 +18,7 @@
 //
 
 = There sure are a lot of modules in the source tree.  What are they for?
-:page-layout: wikidev
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqSourceTreeModuleDescriptions
