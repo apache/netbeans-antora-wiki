@@ -18,7 +18,7 @@
 //
 
 = How To Create a 64-Bit C/C++ Windows Program with NetBeans
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki HowToCreate64-BitC/C++WindowsProgramWithNetBeans

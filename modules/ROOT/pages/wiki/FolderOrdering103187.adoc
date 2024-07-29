@@ -19,7 +19,7 @@
 
 
 = FolderOrdering103187
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wiki, devfaq, needsreview
 :markup-in-source: verbatim,quotes,macros
 :jbake-status: published
@@ -350,7 +350,7 @@ but also in `nbms-and-javadoc` (to check experimental modules).
 
 * Modules API.
 * `editor/mimelookup/impl` Javadoc
-* xref:./DevFaqOrderAttributes.adoc[DevFaqOrderAttributes]
+* xref:wiki:netbeansdevelopperfaq:DevFaqOrderAttributes.adoc[DevFaqOrderAttributes]
 * xref:./NewAndNoteWorthyMilestone10.adoc[NewAndNoteWorthyMilestone10]
 
 

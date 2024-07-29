@@ -1,0 +1,44 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= How to run/execute an external program?
+:page-layout: wikimenu
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki DevFaqExternalExecution
+:description: Apache NetBeans wiki DevFaqExternalExecution
+:toc: left
+:toc-title:
+:page-syntax: true
+:page-wikidevsection: _tasks_and_progressbar
+:page-position: 4
+:page-aliases: ROOT:wiki/DevFaqExternalExecution.adoc
+
+include::front::partial$database.adoc[]
+
+Use the "External Execution Support API".
+
+* link:{apidoclink}org-netbeans-modules-extexecution/overview-summary.html[External Execution API]
+* link:{apidoclink}org-netbeans-modules-extexecution/org/netbeans/api/extexecution/ExecutionService.html[ExecutionService]
+* link:https://blogs.oracle.com/phejl/entry/external_execution_support_1_2[https://blogs.oracle.com/phejl/entry/external_execution_support_1_2]
+* link:https://blogs.oracle.com/phejl/entry/external_execution_support_2_2[https://blogs.oracle.com/phejl/entry/external_execution_support_2_2]
+
+Please not that some of the API mentioned in the links above got deprecated in NB 8.1. Please use `extexecution.base` instead. 
+For more details see link:https://bz.apache.org/netbeans/show_bug.cgi?id=244308[https://bz.apache.org/netbeans/show_bug.cgi?id=244308]
+

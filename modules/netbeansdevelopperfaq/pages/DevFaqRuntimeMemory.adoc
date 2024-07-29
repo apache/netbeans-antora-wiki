@@ -1,0 +1,45 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+=  How to run a module with more memory settings
+:page-layout: wikimenu
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki DevFaqRuntimeMemory
+:description: Apache NetBeans wiki DevFaqRuntimeMemory
+:toc: left
+:toc-title:
+:page-syntax: true
+:page-wikidevsection: _development_issues_module_basics_and_classpath_issues_and_information_about_rcpplatform_application_configuration
+:page-position: 30
+:page-aliases: ROOT:wiki/DevFaqRuntimeMemory.adoc
+
+When we run the module from NetBeans IDE and we want to pass JVM options to increase PermGen and Heap Memory then add the following settings to the project.properties file of your module, or module suite.
+
+[source,java]
+----
+
+run.args.extra=-J-Xmx512m 
+-J-XX:+UseConcMarkSweepGC 
+-J-XX:+CMSClassUnloadingEnabled 
+-J-XX:+CMSPermGenSweepingEnabled
+-J-XX:MaxPermSize=256m
+----
+
+Please write the complete setting in one line.

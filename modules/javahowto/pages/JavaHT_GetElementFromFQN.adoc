@@ -1,0 +1,124 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= GetElementFromFQN
+:page-layout: wikimenu
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT GetElementFromFQN
+:description: Apache NetBeans wiki JavaHT GetElementFromFQN
+:toc: left
+:toc-title:
+:page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_GetElementFromFQN.adoc
+
+== Variant A: Using ClasspathInfo and a CancelableTask
+
+[source,java]
+----
+public ElementHandle<TypeElement> getElementHandle(Project p, final String fqn)
+{
+    FileObject projRoot = p.getProjectDirectory();
+
+    // actually, should find srcRoot using p.getLookup().lookup(Sources.class) and iterating over the SourceGroups.
+    // This is cheating, but illustrative...
+    FileObject srcRoot = projRoot.getFileObject("src").getFileObject("java");
+        
+    ClasspathInfo ci = ClasspathInfo.create(srcRoot);
+    JavaSource js = JavaSource.create(ci);
+    Searcher searcher = new Searcher(fqn);
+    try
+    {
+        js.runUserActionTask(searcher, true);
+    }
+    catch (IOException ex)
+    {
+        // kvetch
+    }
+      
+    if (searcher.handle == null)
+    {
+        throw new IllegalArgumentException("Cannot find class: " + fqn);
+    }
+}
+
+private class Searcher implements CancellableTask<CompilationController>
+{
+    private String fqn;
+    ElementHandle<TypeElement> handle;
+    
+    Searcher(String fqn)
+    {
+        this.fqn = fqn;
+    }
+
+    public void cancel() {}
+
+    public void run(CompilationController info) throws Exception {
+        TypeElement te = info.getElements().getTypeElement(fqn);
+        handle = ElementHandle.create(te);
+    }
+}
+----
+
+
+== Variant B: Using ClassIndex (+ How the get the sources?)
+
+[source,java]
+----
+    private Collection<FileObject> findByClassName(FileObject fo, String fqnClassName) {
+
+        Set<FileObject> files = new java.util.LinkedHashSet<FileObject>();
+
+        ClassPath bootCp = ClassPath.getClassPath(fo, ClassPath.BOOT);
+        ClassPath compileCp = ClassPath.getClassPath(fo, ClassPath.COMPILE);
+        ClassPath sourcePath = ClassPath.getClassPath(fo, ClassPath.SOURCE);
+        final ClasspathInfo info = ClasspathInfo.create(bootCp, compileCp, sourcePath);
+        int lastIndexOfDot = fqnClassName.lastIndexOf(".");
+        String simpleClassName;
+        if (lastIndexOfDot > 0) {
+            simpleClassName = fqnClassName.substring(lastIndexOfDot + 1);
+        } else {
+            simpleClassName = fqnClassName;
+        }
+
+        /**
+         * Search in own project sources AND in sources of dependencies
+         */
+        final Set<ElementHandle<TypeElement>> result = info.getClassIndex().getDeclaredTypes(simpleClassName, ClassIndex.NameKind.SIMPLE_NAME, EnumSet.of(ClassIndex.SearchScope.SOURCE, ClassIndex.SearchScope.DEPENDENCIES));
+        for (ElementHandle<TypeElement> te : result) {
+            final String qualifiedName = te.getQualifiedName();
+            if (!qualifiedName.equals(fqnClassName)) {
+                continue;
+            }
+
+            //--> HURRAY: you found the matching elementHandle
+
+
+            //BONUS: How the get the sources of an ElementHandle?
+
+            //NOTE: will not return a file for a class without sources (f.e. maven dep without attached sources)
+            final FileObject file = org.netbeans.api.java.source.SourceUtils.getFile(te, info);
+            if (null != file) {
+                files.add(file);
+            }
+        }
+        return files;
+    }
+----

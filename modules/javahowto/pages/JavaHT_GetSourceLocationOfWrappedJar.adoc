@@ -1,0 +1,45 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= How do I get the source location of a wrapped jar?
+:page-layout: wikimenu
+:page-tags: wiki, devfaq, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki JavaHT GetSourceLocationOfWrappedJar
+:description: Apache NetBeans wiki JavaHT GetSourceLocationOfWrappedJar
+:toc: left
+:toc-title:
+:page-syntax: true
+:page-aliases: ROOT:wiki/JavaHT_GetSourceLocationOfWrappedJar.adoc
+
+Q: I am looking for a way to get the source location for a wrapped jar that has source specified. The Sources/SourceGroup code does not find sources attached to wrapped jars.
+
+A: The source can be obtained by SourceForBinaryQuery.
+
+[source,java]
+----
+  Set<URL> roots = new HashSet<>();
+  Set<FileObject> sourceRoots = new HashSet<>();
+  cps.each((cp)->{cp.entries().stream().each((e)->roots.add(e.getURL();});
+  for (root : roots) {
+    Collections.addAll(sourceRoots, SourceForBinaryQuery.findSourceRoots(root).getRoots()); 
+  }
+----
+
+-- provided by Tomas Zezula 

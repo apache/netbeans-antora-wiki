@@ -17,7 +17,7 @@
      under the License.
 ////
 = NetCAT
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: community
 :jbake-status: published
 :icons: font

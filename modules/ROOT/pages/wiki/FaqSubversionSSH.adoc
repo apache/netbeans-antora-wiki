@@ -18,7 +18,7 @@
 //
 
 = How Do I Set Up SSH with Subversion?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki FaqSubversionSSH

@@ -18,7 +18,7 @@
 //
 
 = What can I do if NetBeans IDE runs out of memory (OutOfMemoryError is thrown)?
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki FaqNetBeansAndOOME

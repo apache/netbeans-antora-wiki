@@ -18,7 +18,7 @@
 //
 
 = How to create support for a new language
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki How_to_create_support_for_a_new_language

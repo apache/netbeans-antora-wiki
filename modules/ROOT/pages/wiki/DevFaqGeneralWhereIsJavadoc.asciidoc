@@ -18,7 +18,7 @@
 //
 
 = Where can I find Javadoc for the IDE and Platform?
-:page-layout: wikidev
+:page-layout: wikimenu
 :jbake-tags: wiki, devfaq, needsreview
 :jbake-status: published
 :keywords: Apache NetBeans wiki DevFaqGeneralWhereIsJavadoc

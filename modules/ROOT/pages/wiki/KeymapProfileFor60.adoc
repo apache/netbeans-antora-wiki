@@ -18,7 +18,7 @@
 //
 
 = NetBeans IDE 6.0 - 6.5 Keyboard Shortcuts Specification
-:page-layout: wiki
+:page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
 :keywords: Apache NetBeans wiki KeymapProfileFor60
