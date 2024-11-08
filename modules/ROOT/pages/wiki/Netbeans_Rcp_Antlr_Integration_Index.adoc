@@ -1,0 +1,43 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Netbeans Rcp Antlr Integration Index
+:page-layout: wikimenu
+:page-tags: wiki, needsreview
+:jbake-status: published
+:keywords: Netbeans Rcp Antlr Integration Index
+:description: Netbeans Rcp Antlr Integration Index
+:toc: left
+:toc-title:
+:page-syntax: true
+include::front::partial$database.adoc[]
+
+== How can I add support for a new language via ANTLR?
+
+This will serve as the index page that links to everything we know about how to integrate ANTLR into a NetBeans Platform application (go xref:./How_to_create_support_for_a_new_language.adoc[here] for javaCC).
+
+* How to xref:./New_Language_Support_Tutorial_Antlr.adoc[highlight syntax and check errors] using ANTLR with the new NetBeans Parsing and Lexing API's.
+* How to xref:./Netbeans_Rcp_Antlr_Format_And_Indent.adoc[format and indent] using ANTLR with the NetBeans APIs.
+* How to xref:./Netbeans_Antlr_BracesMatching.adoc[match braces (and parentheses, brackets...)] using ANTLR. 
+
+xref:./Antlr_Notes.adoc[Notes on the above].
+
+Other useful links:
+
+* xref:./AntlrInNetBeansJavaApplication.adoc[Integrating antlr grammar into the project] - this is written for NB 6.5 but has been tested in 6.7 and 6.8m1 (it's also a Kenai project) 

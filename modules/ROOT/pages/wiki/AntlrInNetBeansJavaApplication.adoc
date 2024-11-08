@@ -17,25 +17,16 @@
 //     under the License.
 //
 
-= How to create support for a new language
+= How to use Antlr in Netbeans
 :page-layout: wikimenu
-:page-tags: wik
+:page-tags: wiki, needsreview
 :jbake-status: published
-:keywords: Apache NetBeans wiki How_to_create_support_for_a_new_language
-:description: Apache NetBeans wiki How_to_create_support_for_a_new_language
+:keywords: Apache NetBeans wiki How to use Antlr in Netbeans
+:description: Apache NetBeans wiki How to use Antlr in Netbeans
 :toc: left
 :toc-title:
 :page-syntax: true
 include::front::partial$database.adoc[]
 
-== New Language Support Tutorial
-
-﻿﻿﻿The replacement tutorials for javacc are:﻿﻿ ﻿
-
-* xref:tutorial::tutorials/nbm-javacc-lexer.adoc[]
-* xref:tutorial::tutorials/nbm-javacc-parser.adoc[]
-
-Some information for antlr integration:
-
-xref:./Netbeans_Rcp_Antlr_Integration_Index.adoc[]
+link:https://web.archive.org/web/20100309115543/http://wiki.netbeans.org/AntlrInNetBeansJavaApplication[former article]
 
