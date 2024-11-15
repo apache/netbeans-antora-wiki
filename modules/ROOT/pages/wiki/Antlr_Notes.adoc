@@ -1,0 +1,220 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Antlr Notes
+:page-layout: wikimenu
+:page-tags: wiki, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki Antlr_Notes
+:description: Apache NetBeans wiki Antlr_Notes
+:toc: left
+:toc-title:
+:page-syntax: true
+include::front::partial$database.adoc[]
+
+Author: Joe Areeda 
+
+
+I started from scratch to implementing an antlr lexer/parser following the tutorial xref:./New_Language_Support_Tutorial_Antlr.adoc[highlight syntax and check errors]. 
+It was very helpful as was its author, so I thought I'd add some notes on what I learned in the process.
+
+== Antlr & AntlrWorks
+
+I found AntlrWorks an amazing IDE for developing the lexer and parser. 
+The debugger and the visual depiction of NFA/DFA rules and parse trees made the job so much easier than I remember. 
+Both can be downloaded for free from link:https://www.antlr.org/.
+
+To integrate antlr into a project, create a library wrapper module with the appropriate jar file. Note that the project cannot be a module, but must be a module suite as far as I know. I also suggest that if you use antlr use the antlr-runtime.jar and if you use antlrWorks use the whole antlrworks-x.x.x.jar to avoid a version mismatch.
+
+== LanguageHierachy.java
+
+In the original tutorial Jeff uses constructs like this to define the tokenIDs
+
+[source,javacc]
+----
+    new SqlTokenId ("WHERE", "keyword", 6),
+    new SqlTokenId ("LETTER", "character", 21),
+    new SqlTokenId ("NULL", "keyword", 18),
+----
+
+[source,javacc]
+----
+The only problem with this is that antlr assigns the numeric token values in a seemingly random order. Adding or deleting a token can change many values so I use the following code to do it symbolically:
+
+    new UnoTokenId (unoidlParser.tokenNames[UnoidlLexer.AND], "idl-text", unoidlLexer.AND),
+    new UnoTokenId (unoidlParser.tokenNames[UnoidlLexer.ANY], "idl-type", unoidlLexer.ANY),
+    new UnoTokenId (unoidlParser.tokenNames[UnoidlLexer.ATTRIBUTE], "idl-keyword", unoidlLexer.ATTRIBUTE),
+----
+
+When antlr compiles a grammar it produces a file called <grammarName>.tokens that contains the token numbers:
+
+[source,javacc]
+----
+COMMA=13
+TRANSIENT=22
+TILDE=71
+LEFTSHIFT=64
+PLUS=66
+----
+
+A simple awk script can create the TokenId contructors:
+
+[source,shell]
+----
+sort output/unoidl.tokens | \
+awk --field-separator "=" '{print ("new UnoTokenId (unoidlParser.tokenNames[unoidlLexer." \
+$1 "], \"idl-keyword\", unoidlLexer." $1 "),");}' | vi -
+----
+
+Include the output in your LanguageHierarchy class and edit the "idl-keyword" part to assign a coloring class to each token.
+
+We need to be cautious when adding a token to the grammar. 
+An unknown token type will return a null object to the Syntax Coloring module causing an exception reporting dialog. 
+However when we delete a token we get a syntax error in LanguageHierarchy class marking the line to delete.
+
+== The FontAndColors.xml file
+
+
+It is also possible to specify your default colors and font styles in this file. For example:
+
+[source,xml]
+----
+<!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
+<fontscolors>
+    <fontcolor name="idl-attr"          foreColor="blue" default="default">
+        <font style="italic" />
+    </fontcolor>
+    <fontcolor name="idl-bracket"       foreColor="blue" default="default"/>
+    <fontcolor name="idl-char"          foreColor="ff00aa00" default="default"/>
+    <fontcolor name="idl-comment"       foreColor="gray" default="default"/>
+    <fontcolor name="idl-exception"     foreColor="magenta" default="default">
+        <font style="bold" />
+    </fontcolor>
+    <fontcolor name="idl-function"      foreColor="black" default="default">
+        <font style="bold" />
+</fontscolors>
+----
+
+== Syntax Error Highlights
+
+To highlight the token causing an error, add the following code to your grammar:
+
+[source,antlr]
+----
+@members {
+	public List<SyntaxError> syntaxErrors = new ArrayList<SyntaxError>();
+
+	@Override
+    	public String getErrorMessage(RecognitionException e, String[] tokenNames) {
+    		String message = super.getErrorMessage(e, tokenNames);
+    		SyntaxError syntaxError = new SyntaxError();
+    		syntaxError.exception = e;
+    		syntaxError.message = message;
+
+                CommonToken token =  (CommonToken) e.token;
+
+                syntaxError.line = e.token.getLine();
+                syntaxError.charPositionInLine = e.token.getCharPositionInLine();
+                syntaxError.start = token.getStartIndex();
+
+                syntaxError.stop = token.getStopIndex()+1;
+                
+    		syntaxErrors.add(syntaxError);
+    		return message;
+    	}
+
+    	public static class SyntaxError {
+    		public RecognitionException exception;
+    		public String message;
+    		public int line;
+    		public int charPositionInLine;
+                public int start,stop;
+    	}
+}
+----
+
+The difference between this and Jeff's code is the cast of the token contained in the exception to a CommonToken 
+which allows access to the getStartIndex and getStopIndex methods. 
+These are offsets into the document being parsed. Note the stop index is incremented. 
+Then in the SyntaxErrorsHighlightingTask replace the call to createErrorDescription with:
+
+[source,java]
+----
+                ErrorDescription errorDescription = ErrorDescriptionFactory.createErrorDescription(
+                        Severity.ERROR,
+                        message,
+                        document,
+                        document.createPosition(syntaxError.start),
+                        document.createPosition(syntaxError.stop));
+                errors.add(errorDescription);
+----
+
+== Handling C-Style Comments /* ... */
+
+This took me weeks to figure out the mystic incantation to get this to work while you type. 
+The problem is once you type the opening /* you comment out the rest of the file and the lexer returns an end of file but no token. 
+This causes an exception complaining that we consumed character and return null.
+
+The change needed is in the nextToken method of our lexer (the one between the NetBeans Lexer and the Antlr Lexer).
+
+[source,java]
+----
+    public org.netbeans.api.lexer.Token<UnoTokenId> nextToken() {
+        Token token = unoLexer.nextToken();
+
+        org.netbeans.api.lexer.Token<UnoTokenId> createdToken = null;
+
+        if (token.getType() != unoidlParser.EOF) {
+            UnoTokenId tokenId = UnoEditorLanguageHierarchy.getToken(token.getType());
+            createdToken = info.tokenFactory().createToken(tokenId);
+        }
+        else if (info.input().readLength() > 0)
+        {   // we have an incomplete token
+            UnoTokenId tokenId = UnoEditorLanguageHierarchy.getToken(unoidlParser.TraditionalComment);
+            createdToken = info.tokenFactory().createToken(tokenId, info.input().readLength(),
+                           PartType.MIDDLE);
+        }
+        return createdToken;
+    }
+----
+
+By testing the readLength we can see if the situation where an incomplete token eats the rest of the input. 
+I do want to separate documentation comments (/**) from other comments of this form but this code assumes that we have only 1 token that will do this. 
+If there were multiple types of tokens like this several modifications would be needed to determine which type. 
+Note that this means strings cannot contain newlines between quotes without escape characters. 
+What's important here is the different call to createToken that includes the length and PartType.
+
+To help, here is the grammar I use that defines the comment and a string literal.
+
+[source,antlr]
+----
+// multiple-line comments
+TraditionalComment 
+	:	MLCOMMENTSTART (options {greedy=false;} : .)* MLCOMMENTEND 
+         {$channel=HIDDEN;}
+         ;
+fragment StringCharacter
+	:	~('\r' | '\n' | '\u000C' | '<br>' | '"');
+StringLiteral
+    :  	QUOTE ( EscapeSequence | StringCharacter )* QUOTE
+    ;
+fragment QUOTE	:	'\"';
+fragment MLCOMMENTSTART  :	'/*';
+fragment MLCOMMENTEND    :	'*/';
+----

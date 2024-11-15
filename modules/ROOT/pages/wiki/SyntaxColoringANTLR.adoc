@@ -1,0 +1,1148 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Using an ANTLR Lexer For Syntax Coloring Tutorial
+:page-layout: wikimenu
+:page-tags: wiki,needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki Using an ANTLR Lexer For Syntax Coloring Tutorial
+:description: Apache NetBeans wiki Using an ANTLR Lexer For Syntax Coloring Tutorial
+:toc: left
+:toc-title:
+:page-syntax: true
+include::front::partial$database.adoc[]
+
+This tutorial will show you how to write a Netbeans RCP application that provides syntax coloring for a fictional language.
+
+During this tutorial we will
+
+* Create a new file type
+* Provide Syntax Highlighting by having the Lexer API delegate to an ANTLR lexer 
+
+NOTE: This tutorial only considers the LEXER portion of a new language.
+
+This tutorial was designed with Netbeans 6.9 and Java6.
+
+This tutorial is based on several ANTLR themed emails on the dev list and from xref:./New_Language_Support_Tutorial_Antlr.adoc[]
+
+== Setting up the Application
+
+We'll start by creating a new Netbeans Platform application
+
+. Choose File > New Project (Ctrl+Shift+N). Under Categories, select NetBeans Modules. Under Projects, select NetBeans Platform Application. Click Next.
+. In the Name and Location panel, type CMinusEditor in the Project Name field. Click Finish. 
+
+The IDE creates the CMinusEditor project. The project container for all the other modules we will create.
+
+Missing Image // image:SyntaxColoringANTLR-CreateApplication.png
+
+
+== Creating the ANTLR Grammar For The C Minus Language
+
+We will create a very small subset of the C language called C Minus. This example can be downloaded from TODO: get link[[]]
+
+This is the grammar with a small modification so that we have *named* keyword tokens. 
+The parser definition of the language uses literals for "int", "char", and "for". These will be converted to unnamed tokens. 
+Therefore, I converted them to TYPE_INT, TYPE_CHAR, and FOR. This will give us *named* tokens so we can color them easier.
+
+[source,antlr]
+----
+grammar CMinus;
+options {output=template;}
+
+scope slist {
+    List locals; // must be defined one per semicolon
+    List stats;
+}
+
+/*
+@slist::init {
+    locals = new ArrayList();
+    stats = new ArrayList();
+}
+*/
+
+@header {
+import org.antlr.stringtemplate.*;
+}
+
+program
+scope {
+  List globals;
+  List functions;
+}
+@init {
+  $program::globals = new ArrayList();
+  $program::functions = new ArrayList();
+}
+    :   declaration+
+        -> program(globals={$program::globals},functions={$program::functions})
+    ;
+
+declaration
+    :   variable   {$program::globals.add($variable.st);}
+    |   f=function {$program::functions.add($f.st);}
+    ;
+
+// ack is $function.st ambig?  It can mean the rule's dyn scope or
+// the ref in this rule.  Ack.
+
+variable
+    :   type declarator SEMICOLON
+        -> {$function.size()>0 && $function::name==null}?
+           globalVariable(type={$type.st},name={$declarator.st})
+        -> variable(type={$type.st},name={$declarator.st})
+    ;
+
+declarator
+    :   ID -> {new StringTemplate($ID.text)}
+    ;
+
+function
+scope {
+    String name;
+}
+scope slist;
+@init {
+  $slist::locals = new ArrayList();
+  $slist::stats = new ArrayList();
+}
+    :   type ID {$function::name=$ID.text;}
+        LEFTPAREN ( p+=formalParameter ( COMMA p+=formalParameter )* )? RIGHTPAREN
+        block
+        -> function(type={$type.st}, name={$function::name},
+                    locals={$slist::locals},
+                    stats={$slist::stats},
+                    args={$p})
+    ;
+
+formalParameter
+    :   type declarator 
+        -> parameter(type={$type.st},name={$declarator.st})
+    ;
+
+type
+    :   TYPE_INT  -> type_int()
+    |   TYPE_CHAR -> type_char()
+    |   ID     -> type_user_object(name={$ID.text})
+    ;
+
+block
+    :  LEFTBRACE
+       ( variable {$slist::locals.add($variable.st);} )*
+       ( stat {$slist::stats.add($stat.st);})*
+       RIGHTBRACE
+    ;
+
+stat
+scope slist;
+@init {
+  $slist::locals = new ArrayList();
+  $slist::stats = new ArrayList();
+}
+    : forStat -> {$forStat.st}
+    | expr SEMICOLON -> statement(expr={$expr.st})
+    | block -> statementList(locals={$slist::locals}, stats={$slist::stats})
+    | assignStat SEMICOLON -> {$assignStat.st}
+    | SEMICOLON -> {new StringTemplate(";")}
+    ;
+
+forStat
+scope slist;
+@init {
+  $slist::locals = new ArrayList();
+  $slist::stats = new ArrayList();
+}
+    :   FOR LEFTPAREN e1=assignStat SEMICOLON e2=expr SEMICOLON e3=assignStat RIGHTPAREN block
+        -> forLoop(e1={$e1.st},e2={$e2.st},e3={$e3.st},
+                   locals={$slist::locals}, stats={$slist::stats})
+    ;
+
+assignStat
+    :   ID EQUAL expr -> assign(lhs={$ID.text}, rhs={$expr.st})
+    ;
+
+expr:   condExpr -> {$condExpr.st}
+    ;
+
+condExpr
+    :   a=aexpr
+        (   (  EQUALEQUAL b=aexpr -> equals(left={$a.st},right={$b.st})
+            |  LESSTHAN b=aexpr   -> lessThan(left={$a.st},right={$b.st})
+            )
+        |   -> {$a.st} // else just aexpr
+        )
+    ;
+
+aexpr
+    :   (a=atom -> {$a.st})
+        ( PLUS b=atom -> add(left={$aexpr.st}, right={$b.st}) )*
+    ;
+
+atom
+    : ID -> refVar(id={$ID.text})
+    | INT -> iconst(value={$INT.text})
+    | LEFTPAREN expr RIGHTPAREN -> {$expr.st}
+    ; 
+    
+TYPE_INT : 'int';
+TYPE_CHAR : 'char';
+FOR : 'for';
+
+ID  :   ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
+    ;
+
+INT	:	('0'..'9')+
+	;
+
+EQUAL : '=';
+EQUALEQUAL : '==';
+LESSTHAN : '<';
+SEMICOLON : ';'	;
+LEFTPAREN : '(';
+RIGHTPAREN : ')';
+LEFTBRACE : '{';
+RIGHTBRACE : '}';
+PLUS : '+';
+COMMA : ',';
+	
+
+	
+
+WS  :   (' ' | '\t' | '\r' | '\n')+ {$channel=HIDDEN;}
+    ;    
+----
+
+=== Generate the C Minus Files
+
+We can create the required java files using ANTLRWorks which is written in Java.
+
+. Open up ANTLRWorks and create a new grammar called CMinus
+. Paste the above into the new file.
+. Save the grammar.
+. Click Generate->Generate Code (CTRL + SHIFT + G) 
+
+The generated files will be in the *output* folder in the directory where you saved the grammar.
+
+== Creating the C Minus File Type
+
+Now we need to create a module to support our C Minus file type.
+
+. Right-click the CMinusEditor's Modules node in the Projects window and choose Add New.. option.
+. Enter CMinusFiltype as the Project Name.
+. Click the Next button.
+. Enter org.demo.cminus.filetype for the Code Name Base:
+. Change the Module Display Name to CMinus File Type
+. Check the Generate Layer XML checkbox.
+. Click Finish 
+
+Now that the module is created we can use the File Type wizard to generate our file type.
+
+. Right-click the org.demo.cminus.filetype package and select New->File Type.
+        If File Type is not on the list click Other then Module Development in the categories view and select File Type in the File Types view. 
+. Enter text/x-cm as the MIME Type
+. Enter "cm CM" as the extension (without the quotes)
+. Click the Next button 
+
+Missing Image //image:SyntaxColoringANTLR-NewFileType1.png‎
+
+. Enter CMinus as the Class Prefix
+. Provide an icon. You can use this one by right clicking it and saving it image:SyntaxColoringANTLR-CMinusIcon.png 
+
+Missing Image //image:SyntaxColoringANTLR-NewFileType2.png
+
+. Click the Finish button. 
+
+Your project structure should look as follows
+
+Missing Image //image:SyntaxColoringANTLR-NewFileTypeView.png
+
+=== Providing An Open Action
+
+Now we need a way to open cm files.
+
+. Right-click on the org.demo.cminus.fileteype package and select New->Java Package
+. Name the new package org.demo.cminus.filetype.actions
+. Right-click on the org.demo.cminus.filetype.actions package and select New->Action
+. Select File as the category
+. Under the GLobal Menu Item select the File menu and Postion HERE-<separator> 
+
+Missing Image // image:SyntaxColoringANTLR-NewAction1.png
+
+. Click Next
+. Type OpenAction as the Class Name
+. Type Open File as the display name 
+
+Missing Image //image:SyntaxColoringANTLR-NewAction2.png
+
+. Click Finish 
+
+
+Your project should look as follows
+
+Missing Image //image:SyntaxColoringANTLR-NewActionView.png
+
+. Open the OpenAction.java file and paste the following code in. 
++
+[source,java]
+----
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package org.demo.cminus.filetype.actions;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileFilter;
+import org.openide.cookies.EditorCookie;
+import org.openide.filesystems.FileChooserBuilder;
+import org.openide.filesystems.FileObject;
+import org.openide.filesystems.FileUtil;
+import org.openide.loaders.DataObject;
+import org.openide.loaders.DataObjectNotFoundException;
+
+public final class OpenAction implements ActionListener {
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+     FileChooserBuilder fcb = new FileChooserBuilder(org.demo.cminus.filetype.actions.OpenAction.class);
+        fcb.setApproveText("Open");
+        fcb.setFileFilter(new CMinusFileFilter());
+
+        JFileChooser jfc = fcb.createFileChooser();
+
+        if (jfc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+            try {
+                File file = jfc.getSelectedFile();
+                FileObject foSelectedFile = FileUtil.toFileObject(file);
+
+                DataObject obj = DataObject.find(foSelectedFile);
+                EditorCookie ec = obj.getLookup().lookup(EditorCookie.class);
+
+                if (ec != null) {
+                    ec.open();
+                }
+
+            } catch (DataObjectNotFoundException donfe) {
+            }
+        }
+    }
+
+    private final class CMinusFileFilter extends FileFilter{
+
+        @Override
+        public boolean accept(File pathname) {
+
+            if (pathname.isDirectory()){
+                return true;
+            }
+
+            String[] path  = pathname.getPath().split("\\.");
+            if (path[path.length - 1].equalsIgnoreCase("cm")){
+                return true;
+            }
+
+            return false;
+        }
+
+        @Override
+        public String getDescription() {
+            return "CMinus files";
+        }
+
+    }
+}
+----
+. Save the file and run your application.
+. Create a test CM file with the following input. 
++
+[source,java]
+----
+char c;
+int x;
+int foo(int y, char d){
+  int i;
+  for (i=0; i<3; i=i+1){
+    x=3;
+    y=3;  
+  }
+}
+----
+. In your running application click File->Open
+. Navigate to the test file you created and open it. 
++
+Your should see something like this.
+
+Missing Image // image:SyntaxColoringANTLR-NewFileTypeComplete.png
+
+== Creating The C Minus Netbeans Lexer
+
+Now comes the meat of our tutorial. In order to provide syntax coloring we need to tap into the Lexer APi. To get started we need to create a new module.
+
+. Create a new module and name it CMinusSyntaxHighlighter
+.. Use org.demo.cminus.syntaxhighlighter as the Code Name Base
+.. Use CMinus Syntax Highlighter
+.. Check the Generate XML Layer box 
+. Add the Lexer API to your application
+.. Right-click on the CMinusEditor and select Properties
+.. Select the Libraries Category
+.. Expand the ide cluster
+.. It will complain about needing the Editor Utilities module. Click the Resolve button to automatically handle this.
+.. Click OK 
+. Set a dependency on the Lexer API
+.. Right-click Click the CMinus Syntax Highlighter module and select Properties
+.. Go to the Libraries category
+.. Click Add Dependency
+.. Type in Lexer in the filter box and choose the Lexer module
+.. Click the OK button 
+. Set a dependency on the Lookup API
+.. Right-click Click the CMinus Syntax Highlighter module and select Properties
+.. Go to the Libraries category
+.. Click Add Dependency
+.. Type in Lookup in the filter box and choose the Lookup module
+.. Click the OK button 
+
+
+=== Creating The C Minus Language Provider
+
+Now we need a way to let the Application know that we are providing a language. ICreate a new Java file in the org.demo.cminus.syntaxhighlighter package and name it CMLanguageProvider
+
+* Have the class extend LanguageProvider
+* Press ctrl-shift-i to fix the imports.
+* Now click the lightbulb to implement all abstract methods.
+* Implement the *findLanguage* method as follows 
++
+[source,java]
+----
+    @Override
+    public Language<?> findLanguage(String mimeType) {
+        if ("text/x-cm".equals(mimeType)){
+            return new CMinusLanguageHierarchy().language();
+        }
+
+        return null;
+    }
+----
+* Have the *findLanguageEmbedding* method return null; 
+* Finally, decorate the class with the following annotator 
++
+[source,java]
+----
+@org.openide.util.lookup.ServiceProvider(service=org.netbeans.spi.lexer.LanguageProvider.class)
+public class CMinusLanguageProvider extends LanguageProvider {
+----
+
+=== Creating The C Minus TokenId
+
+Now we're going to implement the class that will represent CMinus tokens
+
+* Create a new Java file in the org.demo.cminus.syntaxhighlighter package and name it CMinusTokenId
+* Have the class implement TokenId 
++
+[source,java]
+----
+public class CMinusTokenId implements TokenId {
+----
+* Press ctrl-shift-i to fix the imports.
+* Now click the lightbulb to implement all abstract methods.
+* create three private fields name, primaryCategory, and id 
++
+[source,java]
+----
+    private final String name;
+    private final String primaryCategory;
+    private final int id;
+----
+* Create constructor as follows 
++
+[source,java]
+----
+    public CMinusTokenId(
+            String name,
+            String primaryCategory,
+            int id) {
+        this.name = name;
+        this.primaryCategory = primaryCategory;
+        this.id = id;
+    }
+----
+* Have the *name()* method return this.name
+* Have the *ordinal()* method return this.id
+* Have the *primaryCategory()* method return this.primaryCategory 
++
+[source,java]
+----
+    @Override
+    public String name() {
+        return name;
+    }
+
+    @Override
+    public int ordinal() {
+        return id;
+    }
+
+    @Override
+    public String primaryCategory() {
+        return primaryCategory;
+    }
+----
+
+=== Creating The C Minus Language Hierarchy
+
+Now we will create our entry point into the Lexer API. The LanguageHierarchy class
+
+* Create a new Java file in the org.demo.cminus.syntaxhighlighter package and name it CMinusLanguageHierarchy
+* Have the class extend LanguageHierarchy<CMinusTokenId> 
++
+[source,java]
+----
+public class CMinusLanguageHierarchy extends LanguageHierarchy<CMinusTokenId>{
+----
+* Press ctrl-shift-i to fix the imports.
+* Now click the lightbulb to implement all abstract methods.
+* We need a list of tokens and a map for token id's to tokens 
++
+[source,java]
+----
+    private static List<CMinusTokenId> tokens;
+    private static Map<Integer, CMinusTokenId> idToToken;
+----
+* We also need a language instance 
++
+[source,java]
+----
+    private static final Language<CMinusTokenId> language = new CMinusLanguageHierarchy().language();
+----
+* And a way to get that language 
++
+[source,java]
+----
+    public static Language<CMinusTokenId> getLanguage() {
+        return language;
+    }
+----
+* Now we need a way to initialize our CMinusTokenId's with the tokens generated from ANTLR 
++
+[source,java]
+----
+    /**
+     * Initializes the list of tokens with IDs generated from the ANTLR
+     * token file.
+     */
+    private static void init() {
+        AntlrTokenReader reader = new AntlrTokenReader();
+        tokens = reader.readTokenFile();
+        idToToken = new HashMap<Integer, CMinusTokenId>();
+        for (CMinusTokenId token : tokens) {
+            idToToken.put(token.ordinal(), token);
+        }
+    }
+----
+* Now we need a way to get a token based off of it's id 
++
+[source,java]
+----
+    /**
+     * Returns an actual CMinusTokenId from an id. This essentially allows
+     * the syntax highlighter to decide the color of specific words.
+     * @param id
+     * @return
+     */
+    static synchronized CMinusTokenId getToken(int id) {
+        if (idToToken == null) {
+            init();
+        }
+        return idToToken.get(id);
+    }
+----
+* Now for the overridden methods.
+* For the *createTokenIds()* method we'll just return our list of tokens. First we'll make sure it has been initialized 
++
+[source,java]
+----
+    /**
+     * Initializes the tokens in use.
+     *
+     * @return
+     */
+    @Override
+    protected synchronized Collection<CMinusTokenId> createTokenIds() {
+        if (tokens == null) {
+            init();
+        }
+        return tokens;
+    }
+----
+* We need lexer object to do the highlighting with. We'll be creating this shortly. 
++
+[source,java]
+----
+    /**
+     * Creates a lexer object for use in syntax highlighting.
+     *
+     * @param info
+     * @return
+     */
+    @Override
+    protected synchronized Lexer<CMinusTokenId> createLexer(LexerRestartInfo<CMinusTokenId> info) {
+        return new CMinusEditorLexer(info);
+    }
+----
+    And we need to say which MimeType this is all for 
++
+[source,java]
+----
+    /**
+     * Returns the mime type of this programming language ("text/x-cm). This
+     * allows NetBeans to load the appropriate editors and file loaders when
+     * a file with the cm file extension is loaded.
+     *
+     * @return
+     */
+    @Override
+    protected String mimeType() {
+        return "text/x-cm";
+    }
+----
+
+
+=== Creating The C Minus Editor Lexer
+
+Now we need to create the Editor Lexer. This will the be bridge between the Netbeans Lexer and the ANTLR lexer
+
+* Create a new Java file in the org.demo.cminus.syntaxhighlighter package and name it CMinusEditorLexer
+* Have the class implement Lexer<CMinusTokenId> 
++
+[source,java]
+----
+public class CMinusEditorLexer implements Lexer<CMinusTokenId>{
+----
+* Press Ctrl-Shift-I to fix the imports
+* Click the lightbulb icon to implement all abstract methods
+* We need fields for LexerRestartInfo and our ANTLR lexer 
++
+[source,java]
+----
+    private LexerRestartInfo<CMinusTokenId> info;
+    private CMinusLexer lexer;
+----
+* Create a constructor as follows 
++
+[source,java]
+----
+    public CMinusEditorLexer(LexerRestartInfo<CMinusTokenId> info) {
+        this.info = info;
+        ANTLRCharStream charStream = new ANTLRCharStream(info.input(), "CMinusEditor", true);
+        lexer = new CMinusLexer(charStream);
+    }
+----
+* Override the *nextToken()* method as follows 
++
+[source,java]
+----
+    @Override
+    public org.netbeans.api.lexer.Token<CMinusTokenId> nextToken() {
+        org.antlr.runtime.Token token = lexer.nextToken();                
+
+        Token<CMinusTokenId> createdToken = null;
+
+        if (token.getType() != -1){
+            CMinusTokenId tokenId  = CMinusLanguageHierarchy.getToken(token.getType());
+            createdToken = info.tokenFactory().createToken(tokenId);
+        }  else if(info.input().readLength() > 0){
+            CMinusTokenId tokenId  = CMinusLanguageHierarchy.getToken(CMinusLexer.WS);
+            createdToken = info.tokenFactory().createToken(tokenId);
+        }
+
+        return createdToken;
+    }
+----
+* Implement the *state()* and *release()* methods as follows 
++
+[source,java]
+----
+   @Override
+   public Object state() {
+       return null;
+   }
+
+   @Override
+   public void release() {
+   }
+----
+
+== Creating A Dependency On the ANTLR API
+
+* Download the ANTLR runtime
+* Wrap the runtime into a Netbeans Module
+** Right-click the CMinusEditor module node and choose Add New Library
+** For the Library browse to the ANTLR jar
+** Click Next
+** Type ANTLR as the project name
+** Click Next
+** Type org.antlr.runtime for the CodeName Base
+** Type ANTLR as the display name
+** Click Finish 
+* Add the ANTLR module as a dependency for the CMinus Syntax Highlighter module
+** Right-click CMinus Syntax Highlighter module and choose properties
+** Go to the Libraries category
+** Click Add Dependency
+** Select ANTLR
+** Click the okay button 
+
+== Finish Wiring The Netbeans and ANTLR Lexers Together
+
+=== Provide A Communication Method between the Netbeans Lexer and ANTLR Lexer
+
+Now we only a little bit of wiring left to do.
+
+* Create a new package in the CMinus Syntax Highlighter module and name it org.demo.cminus.syntaxhighlighter.utils 
+
+First we'll create then ANTLRCharStream. This will allow the ANTLR lexer to use the Netbeans Lexer as input.
+
+* Create a new java file in the org.demo.cminus.syntaxhighlighter.utils package and name it ANTLRCharStream.
+* Paste the below contents into the file. This version of the files differs slightly than the one found in the xref:./Netbeans_Rcp_Antlr_Integration_Index.adoc[ANTLR Integration Tutorials]. 
+This one allows you to ignore case while lexing. 
++
+[source,java]
+----
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package org.demo.cminus.syntaxhighlighter.utils;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import org.antlr.runtime.CharStream;
+import org.netbeans.spi.lexer.LexerInput;
+
+/**
+ * @author jonny
+ */
+public class AntlrCharStream implements CharStream {
+
+    private class CharStreamState {
+
+        int index;
+        int line;
+        int charPositionInLine;
+    }
+
+    private int line = 1;
+    private int charPositionInLine = 0;
+    private LexerInput input;
+    private String name;
+    private int index = 0;
+    private List<CharStreamState> markers;
+    private int markDepth = 0;
+    private int lastMarker;
+
+    private boolean ignoreCase = false;
+
+    public AntlrCharStream(LexerInput input, String name, boolean ignoreCase) {
+        this.input = input;
+        this.name = name;
+        this.ignoreCase = ignoreCase;
+    }
+
+    @Override
+    public String substring(int start, int stop) {
+        return input.readText(start, stop).toString();
+    }
+
+    @Override
+    public int LT(int i) {
+        return LA(i);
+    }
+
+    @Override
+    public int getLine() {
+        return line;
+    }
+
+    @Override
+    public void setLine(int line) {
+        this.line = line;
+    }
+
+    @Override
+    public void setCharPositionInLine(int pos) {
+        this.charPositionInLine = pos;
+    }
+
+    @Override
+    public int getCharPositionInLine() {
+        return charPositionInLine;
+    }
+
+    @Override
+    public void consume() {
+        int c = input.read();
+        index++;
+        charPositionInLine++;
+
+        if (c == '\n') {
+            line++;
+            charPositionInLine = 0;
+        }
+    }
+
+    @Override
+    public int LA(int i) {
+        if (i == 0) {
+            return 0; // undefined
+        }
+
+        int c = 0;
+        for (int j = 0; j < i; j++) {
+            c = read();
+        }
+        backup(i);
+
+        if (ignoreCase && (c != -1)){
+            return Character.toLowerCase((char)c);
+        } else {
+            return c;
+        }
+    }
+
+    @Override
+    public int mark() {
+        if (markers == null) {
+            markers = new ArrayList<CharStreamState>();
+            markers.add(null); // depth 0 means no backtracking, leave blank
+        }
+        markDepth++;
+        CharStreamState state = null;
+        if (markDepth >= markers.size()) {
+            state = new CharStreamState();
+            markers.add(state);
+        } else {
+            state = markers.get(markDepth);
+        }
+        state.index = index;
+        state.line = line;
+        state.charPositionInLine = charPositionInLine;
+        lastMarker = markDepth;
+
+        return markDepth;
+    }
+
+    @Override
+    public void rewind() {
+        rewind(lastMarker);
+    }
+
+    @Override
+    public void rewind(int marker) {
+        CharStreamState state = markers.get(marker);
+        // restore stream state
+        seek(state.index);
+        line = state.line;
+        charPositionInLine = state.charPositionInLine;
+        release(marker);
+    }
+
+    @Override
+    public void release(int marker) {
+        // unwind any other markers made after m and release m
+        markDepth = marker;
+        // release this marker
+        markDepth--;
+    }
+
+    @Override
+    public void seek(int index) {
+        if (index < this.index) {
+            backup(this.index - index);
+            this.index = index; // just jump; don't update stream state (line, ...)
+            return;
+        }
+
+        // seek forward, consume until p hits index
+        while (this.index < index) {
+            consume();
+        }
+    }
+
+    @Override
+    public int index() {
+        return index;
+    }
+
+    @Override
+    public int size() {
+        return -1; //unknown...
+    }
+
+    @Override
+    public String getSourceName() {
+        return name;
+    }
+
+    private int read() {
+        int result = input.read();
+        if (result == LexerInput.EOF) {
+            result = CharStream.EOF;
+        }
+
+        return result;
+    }
+
+    private void backup(int count) {
+        input.backup(count);
+    }
+}
+----
+
+=== Provide Catagories For Syntax Coloring
+
+Every time you change your ANTLR grammar and regenerate the files the tokens are given different Ids. We'll provide a utility class that helps in that situation.
+
+* Create a new java class in the org.demo.cminus.syntaxhighlighter package and name it ANTLRTokenReader 
+This class will read in the .tokens file generated by ANTLR and map token names to categories. 
+This way we don't care what the .tokens file looks like. Any new tokens will be put in the category "separator"
+[source,java]
+----
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package org.demo.cminus.syntaxhighlighter.utils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import org.demo.cminus.syntaxhighlighter.CMinusTokenId;
+
+/**
+ *
+ * @author James Reid
+ */
+public class ANTLRTokenReader {
+
+    private HashMap<String, String> tokenTypes = new HashMap<String, String>();
+    private ArrayList<CMinusTokenId> tokens = new ArrayList<CMinusTokenId>();
+
+    public ANTLRTokenReader() {
+        init();
+    }
+
+    /**
+     * Initializes the map to include any keywords in the Hop Programming language.
+     */
+    private void init() {
+
+        tokenTypes.put("TYPE_INT", "type");
+        tokenTypes.put("TYPE_CHAR", "type");
+        
+        tokenTypes.put("FOR", "keyword");
+
+        tokenTypes.put("ID", "identifier");
+        tokenTypes.put("INT", "number");
+        
+    }
+
+    /**
+     * Reads the token file from the ANTLR parser and generates
+     * appropriate tokens.
+     *
+     * @return
+     */
+    public List<CMinusTokenId> readTokenFile() {
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        InputStream inp = classLoader.getResourceAsStream("org/demo/cminus/syntaxhighlighter/utils/CMinus.tokens");
+        BufferedReader input = new BufferedReader(new InputStreamReader(inp));
+        readTokenFile(input);
+        return tokens;
+    }
+
+    /**
+     * Reads in the token file.
+     *
+     * @param buff
+     */
+    private void readTokenFile(BufferedReader buff) {
+        String line = null;
+        try {
+            while ((line = buff.readLine()) != null) {
+                String[] splLine = line.split("=");
+                String name = splLine[0];
+                int tok = Integer.parseInt(splLine[1].trim());
+                CMinusTokenId id;
+                String tokenCategory = tokenTypes.get(name);
+                if (tokenCategory != null) {
+                    //if the value exists, put it in the correct category
+                    id = new CMinusTokenId(name, tokenCategory, tok);
+                } else {
+                    //if we don't recognize the token, consider it to a separator
+                    id = new CMinusTokenId(name, "separator", tok);
+                }
+                //add it into the vector of tokens
+                tokens.add(id);
+            }
+        } catch (IOException ex) {
+            Exceptions.printStackTrace(ex);
+        }
+    }
+}
+----
+* Now add a dependency on Utilities API 
+
+=== One More Piece Of Wiring
+
+* Now we need to include our ANTLR generated lexer
+* Open up a file browser and navigate to the *output* folder that ANTLR placed the generated files in
+* Copy the CMinusLexer file
+* In Netbeans right-click on the org.demo.cminus.syntaxhighlighter package and choose Paste 
+* Now we need to provide the .tokens file.
+** Copy the CMinus.tokens file in the *output* folder
+** In Netbeans right-click on the org.demo.cminus.syntaxhighlighter.utils package and choose Paste 
+* We now have all the pieces needed to actually run the application. However, first we'll create some default colorings. 
+
+== Provide Default Syntax Coloring
+
+Now we'll create some default colorings.
+
+* Create a new XML document in the org.demo.cminus.syntaxhighlighter package and name it SyntaxColors.xml
+* Paste the contents below into the file. 
++
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
+<fontscolors>
+    
+    <fontcolor name="keyword"           foreColor="blue" default="default"/>
+    <fontcolor name="type"              foreColor="orange" default="default"/>    
+    <fontcolor name="number"            foreColor="red" default="default"/>    
+
+</fontscolors>
+----
+* Now open up the layer.xml file in the org.demo.cminus.syntaxhighlighter package and paste the below contents 
++
+[source,java]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Editors">
+        <folder name="text">
+            <folder name="x-cm">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.demo.cminus.syntaxhighlighter.Bundle"/>
+                <folder name="FontsColors">
+                    <folder name="NetBeans">
+                        <folder name="Defaults">
+                            <file name="SyntaxColors.xml" url="SyntaxColors.xml">
+                                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.demo.cminus.syntaxhighlighter.Bundle"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>                
+            </folder>
+        </folder>
+    </folder>
+</filesystem>
+----
+* Now open the Bundle.properties file and paste the below in to it 
++
+[source,ini]
+----
+OpenIDE-Module-Name=CMinus Syntax Highlighter
+text/x-cm=C Minus
+type=Type
+keyword=Keyword
+identifier=Identifier
+number=Number
+----
+
+== Testing The Syntax Coloring
+
+* Now we are ready to test. Go ahead and run the application. Open up your test .cm file and you should see... 
+
+Missing Image // image:SyntaxColoringANTLR-NewFileTypeComplete.png
+
+* Wait!? All that and it doesn't work?. Never fear, we just need to add a couple of more modules to our application.
+* Right-click the CMinusEditor Module and select Properties.
+* Go to the libraries category.
+* Expand the IDE cluster.
+* Scroll down to Editor Options and select it.
+* Select the Resolve button to fix other dependencies.
+* Click OK to close the dialog.
+* Clean and Rebuild your application.
+* In your application open up the test .cm file and you should see.. 
++
+Missing Image // image:SyntaxColoringANTLR-NewFileTypeComplete.png
+* What1? It still doesn't work!? This is where I got hung up for a long time. 
+The only way I could get syntax highlighting to work was to include the Plain Editor Library and Plain Editor modules. 
+I did not like doing it that way. So I dug through the sources to see how the Plain Editor did it. 
+The first thing I see is *"If you need this class you are doing something wrong"*. So I set out on a mission to figure out how to make it work. 
+After several several hours of digging and following stack traces it came down to one simple thing. We need an editor kit that supports the Lexer API.
+* Open up your layer file for the CMinus Syntax Highlighter module and add the following entry 
++
+[source,xml]
+----
+<file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
+----
++
+right under Editors/text/x-cm/. It should look like this when you are done.
++
+[source,xml]
+----
+<filesystem>
+    <folder name="Editors">
+        <folder name="text">
+            <folder name="x-cm">
+               <file name="org-netbeans-modules-editor-NbEditorKit.instance"/>
+
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.demo.cminus.syntaxhighlighter.Bundle"/>
+                <folder name="FontsColors">
+                    <folder name="NetBeans">
+                        <folder name="Defaults">
+                            <file name="SyntaxColors.xml" url="SyntaxColors.xml">
+                                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.demo.cminus.syntaxhighlighter.Bundle"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>                
+            </folder>
+        </folder>
+    </folder>
+</filesystem>
+----
+* Clean and build your application.
+* Run the application again
+* Open your test .cm file and see 
++
+Missing Image //image:SyntaxColoringANTLR-finished.png
+* And that's how you include syntax highlighting in a stand alone Netbeans Platform App. 
+* A big thank you to Andreas Stefik and his Sodbeans project. Over the past year or so Andreas has been asking and answering questions on the netbeans dev list. Which has lead to a wealth of knowledge in the integration of ANTLR into Netbeans Applications. 

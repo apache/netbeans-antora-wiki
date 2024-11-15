@@ -1,0 +1,772 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= New Language Support Tutorial Antlr
+:page-layout: wikimenu
+:page-tags: wiki, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki New Language Support Tutorial Antlr
+:description: Apache NetBeans wiki New Language Support Tutorial Antlr
+:toc: left
+:toc-title:
+:page-syntax: true
+include::front::partial$database.adoc[]
+
+NetBeans is promoting some new APIs for new language support. This allows you to create your own lexer and parser from scratch. 
+However, you can also plug in a 3rd party tool such as JavaCC or ANTLR. There is already a really great xref:./How_to_create_support_for_a_new_language.adoc[tutorial] for plugging in JavaCC. 
+However, it is not immediately obvious on how to plug in ANTLR. What I will show here is how I plugged in ANTLR v3 for the SQLRaider project. 
+I also encourage you to read the original tutorial as it talks in more detail about what each of these steps is really doing.
+
+This is part of the xref:./Netbeans_Rcp_Antlr_Integration_Index.adoc[ANTLR integration tutorials].
+
+I found this very helpful, I've added some notes on what I learned implementing syntax coloring and error reporting on the page xref:./Antlr_Notes.adoc[Antlr_Notes] (Joe Areeda)
+
+== Lexer for Syntax Coloring
+
+=== 1) Grammar file:
+
+This is what my grammer file looks like right now. I am pretty new to ANTLR, but this grammar already handles some pretty complex syntax. What is relevant to enable syntax coloring is the code starting with 'SELECT' which will be used as the tokens. This grammar will generate a file called SqlLexer.java.
+
+[source,antlr]
+----
+grammar Oracle;
+
+@header{package com.sqlraider.editor.parser;}
+@lexer::header{package com.sqlraider.editor.lexer;}
+
+@members {
+	public List<SyntaxError> syntaxErrors = new ArrayList<SyntaxError>();
+
+	@Override
+	public String getErrorMessage(RecognitionException e, String[] tokenNames) {
+		String message = super.getErrorMessage(e, tokenNames);
+		SyntaxError syntaxError = new SyntaxError();
+		syntaxError.exception = e;
+		syntaxError.message = message;
+		syntaxErrors.add(syntaxError);
+		return message;
+	}
+
+	public static class SyntaxError {
+		public RecognitionException exception;
+		public String message;
+		public int line;
+		public int charPositionInLine;
+	}
+}
+
+prog: selectStatment;
+
+selectStatment: SELECT columns FROM tables (WHERE equalsStatment)? (ORDER_BY orderByClause)?;
+
+columns: columnName (COMMA columnName)*;
+
+/* 
+Defines one of the following: 
+- name and alias
+- asterisk
+- alias followed by an asterisk
+- inner select and alias
+*/
+columnName: (NAME NAME?|ASTERISK|NAME_ASTERISK|innerSelect NAME?);
+
+tables: tableName joinTables*;
+
+tableName: (NAME|innerSelect) NAME?;
+
+joinTables: JOIN tableName joinCondition;
+
+joinCondition: ON equalsStatment;
+
+innerSelect: LPAREN selectStatment RPAREN;
+
+equalsStatment: equals (AND equals)*;
+
+equals: leftOfEquals (OPERATORS rightOfEquals|NULL);
+
+leftOfEquals: NAME;
+
+rightOfEquals: QUOTED_STATEMENT
+           | innerSelect
+           | LPAREN (QUOTED_STATEMENT|NAME) RPAREN
+           | NAME
+           ;
+
+orderByClause: NAME (COMMA NAME)*; 
+
+/* select */
+SELECT: ('S'|'s')('E'|'e')('L'|'l')('E'|'e')('C'|'c')('T'|'t');
+
+/* from */
+FROM: ('F'|'f')('R'|'r')('O'|'o')('M'|'m');
+
+/* where */
+WHERE: ('W'|'w')('H'|'h')('E'|'e')('R'|'r')('E'|'e');
+
+/* order by */
+ORDER_BY: ('O'|'o')('R'|'r')('D'|'d')('E'|'e')('R'|'r')(' '*)('B'|'b')('Y'|'y');
+
+/* and */
+AND: ('A'|'a')('N'|'n')('D'|'d');
+
+/* join, inner join, left join, right join, outer join*/
+JOIN: ((('J'|'j')('O'|'o')('I'|'i')('N'|'n'))
+       |(('I'|'i')('N'|'n')('N'|'n')('E'|'e')('R'|'r')(' '*)('J'|'j')('O'|'o')('I'|'i')('N'|'n'))
+       |(('L'|'l')('E'|'e')('F'|'f')('T'|'t')(' '*)('J'|'j')('O'|'o')('I'|'i')('N'|'n'))
+       |(('R'|'r')('I'|'i')('G'|'g')('H'|'h')('T'|'t')(' '*)('J'|'j')('O'|'o')('I'|'i')('N'|'n'))
+       |(('O'|'o')('U'|'u')('T'|'t')('E'|'e')('R'|'r')(' '*)('J'|'j')('O'|'o')('I'|'i')('N'|'n'))
+       );
+
+/* is null, is not null */
+NULL: ((('I'|'i')('S'|'s')(' '*)('N'|'n')('U'|'u')('L'|'l')('L'|'l'))
+          |(('I'|'i')('S'|'s')(' '*)('N'|'n')('O'|'o')('T'|'t')(' '*)('N'|'n')('U'|'u')('L'|'l')('L'|'l'))
+         );
+
+/* on */
+ON: ('O'|'o')('N'|'n');
+
+IN: (('I'|'i')('N'|'n')|('N'|'n')('O'|'o')('T'|'t')(' '+)('I'|'i')('N'|'n'));
+
+OPERATORS: ('<'|'>'|'='|'!='|IN);
+
+NAME: (LETTER|NUMBER) (LETTER|NUMBER|'_'|'.')*;
+
+fragment LETTER: ('a'..'z'|'A'..'Z');
+
+fragment NUMBER: '0'..'9';
+
+ASTERISK: '*';
+
+NAME_ASTERISK: NAME ASTERISK;
+
+COMMA: ',';
+
+LPAREN: '(';
+
+RPAREN: ')';
+
+QUOTED_STATEMENT: '\'' .* '\'';
+
+WS: (' '|'\n'|'\r')+ {skip();};
+
+SL_COMMENT: '--' .* '\n' {$channel=HIDDEN;};
+
+ML_COMMENT: '/*' .* '*/' {$channel=HIDDEN;};
+----
+
+=== 2) LanguageHierarchy
+
+LanguageHierarchy contains a list of token types for our language.
+
+First though I would recommend taking the tokens file that ANTLR generated and create an enum class that represents the tokens. 
+Having your own enum class will come in handy when you decide to include features like code formatting. 
+This enum will be used to create TokenId objects in the LanguageHierarchy next. 
+It is not strictly necessary though as you could just create TokenId objects in the LanguageHierarchy directly.
+
+[source,antlr]
+----
+public enum TokenType {
+
+    WHERE(6, "keyword"),
+    LETTER(21, "character"),
+    NULL(18, "keyword"),
+    NUMBER(22, "character"),
+    ON(13, "keyword"),
+    NAME_ASTERISK(11, "character"),
+    AND(16, "keyword"),
+    JOIN(12, "keyword"),
+    ASTERISK(10, "character"),
+    LPAREN(14, "character"),
+    ML_COMMENT(25, "comment"),
+    RPAREN(15, "character"),
+    NAME(9, "character"),
+    WS(23, "whitespace"),
+    IN(20, "keyword"),
+    COMMA(8, "character"),
+    SL_COMMENT(24, "comment"),
+    QUOTED_STATEMENT(19, "character"),
+    OPERATORS(17, "character"),
+    FROM(5, "keyword"),
+    SELECT(4, "keyword"),
+    ORDER_BY(7, "keyword");
+    
+    public int id;
+    public String category;
+    public String text;
+
+    private TokenType(int id, String category) {
+        this.id = id;
+        this.category = category;
+    }
+
+    public static TokenType valueOf(int id) {
+        TokenType[] values = values();
+        for (TokenType value : values) {
+            if (value.id == id) {
+                return value;
+            }
+        }
+        throw new IllegalArgumentException("The id " + id + " is not recognized");
+    }
+}
+----
+
+Then create the LanguageHierarchy class. Notice how we iterate over the TokenType enum and convert it into a TokenId object.
+
+[source,java]
+----
+import org.netbeans.spi.lexer.LanguageHierarchy;
+import org.netbeans.spi.lexer.Lexer;
+import org.netbeans.spi.lexer.LexerRestartInfo;
+
+public class SqlLanguageHierarchy extends LanguageHierarchy<SqlTokenId> {
+
+    private static List<SqlTokenId> tokens = new ArrayList<SqlTokenId>();
+    private static Map<Integer, SqlTokenId> idToToken = new HashMap<Integer, SqlTokenId>();
+
+    static {
+        TokenType[] tokenTypes = TokenType.values();
+        for (TokenType tokenType : tokenTypes) {
+            tokens.add(new SqlTokenId(tokenType.name(), tokenType.category, tokenType.id));
+        }
+        for (SqlTokenId token : tokens) {
+            idToToken.put(token.ordinal(), token);
+        }
+    }
+
+    static synchronized SqlTokenId getToken(int id) {
+        return idToToken.get(id);
+    }
+
+    protected synchronized Collection<SqlTokenId> createTokenIds() {
+        return tokens;
+    }
+
+    protected synchronized Lexer<SqlTokenId> createLexer(LexerRestartInfo<SqlTokenId> info) {
+        return new SqlLexer(info);
+    }
+
+    protected String mimeType() {
+        return "text/x-sqlr";
+    }
+}
+----
+
+=== 3) TokenId
+
+To get the SqlEditorLanguageHierarchy class to compile you need a boilerplate TokenId implementation.
+
+[source,java]
+----
+import org.netbeans.api.lexer.Language;
+import org.netbeans.api.lexer.TokenId;
+
+public class SqlTokenId implements TokenId {
+
+    private static final Language<SqlTokenId> language = new SqlLanguageHierarchy().language();
+    private final String name;
+    private final String primaryCategory;
+    private final int id;
+
+    public SqlTokenId(String name, String primaryCategory, int id) {
+        this.name = name;
+        this.primaryCategory = primaryCategory;
+        this.id = id;
+    }
+
+    public String primaryCategory() {
+        return primaryCategory;
+    }
+
+    public int ordinal() {
+        return id;
+    }
+
+    public String name() {
+        return name;
+    }
+
+    public static final Language<SqlTokenId> getLanguage() {
+        return language;
+    }
+}
+----
+
+=== 4) Integrate lexer to NetBeans
+
+Now we can pull it all together to plug the lexer into the NetBeans Platform.
+
+[source,java]
+----
+import org.antlr.runtime.Token;
+import org.netbeans.spi.lexer.Lexer;
+import org.netbeans.spi.lexer.LexerRestartInfo;
+
+public class SqlLexer implements Lexer<SqlTokenId> {
+
+    private LexerRestartInfo<SqlTokenId> info;
+
+    private OracleLexer oracleLexer;
+
+    public SqlLexer(LexerRestartInfo<SqlTokenId> info) {
+        this.info = info;
+
+        AntlrCharStream charStream = new AntlrCharStream(info.input(), "SqlEditor");
+        oracleLexer = new OracleLexer(charStream);
+    }
+
+    public org.netbeans.api.lexer.Token<SqlTokenId> nextToken() {
+        Token token = oracleLexer.nextToken();
+        if (token.getType() != OracleLexer.EOF) {
+            SqlTokenId tokenId = SqlLanguageHierarchy.getToken(token.getType());
+            return info.tokenFactory().createToken(tokenId);
+        }
+        return null;
+    }
+
+    public Object state() {
+        return null;
+    }
+
+    public void release() {}
+}
+----
+
+But there is still one last very important detail, and that is how to get NetBeans Platform to delegate to your Lexer. 
+For that what you need to do is implement your own CharStream implementation.
+
+Before sitting down to create this I first checked the NetBeans Platform mailing list to see if this had already been done in another project. 
+As it turns out I received a CharStream implementation that works perfectly. 
+I wanted to make sure that this class was available (as did the original author) so feel free to take it and put it in your project. 
+Also, if you find any improvements be sore to post those changes back.
+
+[source,java]
+----
+import org.antlr.runtime.CharStream;
+import org.netbeans.spi.lexer.LexerInput;
+
+/**
+ * @author jonny
+ */
+public class AntlrCharStream implements CharStream {
+
+    private class CharStreamState {
+        int index;
+        int line;
+        int charPositionInLine;
+    }
+
+    private int line = 1;
+    private int charPositionInLine = 0;
+    private LexerInput input;
+    private String name;
+    private int index = 0;
+    private List<CharStreamState> markers;
+    private int markDepth = 0;
+    private int lastMarker;
+
+    public AntlrCharStream(LexerInput input, String name) {
+        this.input = input;
+        this.name = name;
+    }
+
+    public String substring(int start, int stop) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public int LT(int i) {
+        return LA(i);
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line = line;
+    }
+
+    public void setCharPositionInLine(int pos) {
+        this.charPositionInLine = pos;
+    }
+
+    public int getCharPositionInLine() {
+        return charPositionInLine;
+    }
+
+    public void consume() {
+        int c = input.read();
+        index++;
+        charPositionInLine++;
+
+        if (c == '\n') {
+            line++;
+            charPositionInLine = 0;
+        }
+    }
+
+    public int LA(int i) {
+        if (i == 0) {
+            return 0; // undefined
+        }
+
+        int c = 0;
+        for (int j = 0; j < i; j++) {
+            c = read();
+        }
+        backup(i);
+        return c;
+    }
+
+    public int mark() {
+        if (markers == null) {
+            markers = new ArrayList<CharStreamState>();
+            markers.add(null); // depth 0 means no backtracking, leave blank
+        }
+        markDepth++;
+        CharStreamState state = null;
+        if (markDepth >= markers.size()) {
+            state = new CharStreamState();
+            markers.add(state);
+        } else {
+            state = (CharStreamState) markers.get(markDepth);
+        }
+        state.index = index;
+        state.line = line;
+        state.charPositionInLine = charPositionInLine;
+        lastMarker = markDepth;
+
+        return markDepth;
+    }
+
+    public void rewind() {
+        rewind(lastMarker);
+    }
+
+    public void rewind(int marker) {
+        CharStreamState state = (CharStreamState) markers.get(marker);
+        // restore stream state
+        seek(state.index);
+        line = state.line;
+        charPositionInLine = state.charPositionInLine;
+        release(marker);
+    }
+
+    public void release(int marker) {
+        // unwind any other markers made after m and release m
+        markDepth = marker;
+        // release this marker
+        markDepth--;
+    }
+
+    public void seek(int index) {
+        if (index < this.index) {
+            backup(this.index - index);
+            this.index = index; // just jump; don't update stream state (line, ...)
+            return;
+        }
+
+        // seek forward, consume until p hits index
+        while (this.index < index) {
+            consume();
+        }
+    }
+
+    public int index() {
+        return index;
+    }
+
+    public int size() {
+        return -1; //unknown...
+    }
+
+    public String getSourceName() {
+        return name;
+    }
+
+    private int read() {
+        int result = input.read();
+        if (result == LexerInput.EOF) {
+            result = CharStream.EOF;
+        }
+
+        return result;
+    }
+
+    private void backup(int count) {
+        input.backup(count);
+    }
+}
+----
+
+=== 5) Configuration File Changes
+
+This is the list of configuration changes that I had to make to get everything hooked up.
+
+Create a FontAndColors.xml file.
+
+[source,xml]
+----
+<!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
+<fontscolors>
+    <fontcolor name="comment" default="comment"/>
+    <fontcolor name="keyword" default="keyword"/>
+    <fontcolor name="whitespace" default="whitespace"/>
+    <fontcolor name="character" default="character"/>
+</fontscolors>
+----
+
+Update your Bundles.properties file.
+
+[source]
+----
+character=Character
+keyword=Keyword
+comment=Comment
+whitespace=Whitespace
+----
+
+Lastly, update your Layer.xml file.
+
+[source,xml]
+----
+<folder name="Editors">
+    <folder name="text">
+        <folder name="x-sqlr">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="com.sqlraider.editor.Bundle"/>
+            <file name="language.instance">
+                <attr name="instanceCreate" methodvalue="com.sqlraider.editor.lexer.SqlTokenId.getLanguage"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
+            </file>
+            <folder name="FontsColors">
+                <folder name="NetBeans">
+                    <folder name="Defaults">
+                        <file name="FontAndColors.xml" url="FontAndColors.xml">
+                            <attr name="SystemFileSystem.localizingBundle" stringvalue="com.sqlraider.editor.Bundle"/>
+                        </file>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+</folder>
+<folder name="OptionsDialog">
+    <folder name="PreviewExamples">
+        <folder name="text">
+            <file name="x-sqlr" url="SqlTemplate.sqlr"/>
+        </folder>
+    </folder>
+</folder>
+----
+
+== Parser for Syntax Error
+
+Using the same grammer file (top of tutorial) ANTLR will also generate a SqlParser.java file.
+
+=== 1) Integrate parser into NetBeans Platform
+
+Extend the NetBeans Platform parser to integrate ANTLR.
+
+[source,java]
+----
+import com.sqlraider.editor.lexer.SqlLexer;
+import javax.swing.event.ChangeListener;
+import org.antlr.runtime.ANTLRStringStream;
+import org.antlr.runtime.CommonTokenStream;
+import org.antlr.runtime.Lexer;
+import org.netbeans.modules.parsing.api.Snapshot;
+import org.netbeans.modules.parsing.api.Task;
+import org.netbeans.modules.parsing.spi.ParseException;
+import org.netbeans.modules.parsing.spi.Parser;
+import org.netbeans.modules.parsing.spi.SourceModificationEvent;
+
+public class SqlParser extends Parser {
+
+    private Snapshot snapshot;
+    private OracleParser oracleParser;
+
+    public void parse(Snapshot snapshot, Task task, SourceModificationEvent event) {
+        this.snapshot = snapshot;
+        ANTLRStringStream input = new ANTLRStringStream(snapshot.getText().toString());
+        Lexer lexer = new OracleLexer(input);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        oracleParser = new OracleParser(tokens);
+        try {
+            oracleParser.prog();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public Result getResult(Task task) {
+        return new SqlEditorParserResult(snapshot, oracleParser);
+    }
+
+    public void cancel() {}
+
+    public void addChangeListener(ChangeListener changeListener) {}
+
+    public void removeChangeListener(ChangeListener changeListener) {}
+
+    public static class SqlEditorParserResult extends Result {
+
+        private OracleParser sqlParser;
+        private boolean valid = true;
+
+        SqlEditorParserResult(Snapshot snapshot, OracleParser oracleParser) {
+            super(snapshot);
+            this.sqlParser = oracleParser;
+        }
+
+        public OracleParser getSqlParser()
+                throws ParseException {
+            if (!valid) {
+                throw new ParseException();
+            }
+            return sqlParser;
+        }
+
+        protected void invalidate() {
+            valid = false;
+        }
+    }
+}
+----
+
+=== 2) SyntaxErrorsHighlightingTask
+
+This is where the real interesting code is. 
+What we are doing is getting a hold of the custom syntaxErrors List that we declared in the @members section of our grammer. 
+As you can tell what I did was override the getErrorMessage() method of the ANTLR parser to track errors. 
+In the future this will have to be improved so that the error text is more clear. 
+However, the getErrorMessage() method seems like the correct extension point as ANTLR will always call this method when an error occurs. 
+What is really nice is that ANTLR will roll up errors so that the user is not bombarded with similar errors at the same point in the syntax.
+
+Note: future version of this class should use the ErrorDescriptionFactory.createErrorDescription() method that will error out at the exact 
+syntax within the line as well as on the line itself. 
+Right now the user will only know which line has the problem.
+
+[source,java]
+----
+import com.sqlraider.editor.parser.SqlParser.SyntaxError;
+import javax.swing.text.Document;
+import org.antlr.runtime.RecognitionException;
+import org.netbeans.modules.parsing.spi.Parser.Result;
+import org.netbeans.modules.parsing.spi.ParserResultTask;
+import org.netbeans.modules.parsing.spi.Scheduler;
+import org.netbeans.modules.parsing.spi.SchedulerEvent;
+import org.netbeans.spi.editor.hints.ErrorDescription;
+import org.netbeans.spi.editor.hints.ErrorDescriptionFactory;
+import org.netbeans.spi.editor.hints.HintsController;
+import org.netbeans.spi.editor.hints.Severity;
+
+public class SyntaxErrorsHighlightingTask extends ParserResultTask {
+
+    public SyntaxErrorsHighlightingTask() {
+    }
+
+    public void run(Result result, SchedulerEvent event) {
+        try {
+            SqlParser.SqlEditorParserResult sjResult = (SqlParser.SqlEditorParserResult) result;
+            List<SyntaxError> syntaxErrors = sjResult.getSqlParser().syntaxErrors;
+            Document document = result.getSnapshot().getSource().getDocument(false);
+            List<ErrorDescription> errors = new ArrayList<ErrorDescription>();
+            for (SyntaxError syntaxError : syntaxErrors) {
+                RecognitionException exception = syntaxError.exception;
+                String message = syntaxError.message;
+
+                int line = exception.line;
+                if (line <= 0) {
+                    continue;
+                }
+                ErrorDescription errorDescription = ErrorDescriptionFactory.createErrorDescription(
+                        Severity.ERROR,
+                        message,
+                        document,
+                        line);
+                errors.add(errorDescription);
+            }
+            HintsController.setErrors(document, "sqlr", errors);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public int getPriority() {
+        return 100;
+    }
+
+    public Class<? extends Scheduler> getSchedulerClass() {
+        return Scheduler.EDITOR_SENSITIVE_TASK_SCHEDULER;
+    }
+
+    public void cancel() {
+    }
+}
+----
+
+=== 3) SqlEditorParserFactory And SyntaxErrorsHighlightingTaskFactory
+
+The next two classes are boilerplate implementations so that NetBeans Platform can parse your file as you type.
+
+[source,java]
+----
+import org.netbeans.modules.parsing.api.Snapshot;
+import org.netbeans.modules.parsing.spi.Parser;
+import org.netbeans.modules.parsing.spi.ParserFactory;
+
+public class SqlParserFactory extends ParserFactory {
+
+    @Override
+    public Parser createParser(Collection<Snapshot> snapshots) {
+        return new SqlParser();
+    }
+}
+----
+
+[source,java]
+----
+import org.netbeans.modules.parsing.api.Snapshot;
+import org.netbeans.modules.parsing.spi.SchedulerTask;
+import org.netbeans.modules.parsing.spi.TaskFactory;
+
+public class SyntaxErrorsHighlightingTaskFactory extends TaskFactory {
+
+    public Collection<? extends SchedulerTask> create (Snapshot snapshot) {
+        return Collections.singleton (new SyntaxErrorsHighlightingTask ());
+    }
+}
+----
+
+=== 4) Configuration File Changes
+
+This is the list of configuration changes that I had to make to get everything hooked up.
+
+[source,xml]
+----
+<folder name="Editors">
+    <folder name="text">
+        <folder name="x-sqlr">
+            <file name="com-sqlraider-editor-parser-SqlParserFactory.instance"/>
+            <file name="com-sqlraider-editor-parser-SyntaxErrorsHighlightingTaskFactory.instance"/>
+        </folder>
+    </folder>
+</folder>
+----
+

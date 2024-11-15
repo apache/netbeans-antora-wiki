@@ -1,0 +1,380 @@
+// 
+//     Licensed to the Apache Software Foundation (ASF) under one
+//     or more contributor license agreements.  See the NOTICE file
+//     distributed with this work for additional information
+//     regarding copyright ownership.  The ASF licenses this file
+//     to you under the Apache License, Version 2.0 (the
+//     "License"); you may not use this file except in compliance
+//     with the License.  You may obtain a copy of the License at
+// 
+//       http://www.apache.org/licenses/LICENSE-2.0
+// 
+//     Unless required by applicable law or agreed to in writing,
+//     software distributed under the License is distributed on an
+//     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//     KIND, either express or implied.  See the License for the
+//     specific language governing permissions and limitations
+//     under the License.
+//
+
+= Netbeans Antlr BracesMatching
+:page-layout: wikimenu
+:page-tags: wiki, needsreview
+:jbake-status: published
+:keywords: Apache NetBeans wiki How_to_create_support_for_a_new_language
+:description: Apache NetBeans wiki How_to_create_support_for_a_new_language
+:toc: left
+:toc-title:
+:page-syntax: true
+include::front::partial$database.adoc[]
+
+Matching braces, parentheses and other grouping symbols like square and angle brackets is a fairly easy way to reduce errors while entering code. 
+It is also relatively straight forward to implement in Netbeans/Editor framework.
+
+The method here depends on a Lexer implementation see xref:./New_Language_Support_Tutorial_Antlr.adoc[highlight syntax and check errors]. is organized as:
+
+* BracesMatcher Class
+* LexerUtilities Class
+* BracesMatcherFactory Class
+* Registering the BracesMatcherFactory in layer.xml 
+
+(I'm in kind of rush right now so, here's my code. The golden prose that ties it all together and removes all doubt and confusion will have to wait) 
+
+== BracesMatcher Class
+
+[source,java]
+----
+import javax.swing.text.AbstractDocument;
+import javax.swing.text.BadLocationException;
+import org.netbeans.api.lexer.Token;
+import org.netbeans.api.lexer.TokenId;
+import org.netbeans.api.lexer.TokenSequence;
+import org.netbeans.editor.BaseDocument;
+import org.netbeans.modules.csl.api.OffsetRange;
+import org.netbeans.spi.editor.bracesmatching.BracesMatcher;
+import org.netbeans.spi.editor.bracesmatching.MatcherContext;
+import org.openoffice.extensions.editors.unoidl.UnoTokenId;
+import org.openoffice.extensions.editors.unoidl.unoidlParser;
+
+
+/**
+ * Implementation of BracesMatcher interface for UnoIdl. It is based on original code
+ * from PHPBracesMatcher
+ *
+ * @author joe areeda
+ */
+class UnoBracesMatcher implements BracesMatcher{
+
+    MatcherContext context;
+    private class BracePair{
+        int open;       // Lexer ordinal of opening brace eg { or [
+        int close;      // Lexer ordinal of closing brace eg } or }
+
+        private BracePair(int op, int cl) {
+         open = op;
+         close = cl;
+        }
+    }
+    BracePair[] bracePairs = {
+        new BracePair(unoidlParser.LPAREN, unoidlParser.RPAREN),
+        new BracePair(unoidlParser.LBRACE, unoidlParser.RBRACE),
+        new BracePair(unoidlParser.LBRACKET, unoidlParser.RBRACKET),
+        new BracePair(unoidlParser.LANGLE, unoidlParser.RANGLE)
+    };
+
+    public UnoBracesMatcher (MatcherContext context) {
+        this.context = context;
+    }
+
+    public int [] findOrigin() throws InterruptedException, BadLocationException {
+        int[] ret = null;
+        ((AbstractDocument) context.getDocument()).readLock();
+        try {
+            BaseDocument doc = (BaseDocument) context.getDocument();
+            int offset = context.getSearchOffset();
+            TokenSequence<?extends UnoTokenId> ts = LexUtilities.getUnoTokenSequence(doc, offset);
+            
+            if (ts != null) {
+                ts.move(offset);
+
+                if (ts.moveNext()) {
+
+                    Token<?extends UnoTokenId> token = ts.token();
+
+                    if (token != null) {
+                        TokenId id = token.id();
+                        int ordinal = id.ordinal();
+
+                        for(BracePair bp : bracePairs)
+                        {
+                            if (ordinal == bp.open) {
+                                ret= new int [] { ts.offset(), ts.offset() + token.length() };
+                                break;
+                            } else if (ordinal == bp.close) {
+                                ret = new int [] { ts.offset(), ts.offset() + token.length() };
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        } finally {
+            ((AbstractDocument) context.getDocument()).readUnlock();
+        }
+        return ret;
+    }
+
+    public int [] findMatches() throws InterruptedException, BadLocationException {
+        int[] ret = null;
+        ((AbstractDocument) context.getDocument()).readLock();
+        try {
+            BaseDocument doc = (BaseDocument) context.getDocument();
+            int offset = context.getSearchOffset();
+            TokenSequence<?extends UnoTokenId> ts = LexUtilities.getUnoTokenSequence(doc, offset);
+
+            if (ts != null) {
+                ts.move(offset);
+
+                if (ts.moveNext()) {
+
+                    Token<?extends UnoTokenId> token = ts.token();
+
+                    if (token != null) {
+                        TokenId id = token.id();
+                        int ordinal = id.ordinal();
+                        OffsetRange r;
+
+                        for(BracePair bp : bracePairs)
+                        {
+                            if (ordinal == bp.open) {
+                                r = LexUtilities.findFwd(ts, bp.open, bp.close);
+                                ret= new int [] {r.getStart(), r.getEnd() };
+                                break;
+                            } else if (ordinal == bp.close) {
+                                r = LexUtilities.findBwd(ts, bp.open, bp.close);
+                                ret= new int [] {r.getStart(), r.getEnd() };
+                                break;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        } finally {
+            ((AbstractDocument) context.getDocument()).readUnlock();
+        }
+        return ret;
+
+    }
+
+}
+----
+
+== LexerUtilities Class
+
+[source,java]
+----
+import java.util.List;
+import javax.swing.text.Document;
+import org.netbeans.api.lexer.Token;
+import org.netbeans.api.lexer.TokenHierarchy;
+import org.netbeans.api.lexer.TokenId;
+import org.netbeans.api.lexer.TokenSequence;
+import org.netbeans.editor.BaseDocument;
+import org.netbeans.modules.csl.api.OffsetRange;
+import org.openoffice.extensions.editors.unoidl.UnoTokenId;
+
+/**
+ *
+ * @author joe
+ */
+class LexUtilities {
+
+    @SuppressWarnings("unchecked")
+    public static TokenSequence<UnoTokenId> getUnoTokenSequence(Document doc, int offset) {
+        TokenHierarchy<Document> th = TokenHierarchy.get(doc);
+        TokenSequence<UnoTokenId> ts = th == null ? null : th.tokenSequence(UnoTokenId.getLanguage());
+
+        if (ts == null) {
+            // Possibly an embedding scenario such as an RHTML file
+            // First try with backward bias true
+            List<TokenSequence<?>> list = th.embeddedTokenSequences(offset, true);
+
+            for (TokenSequence<?extends TokenId> t : list) {
+                if (t.language() == UnoTokenId.getLanguage()) {
+                    ts = (TokenSequence<UnoTokenId>) t;
+
+                    break;
+                }
+            }
+
+            if (ts == null) {
+                list = th.embeddedTokenSequences(offset, false);
+
+                for (TokenSequence<?extends TokenId> t : list) {
+                    if (t.language() == UnoTokenId.getLanguage()) {
+                        ts =        (TokenSequence<UnoTokenId>) t;
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        return ts;
+    }
+    /** Search forwards in the token sequence until a token of type <code>down</code> is found */
+    public static OffsetRange findFwd(BaseDocument doc, TokenSequence<?extends UnoTokenId> ts, char up, char down) {
+        int balance = 0;
+
+        while (ts.moveNext()) {
+            Token<?extends UnoTokenId> token = ts.token();
+
+            if (textEquals(token.text(), up)) {
+                balance++;
+            } else if (textEquals(token.text(), down)) {
+                if (balance == 0) {
+                    return new OffsetRange(ts.offset(), ts.offset() + token.length());
+                }
+
+                balance--;
+            }
+        }
+
+        return OffsetRange.NONE;
+    }
+    /**
+     * Search forwards in the token sequence until a matching closing token is found
+     * so keeps track of nested pairs of up-down eg (()) is ignored if we're
+     * searching for a )
+     * @param ts the TokenSequence set to the position after an up
+     * @param up the opening token eg { or [
+     * @param down the closing token eg } or ]
+     * @return the Range of closing token in our case 1 char
+     */
+    public static OffsetRange findFwd(TokenSequence<?extends UnoTokenId> ts, int up, int down) {
+        int balance = 0;
+
+        while (ts.moveNext()) {
+            Token<?extends UnoTokenId> token = ts.token();
+
+            if (token.id().ordinal() == up){
+                balance++;
+            }
+            else if (token.id().ordinal() == down) {
+                if (balance == 0) {
+                    return new OffsetRange(ts.offset(), ts.offset() + token.length());
+                }
+                balance--;
+            }
+        }
+
+        return OffsetRange.NONE;
+    }
+    /**
+     * Search forwards in the token sequence until a matching closing token is found
+     * so keeps track of nested pairs of up-down eg (()) is ignored if we're
+     * searching for a )
+     * @param ts the TokenSequence set to the position after an up
+     * @param up the opening token eg { or [
+     * @param down the closing token eg } or ]
+     * @return the Range of closing token in our case 1 char
+     */
+    public static OffsetRange findBwd(TokenSequence<?extends UnoTokenId> ts, int up, int down) {
+        int balance = 0;
+
+        while (ts.movePrevious()) {
+            Token<?extends UnoTokenId> token = ts.token();
+            TokenId id = token.id();
+
+            if (token.id().ordinal() == up) {
+                if (balance == 0) {
+                    return new OffsetRange(ts.offset(), ts.offset() + token.length());
+                }
+
+                balance++;
+            } else if (token.id().ordinal() == down) {
+                balance--;
+            }
+        }
+
+        return OffsetRange.NONE;
+    }
+    /** Search backwards in the token sequence until a token of type <code>up</code> is found */
+    public static OffsetRange findBwd(BaseDocument doc, TokenSequence<?extends UnoTokenId> ts, char up, char down) {
+        int balance = 0;
+
+        while (ts.movePrevious()) {
+            Token<?extends UnoTokenId> token = ts.token();
+            TokenId id = token.id();
+
+            if (textEquals(token.text(), up)) {
+                if (balance == 0) {
+                    return new OffsetRange(ts.offset(), ts.offset() + token.length());
+                }
+
+                balance++;
+            } else if (textEquals(token.text(), down)) {
+                balance--;
+            }
+        }
+
+        return OffsetRange.NONE;
+    }
+    public static boolean textEquals(CharSequence text1, char... text2) {
+        int len = text1.length();
+        if (len == text2.length) {
+            for (int i = len - 1; i >= 0; i--) {
+                if (text1.charAt(i) != text2[I]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+}
+----
+
+== BracesMatcherFactory Class
+
+[source,java]
+----
+import org.netbeans.spi.editor.bracesmatching.BracesMatcher;
+import org.netbeans.spi.editor.bracesmatching.BracesMatcherFactory;
+import org.netbeans.spi.editor.bracesmatching.MatcherContext;
+
+/**
+ * Creates a UnoBracesMatcher class from layer.xml
+ * @author joe areeda
+ */
+public class UnoBracesMatcherFactory implements BracesMatcherFactory {
+
+    public BracesMatcher createMatcher(MatcherContext context) {
+        return new UnoBracesMatcher(context);
+    }
+
+
+}
+----
+
+== Registering the BracesMatcherFactory in layer.xml
+
+[source,xml]
+----
+    <folder name="Editors">
+        <folder name="text">
+            <folder name="x-uno-idl">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.openoffice.extensions.editors.unoidl.Bundle"/>
+                <file name="language.instance">
+                    <attr name="instanceCreate" methodvalue="org.openoffice.extensions.editors.unoidl.UnoTokenId.getLanguage"/>
+                    <attr name="instanceOf" stringvalue="org.netbeans.api.lexer.Language"/>
+                </file>
+                ___<folder name="BracesMatchers">
+                    <file name="org-openoffice-extensions-editors-unoidl-indent-UnoBracesMatcherFactory.instance">
+                        <attr name="position" intvalue="0"/>
+                    </file>
+                </folder>___
+----
