@@ -27,10 +27,11 @@
 :toc-title:
 :page-syntax: true
 :page-aliases: ROOT:wiki/DevFaqIndex.adoc
+include::front::partial$database.adoc[]
 
 //== Actions: How to add things to Files, Folders, Menus, Toolbars and more
-// dzone https://web.archive.org/web/20170617115833/http://netbeans.dzone.com/news/which-netbeans-platform-action|
-// dzone https://web.archive.org/web/20170617115833/http://netbeans.dzone.com/how-to-make-context-sensitive-actions
+// dzone link:{webarchive}20170617115833/http://netbeans.dzone.com/news/which-netbeans-platform-action|
+// dzone link:{webarchive}20170617115833/http://netbeans.dzone.com/how-to-make-context-sensitive-actions
 //- xref:./DevFaqHowCreateAnActionObject.adoc[How can I to create an Action object and attach this action to one or more components on frame without manually editing Generated Code?]
 
 //== Command Line Parsing
@@ -39,7 +40,7 @@
 //== Tasks and Progressbar
 // ow to use progress api?
 // cancellable tasks and progress indicators
-// Saving as per https://web.archive.org/web/20170110010149/http://wiki.netbeans.org/NetBeansDeveloperFAQ#Saving
+// Saving as per link:{webarchive}20170110010149/http://wiki.netbeans.org/NetBeansDeveloperFAQ#Saving
 // 
 //== Project Types
 //Also see BuildSystemDesign and ProjectGroups.

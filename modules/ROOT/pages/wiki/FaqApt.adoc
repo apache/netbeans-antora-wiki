@@ -28,4 +28,6 @@
 :page-syntax: true
 
 
-link:https://web.archive.org/web/20181020080501/wiki.netbeans.org/FaqApt[Former article page]
+Yes. NetBeans supports JSR 269-compliant annotation processors directly - both during the build (for Ant or Maven projects), 
+and in the IDE's Java editor as you type. For more information on how to use annotation processors, see xref:tutorial::kb/docs/java/annotations.adoc[]
+

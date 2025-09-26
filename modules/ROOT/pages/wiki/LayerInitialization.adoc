@@ -17,7 +17,7 @@
 //     under the License.
 //
 
-= LayerInitialization
+= Layer Initialization in Unit Tests
 :page-layout: wikimenu
 :page-tags: wik
 :jbake-status: published
@@ -26,6 +26,8 @@
 :toc: left
 :toc-title:
 :page-syntax: true
+include::front::partial$database.adoc[]
 
+When running unit tests you would often like to have ``Repository.getDefault().getDefaultFileSystem()`` contain XML layers from your module (and other modules in your runtime classpath). 
 
-link:https://web.archive.org/web/20210118062359/http://wiki.netbeans.org/LayerInitialization[Former article page]
+// link:{webarchive}20210118062359/http://wiki.netbeans.org/LayerInitialization[Former article]
