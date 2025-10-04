@@ -34,7 +34,7 @@ include::front::partial$database.adoc[]
 
 There are several ways to do this, depending on what exactly you need.  The basic problems all of the available solutions are addressing is that:
 
-* An action may be created and shown in a menu, toolbar or popup menu.
+* An action may be created and shown in a menu, toolbar or popup menu -or with no UI and only triggered via a keyboard shortcut
 * While it is visible on-screen, the selected file (or whatever) can change.
 * If it is context sensitive, it should run against the thing it was _shown for_ not whatever is selected at the millisecond when it is actually called
 * People want to write main-menu and toolbar actions which are enabled and disabled based on what is xref:./DevFaqTrackGlobalSelection.adoc[selected] - in practice this means writing an object that enables and disables itself based on a particular _type_ -- a particular class or its subclasses -- being selected (each logical window in NetBeans has its own "selection";  the "global selection" is whatever is selected in whatever window currently has focus)
@@ -84,7 +84,7 @@ link:{apidoclink}org-openide-nodes/org/openide/util/actions/NodeAction.html[Node
 
 == Roll your own
 
-The following is relatively simple and affords a way to perform whatever enablement logic you like (`NodeAction` can do that too, but this might be a little more straightforward and your code doesn't have to worry about nodes at all: xref:./DevFaqWhatIsANode.adoc[DevFaqWhatIsANode]).  To understand how this works, see xref:./DevFaqTrackGlobalSelection.adoc[DevFaqTrackGlobalSelection]:
+The following is relatively simple and affords a way to perform whatever enablement logic you like (`NodeAction` can do that too, but this might be a little more straightforward and your code doesn't have to worry about nodes at all: xref:./DevFaqWhatIsANode.adoc[DevFaqWhatIsANode]). 
 
 [source,java]
 ----
@@ -140,6 +140,69 @@ public class FooAction extends AbstractAction implements LookupListener, Context
 
 ----
 
+Let's register the above action and see how it works.
+
+[source,java]
+----
+@ActionID(category = "foocat", id = "org.fooaction")
+@ActionRegistration(displayName = "not_used", lazy = false)  // displayName useless if lazy is false
+@ActionReferences(
+        {
+            @ActionReference(path = "Menu/Edit", position = 100),  // add an entry in the app-level edit menu 
+            @ActionReference(path = "Shortcuts", name = "O-Z"),    // action can be directly run with alt-Z
+            @ActionReference(path = "Actions/Popupmenu", position = 3)   // add a menu entry in a contextual popup menu
+        })
+public class FooAction extends AbstractAction implements LookupListener, ContextAwareAction {
+...
+----
+
+When the Netbeans platform application is started:
+
+* a `FooAction` instance is created automatically using the no-arg constructor when the edit menu is created
+* the same instance is reused and associated to the alt-Z shortcut
+
+As there can be many actions in a platform app, the constructors must be lightweight. That's why we start listening to the `Lookup.Result` only when the menu item is about to be displayed.
+
+To further optimize application startup time, you should register your action with `lazy=true` whenever possible (see limitations in the `@ActionRegistration` javadoc). In lazy instanciation mode the `displayName` value (and other optional parameters) is used to build the action menu item, and the `FooAction` instance is created only when the menu entry (or keyboard shortcut) is actually selected by user.
+
+The `FooAction` no-arg constructor uses the global selection context (xref:./DevFaqTrackGlobalSelection.adoc[DevFaqTrackGlobalSelection]), i.e. action will be enabled only when `Whatever` instances are present in the lookup of the focused `TopComponent`.
+
+`FooAction` also implements `ContextAwareAction`. This is used by methods `Utilities.actionsForPath()` and `Actions.actionsToPopup()` when building a contextual popup menu, for example:
+[source,java]
+----
+var actions = Utilities.actionsForPath("Actions/Popupmenu"); 
+var context = myEditorTopComponent.getLookup();
+var popupmenu = Actions.actionsToPopup(actions, context); 
+----
+In our case `actionsToPopup()` will find our FooAction_instance and, because it's a `ContextAwareAction`, will create a menu item based on the the return value of FooAction_instance `createContextAwareInstance(context)`. The return value must be considered as a transient instance because a new `FooAction` instance is created each time the popup menu is built (i.e. if the transient instance needs to listen to a shared object, you should probably use a `WeakListener`).
+
+Note that even if `FooAction` does not implement `ContextAwareAction`, different `Utilities.actionsForPath()` calls might return different `FooAction` instances if there is no strong reference on these instances.
+
+If you need to enforce `FooAction` as a singleton, it's possible to register a static factory method instead of the class:
+[source,java]
+----
+public class FooAction extends AbstractAction implements LookupListener {
+
+  private FooAction INSTANCE;
+  @ActionID(category = "foocat", id = "org.fooaction")
+  @ActionRegistration(displayName = "not_used", lazy = false)  // displayName useless if lazy is false
+  @ActionReferences(
+          {
+              @ActionReference(path = "Menu/Edit", position = 100),  // add an entry in the app-level edit menu 
+              @ActionReference(path = "Shortcuts", name = "O-Z"),    // action can be directly run with alt-Z
+              @ActionReference(path = "Actions/Popupmenu", position = 3)   // add a menu entry in a contextual popup menu
+          })
+   public static FooAction getInstance() {
+        if (INSTANCE==null)
+        {
+              INSTANCE = new FooAction();
+        }
+   return INSTANCE;
+}
+...
+----
+
+
 == Deprecated CookieAction
 
 In many older (pre-NB 6.8) examples you may find link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction]. It should be (but is not) deprecated. The original info is left here for reference and/or old code maintenance:
@@ -148,40 +211,3 @@ link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[Co
 
 Being an older class, under the hood it is using xref:./DevFaqLookupCookie.adoc[Node.getCookie()], so your action will only be sensitive to things actually returned by that method - in other words, only objects that implement the marker interface `Node.Cookie` can work here.
 
-== Not-Yet-Official spi.actions
-
-This module is part of the platform as of 6.8, but has not yet become official API (and nobody seems to be willing to make it stable API, so judge your own decisions based on this fact).  Nonetheless it is there, it is not changing and straightforward to use.  The example below opens a visual editor window if an instance of RAFDataObject is selected and has a RandomAccessFile in its lookup:
-
-[source,java]
-----
-
-public final class CustomOpenAction extends org.netbeans.spi.actions.Single<RAFDataObject>
- {
-    public CustomOpenAction() {
-      super(RAFDataObject.class, "Open", null);
-    }
-    @Override
-    protected void actionPerformed(RAFDataObject target) {
-      //If an editor is already open, just give it focus
-      for (TopComponent tc : TopComponent.getRegistry().getOpened()) {
-        if (tc instanceof RAFEditor &amp;&amp; tc.getLookup().lookup(RAFDataObject.class) == target) {
-          tc.requestActive();
-          return;
-        }
-      }
-      //Nope, need a new editor
-      TopComponent editorWindow = null;
-      editorWindow = new RAFEditor(target);
-      editorWindow.open();
-      editorWindow.requestActive();
-    }
-    @Override
-    protected boolean isEnabled(RAFDataObject target) {
-      //Make sure there really is a file on disk
-      return target.getLookup().lookup(RandomAccessFile.class) != null;
-    }
-  }
-
-----
-
-Use `ContextAction` instead of `Single` to create actions that operate on multi-selections.
