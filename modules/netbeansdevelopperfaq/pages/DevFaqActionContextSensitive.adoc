@@ -170,9 +170,9 @@ The `FooAction` no-arg constructor uses the global selection context (xref:./Dev
 `FooAction` also implements `ContextAwareAction`. This is used by methods `Utilities.actionsForPath()` and `Actions.actionsToPopup()` when building a contextual popup menu, for example:
 [source,java]
 ----
-var actions = Utilities.actionsForPath("Actions/Popupmenu"); 
-var context = myEditorTopComponent.getLookup();
-var popupmenu = Actions.actionsToPopup(actions, context); 
+List<? extends Action> actions = Utilities.actionsForPath("Actions/Popupmenu"); 
+Lookup context = myEditorTopComponent.getLookup();
+JPopupMenu popupmenu = Utilities.actionsToPopup(actions, context); 
 ----
 In our case `actionsToPopup()` will find our FooAction_instance and, because it's a `ContextAwareAction`, will create a menu item based on the the return value of FooAction_instance `createContextAwareInstance(context)`. The return value must be considered as a transient instance because a new `FooAction` instance is created each time the popup menu is built (i.e. if the transient instance needs to listen to a shared object, you should probably use a `WeakListener`).
 
@@ -192,12 +192,12 @@ public class FooAction extends AbstractAction implements LookupListener {
               @ActionReference(path = "Shortcuts", name = "O-Z"),    // action can be directly run with alt-Z
               @ActionReference(path = "Actions/Popupmenu", position = 3)   // add a menu entry in a contextual popup menu
           })
-   public static FooAction getInstance() {
-        if (INSTANCE==null)
-        {
-              INSTANCE = new FooAction();
+  public static FooAction getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new FooAction();
         }
-   return INSTANCE;
+        return INSTANCE;
+  }
 }
 ...
 ----
