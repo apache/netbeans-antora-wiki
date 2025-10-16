@@ -203,11 +203,16 @@ public class FooAction extends AbstractAction implements LookupListener {
 ----
 
 
-== Deprecated CookieAction
+== Legacy use of CookieAction
 
-In many older (pre-NB 6.8) examples you may find link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction]. It should be (but is not) deprecated. The original info is left here for reference and/or old code maintenance:
+In many older (pre-NB 6.8) examples you may find references to link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction].
 
-link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction] is used to write actions that are sensitive to what is in the selected Node(s) xref:./DevFaqLookup.adoc[Lookup].  You can specify one or more classes that must be present in the selected xref:./DevFaqWhatIsANode.adoc[Node]'s Lookup, and some other semantics about enablement.
+link:{apidoclink}org-openide-nodes/org/openide/util/actions/CookieAction.html[CookieAction] is used to write
+actions that are sensitive to what is in the selected Node(s) xref:./DevFaqLookup.adoc[Lookup].
+You can specify one or more classes that must be present in the selected xref:./DevFaqWhatIsANode.adoc[Node]'s Lookup,
+and some other semantics about enablement.
 
-Being an older class, under the hood it is using xref:./DevFaqLookupCookie.adoc[Node.getCookie()], so your action will only be sensitive to things actually returned by that method - in other words, only objects that implement the marker interface `Node.Cookie` can work here.
+Being an older class, under the hood it is using xref:./DevFaqLookupCookie.adoc[Node.getCookie()], so your action will
+only be sensitive to things actually returned by that method - in other words, only objects that implement the marker
+interface `Node.Cookie` can work here.
 
